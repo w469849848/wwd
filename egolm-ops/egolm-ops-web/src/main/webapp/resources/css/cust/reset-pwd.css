@@ -1,0 +1,62 @@
+.reset-pwd{ border: 1px solid #e5e5e5; background-color: #fff; border-radius: 5px; -webkit-border-radius: 5px; -moz-border-radius: 5px; padding: 40px 38px; font-size: 14px; }
+.reset-pwd form p:last-child{ margin-top: 20px; text-align: center; }
+.reset-pwd form p:last-child label input:first-child{ margin-right: 50px; }
+.reset-pwd form input[type="text"]{ height: 38px; }
+.reset-pwd form input[type="text"],.reset-pwd form textarea{ width: 100%; }
+.reset-pwd form input[type="password"]{ height: 38px; }
+.reset-pwd form input[type="password"]{ width: 100%; }
+.reset-pwd form textarea{ resize: none; }
+.reset-pwd form input[type="button"]{ padding: 8px 15px; color: #fff; background-color: #ff6400; text-align: center; float: none; max-width: 180px; outline: none; }
+.reset-pwd form input.cancel{ background-color: #f5f5f5; color: #FF6400; }
+
+.reset-pwd form small label{ position: relative; }
+.reset-pwd form small>span,.reset-pwd form small>span>span{ padding: 0; font-size: 14px; line-height: 40px; }
+.reset-pwd form .checked-wrap{ position: relative; top: 3px; }
+.reset-pwd form .postion-pc{ margin-right: 30px; }
+.reset-pwd form .txt-limt{ position: absolute; bottom: 0; right: 6px; }
+
+.path-wrap .tit{ border-bottom: 1px solid #e5e5e5; margin: 30px 0 !important; }
+.path-wrap .path small input,.path-wrap .path small textarea{ padding-left: 20px; }
+
+.add-box form .checked-wrap{ position: relative; top: 3px; }
+span.dropdown-wrap{ margin-right: 30px; }
+
+/*自定义下拉框*/
+.reset-pwd form div.row{ margin-bottom: 13px; }
+.reset-pwd form a.dropdown-btn{ position: relative; height: 38px; line-height: 28px; padding: 5px 12px; padding-right: 25px; text-decoration: none; }
+.reset-pwd form a.dropdown-btn:focus{ color: #505050; }
+.reset-pwd form a.dropdown-btn:hover{ color: #505050; }
+.reset-pwd form span.input-tips{ line-height: 40px; }
+.reset-pwd form span.dr{ position: absolute; display: block; width: 38px; height: 38px; top: 50%; margin-top: -19px; right: 0; background: #e5e5e5; }
+.reset-pwd form span.dr img{ position: absolute; top: 50%; left: 50%; margin-top: -3.5px; margin-left: -6px; display: block; width: 12px; height: 7px; }
+.reset-pwd form .dropdown-menu li{ text-align: left; padding: 0 12px; }
+
+
+
+/*自定义radio*/
+.floor-wrap{  }
+.floor-wrap .checked-wrap{ width: 18px; height: 18px; margin-right: 8px; }
+.floor-wrap .checked-wrap .chk-radio{ opacity: 0; position: absolute; z-index: 12; width: 18px; height: 18px; cursor: pointer; margin-top: 0; }
+.floor-wrap .checked-wrap .chk-bg{ position: absolute; z-index: 11; display: inline-block; margin: 0; width: 18px; height: 18px; font-weight: normal; }
+.floor-wrap .checked-wrap .chk-bg::before{ content: ""; display: block; height: 18px; width: 18px; background: url(../images/default.png) no-repeat; }
+.floor-wrap .checked-wrap input[checked=checked] + span.chk-bg:before{ content: ""; display: block; height: 18px; width: 18px; background: url(../images/checked.png) no-repeat; }
+
+
+/*上传框*/
+.pic-wrap .pic-box{ position: relative; display: inline-block; width: 170px; height: 170px; margin: 0; }
+.pic-wrap .tips-txt{ display: inline-block; height: 170px; line-height: 170px; }
+.pic-wrap .pic-box img{ display: block;position: absolute; top: 0; bottom: 0; left: 0; right: 0; margin: auto; }
+.pic-wrap .pic-box input{ position: absolute; z-index: 999; top: 0; width: 100%; height: 100%; filter:alpha(opacity=0); -moz-opacity:0;  -khtml-opacity:0; opacity: 0; }
+
+.col-xs-1, .col-xs-2, .col-xs-3, .col-xs-4, .col-xs-5, .col-xs-6, .col-xs-7, .col-xs-8, .col-xs-9, .col-xs-10, .col-xs-11, .col-xs-12, .col-sm-1, .col-sm-2, .col-sm-3, .col-sm-4, .col-sm-5, .col-sm-6, .col-sm-7, .col-sm-8, .col-sm-9, .col-sm-10, .col-sm-11, .col-sm-12, .col-md-1, .col-md-2, .col-md-3, .col-md-4, .col-md-5, .col-md-6, .col-md-7, .col-md-8, .col-md-9, .col-md-10, .col-md-11, .col-md-12, .col-lg-1, .col-lg-2, .col-lg-3, .col-lg-4, .col-lg-5, .col-lg-6, .col-lg-7, .col-lg-8, .col-lg-9, .col-lg-10, .col-lg-11, .col-lg-12{ padding: 0; }
+
+.border-radius{ border-radius: 2px !important; -webkit-border-radius: 2px !important; -moz-border-radius: 2px !important; }
+
+@media only screen and (max-width: 767px) {
+	.reset-pwd{ padding-left: 22px !important; padding-right: 22px !important; }
+	.reset-pwd form input[type="button"]{ width: 37%; }
+	.reset-pwd form p:last-child label input:first-child{ margin-right: 20%; }
+}
+
+input:radio{
+}

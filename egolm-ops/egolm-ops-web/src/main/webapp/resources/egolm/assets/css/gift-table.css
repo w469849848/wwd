@@ -1,0 +1,15 @@
+.table-box{ margin-bottom: 20px; }
+.filter-wrap{ padding: 12px; }
+.filter-wrap .add-man{ float: right; font-weight: bold; width: 190px; height: 40px; line-height: 40px; text-align: center; text-decoration: none; color: #ff6400; background-size: 100% 100%; -webkit-background-size: 100% 100%; background: url(../images/add-man.png) no-repeat; }
+.filter-wrap .add-man a{ color: #ff6400; text-decoration: none; }
+.filter-wrap .add-man i{ margin-right: 2%; }
+.filter-wrap .add-man i.add-icon::before{ content: ""; display: inline-block; width: 15px; height: 15px; background: url(../images/add-icon.png) no-repeat; background-size: 100% 100%; -webkit-background-size: 100% 100%; position: relative; top: 2px; }
+
+.table-box table thead tr th:nth-child(1){ padding-left: 12px; }
+.table-box table tbody tr td:nth-child(1){ width: auto !important; text-align: left !important; padding-left: 12px; }
+
+.footable.breakpoint > tbody > tr > td > span.footable-toggle{ position: relative; top: 0px; }
+
+.gift-info{ display: inline-block; }
+.gift-info p{ margin: 0; margin-left: 86px; margin-top: 32px; }
+.gift-info img{ width: 76px; height: 76px; }

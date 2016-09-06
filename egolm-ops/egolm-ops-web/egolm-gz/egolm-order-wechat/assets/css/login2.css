@@ -1,0 +1,157 @@
+body {
+	background: #eee;
+}
+
+.empty {
+	width: 100%;
+	height: 2rem;
+}
+
+.login2-tit {
+	height: 4.285rem;
+	width: 100%;
+}
+
+.login2-tit h5 {
+	height: 4.285rem;
+	width: 100%;
+	line-height: 4.285rem;
+	text-align: center;
+}
+
+.select-shop {
+	width:20.45rem;
+	height: 15.15rem;
+	background: #fff;
+	margin:0 3.571rem;
+}
+
+.select-shop-yl {
+	width: 10.178rem;
+	height: 7.678rem;
+	background: #fff;
+	float: left;	
+	position: relative;
+}
+
+.chk-shop {
+	width: 10.178rem;
+	height: 7.678rem;
+	z-index: 11;	
+}
+
+.select-shop-bg {
+	width: 10.178rem;
+	height:7.678rem;
+	margin:0 auto;
+	position: absolute;
+	top: 0;
+	left:0;
+}
+
+.select-shop-img1 {
+	background:url(../images/register/defalut1.png) 50% 50% no-repeat;
+	height: 5rem;
+	width: 100%;
+	background-size:2.571rem 2.571rem;
+}
+
+.select-shop-img2 {
+	background:url(../images/register/defalut3.png) 50% 50% no-repeat;
+	height: 5rem;
+	width: 100%;
+	background-size:2.571rem 2.571rem; 
+}
+
+.select-shop-img3 {
+	background:url(../images/register/defalut4.png) 50% 50% no-repeat;
+	height: 5rem;
+	width: 100%;
+	background-size:2.571rem 2.571rem;
+}
+
+.select-shop-img4 {
+	background:url(../images/register/defalut5.png) 50% 50% no-repeat;
+	height: 5rem;
+	width: 100%;
+	background-size:2.571rem 2.571rem;
+}
+
+/* .select-shop-yl input.chk-shop:checked + .select-shop-bg.select-shop-img1 {
+	background:url(../images/register/active1.png) 50% 50% no-repeat;
+	height: 4.28rem;
+	width: 100%;
+} */
+
+.select-shop-img5 {
+	background:url(../images/register/active1.png) 50% 50% no-repeat;
+	height: 5rem;
+	width: 100%;
+	background-size:2.571rem 2.571rem;
+}
+
+
+.select-shop-img6{
+	background:url(../images/register/active3.png) 50% 50% no-repeat;
+	height: 5rem;
+	width: 100%;
+	background-size:2.571rem 2.571rem;
+}
+
+.select-shop-img7{
+	background:url(../images/register/active4.png) 50% 50% no-repeat;
+	height: 5rem;
+	width: 100%;
+	background-size:2.571rem 2.571rem;
+}
+
+.select-shop-img8 {
+	background:url(../images/register/active5.png) 50% 50% no-repeat;
+	height: 5rem;
+	width: 100%;
+	background-size:2.571rem 2.571rem;
+}
+
+
+.select-shop-yl:last-child {
+	border-left-style: 1px solid #eee;
+	border-top-style: 1px solid #eee; 
+}
+
+.select-pd {
+	height: 3.571rem;
+	width: 100%;
+	margin: 2.321rem 3.571rem 0 3.571rem;
+}
+
+.shop-getto {
+	display: block;
+	width: 20rem;
+	height: 3.571rem;
+	line-height: 3.571rem;
+	text-align: center;
+	background: #ff6400;
+	color: #fff;
+	border-radius: 5px;
+}
+
+.select-shop-bg p {
+	/*margin-top: 0.8rem;*/
+	text-align: center;
+	font-size: 0.9rem;
+	color: #959595;
+	padding:0 1.785rem;
+}
+
+.shop-line1 {
+	border-right: 1px solid #eee;
+}
+
+.shop-line2{
+	border-top: 1px solid #eee;
+}
+
+.shop-line4 {
+	border-top:1px solid #eee;
+	border-right: 1px solid #eee;
+}

@@ -1,0 +1,16 @@
+.page-content .filter-wrap .report-time{ margin-right: 20px; }
+.page-content .filter-wrap .report-time label{ width: 18% !important; }
+.page-content .filter-wrap .report-time label input{ -webkit-appearance: none; height: 38px; line-height: 38px; width: 100% !important; padding-left: 10px; left: 0; margin-left: 0; border-radius: 2px !important; -webkit-border-radius: 2px !important; -moz-border-radius: 2px !important; border: 1px solid #e5e5e5; }
+.page-content .filter-wrap .report-time label span.dr{ position: absolute; display: block; width: 30px; height: 38px; top: 50%; margin-top: -19px; right: 0; background: #e0e0e0; }
+.page-content .filter-wrap .report-time label span.dr img{ position: absolute; top: 50%; left: 50%; margin-top: -3.5px; margin-left: -6px; display: block; width: 12px; height: 7px; }
+
+.table-box table tbody tr td:nth-child(1){ text-align: left; }
+
+.filter-wrap{ padding-top: 0; }
+.filter-wrap .l-box{ width: 88%; }
+.filter-wrap .r-box{ width: 12%; margin-top: 12px; }
+
+.filter-wrap .l-box small .i-name{ position: relative; top: 7px; }
+.filter-wrap .l-box label{ padding: 0; margin: 0; width: 28%; color: #505050; margin-top: 12px; }
+.filter-wrap .l-box .icon-search { font-size: 18px; position: relative; left: 13px; z-index: 990; }
+.filter-wrap .l-box label .filter { -webkit-appearance: none; position: relative; left: -15px; height: 38px; line-height: 38px; width: 90%; border-radius: 2px !important; -webkit-border-radius: 2px !important; -moz-border-radius: 2px !important; border: 1px solid #e5e5e5; padding-left: 40px; margin-left: 0; }

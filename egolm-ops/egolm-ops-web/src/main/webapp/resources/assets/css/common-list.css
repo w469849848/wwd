@@ -1,0 +1,131 @@
+.page-content .table-box table tbody tr td:nth-child(1){ width: auto !important; text-align: left; padding-left: 32px; }
+.table thead:first-child tr:first-child th:first-child{ padding-left: 32px; }
+
+.batch{ float: left; padding-left: 23px; }
+.batch label{ margin: 0; margin-left: 10px; }
+.batch label input{ height: 40px; padding-left: 20px; padding-right: 20px; }
+.batch label:nth-child(1){ margin: 0; }
+.batch label:nth-child(1) input[type=checkbox]{ width: 90px !important; }
+.batch label:nth-child(1) input{ margin-right: 8px; }
+.batch label:nth-child(2) input,.batch label:nth-child(3) input{ background-color: #ff6400 !important; color: #fff; }
+
+.filter-wrap{ margin-left: 0; margin-bottom: 0; margin-right: 0; padding: 12px 32px; }
+.filter-wrap label{ padding: 0; margin: 0; width: 47%; color: #505050; }
+.filter-wrap>span{ position: relative; top: -1px; }
+.filter-wrap label .filter{ -webkit-appearance: none; position: relative; left: -15px; height: 38px; line-height: 38px; width: 97%; border-radius: 2px !important; -webkit-border-radius: 2px !important; -moz-border-radius: 2px !important; border: 1px solid #e5e5e5; padding-left: 40px; }
+.filter-wrap .icon-search{ font-size: 18px; position: relative; left: 13px; z-index: 990; }
+.filter-wrap .icon-search::before{ content: ""; display: block; position: relative; top: 2px; width: 15px; height: 15px; background: url(../images/search.png) no-repeat; background-size: 100% 100%; -webkit-background-size: 100% 100%; }
+.filter-wrap .add-message{ float: right; font-weight: bold; width: 190px; height: 40px; line-height: 40px; text-align: center; text-decoration: none; color: #ff6400; background-size: 100% 100%; -webkit-background-size: 100% 100%; background: url(../images/add-man.png) no-repeat; }
+.filter-wrap .add-message a{ color: #ff6400; text-decoration: none; }
+.filter-wrap .add-message i{ margin-right: 2%; }
+.filter-wrap .add-message i.add-icon::before{ content: ""; display: inline-block; width: 15px; height: 15px; background: url(../images/add-icon.png) no-repeat; background-size: 100% 100%; -webkit-background-size: 100% 100%; position: relative; top: 2px; }
+
+.filter-wrap .filter-select{ width: 18%; margin: 0 10px;}
+.filter-wrap .dropdown-btn{ border-radius: 2px !important; -moz-border-radius: 2px !important; -webkit-border-radius: 2px !important; }
+
+/*自定义下拉框*/
+.filter-wrap div.row{ margin-bottom: 13px; }
+.filter-wrap a.dropdown-btn{ position: relative; height: 38px; line-height: 28px; padding: 5px 12px; padding-right: 25px; text-decoration: none; }
+.filter-wrap a.dropdown-btn:focus{ color: #505050; }
+.filter-wrap a.dropdown-btn:hover{ color: #505050; }
+.filter-wrap span.input-tips{ line-height: 40px; }
+.filter-wrap span.dr{ position: absolute; display: block; width: 38px; height: 38px; top: 50%; margin-top: -19px; right: 0; background: #e5e5e5; }
+.filter-wrap span.dr img{ position: absolute; top: 50%; left: 50%; margin-top: -3.5px; margin-left: -6px; display: block; width: 12px; height: 7px; }
+.filter-wrap .dropdown-menu li{ text-align: left; padding: 0 12px; }
+
+/*radio*/
+.edit-box .checked-wrap{ position: relative; width:18px; height: 18px; top: 5px; }
+.edit-box .chk-bg{ position: relative; z-index: 11; display: inline-block; margin: 0; line-height: 20px; min-height: 18px; min-width: 18px; font-weight: normal; margin: 0; }
+.edit-box .chk-radio{ opacity: 0; position: absolute; z-index: 12; width: 18px; height: 18px !important; cursor: pointer; margin-top: 0; }
+.edit-box .chk-bg::before{ content: ""; display: block; height: 18px; width: 18px; background: url(../images/radio-default.png); }
+.edit-box .chk-radio[checked=checked] + .chk-bg::before{ content: ""; display: block; height: 18px; width: 18px; background: url(../images/radio-cheched.png); }
+.edit-box label label{ width: auto; margin-right: 10px; }
+.edit-box label label i{ font-style: normal; }
+
+
+.pagination { float: right; }
+.state{ position: relative; top: -2px; margin-right: 4px; }
+
+@media only screen and (max-width: 991px) {
+	.table thead:first-child tr:first-child th{ padding-left: 20px !important; }
+}
+
+@media only screen and (max-width: 600px) {
+	.filter-wrap{ position: relative; height: 110px; }
+	.filter-wrap .filter-select{ position: relative; top: 11px; width: 55%; }
+	.filter-wrap .filter-select .dropdown-btn{ width: 90% !important; }
+	.filter-wrap>span{ position: relative; top: -39px !important; }
+}
+
+@media only screen and (max-width: 360px) {
+	.table thead:first-child tr:first-child th{ padding-left: 10px !important; }
+}
+
+@media only screen and (max-width: 360px) {
+	.edit-box .modal-body{ padding-left: 12px; }
+}
+
+
+
+/*浮左*/
+.fl{ float: left; }
+/*浮右*/
+.fr{ float: right; }
+/*错误边框*/
+.err-border{border: 1px solid red !important;}
+/*下拉框标示*/
+span.dr{right: 23px !important;}
+/***满减***/
+.promo_fullcut{background-color:#fff; padding: 0 20px;}
+.promo_fullcut div:first-child{width:58%;}
+.promo_fullcut div:last-child{width:42%; margin-top:20px;}
+.promo_fullcut div:last-child button{color: #ff6400;padding: 10px 0;width: 30%;border-radius: 2px;border: none;font-size: 16px;}
+.promo_fullcut dl{width:25%;float:left;font-size: 14px;}
+.promo_fullcut dl dd{ margin-top: 10px; word-break: break-all;}
+
+#PromoGoodsList{background-color: #f2f2f2;}
+#PromoGoodsList .rule-wrap>div{ margin-top: 20px; padding: 10px 20px; background-color: #fff;}
+#PromoGoodsList .rule-wrap>div table:first-child{width:57%;font-size:14px; border-collapse: separate;border-spacing: 0px 10px;}
+#PromoGoodsList .rule-wrap>div table:first-child input{width:90%;border: 1px solid #999;}
+#PromoGoodsList .rule-wrap>div table:first-child button{padding:5px 15px;}
+#PromoGoodsList .rule-wrap>div table:last-child {width:55%;font-size:12px; border-collapse: collapse;}
+#PromoGoodsList .rule-wrap>div table:last-child input{width:90%;}
+#PromoGoodsList .rule-wrap>div table:last-child tr td,#PromoGoodsList .rule-wrap>div table:last-child tr th{border-width: 1px; border-style: solid; border-color: #ddd; padding: 10px;}
+#PromoGoodsList .rule-wrap>div table:last-child tr th{background-color: #f2f2f2;}
+#PromoGoodsList .rule-wrap>div table:last-child tr th:last-child{text-align:center;padding:0;}
+#PromoGoodsList .rule-wrap>div table:last-child tr td:last-child{text-align:center;padding:0;}
+
+
+/***换购***/
+.promo_gift{background-color:#fff; padding: 0 20px;}
+.promo_gift div:first-child{width:80%;}
+.promo_gift div:last-child{width:20%; margin-top:20px;}
+.promo_gift div:last-child button{color: #ff6400; padding: 10px 0;width: 88%;border-radius: 2px;border: none;font-size: 16px;}
+.promo_gift dl{width:25%;float:left;font-size: 14px;}
+.promo_gift dl dd{ margin-top: 10px; word-break: break-all;}
+
+#GiftList{background-color: #f2f2f2;font-size:14px;}
+#GiftList .gift{ margin-top: 20px; padding: 10px 20px; background-color: #fff;}
+#GiftList .gift .gift-title .gift-title-dtl{line-height: 300%;}
+#GiftList .gift .gift-title .addButton{margin-top:10px;}
+#GiftList .gift .gift-title .addButton button{padding:5px 15px; margin-right: 25px;}
+#GiftList .gift table{table-layout:fixed; width: 99%; font-size: 12px; border-collapse: collapse;margin-top:10px;}
+#GiftList .gift table input{width:100%;}
+#GiftList .gift table tr td,#GiftList .gift table tr th{border-width: 1px; border-style: solid; border-color: #ddd; padding: 10px;}
+.savePromoDtl{margin-top: 20px; padding-bottom: 20px; padding-left: 20px;}
+.savePromoDtl button,.SavePromoGoods button{padding: 10px 80px; border: none; background-color: #ff6400; color: #fff;font-size: 14px;margin-left: -20px;margin-right:30px;}
+#GiftList .gift table tr th{background-color: #f2f2f2;}
+
+/***批量***/
+.promo_batch{background-color:#fff; padding: 0 20px;}
+.promo_batch div:first-child{width:80%;}
+.promo_batch div:last-child{width:20%; margin-top:20px;}
+.promo_batch div:last-child button{color: #ff6400;padding: 10px 0;width: 60%;border-radius: 2px;border: none;font-size: 16px;}
+.promo_batch dl{width:25%;float:left;font-size: 14px;}
+.promo_batch dl dd{ margin-top: 10px; word-break: break-all;}
+
+#BatchGoodsList{background-color: #fff;font-size: 14px;padding: 10px 20px;margin-top: 20px;}
+#BatchGoodsList table{ width: 100%; font-size: 12px; border-collapse: collapse;margin-top:10px;}
+#BatchGoodsList table tr td,#BatchGoodsList table tr th{border-width: 1px; border-style: solid; border-color: #ddd; padding: 10px;}
+#BatchGoodsList table tr th{background-color: #f2f2f2;}
+.SavePromoGoods{margin-top: 20px; padding-bottom: 20px;}

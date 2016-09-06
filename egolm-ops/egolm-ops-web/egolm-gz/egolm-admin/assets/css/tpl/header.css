@@ -1,0 +1,68 @@
+/*头部*/
+.tpl-content .nav-wrap{ width: 100%; background-color: #f5f5f5; font-size: 12px; border-bottom: 1px solid #e5e5e5; }
+.tpl-content .nav-wrap .nav-bar{ height: 30px; line-height: 30px; }
+.tpl-content .nav-wrap .nav-bar .welcomes{ height: 100%; }
+.tpl-content .nav-wrap .nav-bar .nav-menu li a{ padding: 0 12px; }
+.tpl-content .nav-wrap .nav-bar .nav-menu li.spacer{ width: 1px; height: 12px; margin-top: 9px; padding: 0; background: #d7d7d7; overflow: hidden; }
+.tpl-content .nav-wrap .nav-bar .nav-menu li i.icon-app{ width: 9px; height: 12px; background: url(../../images/tpl/tpl/icon-app.png) no-repeat; margin-right: 4px; }
+.tpl-content .nav-wrap .nav-bar .nav-menu li i.icon-wechat{ width: 16px; height: 13px; top: 3px; background: url(../../images/tpl/icon-wechat.png) no-repeat; }
+.tpl-content .nav-wrap .nav-bar .nav-menu li i.icon-dr{ width: 7px; height: 4px; top: -3px; margin-left: 4px; background: url(../../images/tpl/icon-dr.png) no-repeat; }
+.tpl-content .nav-wrap .nav-bar .nav-menu .my-eg{ position: absolute; background-color: #f5f5f5; width: 100%; }
+.tpl-content .nav-wrap .nav-bar .nav-menu .my-eg li{ float: none; }
+.tpl-content .nav-wrap .nav-bar .nav-menu .follow .follow-qrCode{ position: absolute; width: 100%; height: 100px; background-color: #fff; }
+.tpl-content .nav-wrap .nav-bar .nav-menu .follow .follow-qrCode img{ position: absolute; z-index: 9999999; margin: auto; top: 0; left: 0; right: 0; }
+
+.tpl-content .search-wrap{ padding: 16px 0 26px; font-size: 12px; }
+.tpl-content .search-wrap .logo{ width: 316px; height: 72px; }
+.tpl-content .search-wrap .logo a{ position: absolute; display: inline-block; width: 200px; height: 114px; top: -16px; background-color: #ff6400; }
+.tpl-content .search-wrap .logo a img{ position: absolute; margin: auto; top: 0; left: 0; bottom: 0; right: 0; }
+
+.tpl-content .search-wrap .search input{ width: 482px; height: 34px; padding: 0 10px; border: 2px solid #ff6400; }
+.tpl-content .search-wrap .search button{ width: 86px; height: 38px; background-color: #ff6400; border: 2px solid #ff6400; font-size: 16px; line-height: 34px; color: #fff; cursor: pointer; }
+.tpl-content .search-wrap .search button:hover{ background-color: #ea5507; border: 2px solid #ea5507; }
+.tpl-content .search-wrap .hot-keywords{ margin-top: 10px; }
+.tpl-content .search-wrap .hot-keywords a{ margin-right: 20px; }
+.tpl-content .search-wrap .hot-keywords a:last-child{ margin-right: 0; }
+.tpl-content .search-wrap .cart-wrap .cart,.tpl-content .search-wrap .cart-wrap .order{ width: 93px; height: 36px; background-color: #f9f9f9; border: 1px solid #e5e5e5; line-height: 36px; padding: 0 8px 0 15px; }
+.tpl-content .search-wrap .cart-wrap .cart a,.tpl-content .search-wrap .cart-wrap .order a{ color: #4c4c4c; }
+.tpl-content .search-wrap .cart-wrap .cart a:hover,.tpl-content .search-wrap .cart-wrap .order a:hover{ color: #FF6400; }
+.tpl-content .search-wrap .cart-wrap .cart{ margin-left: 10px; }
+.tpl-content .search-wrap .cart-wrap i.count{ position: absolute; top: -7px; right: 15px; display: inline-block; min-width: 12px; line-height: 12px; text-align: center; color: #fff; padding: 2px 3px; border-radius: 7px; -webkit-border-radius: 7px; -moz-border-radius: 7px; background-color: #ef8042; }
+.tpl-content .search-wrap .cart-wrap i.icon-cart{ width: 12px; height: 12px; background: url(../../images/tpl/icon-cart.png) no-repeat; }
+.tpl-content .search-wrap .cart-wrap i.icon-order{ width: 9px; height: 12px; background: url(../../images/tpl/icon-cart-order.png) no-repeat; }
+.tpl-content .search-wrap .cart-wrap i.icon-arrow{ width: 5px; height: 9px; background: url(../../images/tpl/icon-arrow.png) no-repeat; top: 13px; }
+
+
+
+
+/*新分类*/
+.tpl-content .header-nav{ height: 42px; line-height: 42px; }
+.tpl-content .header-nav .sort-wrap{ width: 200px; background-color: #ea5507; font-weight: bold; }
+.tpl-content .header-nav .sort-wrap>a{ padding-left: 40px; width: 160px; }
+.tpl-content .header-nav .sort-wrap a{ color: #fff; }
+.tpl-content .header-nav .sort-wrap .sort{ position: absolute; top: 42px; width: 200px; height: 456px; background-color: #ea5507; z-index: 1000; font-size: 12px; }
+.tpl-content .header-nav .sort-wrap .sort ul li{ float: none; }
+.tpl-content .header-nav .sort-wrap .sort ul li .sort-title{ border-bottom: 1px solid #f96200; position: relative; }
+.tpl-content .header-nav .sort-wrap .sort ul li.active .sort-title{ border-bottom: 1px solid #fafafa; background-color: #fafafa; }
+.tpl-content .header-nav .sort-wrap .sort ul li.active .sort-title a{ color: #ff6400; }
+.tpl-content .header-nav .sort-wrap .sort ul li:first-child .sort-title{ border-top: 1px solid #f96200; }
+.tpl-content .header-nav .sort-wrap .sort ul li .sort-title a{ width: 160px; padding-left: 40px; }
+
+.tpl-content .header-nav .sort-wrap .sort .sort-content{ position: absolute; left: 200px; top: 1px; width: 508px; height: 441px; padding-left: 30px; padding-top: 15px; background-color: #fafafa; font-size: 12px; }
+.tpl-content .header-nav .sort-wrap .sort .sort-content .sort-list{ margin-bottom: 15px; }
+.tpl-content .header-nav .sort-wrap .sort .sort-content .sort-list>ul{ width: 375px; }
+.tpl-content .header-nav .sort-wrap .sort .sort-content .sort-list ul li{ float: left; height: 14px; line-height: 14px; padding-left: 13px; background: url(../../images/tpl/sort-spacer.png) center left no-repeat; margin-right: 12px; font-weight: normal; margin-bottom: 8px; }
+.tpl-content .header-nav .sort-wrap .sort .sort-content .sort-list ul li:last-child{ margin-right: 0; }
+.tpl-content .header-nav .sort-wrap .sort .sort-content .sort-list ul li a{ color: #999; }
+
+.tpl-content .header-nav .sort-wrap .sort .sort-content .sort-list h1{ padding-left: 0; margin-right: 20px; width: 82px; height: 14px; line-height: 14px; font-size: 12px; font-weight: normal; background: url(../../images/tpl/sort-dr.png) center right no-repeat; }
+.tpl-content .header-nav .sort-wrap .sort .sort-content .sort-list h1 a{ color: #4c4c4c; }
+
+/*商品分类小箭头*/
+.tpl-content .header-nav .sort-wrap .sort ul li .sort-title span.dr{ position: absolute; width: 5px; height: 9px; background: url(../../images/tpl/nav-dr.png) no-repeat; margin: auto; top: 0; bottom: 0; right: 20px; }
+
+/*导航*/
+.tpl-content .header-nav .mask-wrap ul li{ margin-right: 30px; font-weight: bold; }
+.tpl-content .header-nav .mask-wrap ul li:last-child{ margin-right: 0; }
+.tpl-content .header-nav .mask-wrap ul li a{ color: #222; }
+.tpl-content .header-nav .mask-wrap ul li a:hover{ color: #FF6400; }

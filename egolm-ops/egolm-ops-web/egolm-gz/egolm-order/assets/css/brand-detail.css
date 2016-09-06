@@ -1,0 +1,100 @@
+.content{ top: -1px; z-index: 999; }
+.content-wrap{ border-top: 1px solid #ff6400; background-color: #ededed; padding-bottom: 40px; }
+.content-wrap .content .good-box{ background: #fff; padding: 0 28px; }
+.content-wrap .content p.position{ margin: 12px 0; padding: 0 20px; font-size: 12px; }
+
+/*广告头部公用样式*/
+.content-wrap .content .ad-title{ text-align: center; }
+.content-wrap .content .ad-title i{ position: relative; display: inline-block; border-bottom: 1px solid #eee; top: -3px; }
+
+/*板块顶部文字样式*/
+.tit-tips{ position: absolute; top: 0; left: 0; width: 100px; height: 44px; line-height: 44px; color: #ff6400; font-size: 14px; text-align: center; font-weight: bold; border-top: 1px solid #ff6400; }
+
+/*商品列表*/
+.content-wrap .content .good-intro .good-box.detail-wrap{ width: 960px; padding: 0; }
+.content-wrap .content .good-intro .detail-wrap .b-sort{ line-height: 44px; font-size: 12px; padding-top: 44px; }
+.content-wrap .content .good-intro .detail-wrap .b-sort .bs-wrap{ padding-left: 28px; border-bottom: 1px solid #e6e6e6; border-top: 1px solid #e6e6e6; }
+.content-wrap .content .good-intro .detail-wrap .b-sort h1{ font-size: 14px; }
+.content-wrap .content .good-intro .detail-wrap .b-sort h1 span{ margin-left: 5px; }
+.content-wrap .content .good-intro .detail-wrap .b-sort i{ margin: 0 20px; }
+
+.content-wrap .content .good-intro .detail-wrap .ad-content{ width: 203px; height: 309px; border-right: 1px solid #e6e6e6; border-bottom: 1px solid #e6e6e6; padding: 20px 18px; }
+.content-wrap .content .good-intro .detail-wrap .ad-content .ad-link{ height: 203px; }
+.content-wrap .content .good-intro .detail-wrap .ad-content .ad-item p{ line-height: 1; margin-top: 10px; font-size: 14px; }
+.content-wrap .content .good-intro .detail-wrap .ad-content p.it{  }
+.content-wrap .content .good-intro .detail-wrap .ad-content .btn-buy{ margin-top: 12px; }
+.content-wrap .content .good-intro .detail-wrap .ad-content .collect{ position: absolute; display: none; top: 20px; right: 18px; z-index: 9999; background: rgba(91,91,91,0.8); color: #fff; padding: 4px 12px;  }
+.content-wrap .content .good-intro .detail-wrap .ad-content .collect a{ position: relative; top: 2px; margin-right: 5px; display: inline-block; width: 14px; height: 12px; background: url(../images/detail/goods/collect-defalut.png) no-repeat; }
+.content-wrap .content .good-intro .detail-wrap .ad-content .collect a.active{ background: url(../images/detail/goods/collect.png) no-repeat; }
+
+.content-wrap .content .good-intro .detail-wrap .g-wrap>ul>li{ position: relative; }
+.content-wrap .content .good-intro .detail-wrap .g-wrap>ul>li:last-child .ad-content{ border-right: none; }
+
+/*分页*/
+.content-wrap .content .good-intro .detail-wrap .paging-wrap{ padding: 15px 0; font-size: 12px; }
+.content-wrap .content .good-intro .detail-wrap .paging-wrap .paging-box{ width: 478px; }
+.content-wrap .content .good-intro .detail-wrap .paging-wrap .prev,.content-wrap .content .good-intro .detail-wrap .paging-wrap .next{ width: 22px; height: 22px; line-height: 22px; text-align: center; }
+.content-wrap .content .good-intro .detail-wrap .paging-wrap a{ width: 100%; border: 1px solid #e6e6e6; color: #999; }
+.content-wrap .content .good-intro .detail-wrap .paging-wrap li.active a{ border: 1px solid #ff6400; background-color: #ff6400; color: #fff; }
+.content-wrap .content .good-intro .detail-wrap .paging-wrap a:hover{ border: 1px solid #ff6400; background-color: #ff6400; color: #fff; }
+.content-wrap .content .good-intro .detail-wrap .paging-wrap .btn-paging ul li{ width: 22px; height: 22px; line-height: 22px; text-align: center; margin-right: 10px; }
+.content-wrap .content .good-intro .detail-wrap .paging-wrap .btn-paging ul li:first-child{ margin-left: 10px; }
+.content-wrap .content .good-intro .detail-wrap .paging-wrap .ipt-wrap{ margin-left: 10px; height: 24px; line-height: 24px; }
+.content-wrap .content .good-intro .detail-wrap .paging-wrap .ipt-wrap .ipt input{ width: 22px; height: 22px; border: 1px solid #e6e6e6; text-align: center; margin: 0 10px; }
+.content-wrap .content .good-intro .detail-wrap .paging-wrap .ipt-wrap .btn-sub input{ height: 24px; border: 1px solid #e6e6e6; padding: 0 16px; background-color: #fff; margin-left: 10px; }
+.content-wrap .content .good-intro .detail-wrap .paging-wrap .ipt-wrap .btn-sub input:hover{ border: 1px solid #ff6400; background-color: #ff6400; color: #fff; }
+
+
+/*购买数量*/
+.ipt-num{ display: inline-block; width: 82px; height: 25px; }
+.ipt-num input{ width: 32px; padding: 0 24px; height: 23px; border: 1px solid #eee; text-align: center; }
+.ipt-num a{ position: absolute; top: 0; display: block; width: 23px; height: 24px; background-color: #eee; }
+.ipt-num a.sub{ left: 0; }
+.ipt-num a.add{ right: 0; }
+.ipt-num a img{ position: absolute; margin: auto; top: 0; left: 0; bottom: 0; right:0; }
+
+
+/*品牌信息*/
+.content-wrap .content .good-intro .brand{ padding: 46px 0 30px; width: 238px; background-color: #fff; }
+.content-wrap .content .good-intro .brand .brand-item{ border-top: 1px solid #e6e6e6; padding: 0 20px; }
+.content-wrap .content .good-intro .brand .brand-item .brand-logo{ width: 100%; height: 100px; padding: 30px 0 10px; }
+.content-wrap .content .good-intro .brand .brand-item .brand-logo img{ position: absolute; margin: auto; top: 0; left: 0; right: 0; bottom: 0; }
+.content-wrap .content .good-intro .brand .brand-item h1{ line-height: 2; }
+.content-wrap .content .good-intro .brand .brand-item p{ font-size: 12px; color: #999; line-height: 1.8; }
+
+
+/*详细参数*/
+.content-wrap .content .good-intro .good-box{ padding: 12px 34px; }
+.content-wrap .content .good-intro .ad-intro{ padding: 12px 28px 44px; }
+.content-wrap .content .good-intro .ad-intro>ul li{ position: relative; float: none; margin-bottom: 35px; }
+.content-wrap .content .good-intro .ad-intro>ul li:last-child{ margin-bottom: 0; }
+.content-wrap .content .good-intro .ad-intro .ad-content .ad-item .ad-link{ height: 182px; width: 182px; text-align: center; }
+.content-wrap .content .good-intro .ad-intro .ad-content .ad-item p:last-child{ line-height: 1.2; }
+.content-wrap .content .good-intro .ad-intro .ad-content .ad-item p{ text-align: center; }
+.content-wrap .content .good-intro .ad-intro .ad-title{ margin: 10px 0 20px; }
+.content-wrap .content .good-intro .ad-intro .ad-title i{ width: 42px; }
+.content-wrap .content .good-intro .ad-intro p.it{ font-size: 14px; overflow: hidden; text-overflow: ellipsis; white-space: nowrap; }
+.content-wrap .content .good-intro .ad-intro .btn-buy{ margin: 10px 0 0; }
+
+
+/*推荐商品*/
+.rec-goods{ font-size: 12px; background-color: #fff; padding-top: 46px; }
+.rec-goods h1{ font-size: 14px; border-bottom: 1px solid #ff6400; line-height: 2; padding-left: 10px; color: #FF6400; }
+
+.rec-goods .rec-content .ad-content{ width: 200px; height: 309px; }
+.rec-goods .rec-content .ad-content .ad-link{ height: 200px; }
+.rec-goods .rec-content .ad-content .ad-item p{ line-height: 1; margin-top: 10px; font-size: 14px; }
+.rec-goods .rec-content .ad-content .ad-item p.size{ color: #999; }
+.rec-goods .rec-content .ad-content .btn-buy{ width: 200px; margin-top: 12px; }
+.rec-goods .rec-content .ad-content .collect{ position: absolute; display: none; top: 0; right: 0; z-index: 9999; background: rgba(91,91,91,0.8); color: #fff; padding: 4px 12px;  }
+.rec-goods .rec-content .ad-content .collect a{ position: relative; top: 2px; margin-right: 5px; display: inline-block; width: 14px; height: 12px; background: url(../images/detail/goods/collect-defalut.png) no-repeat; }
+.rec-goods .rec-content .ad-content .collect a.active{ background: url(../images/detail/goods/collect.png) no-repeat; }
+
+.rec-goods .rec-content>ul>li{ position: relative; padding: 20.5px; border-top: 1px solid #e6e6e6; border-right: 1px solid #e6e6e6; border-bottom: 1px solid #e6e6e6; }
+.rec-goods .rec-content>ul>li:last-child{ border-right: none; padding-right: 21.5px; }
+
+
+
+/*购买按钮*/
+.ad-content .add-cart{ display: block; width: 80px; height: 24px; line-height: 24px; font-size: 12px; background-color: #ff6400; color: #fff; text-align: center; }
+.ad-content .add-cart:hover{ background-color: #ea5507; }

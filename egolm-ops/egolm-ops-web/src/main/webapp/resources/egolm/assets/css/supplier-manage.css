@@ -1,0 +1,22 @@
+.batch{ float: left; padding-left: 23px; }
+.batch label{ margin: 0; margin-left: 10px; }
+.batch label input{ height: 40px; padding-left: 20px; padding-right: 20px; }
+.batch label:nth-child(1){ margin: 0; }
+.batch label:nth-child(1) input{ margin-right: 8px; }
+.batch label:nth-child(2) input,.batch label:nth-child(3) input{ background-color: #ff6400 !important; color: #fff; }
+
+.pagination{ float: right; }
+.supplier{ border: 1px solid #e5e5e5; background-color: #fff; border-radius: 5px; -webkit-border-radius: 5px; -moz-border-radius: 5px; }
+.state{ position: relative; top: -2px; margin-right: 4px; }
+
+.filter-wrap{ margin-left: 0; margin-bottom: 0; margin-right: 0; padding: 12px 32px; }
+.filter-wrap label{ position: relative; padding: 0; margin: 0; font-weight: bold; }
+.filter-wrap label span.dr{ position: absolute; height: 7px; top: 50%; margin-top: -3.5px; left: 105px; }
+.filter-wrap label span.dr img{ display: block; }
+.filter-wrap label select{ height: 44px; padding-right: 30px; }
+.filter-wrap label .filter{ margin-left: 16px; height: 44px; width: 65%; border-radius: 5px !important; -webkit-border-radius: 5px !important; -moz-border-radius: 5px !important; border: 1px solid #e5e5e5; padding-left: 1.5%; }
+.filter-wrap .icon-search{ font-size: 18px; margin-right: 8px; }
+.filter-wrap .icon-search::before{ content: ""; display: block; position: relative; top: 2px; width: 15px; height: 15px; background: url(../images/search.png) no-repeat; background-size: 100% 100%; -webkit-background-size: 100% 100%; }
+.filter-wrap .add-supplier{ float: right; width: 100%; width: 206px; height: 44px; line-height: 44px; text-align: center; text-decoration: none; color: #ff6400; background-size: auto 100%; -webkit-background-size: auto 100%; background: url(../images/btn.png) no-repeat; }
+.filter-wrap .add-supplier a{ color: #ff6400; text-decoration: none; }
+.filter-wrap .add-supplier i{ font-size: 15px; margin-right: 2%; }

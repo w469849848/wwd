@@ -1,0 +1,274 @@
+.promotion-consulting-th {
+	width: 100%;
+	height: 670px;
+	border-top: 1px solid #ff6400;
+	background: #ededed;
+}
+
+.promotion-consulting {
+	width: 1210px;
+	height:100%;
+	margin: 0 auto;
+}
+
+.promotion-consulting-r {
+	width: 102px;
+	height: 610px;
+	padding: 0 32px 0 26px;
+	float: left;
+	background: white;
+	margin-top:20px;
+}
+
+.promotion-consulting-l {
+	width: 1040px;
+	height: 610px;
+	float: left;
+	background: white;
+	margin:20px 0 0 10px;
+}
+
+.promotion-nav {
+	height: 100px;
+	padding-left: 16px;
+	border-bottom: 1px solid #e5e5e5;
+}
+
+.promotion-nav:last-child{
+	border-bottom: 0;
+}
+
+.promotion-nav-th {
+	height: 120px;
+	padding-left: 16px;
+	border-bottom: 1px solid #e5e5e5;
+}
+
+.promotion-nav ul li{ float: none; }
+.promotion-nav-th ul li{ float: none; }
+
+.promotion-nav-thed {
+	height: 80px;
+	border-bottom: 1px solid #e5e5e5;
+	padding-left: 16px;
+}
+
+.promotion-nav h4,.promotion-nav-th,.promotion-nav-thed{
+	text-align: left;
+}
+
+.promotion-nav ul li a {
+	font-size: 12px;
+}
+.promotion-nav-th ul li{
+	text-align: left;
+}
+.promotion-nav-th ul li a {
+	font-size: 12px;
+}
+
+.promotion-nav-thed ul li a {
+	font-size: 12px;
+}
+
+.promotion-title {
+	width: 100%;
+	height: 45px;
+	border-bottom: 1px solid #e5e5e5;
+}
+
+.promotion-title h1 {
+	width: 115px;
+	height: 45px;
+	text-align: center;
+	line-height: 45px;
+	border-top: 1px solid #ff6400;
+	color: #ff6400;
+}
+
+.promotion-title h1:first-child {
+	border-top:0; 
+}
+
+.active {
+	color: #ff6400;
+	font-weight: bold;
+}
+
+.promotion-show {
+	padding:20px 0 15px 40px; 
+}
+
+.promotion-show p {
+	line-height: 30px;
+}
+
+.promotion-show p:first-child {
+	font-weight: bold;
+}
+
+ .use-address {
+	margin:15px 20px 0 20px;
+}
+
+.addr-item {
+	height: 30px;
+	width: 980px;
+	line-height: 30px;
+}
+
+.btn-radio {
+	margin: right:10px;
+}
+
+.radio-wrap {
+	width: 114px;
+	height: 30px;
+	margin-right:8px; 
+}
+
+.radio {
+	opacity: 0;
+	position: absolute;
+	z-index: 12;
+	width: 144px;
+	height: 30px;
+	cursor: pointer;
+}
+
+.radio-bg {
+	position: absolute;
+	z-index: 11;
+	display: block;
+	margin: 0;
+	width: 142px;
+	height: 28px;
+	border:1px solid #e6e6e6;	
+	text-align: center;
+	line-height: 28px;
+}
+
+.addr {
+	margin: 0 8px;
+}
+
+/* .addr-tracit{
+	display: block;
+	background: #ff6400;
+	color: #fff;
+	font-size: 12px;
+	padding:0 3px; 
+} */
+
+.addr-tracit:hover {
+	color: white;
+}
+
+.btn-edit a {
+	color: #0078D6;
+}
+
+.name {
+	padding-left: 40px;
+}
+
+.add {
+	padding:0 10px;
+}
+
+.tel {
+	padding:0 10px; 
+}
+
+
+.use-address ul li {
+	padding-bottom: 30px;
+}
+
+.remove-add {
+
+
+}
+
+.add-address {
+ 	padding-left:20px; 
+}
+
+.add-address a {
+	display: block;
+	height: 40px;
+	width: 144px;
+	background: #ff6400;
+	color: #fff;
+	font-weight: bold;
+	text-align: center;
+	line-height: 40px;
+}
+ 
+
+/*地址列表*/
+/*
+.ship-address{ width: 1040px; height: 490px; padding-top: 46px; background-color: #fff; font-size: 12px; }
+ .ship-address .ship-wrap{ padding: 30px; border-top: 1px solid #e6e6e6; }
+
+ .addr-item{ height: 30px; line-height: 30px; margin-bottom: 21px; }
+ .addr-item .btn-radio{ margin-right: 10px; }
+ .addr-item .addr-info .addr{ margin: 0 8px; }
+ .addr-item .btn-wrap{ width: 166px; }
+ .addr-item .btn-wrap a{ color: #0078d6; margin-right: 20px; }
+ .addr-item .btn-wrap a:last-child{ margin-right: 0; }
+*/
+ .icon-default{ width: 54px; height: 24px; text-align: center; line-height: 24px; color: #fff; background-color: #ff6400; margin-left: 10px; margin-top: 3px;font-size: 12px;}
+ .btn-add input{ width: 140px; height: 36px;  background-color: #ff6400; border: none; color: #fff; font-weight: bold; }
+
+
+
+/*自定义 radio*/
+.radio-wrap{ width: 144px; height: 30px; margin-right: 8px; }
+.radio-wrap .radio{ opacity: 0; position: absolute; z-index: 12; width: 144px; height: 30px; cursor: pointer; }
+.radio-wrap .radio-bg{ position: absolute; z-index: 11; display: block; margin: 0; width: 142px; height: 28px; line-height: 28px; border: 1px solid #e6e6e6; font-weight: normal; text-align: center; line-height: 28px; }
+.radio-wrap input[checked=checked] + span.radio-bg{ display: block; width: 140px; height: 26px; line-height: 26px; border: 2px solid #ff6400; background: url(../images/icon-radio.png) right bottom no-repeat; }
+
+
+/*修改地址弹窗*/
+.alert-box{ position: fixed; z-index: 9999999; top: 0; width: 100%; height: 100%; background: rgba(0,0,0,0.8); }
+.alert-box .alert-dialog{ position: absolute; top: 50%; left: 50%; margin-top: -173.5px; margin-left: -283px; width: 566px; height: 347px; background: #fff; }
+.alert-box .alert-dialog .alert-header{ height: 44px; background-color: #ff6400; line-height: 44px; color: #fff; }
+.alert-box .alert-dialog .alert-header h1{ padding-left: 16px; }
+.alert-box .alert-dialog .alert-header h1 span{ font-size: 12px; }
+.alert-box .alert-dialog .alert-header .btn-close{ position: absolute; top: 16px; right: 16px; display: block; width: 12px; height: 12px; }
+
+.alert-box .alert-dialog .alert-body{ padding: 20px 60px 0; font-size: 12px; }
+.alert-box .alert-dialog .alert-body form p{ margin-bottom: 12px; }
+.alert-box .alert-dialog .alert-body form p span.tit{ display: inline-block; width: 75px; }
+.alert-box .alert-dialog .alert-body form p span.select{ margin-left: -6px; }
+.alert-box .alert-dialog .alert-body form p span.select select{ width: 68px; height: 26px; border: 1px solid #e6e6e6; outline: none; padding-left: 6px; }
+.alert-box .alert-dialog .alert-body form p input[type=text]{ width: 148px; height: 26px; border: 1px solid #e6e6e6; padding: 0 10px; }
+.alert-box .alert-dialog .alert-body form p.address input[type=text]{ width: 348px; }
+.alert-box .alert-dialog .alert-body form .set-addr{ line-height: 1.2; margin: 20px 0; padding-left: 75px; }
+.alert-box .alert-dialog .alert-body form p.btn-submit{ padding-left: 75px; }
+.alert-box .alert-dialog .alert-body form p.btn-submit input{ width: 125px; height: 36px; border: none; background-color: #ff6400; color: #fff; font-size: 14px; font-weight: bold; }
+
+
+/*删除弹窗*/
+.delete-address .alert-dialog{ margin-top: -88px; margin-left: -205px; width: 410px; height: 176px; }
+.delete-address .alert-dialog .txt{ width: 146px; height: 36px; line-height: 36px; margin: 0 auto; }
+.delete-address .alert-dialog .txt .warm-img{ margin-right: 10px; }
+.delete-address .alert-dialog .btn-wrap{ text-align: center; margin-top: 20px; }
+.delete-address .alert-dialog .btn-wrap input{ width: 100px; height: 36px; border: none; background-color: #ff6400; color: #fff; font-weight: bold; cursor: pointer; }
+.delete-address .alert-dialog .btn-wrap input.btn-ok{ margin-right: 15px; }
+
+.btn-select {
+	width: 180px;
+}
+
+.btn-wrap a {
+	float: left;
+	font-size: 12px;
+	padding-right:20px; 
+	display: inline;
+}
+
+.btn-edit a:last-child {
+	margin-right:0; 
+}

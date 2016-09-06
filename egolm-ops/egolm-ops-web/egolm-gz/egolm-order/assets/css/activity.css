@@ -1,0 +1,29 @@
+.content-wrap{ padding-top: 472px; min-width: 1210px; background: #c60037 url(../images/activity/header-bg.jpg) no-repeat; background-size: 100% auto; padding-bottom: 40px; }
+
+/*入口列表*/
+.content-wrap .content .entrance-wrap .entrance li{ width: 595px; height: 210px; float: left; margin-bottom: 20px; }
+.content-wrap .content .entrance-wrap .entrance li:nth-child(even){ float: right; }
+.content-wrap .content .entrance-wrap .entrance li a{ display: block; }
+.content-wrap .content .entrance-wrap .entrance li .item{ width: 525px; height: 140px; padding: 35px; color: #fff; background-size: 100% 100%; }
+.content-wrap .content .entrance-wrap .entrance li .item h2{ margin: 0; line-height: 1; font-size: 32px; }
+.content-wrap .content .entrance-wrap .entrance li .item p.date{ line-height: 1; margin: 24px 0; font-size: 24px; }
+.content-wrap .content .entrance-wrap .entrance li .item .btn-go{ width: 129px; height: 40px; text-align: center; line-height: 40px; font-size: 19px; background: url(../images/activity/btn-go.png) no-repeat; }
+
+/*分页*/
+.content-wrap .content .entrance-wrap .paging-wrap{ padding: 15px 0; font-size: 12px; background: #af0031; }
+.content-wrap .content .entrance-wrap .paging-wrap .paging-box{ width: 479px; }
+.content-wrap .content .entrance-wrap .paging-wrap .prev,.content-wrap .content .entrance-wrap .paging-wrap .next{ width: 22px; height: 22px; line-height: 22px; text-align: center; }
+.content-wrap .content .entrance-wrap .paging-wrap a{ width: 100%; border: 1px solid #fff; color: #fff; }
+.content-wrap .content .entrance-wrap .paging-wrap li.active a{ border: 1px solid #ff6400; background-color: #ff6400; color: #fff; }
+.content-wrap .content .entrance-wrap .paging-wrap a:hover{ border: 1px solid #ff6400; background-color: #ff6400; color: #fff; }
+.content-wrap .content .entrance-wrap .paging-wrap .btn-paging ul li{ width: 22px; height: 22px; line-height: 22px; text-align: center; margin-right: 10px; }
+.content-wrap .content .entrance-wrap .paging-wrap .btn-paging ul li:first-child{ margin-left: 10px; }
+.content-wrap .content .entrance-wrap .paging-wrap .btn-paging ul li span{ color: #fff; }
+.content-wrap .content .entrance-wrap .paging-wrap .ipt-wrap{ margin-left: 10px; height: 24px; line-height: 24px; color: #fff; }
+.content-wrap .content .entrance-wrap .paging-wrap .ipt-wrap .ipt input{ width: 22px; height: 22px; border: 1px solid #e6e6e6; text-align: center; margin: 0 10px; color: #fff; background: none; }
+.content-wrap .content .entrance-wrap .paging-wrap .ipt-wrap .btn-sub input{ height: 24px; padding: 0 16px; color: #fff; border: 1px solid #e6e6e6; background: none; margin-left: 10px; }
+.content-wrap .content .entrance-wrap .paging-wrap .ipt-wrap .btn-sub input:hover{ border: 1px solid #ff6400; background-color: #ff6400; cursor: pointer; }
+
+
+/*置顶按钮*/
+.to-top a{ background-color: #af0031; }

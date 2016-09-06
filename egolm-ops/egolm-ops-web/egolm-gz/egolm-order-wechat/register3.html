@@ -1,0 +1,121 @@
+<!DOCTYPE html>
+<html>
+
+	<head>
+		<meta charset="UTF-8">
+		<meta name="author" content="name=Insect" />
+		<meta http-equiv="Pragma" content="no-cache">
+		<meta http-equiv="Cache-Control" content="no-cache">
+		<meta http-equiv="Expires" content="0">
+		<meta name="viewport" content="initial-scale=1, maximum-scale=1, user-scalable=no" />
+		<meta name="apple-mobile-web-app-status-bar-style" content="black" />
+		<meta name="format-detection" content="telephone=no" />
+		<meta name="format-detection" content="email=no" />
+		<meta name="x5-orientation" content="portrait">
+		<title>万店订货惠</title>
+		<link rel="stylesheet" href="assets/css/common.css?v=17" />
+		<link rel="stylesheet" href="assets/css/register3.css?v=11" />
+	</head>
+
+	<body>
+		
+		<div class="user-infor">
+			<p>用户注册信息</p>
+		</div>
+
+		<div class="register-pd-th">
+			<div class="register-pd">
+				<input type="text" placeholder="请输入店铺名称">
+			</div>
+		</div>
+
+		<div class="infor-select">
+			<ul>
+				<li>
+					<select class="sec-pd"> 
+						<option>省份</option>
+						<option>广东省</option>
+						<option>浙江省</option>
+						<option>北京市</option>
+						<option>上海市</option>
+					</select>
+				</li>
+
+				<li>
+					<select>
+						<option>城市</option>
+						<option>广州市</option>
+						<option>苏州市</option>
+						<option>上海市</option>
+						<option>北京市</option>
+					</select>
+				</li>
+
+				<li>
+					<select>
+						<option>天河区</option>
+						<option>静安区</option>
+						<option>越秀区</option>
+						<option>闵行区</option>
+						<option>江北区</option>
+					</select>
+				</li>
+		</div>
+
+		<div class="register-pd-th">
+			<div class="register-pd">
+				<input type="text" placeholder="请输入店铺地址">
+			</div>
+		</div>
+
+		<div class="register-pd-th">
+			<div class="register-pd">
+				<input type="text" placeholder="请输入店主姓名">
+			</div>
+		</div>
+
+		<div class="register-uploadth">
+			<div class="register-upload">
+				<div class="register-load">
+					<input type="file" class="upload" onchange="Re.previewImage(this)">
+					<div class="upload_bg" id="preview"><img src="assets/images/register/upload.png" id="imghead">
+					</div>
+				</div>
+			</div>
+		</div>
+
+		<div class="register-next">
+			<a href="#" class="register-tit" onclick="Re.removeReg()">注册</a>
+		</div>
+
+		<div class="register-find">
+			<p>已有万店账户？请点击这里<a href="#">登录</p>	
+		</div>
+
+			<div class="delete-alert hide">
+					<div class="alert-content">
+				<div class="alert-reg">
+					<div class="alert-reg-img">
+					<img src="assets/images/register/reg-icon.png">
+					</div>
+
+					<div class="alert-reg-tit">
+						<h1>注册成功</h1>
+						</div>
+					</div>
+					<div class="btn-wrap clearfix">
+						<p>万店工作人员将与你取得联系，申请通过后，将与短信形式给您发送登录密码。</p>
+						
+						<div class="banck-nav">
+					<a href="index.html">回到首页</a>
+				</div>
+
+			</div>
+		</div>
+	</div>
+
+	</body>
+	<script src="assets/js/zepto.min.js?v=10"></script>
+	<script type="text/javascript" src="assets/js/register3.js"></script>
+
+</html>

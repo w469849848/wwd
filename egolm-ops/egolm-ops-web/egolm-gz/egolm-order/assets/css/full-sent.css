@@ -1,0 +1,70 @@
+@charset "utf-8";
+.content-wrap{ padding-top: 472px; min-width: 1210px; background: #ee2877 url(../images/activity/fullsent/header-bg.jpg) no-repeat; background-size: 100% auto; padding-bottom: 40px; }
+
+/*商品分类栏*/
+.content-wrap .content .goods-nav{ background-color: #fff; }
+.content-wrap .content .goods-nav h2{ margin: 0; line-height: 54px; text-align: center; color: #fff23b; background: #e52875; }
+.content-wrap .content .goods-nav .g-sort,.content-wrap .content .goods-nav .g-brand{ padding: 11px 0 11px 23px; line-height: 22px; border-top: 1px solid #e6e6e6; }
+.content-wrap .content .goods-nav .g-brand{ border-bottom: 1px solid #e6e6e6; }
+.content-wrap .content .goods-nav .brand-checked{ padding-left: 25px; height: 44px; line-height: 44px; border-top: 1px solid #e6e6e6; }
+.content-wrap .content .goods-nav .brand-checked{ padding-left: 120px; }
+.content-wrap .content .goods-nav .brand-checked .check-wrap{ top: 15px; }
+.content-wrap .content .goods-nav h1{ height: 100%; }
+.content-wrap .content .goods-nav h1 span{ margin-right: 10px; }
+.content-wrap .content .goods-nav ul{ font-size: 12px; }
+.content-wrap .content .goods-nav ul li{ margin-right: 15px; }
+.content-wrap .content .goods-nav .brand-checked ul li{ margin-right: 28px; }
+.content-wrap .content .goods-nav ul li:last-child{ margin-right: 0; }
+.content-wrap .content .goods-nav .g-brand ul li{ margin-right: 22px; }
+
+.content-wrap .content .goods-nav ul li .sort-item a,.content-wrap .content .goods-nav ul li .gb-item a{ height: auto; line-height: 1; padding: 5px 10px; }
+.content-wrap .content .goods-nav ul li.active a,.content-wrap .content .goods-nav ul li:hover a{ background: #ff6400; color: #fff; }
+
+.content-wrap .content .goods-nav .goods-sort,.content-wrap .content .goods-nav .brand-sort,.content-wrap .content .goods-nav .dealer-sort{ width: 995px; height: 22px; overflow: hidden; }
+.content-wrap .content .goods-nav .goods-sort.active,.content-wrap .content .goods-nav .brand-sort.active,.content-wrap .content .goods-nav .dealer-sort.active{ height: auto; overflow: inherit; }
+
+.content-wrap .content .goods-nav .btn-more{ margin-right: 20.5px; }
+.content-wrap .content .goods-nav .btn-more a{ position: relative; width: 44px; height: 22px; padding-left: 12px; font-size: 12px; border: 1px solid #e6e6e6; background-color: #f4f4f4; }
+.content-wrap .content .goods-nav .btn-more a i.dr{ display: block; width: 8px; height: 5px; background: url(../images/gs-dr.png) no-repeat; position: absolute; top: 9px; right: 6px;  }
+.content-wrap .content .goods-nav .btn-more a.active i.dr{ background: url(../images/gs-dr-active.png) no-repeat; }
+
+
+/*商品列表*/
+.content-wrap .content .goods-wrap .mz-content{ background-color: #fff; margin-bottom: 20px; }
+.content-wrap .content .goods-wrap .mz-content:last-child{ margin-bottom: 0; }
+.content-wrap .content .goods-wrap .mz-content .tit{ padding: 44px 0; border-bottom: 1px solid #ee2877; }
+.content-wrap .content .goods-wrap .mz-content .tit img{ margin: 0 auto; }
+.content-wrap .content .goods-wrap .mz-content .goods-list .list-item{ width: 1036px; height: 349px; overflow: hidden; margin: 0 auto; }
+.content-wrap .content .goods-wrap .mz-content .goods-list .list-item>ul{ width: 10000px; }
+.content-wrap .content .goods-wrap .mz-content .goods-list:hover a.btn-prev,.content-wrap .content .goods-wrap .goods-list:hover a.btn-next{ display: block; }
+.content-wrap .content .goods-wrap .mz-content .goods-list a.btn-prev,.content-wrap .content .goods-wrap .goods-list a.btn-next{ position: absolute; z-index: 9999999; top: 50%; margin-top: -21px; display: none; width: 42px; height: 42px; background: rgba(0,0,0); background: #eee; }
+.content-wrap .content .goods-wrap .mz-content .goods-list a.btn-prev img,.goods-list a.btn-next img{ position: absolute; margin: auto; top: 0; left: 0; bottom: 0; right: 0; }
+.content-wrap .content .goods-wrap .mz-content .goods-list a.btn-prev{ left: 23px; }
+.content-wrap .content .goods-wrap .mz-content .goods-list a.btn-next{ right: 23px; }
+.content-wrap .content .goods-wrap .mz-content .goods-list .ad-content{ width: 200px; height: 309px; padding: 20px 0; }
+.content-wrap .content .goods-wrap .mz-content .goods-list .ad-content .ad-link{ height: 200px; }
+.content-wrap .content .goods-wrap .mz-content .goods-list .ad-content .ad-item p{ line-height: 1; margin-top: 10px; font-size: 14px; }
+.content-wrap .content .goods-wrap .mz-content .goods-list .ad-content p.size{ color: #999; }
+.content-wrap .content .goods-wrap .mz-content .goods-list .ad-content .btn-buy{ margin-top: 12px; }
+.content-wrap .content .goods-wrap .mz-content .goods-list .ad-content .collect{ position: absolute; display: none; top: 20px; right: 0px; z-index: 9999; background: rgba(91,91,91,0.8); color: #fff; padding: 4px 12px;  }
+.content-wrap .content .goods-wrap .mz-content .goods-list .ad-content .collect a{ position: relative; top: 2px; margin-right: 5px; display: inline-block; width: 14px; height: 12px; background: url(../images/detail/goods/collect-defalut.png) no-repeat; }
+.content-wrap .content .goods-wrap .mz-content .goods-list .ad-content .collect a.active{ background: url(../images/detail/goods/collect.png) no-repeat; }
+.content-wrap .content .goods-wrap .mz-content .goods-list .list-item>ul{ position: absolute; top: 0; left: 0; }
+.content-wrap .content .goods-wrap .mz-content .goods-list .list-item>ul>li{ position: relative; width: 200px; margin-right: 79px; }
+
+
+/*置顶按钮*/
+.to-top a{ background-color: #aeaeae; }
+
+/*购买数量*/
+.ipt-num{ display: inline-block; width: 82px; height: 25px; }
+.ipt-num input{ width: 32px; padding: 0 24px; height: 23px; border: 1px solid #eee; text-align: center; }
+.ipt-num a{ position: absolute; top: 0; display: block; width: 23px; height: 24px; background-color: #eee; }
+.ipt-num a.sub{ left: 0; }
+.ipt-num a.add{ right: 0; }
+.ipt-num a img{ position: absolute; margin: auto; top: 0; left: 0; bottom: 0; right:0; }
+
+
+/*购买按钮*/
+.add-cart{ display: block; width: 80px; height: 24px; line-height: 24px; font-size: 12px; background-color: #ff6400; color: #fff; text-align: center; }
+.add-cart:hover{ background-color: #ea5507; color: #fff; }

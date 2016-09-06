@@ -1,0 +1,13 @@
+span .notice-button {
+	float : none !important;
+	display : inline-block !important;
+	width : 14% !important;
+}
+
+.filter-wrap label {
+    width: 55%;
+}
+
+.cpa a+div {
+	z-index : 200;
+}

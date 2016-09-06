@@ -1,0 +1,443 @@
+.person-information-th {
+	width: 100%;
+	height: 775px;
+	background:#ebebeb; 
+}
+
+.person-information {
+	width: 1200px;
+	height: 775px;
+	margin: 0 auto;
+}
+
+.information-title {
+	height: 155px;
+	width: 100%;
+	margin:0px 0 20px 0; 
+	background: #fff;
+}
+
+.information-main {
+	width: 100%;
+	height: 520px;
+}
+
+.person-pd {
+	width: 100%;
+	height: 45px;
+	background: #ebebeb;
+}
+
+									/*icon*/
+.information-name {
+	width: 150px;
+	height: 70px;
+	float: left;
+	margin:40px 0 0 60px;
+}
+
+.information-img {
+	width: 70px;
+	height: 70px;
+	float: left;
+}
+
+.information-img img {
+	width: 70px;
+	height: 70px;
+	border-radius: 50%;
+}
+
+.information-txt {
+	width: 80px;
+	height: 70px;
+	float: left;
+}
+
+.information-txt h5 {
+	text-align: center;
+	margin:0; 
+	padding-top: 20px;
+}
+
+.information-txt p {
+	text-align: center;
+	margin: 0;
+	font-size: 12px;
+	color: #959595;
+	padding-top: 10px;
+	padding-left: 10px;
+}
+
+.interval {
+	width: 1px;
+	height: 65px;
+	margin:50px 0 0 70px;
+	background: #e6e6e6;
+	float: left;
+}
+
+.infor-icon {
+	width: 90px;
+	height: 70px;
+	float: left;
+	margin:40px 0 0 110px;
+}
+
+.infor-icon img{
+	width: 40px;
+	height: 40px;
+	border-radius: 50%;
+	margin-left: 23px;
+}
+
+.infor-icon p {
+	text-align: center;
+	color: #999;
+	font-size: 12px;
+}
+
+.information-main-l {
+	width: 200px;
+	height: 100%;
+	background:#fff; 
+	float: left;
+}
+
+.information-main-r {
+	width: 980px;
+	height: 100%;
+	background:#fff;
+	margin-left: 20px;
+	float: left;
+}
+
+.infor-tit {
+	width: 200px;
+	height: 160px;
+}
+
+.infor-tit ul {
+	margin: 0!important;
+	padding:0;
+}
+
+.infor-tit ul li {
+	width: 200px;
+	height: 50px;
+	border-bottom: 1px solid #f5f5f5;	
+	text-align: center;
+}
+
+.infor-tit ul li a {
+	text-align: center;
+	line-height: 50px;
+	color: #000;
+	font-weight: bold;
+	font-size: 14px;
+ 	display: block;
+	width: 200px;
+	height: 50px; 
+}
+ 
+ .active {
+	background: #ebebeb;
+	color: #FFAE00!important;
+} 
+
+								/* 搜索样式 */
+ .list-goods-search  {
+	height: 65px;
+	width: 100%;
+	background:#fff;
+}
+
+.list-search {
+	width: 600px;
+	height: 35px;
+	float: left;
+	margin: 15px 0 0 25px;
+}
+
+.list-search input {
+	width: 600px;
+	height: 35px;
+	background: #f9f9f9;
+	border:0;
+	border-radius: 3px;
+	font-size: 12px;
+	padding-left: 15px;
+}
+
+.list-search input:focus {
+	outline: none;
+}
+
+.list-sel {
+	width: 280px;
+	height: 35px;
+	float: left;
+	margin:15px 0 0 40px;
+	color: #959595;
+}
+
+.list-sel select:focus {
+	outline: none;
+}
+
+.list-sel select {
+	width: 280px;
+	height: 35px;
+	border:0;
+	font-size: 12px;
+	appearance:none;
+	 -moz-appearance:none;
+     -webkit-appearance:none;
+     -ms-appearance:none;
+	background: url(../images/common/select.png) no-repeat right #f9f9f9;
+	padding-left: 20px;
+}
+
+ .list-sel select::-ms-expand { 
+ 	display: none;
+}  
+
+
+.list-goods-connert {
+	margin-bottom:40px;
+	background: #fff; 
+}
+
+.list-name tr {
+	background: #f9f9f9;
+}
+
+.list-name tr th {
+	width: 100px;
+	height: 45px;
+	color: #000;
+	font-size: 14px;
+	text-align: center;
+	line-height: 45px;	
+}
+
+.list-connert tr td {
+	width: 100px;
+	height: 45px;
+	color: #333;
+	font-size: 12px;
+	text-align: center;
+	line-height: 45px;
+	border-bottom: 1px solid #f5f5f5;
+}
+
+.list-download {
+	display: block;
+	width: 70px;
+	height: 25px;
+	text-align: center;
+	line-height: 25px;
+	color: #333;
+	font-size: 12px;
+	background: #f3f3f3;
+	border-radius: 5px;
+	margin-left: 15px;
+	border: 1px solid #d9d9d9;
+}
+
+.list-goods-connert table thead {
+	margin-top: 60px;
+}
+
+
+
+
+/* 我的积分样式 */
+.list-nameer tr {
+	background: #f9f9f9;
+}
+
+.list-nameer tr th {
+	width: 250px;
+	height: 45px;
+	color: #000;
+	font-size: 14px;
+	text-align: center;
+	line-height: 45px;	
+}
+
+.integral-titer {
+	width: 100%;
+	height: 80px;
+}
+
+.my-integral {
+	width: 100%;
+	height: 30px;
+	margin: 10px 0;
+	border-bottom:1px solid #E8E8E8; 
+
+}
+
+.integral-sum {
+	width: 100%;
+	height: 50px;
+}
+
+.my-integral h3 {
+	margin:0;
+	padding-left: 30px;
+}
+
+.integral-sum p {
+	font-size: 12px;
+	padding-left: 30px;
+}
+
+
+.integral-sum p span {
+	color: red;
+}
+
+
+
+/*积分充值样式*/
+
+.list-goods-connerth {
+	margin-bottom:40px;
+	background:#eee; 
+}
+
+.account-sum {
+	width: 100%;
+	height: 80px;
+	background: #fff;
+	margin-bottom:10px; 
+}
+
+.account-sum h4 {
+	margin: 0;
+	width: 100%;
+	height: 40px;
+	line-height: 40px;
+	padding-left: 30px;
+}
+
+.account-sum h4 span {
+	color: red;
+}
+
+.account-sum p {
+	width: 100%;
+	height: 40px;
+	margin: 0;
+	padding-left: 30px;
+	font-size: 12px;
+}
+
+.account-activity {
+	width: 100%;
+	background: #fff;
+}
+
+.account-titer {
+	height: 50px;
+	width: 100%;
+}
+
+.account-titer h3 {
+	line-height: 50px;
+	margin: 0;
+	line-height: 50px;
+	padding-left: 30px;
+}
+
+.upgrade-type {
+	width: 100%;
+	height: 60px;
+}
+
+.upgrade-type p {
+	float: left;
+	padding-left: 30px;
+	font-size: 12px;
+}
+
+.upgrade-type select {
+	float: left;
+	width: 120px;
+	height: 30px;
+	margin:8px 0 0 10px; 
+	border-color:#ddd;
+	font-size: 12px;
+	outline: none;
+}
+
+.activity-money {
+	width: 100%;
+	height: 60px;
+}
+
+.activity-money p {
+	float: left;
+	padding-left: 30px;
+	font-size: 12px;
+}
+
+.activity-money input {
+	float: left;
+	width: 115px;
+	height: 25px;
+	margin:6px 0 0 10px;
+	outline: none;
+	font-size: 12px;
+	border:1px solid #ddd;
+}
+
+.activity-type {
+	width: 100%;
+	height: 60px;
+}
+
+.activity-type p {
+	float: left;
+	padding-left:30px; 
+	font-size: 12px;
+}
+
+.activity-type select {
+	float: left;
+	width: 120px;
+	height: 30px;
+	margin:8px 0 0 10px; 
+	border-color:#ddd;
+	font-size: 12px;
+	outline: none;
+}
+
+.recharge {
+	width:100%;
+	height: 100%;
+	margin-top:15px; 
+}
+
+.recharge input {
+	display: block;
+	width: 120px;
+	height: 30px;
+	background:#ffAE00;
+	margin-left: 93px;
+	border:0;
+	color: #fff;
+	font-size: 12px;
+}
+
+
+
+
+
+
+
+
+
+

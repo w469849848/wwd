@@ -1,0 +1,287 @@
+<!--楼层2页面模板-->
+			<div id="${floorId}" class="floor floor2 mb-10 pw ma" data-floor="2">
+				<div class="f-nav clearfix">
+					<div class="fl f-icon-wrap">
+						<span class="floor-tit fr" style="padding-left:30px;">${floorName}</span>
+					</div>
+					<div class="nav-bar-wrap fl">
+						<ul>
+							#foreach($advert in ${advertList})
+								<li>
+								#if($velocityCount==1)
+									<a class="active" href="javascript:void(0)">
+								#else
+									<a href="javascript:void(0)">
+								#end
+								
+								${advert.tabTitle}</a>
+								<i class="spacer"></i>
+								</li>
+							#end
+						</ul>
+					</div>
+				</div>			
+				
+				<div class="f-content pw ma">
+					<div class="fes-sort-wrap">
+						#foreach($advert in ${advertList})
+							#if($velocityCount==1)
+									<div class="fes-sort">
+								#else
+									<div class="fes-sort hide false">
+								#end
+							<ul class="clearfix">
+								<li>
+									<div class="f-item fl" adslide="true">
+										<ul>
+													#foreach($advert in $advert.childAdvertList.get(0))
+												
+													<li style="text-align:center;width:333px;height:100%;">
+													
+														#if(!$advert.productName)
+															<a href="${advert.url}"><img isad="true" isshow="false" data-original="${advert.img}" style="width:333px;height:250px;"  ad_id="${advert.id}" ap_id="${advert.apId}"/></a>
+														#end
+														#if($advert.productName)
+														<a href="${advert.url}">
+														<div class="good-item">
+														<div class="pic">
+															<img isshow="false" data-original="${advert.img}" isad="true" style="width:333px;height:250px;"  ad_id="${advert.id}" ap_id="${advert.apId}"/>
+														</div>
+														<div class="intro">
+															<p>${advert.productName}</p>
+															<p class="orange fw"><i class="f-rmb">¥</i>${advert.productPrice}元/<span>${advert.productUnit}</span></p>
+														</div>
+														</div>
+														</a>
+														#end
+													</li>
+													#end
+												</ul>
+									
+									</div>
+									<div class="fl f-sort bg-2f">
+										<p class="clearfix">
+										#foreach($category in ${advert.categoryList})
+													<a href="/egolm-shop-web/category/categoryGoods?categoryNO=${category.id}&categoryName=${category.name}" 
+													#if($velocityCount%2==0)
+													class="fr"
+													#else
+													class="fl"
+													#end
+													>${category.name}</a>
+												
+												#if($velocityCount%2==0&&$categoryList.size()>$velocityCount)
+												</p>
+												<p class="clearfix">
+												#end
+											</a>
+										#end
+										</p>
+									</div>
+								</li>
+								<li>
+									<div class="f-item fl" adslide="true">
+												<ul>
+													#foreach($advert in $advert.childAdvertList.get(1))
+												
+													<li style="text-align:center;width:437px;height:100%;">
+													
+														#if(!$advert.productName)
+															<a href="${advert.url}"><img isad="true" isshow="false" data-original="${advert.img}" style="width:437px;height:249px;" ad_id="${advert.id}" ap_id="${advert.apId}"/></a>
+														#end
+														#if($advert.productName)
+														<a href="${advert.url}">
+														<div class="good-item">
+														<div class="pic">
+															<img isshow="false" data-original="${advert.img}" isad="true" style="width:437px;height:249px;" ad_id="${advert.id}" ap_id="${advert.apId}"/>
+														</div>
+														<div class="intro">
+															<p>${advert.productName}</p>
+															<p class="orange fw"><i class="f-rmb">¥</i>${advert.productPrice}元/<span>${advert.productUnit}</span></p>
+														</div>
+														</div>
+														</a>
+														#end
+													</li>
+													#end
+												</ul>
+									
+									</div>
+									
+									
+									<div class="f-item fl" adslide="true">
+												<ul>
+													#foreach($advert in $advert.childAdvertList.get(2))
+												
+													<li style="text-align:center;width:218px;height:100%;">
+													
+														#if(!$advert.productName)
+															<a href="${advert.url}"><img isad="true" isshow="false" data-original="${advert.img}" style="width:218px;height:249px;" ad_id="${advert.id}" ap_id="${advert.apId}"/></a>
+														#end
+														#if($advert.productName)
+														<a href="${advert.url}">
+														<div class="good-item">
+														<div class="pic">
+															<img isshow="false" data-original="${advert.img}" isad="true" style="width:90px;height:120px;" ad_id="${advert.id}" ap_id="${advert.apId}"/>
+														</div>
+														<div class="intro">
+															<p>${advert.productName}</p>
+															<p class="orange fw"><i class="f-rmb">¥</i>${advert.productPrice}元/<span>${advert.productUnit}</span></p>
+														</div>
+														</div>
+														</a>
+														#end
+													</li>
+													#end
+												</ul>
+									
+									</div>
+									
+									<div class="f-item fl" adslide="true">
+												<ul>
+													#foreach($advert in $advert.childAdvertList.get(3))
+												
+													<li style="text-align:center;width:218px;height:100%;">
+													
+														#if(!$advert.productName)
+															<a href="${advert.url}"><img isad="true" isshow="false" data-original="${advert.img}" style="width:218px;height:249px;" ad_id="${advert.id}" ap_id="${advert.apId}"/></a>
+														#end
+														#if($advert.productName)
+														<a href="${advert.url}">
+														<div class="good-item">
+														<div class="pic">
+															<img isshow="false" data-original="${advert.img}" isad="true" style="width:90px;height:120px;" ad_id="${advert.id}" ap_id="${advert.apId}"/>
+														</div>
+														<div class="intro">
+															<p>${advert.productName}</p>
+															<p class="orange fw"><i class="f-rmb">¥</i>${advert.productPrice}元/<span>${advert.productUnit}</span></p>
+														</div>
+														</div>
+														</a>
+														#end
+													</li>
+													#end
+												</ul>
+									
+									</div>
+								</li>
+								<li>	
+									
+									<div class="f-item fl" adslide="true">
+												<ul>
+													#foreach($advert in $advert.childAdvertList.get(4))
+												
+													<li style="text-align:center;width:218px;height:100%;">
+													
+														#if(!$advert.productName)
+															<a href="${advert.url}"><img isad="true" isshow="false" data-original="${advert.img}" style="width:218px;height:249px;" ad_id="${advert.id}" ap_id="${advert.apId}"/></a>
+														#end
+														#if($advert.productName)
+														<a href="${advert.url}">
+														<div class="good-item">
+														<div class="pic">
+															<img isshow="false" data-original="${advert.img}" isad="true" style="width:90px;height:120px;" ad_id="${advert.id}" ap_id="${advert.apId}"/>
+														</div>
+														<div class="intro">
+															<p>${advert.productName}</p>
+															<p class="orange fw"><i class="f-rmb">¥</i>${advert.productPrice}元/<span>${advert.productUnit}</span></p>
+														</div>
+														</div>
+														</a>
+														#end
+													</li>
+													#end
+												</ul>
+									
+									</div>
+									<div class="f-item fl" adslide="true">
+												<ul>
+													#foreach($advert in $advert.childAdvertList.get(5))
+												
+													<li style="text-align:center;width:218px;height:100%;">
+													
+														#if(!$advert.productName)
+															<a href="${advert.url}"><img isad="true" isshow="false" data-original="${advert.img}" style="width:218px;height:249px;" ad_id="${advert.id}" ap_id="${advert.apId}"/></a>
+														#end
+														#if($advert.productName)
+														<a href="${advert.url}">
+														<div class="good-item">
+														<div class="pic">
+															<img isshow="false" data-original="${advert.img}" isad="true" style="width:90px;height:120px;" ad_id="${advert.id}" ap_id="${advert.apId}"/>
+														</div>
+														<div class="intro">
+															<p>${advert.productName}</p>
+															<p class="orange fw"><i class="f-rmb">¥</i>${advert.productPrice}元/<span>${advert.productUnit}</span></p>
+														</div>
+														</div>
+														</a>
+														#end
+													</li>
+													#end
+												</ul>
+									
+									</div>
+									
+									<div class="f-item fl" adslide="true">
+												<ul>
+													#foreach($advert in $advert.childAdvertList.get(6))
+												
+													<li style="text-align:center;width:218px;height:100%;">
+													
+														#if(!$advert.productName)
+															<a href="${advert.url}"><img isad="true" isshow="false" data-original="${advert.img}" style="width:218px;height:249px;" ad_id="${advert.id}" ap_id="${advert.apId}"/></a>
+														#end
+														#if($advert.productName)
+														<a href="${advert.url}">
+														<div class="good-item">
+														<div class="pic">
+															<img isshow="false" data-original="${advert.img}" isad="true" style="width:90px;height:120px;" ad_id="${advert.id}" ap_id="${advert.apId}"/>
+														</div>
+														<div class="intro">
+															<p>${advert.productName}</p>
+															<p class="orange fw"><i class="f-rmb">¥</i>${advert.productPrice}元/<span>${advert.productUnit}</span></p>
+														</div>
+														</div>
+														</a>
+														#end
+													</li>
+													#end
+												</ul>
+									
+									</div>
+									<div class="f-item fl" adslide="true">
+												<ul>
+													#foreach($advert in $advert.childAdvertList.get(7))
+												
+													<li style="text-align:center;width:218px;height:100%;">
+													
+														#if(!$advert.productName)
+															<a href="${advert.url}"><img isad="true" isshow="false" data-original="${advert.img}" style="width:218px;height:249px;" ad_id="${advert.id}" ap_id="${advert.apId}"/></a>
+														#end
+														#if($advert.productName)
+														<a href="${advert.url}">
+														<div class="good-item">
+														<div class="pic">
+															<img isshow="false" data-original="${advert.img}" isad="true" style="width:90px;height:120px;" ad_id="${advert.id}" ap_id="${advert.apId}"/>
+														</div>
+														<div class="intro">
+															<p>${advert.productName}</p>
+															<p class="orange fw"><i class="f-rmb">¥</i>${advert.productPrice}元/<span>${advert.productUnit}</span></p>
+														</div>
+														</div>
+														</a>
+														#end
+													</li>
+													#end
+												</ul>
+									
+									</div>
+												
+								</li>
+							</ul>
+						
+						</div>
+						#end
+											</div>		
+				</div>
+			</div>

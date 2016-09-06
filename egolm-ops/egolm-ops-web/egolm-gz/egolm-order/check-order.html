@@ -1,0 +1,943 @@
+<!DOCTYPE html>
+<html>
+	<head>
+		<meta charset="utf-8" />
+		<title>万店易购订货平台</title>
+		<meta http-equiv="X-UA-Compatible" content="IE=edge">
+		<meta content="telephone=no" name="format-detection">
+		<meta name="renderer" content="webkit">
+		<meta name="keywords" content="万店易购运营管理平台" />
+		<meta name="description" content="万店易购运营管理平台" />
+		<link rel="shortcut icon" href="favicon.ico">
+		<link rel="stylesheet" href="assets/css/reset.css" />
+		<link rel="stylesheet" href="assets/css/common.css" />
+		<link rel="stylesheet" href="assets/css/header.css" />
+		<link rel="stylesheet" href="assets/css/footer.css" />
+		<link rel="stylesheet" href="assets/css/check-order.css" />
+	</head>
+	<body>
+		
+		<!--顶部导航-->
+		<div class="header">
+			
+			<!--顶部导航条-->
+			<div class="nav-wrap">
+				<div class="nav-bar ma pw">
+					<div class="welcomes fl">Hi，<span>用户名</span>，欢迎来到万店易购！</div>
+					<ul class="nav-menu fr clearfix">
+						<li class="app pr">
+							<a href="#"><i class="icon icon-app"></i>手机APP</a>
+							<div class="app-qrCode-wrap hide">
+								<div class="app-qrCode">
+									<div class="pic pr">
+										<img src="assets/images/app-qrCode.png" />
+									</div>
+									<p>扫码下载万店易购APP</p>
+								</div>
+							</div>
+						</li>
+						<li>
+							<a href="login.html">请登录</a>
+						</li>
+						<li class="pr egolm">
+							<a class="btn-my-eg" href="javascript:void(0)">我的易购<i class="icon icon-dr"></i></a>
+							<ul class="my-eg hide clearfix">
+								<li><a href="my-assets.html">我的资产</a></li>
+								<li><a href="account-info.html">账户信息</a></li>
+								<li><a href="shipping-address.html">收货地址</a></li>
+								<li><a href="edit-password.html">密码修改</a></li>
+								<li><a href="my-collect.html">我的收藏</a></li>
+								<li><a href="buy-record.html">购买记录</a></li>
+							</ul>
+						</li>
+						<li>
+							<a href="service-consulting.html">服务中心</a>
+						</li>
+						<li>
+							<a href="cart.html">我的购物车</a>
+						</li>
+						<li class="follow pr">
+							<a href="javascript:void(0)">关注易购：<i class="icon icon-wechat"></i></a>
+							<div class="follow-qrCode-wrap hide">
+								<div class="follow-qrCode">
+									<div class="pic pr">
+										<img src="assets/images/app-qrCode.png" />
+									</div>
+									<p>关注万店易购</p>
+								</div>
+							</div>
+						</li>
+					</ul>
+				</div>
+			</div>
+			
+			<!--搜索框-->
+			<div class="search-wrap ma pw clearfix">
+				<div class="logo fl pr">
+					<a href="#"><img alt="万店易购" src="assets/images/logo.png"/></a>
+				</div>
+				<div class="search fl clearfix">
+					<input class="fl" type="text" placeholder="商品名称" />
+					<button class="fl">搜索</button>
+				</div>
+				<div class="cart-wrap fr clearfix">
+					<div class="order fl pr clearfix">
+						<i class="icon icon-order"></i>
+						<a href="order-inquiry.html">订单查询</a>
+						<i class="icon icon-arrow fr"></i>
+						<i class="count">0</i>
+					</div>
+					<div class="cart fl pr clearfix">
+						<div class="login-tips hide">
+							<div class="spacer"></div>
+							<p class="txt f-99">登录才能看到购物车里的商品哦</p>
+							<p class="btn"><a href="login.html">登录</a></p>
+						</div>
+						<i class="icon icon-cart"></i>
+						<a href="javascript:void(0)">购物车</a>
+						<i class="icon icon-arrow fr"></i>
+						<i class="count">0</i>
+					</div>
+				</div>
+			</div>
+			
+			<!--商品分类-->
+			<div class="header-nav ma pw clearfix pr">
+				<div class="fl pr sort-wrap">
+					<a class="pr" href="javascript:void(0)">休闲食品<span class="dr"></span></a>
+					
+					<div class="sort hide">
+						<ul class="clearfix">
+							<li>
+								<div class="sort-title">
+									<a href="javascript:void(0)">饼干糕点</a>
+									<span class="dr"></span>
+								</div>
+					
+								<div class="sort-content hide">
+									<div class="sort-list clearfix">
+										<h1 class="fl"><a href="brand-detail.html">剑南春</a></h1>
+										<ul class="clearfix fl">
+											<li><a href="goods-sort.html">茅台</a></li>
+											<li><a href="goods-sort.html">茅台</a></li>
+											<li><a href="goods-sort.html">茅台</a></li>
+											<li><a href="goods-sort.html">茅台</a></li>
+											<li><a href="goods-sort.html">茅台</a></li>
+											<li><a href="goods-sort.html">茅台</a></li>
+										</ul>
+									</div>
+					
+									<div class="sort-list clearfix">
+										<h1 class="fl"><a href="brand-detail.html">剑南春</a></h1>
+										<ul class="clearfix fl">
+											<li><a href="goods-sort.html">茅台</a></li>
+											<li><a href="goods-sort.html">茅台</a></li>
+											<li><a href="goods-sort.html">茅台</a></li>
+											<li><a href="goods-sort.html">茅台</a></li>
+											<li><a href="goods-sort.html">茅台</a></li>
+											<li><a href="goods-sort.html">茅台</a></li>
+										</ul>
+									</div>
+					
+								</div>
+					
+							</li>
+							<li>
+								<div class="sort-title">
+									<a href="javascript:void(0)">巧克力</a>
+									<span class="dr"></span>
+								</div>
+								<div class="sort-content hide">
+									<div class="sort-list clearfix">
+										<h1 class="fl"><a href="brand-detail.html">剑南春</a></h1>
+										<ul class="clearfix fl">
+											<li><a href="goods-sort.html">茅台</a></li>
+											<li><a href="goods-sort.html">茅台</a></li>
+											<li><a href="goods-sort.html">茅台</a></li>
+											<li><a href="goods-sort.html">茅台</a></li>
+											<li><a href="goods-sort.html">茅台</a></li>
+											<li><a href="goods-sort.html">茅台</a></li>
+										</ul>
+									</div>
+					
+									<div class="sort-list clearfix">
+										<h1 class="fl"><a href="brand-detail.html">剑南春</a></h1>
+										<ul class="clearfix fl">
+											<li><a href="goods-sort.html">茅台</a></li>
+											<li><a href="goods-sort.html">茅台</a></li>
+											<li><a href="goods-sort.html">茅台</a></li>
+											<li><a href="goods-sort.html">茅台</a></li>
+											<li><a href="goods-sort.html">茅台</a></li>
+											<li><a href="goods-sort.html">茅台</a></li>
+										</ul>
+									</div>
+									<div class="sort-list clearfix">
+										<h1 class="fl"><a href="brand-detail.html">剑南春</a></h1>
+										<ul class="clearfix fl">
+											<li><a href="goods-sort.html">茅台</a></li>
+											<li><a href="goods-sort.html">茅台</a></li>
+											<li><a href="goods-sort.html">茅台</a></li>
+											<li><a href="goods-sort.html">茅台</a></li>
+											<li><a href="goods-sort.html">茅台</a></li>
+											<li><a href="goods-sort.html">茅台</a></li>
+										</ul>
+									</div>
+					
+								</div>
+							</li>
+							<li>
+								<div class="sort-title">
+									<a href="javascript:void(0)">糖果/口香糖</a>
+									<span class="dr"></span>
+								</div>
+								<div class="sort-content hide">
+									<div class="sort-list clearfix">
+										<h1 class="fl"><a href="brand-detail.html">剑南春</a></h1>
+										<ul class="clearfix fl">
+											<li><a href="goods-sort.html">茅台</a></li>
+											<li><a href="goods-sort.html">茅台</a></li>
+											<li><a href="goods-sort.html">茅台</a></li>
+											<li><a href="goods-sort.html">茅台</a></li>
+											<li><a href="goods-sort.html">茅台</a></li>
+											<li><a href="goods-sort.html">茅台</a></li>
+										</ul>
+									</div>
+					
+									<div class="sort-list clearfix">
+										<h1 class="fl"><a href="brand-detail.html">剑南春</a></h1>
+										<ul class="clearfix fl">
+											<li><a href="goods-sort.html">茅台</a></li>
+											<li><a href="goods-sort.html">茅台</a></li>
+											<li><a href="goods-sort.html">茅台</a></li>
+											<li><a href="goods-sort.html">茅台</a></li>
+											<li><a href="goods-sort.html">茅台</a></li>
+											<li><a href="goods-sort.html">茅台</a></li>
+										</ul>
+									</div>
+									<div class="sort-list clearfix">
+										<h1 class="fl"><a href="brand-detail.html">剑南春</a></h1>
+										<ul class="clearfix fl">
+											<li><a href="goods-sort.html">茅台</a></li>
+											<li><a href="goods-sort.html">茅台</a></li>
+											<li><a href="goods-sort.html">茅台</a></li>
+											<li><a href="goods-sort.html">茅台</a></li>
+											<li><a href="goods-sort.html">茅台</a></li>
+											<li><a href="goods-sort.html">茅台</a></li>
+										</ul>
+									</div>
+									<div class="sort-list clearfix">
+										<h1 class="fl"><a href="brand-detail.html">剑南春</a></h1>
+										<ul class="clearfix fl">
+											<li><a href="goods-sort.html">茅台</a></li>
+											<li><a href="goods-sort.html">茅台</a></li>
+											<li><a href="goods-sort.html">茅台</a></li>
+											<li><a href="goods-sort.html">茅台</a></li>
+											<li><a href="goods-sort.html">茅台</a></li>
+											<li><a href="goods-sort.html">茅台</a></li>
+										</ul>
+									</div>
+					
+								</div>
+							</li>
+							<li>
+								<div class="sort-title">
+									<a href="javascript:void(0)">果冻</a>
+									<span class="dr"></span>
+								</div>
+								<div class="sort-content hide">
+									<div class="sort-list clearfix">
+										<h1 class="fl"><a href="brand-detail.html">剑南春</a></h1>
+										<ul class="clearfix fl">
+											<li><a href="goods-sort.html">茅台</a></li>
+											<li><a href="goods-sort.html">茅台</a></li>
+											<li><a href="goods-sort.html">茅台</a></li>
+											<li><a href="goods-sort.html">茅台</a></li>
+											<li><a href="goods-sort.html">茅台</a></li>
+											<li><a href="goods-sort.html">茅台</a></li>
+										</ul>
+									</div>
+					
+									<div class="sort-list clearfix">
+										<h1 class="fl"><a href="brand-detail.html">剑南春</a></h1>
+										<ul class="clearfix fl">
+											<li><a href="goods-sort.html">茅台</a></li>
+											<li><a href="goods-sort.html">茅台</a></li>
+											<li><a href="goods-sort.html">茅台</a></li>
+											<li><a href="goods-sort.html">茅台</a></li>
+											<li><a href="goods-sort.html">茅台</a></li>
+											<li><a href="goods-sort.html">茅台</a></li>
+										</ul>
+									</div>
+									<div class="sort-list clearfix">
+										<h1 class="fl"><a href="brand-detail.html">剑南春</a></h1>
+										<ul class="clearfix fl">
+											<li><a href="goods-sort.html">茅台</a></li>
+											<li><a href="goods-sort.html">茅台</a></li>
+											<li><a href="goods-sort.html">茅台</a></li>
+											<li><a href="goods-sort.html">茅台</a></li>
+											<li><a href="goods-sort.html">茅台</a></li>
+											<li><a href="goods-sort.html">茅台</a></li>
+										</ul>
+									</div>
+									<div class="sort-list clearfix">
+										<h1 class="fl"><a href="brand-detail.html">剑南春</a></h1>
+										<ul class="clearfix fl">
+											<li><a href="goods-sort.html">茅台</a></li>
+											<li><a href="goods-sort.html">茅台</a></li>
+											<li><a href="goods-sort.html">茅台</a></li>
+											<li><a href="goods-sort.html">茅台</a></li>
+											<li><a href="goods-sort.html">茅台</a></li>
+											<li><a href="goods-sort.html">茅台</a></li>
+										</ul>
+									</div>
+					
+									<div class="sort-list clearfix">
+										<h1 class="fl"><a href="brand-detail.html">剑南春</a></h1>
+										<ul class="clearfix fl">
+											<li><a href="goods-sort.html">茅台</a></li>
+											<li><a href="goods-sort.html">茅台</a></li>
+											<li><a href="goods-sort.html">茅台</a></li>
+											<li><a href="goods-sort.html">茅台</a></li>
+											<li><a href="goods-sort.html">茅台</a></li>
+											<li><a href="goods-sort.html">茅台</a></li>
+										</ul>
+									</div>
+					
+								</div>
+							</li>
+							<li>
+								<div class="sort-title">
+									<a href="javascript:void(0)">牛奶/果汁</a>
+									<span class="dr"></span>
+								</div>
+								<div class="sort-content hide">
+									<div class="sort-list clearfix">
+										<h1 class="fl"><a href="brand-detail.html">剑南春</a></h1>
+										<ul class="clearfix fl">
+											<li><a href="goods-sort.html">茅台</a></li>
+											<li><a href="goods-sort.html">茅台</a></li>
+											<li><a href="goods-sort.html">茅台</a></li>
+											<li><a href="goods-sort.html">茅台</a></li>
+											<li><a href="goods-sort.html">茅台</a></li>
+											<li><a href="goods-sort.html">茅台</a></li>
+										</ul>
+									</div>
+					
+									<div class="sort-list clearfix">
+										<h1 class="fl"><a href="brand-detail.html">剑南春</a></h1>
+										<ul class="clearfix fl">
+											<li><a href="goods-sort.html">茅台</a></li>
+											<li><a href="goods-sort.html">茅台</a></li>
+											<li><a href="goods-sort.html">茅台</a></li>
+											<li><a href="goods-sort.html">茅台</a></li>
+											<li><a href="goods-sort.html">茅台</a></li>
+											<li><a href="goods-sort.html">茅台</a></li>
+										</ul>
+									</div>
+									<div class="sort-list clearfix">
+										<h1 class="fl"><a href="brand-detail.html">剑南春</a></h1>
+										<ul class="clearfix fl">
+											<li><a href="goods-sort.html">茅台</a></li>
+											<li><a href="goods-sort.html">茅台</a></li>
+											<li><a href="goods-sort.html">茅台</a></li>
+											<li><a href="goods-sort.html">茅台</a></li>
+											<li><a href="goods-sort.html">茅台</a></li>
+											<li><a href="goods-sort.html">茅台</a></li>
+										</ul>
+									</div>
+									<div class="sort-list clearfix">
+										<h1 class="fl"><a href="brand-detail.html">剑南春</a></h1>
+										<ul class="clearfix fl">
+											<li><a href="goods-sort.html">茅台</a></li>
+											<li><a href="goods-sort.html">茅台</a></li>
+											<li><a href="goods-sort.html">茅台</a></li>
+											<li><a href="goods-sort.html">茅台</a></li>
+											<li><a href="goods-sort.html">茅台</a></li>
+											<li><a href="goods-sort.html">茅台</a></li>
+										</ul>
+									</div>
+					
+									<div class="sort-list clearfix">
+										<h1 class="fl"><a href="brand-detail.html">剑南春</a></h1>
+										<ul class="clearfix fl">
+											<li><a href="goods-sort.html">茅台</a></li>
+											<li><a href="goods-sort.html">茅台</a></li>
+											<li><a href="goods-sort.html">茅台</a></li>
+											<li><a href="goods-sort.html">茅台</a></li>
+											<li><a href="goods-sort.html">茅台</a></li>
+											<li><a href="goods-sort.html">茅台</a></li>
+										</ul>
+									</div>
+									<div class="sort-list clearfix">
+										<h1 class="fl"><a href="brand-detail.html">剑南春</a></h1>
+										<ul class="clearfix fl">
+											<li><a href="goods-sort.html">茅台</a></li>
+											<li><a href="goods-sort.html">茅台</a></li>
+											<li><a href="goods-sort.html">茅台</a></li>
+											<li><a href="goods-sort.html">茅台</a></li>
+											<li><a href="goods-sort.html">茅台</a></li>
+											<li><a href="goods-sort.html">茅台</a></li>
+										</ul>
+									</div>
+					
+								</div>
+							</li>
+							<li>
+								<div class="sort-title">
+									<a href="javascript:void(0)">饮用水</a>
+									<span class="dr"></span>
+								</div>
+								<div class="sort-content hide">
+									<div class="sort-list clearfix">
+										<h1 class="fl"><a href="brand-detail.html">剑南春</a></h1>
+										<ul class="clearfix fl">
+											<li><a href="goods-sort.html">茅台</a></li>
+											<li><a href="goods-sort.html">茅台</a></li>
+											<li><a href="goods-sort.html">茅台</a></li>
+											<li><a href="goods-sort.html">茅台</a></li>
+											<li><a href="goods-sort.html">茅台</a></li>
+											<li><a href="goods-sort.html">茅台</a></li>
+										</ul>
+									</div>
+					
+									<div class="sort-list clearfix">
+										<h1 class="fl"><a href="brand-detail.html">剑南春</a></h1>
+										<ul class="clearfix fl">
+											<li><a href="goods-sort.html">茅台</a></li>
+											<li><a href="goods-sort.html">茅台</a></li>
+											<li><a href="goods-sort.html">茅台</a></li>
+											<li><a href="goods-sort.html">茅台</a></li>
+											<li><a href="goods-sort.html">茅台</a></li>
+											<li><a href="goods-sort.html">茅台</a></li>
+										</ul>
+									</div>
+									<div class="sort-list clearfix">
+										<h1 class="fl"><a href="brand-detail.html">剑南春</a></h1>
+										<ul class="clearfix fl">
+											<li><a href="goods-sort.html">茅台</a></li>
+											<li><a href="goods-sort.html">茅台</a></li>
+											<li><a href="goods-sort.html">茅台</a></li>
+											<li><a href="goods-sort.html">茅台</a></li>
+											<li><a href="goods-sort.html">茅台</a></li>
+											<li><a href="goods-sort.html">茅台</a></li>
+										</ul>
+									</div>
+									<div class="sort-list clearfix">
+										<h1 class="fl"><a href="brand-detail.html">剑南春</a></h1>
+										<ul class="clearfix fl">
+											<li><a href="goods-sort.html">茅台</a></li>
+											<li><a href="goods-sort.html">茅台</a></li>
+											<li><a href="goods-sort.html">茅台</a></li>
+											<li><a href="goods-sort.html">茅台</a></li>
+											<li><a href="goods-sort.html">茅台</a></li>
+											<li><a href="goods-sort.html">茅台</a></li>
+										</ul>
+									</div>
+					
+									<div class="sort-list clearfix">
+										<h1 class="fl"><a href="brand-detail.html">剑南春</a></h1>
+										<ul class="clearfix fl">
+											<li><a href="goods-search.html">茅台</a></li>
+											<li><a href="goods-sort.html">茅台</a></li>
+											<li><a href="goods-sort.html">茅台</a></li>
+											<li><a href="goods-sort.html">茅台</a></li>
+											<li><a href="goods-sort.html">茅台</a></li>
+											<li><a href="goods-sort.html">茅台</a></li>
+										</ul>
+									</div>
+									<div class="sort-list clearfix">
+										<h1 class="fl"><a href="brand-detail.html">剑南春</a></h1>
+										<ul class="clearfix fl">
+											<li><a href="goods-sort.html">茅台</a></li>
+											<li><a href="goods-sort.html">茅台</a></li>
+											<li><a href="goods-sort.html">茅台</a></li>
+											<li><a href="goods-sort.html">茅台</a></li>
+											<li><a href="goods-sort.html">茅台</a></li>
+											<li><a href="goods-sort.html">茅台</a></li>
+										</ul>
+									</div>
+					
+								</div>
+							</li>
+						</ul>
+					</div>
+				
+				</div>
+				<ul class="fl clearfix">
+					<li><a class="active" href="index.html">首页</a></li>
+					<li><a href="goods-sort.html">新品上线</a></li>
+					<li><a href="goods-sort.html">酒水饮料</a></li>
+					<li><a href="goods-sort.html">方便速食</a></li>
+					<li><a href="brand.html">品牌专区</a></li>
+					<li><a href="goods-sort.html">优选推荐</a></li>
+					<li><a href="activity.html">促销特惠</a></li>
+					<li><a href="activity-615.html">优惠特价2</a></li>
+					<li><a href="announcement-details.html">公告</a></li>
+				</ul>
+			</div>
+			
+		</div>
+		
+		<!--中部楼层-->
+		<div class="content-wrap">
+			<div class="content pw ma pr">
+				
+				<div class="order-wrap">
+					
+					<form>
+						
+						<!--收货人信息-->
+						<div class="consignee-info pr">
+							
+							<div class="consignee-tit clearfix">
+								<div class="tit-tips">收货人信息</div>
+								<div class="btn-add-addr">
+									<a href="javascript:void(0)">新增收货地址</a>
+								</div>
+							</div>
+							
+							<div class="addr-list-wrap">
+								
+								<ul class="clearfix">
+									<li>
+										<div class="addr-item clearfix">
+											
+											<div class="addr-info clearfix fl">
+												<div class="btn-radio fl">
+													<label class="pr radio-wrap fl">
+														<input type="radio" name="address" class="radio">
+														<span class="radio-bg">张银</span>
+													</label>
+												</div>
+												<div class="name fl">
+													<span>张银</span>
+												</div>
+												<div class="addr fl">
+													<span>广东</span>
+													<span>广州市</span>
+													<span>越秀区</span>
+													<span>广信晖景大厦502室</span>
+												</div>
+												<div class="tel fl">
+													<span>159****3357</span>
+												</div>
+											</div>
+											
+											<div class="btn-edit fr">
+												<a href="javascript:void(0)">编辑修改</a>
+											</div>
+										</div>
+									</li>
+									<li>
+										<div class="addr-item clearfix">
+											
+											<div class="addr-info clearfix fl">
+												<div class="btn-radio fl">
+													<label class="pr radio-wrap fl">
+														<input type="radio" name="address" class="radio">
+														<span class="radio-bg">张银</span>
+													</label>
+												</div>
+												<div class="name fl">
+													<span>张银</span>
+												</div>
+												<div class="addr fl">
+													<span>广东</span>
+													<span>广州市</span>
+													<span>越秀区</span>
+													<span>广信晖景大厦502室</span>
+												</div>
+												<div class="tel fl">
+													<span>159****3357</span>
+												</div>
+											</div>
+											
+											<div class="btn-edit fr">
+												<a href="javascript:void(0)">编辑修改</a>
+											</div>
+										</div>
+									</li>
+									<li>
+										<div class="addr-item clearfix">
+											
+											<div class="addr-info clearfix fl">
+												<div class="btn-radio fl">
+													<label class="pr radio-wrap fl">
+														<input type="radio" name="address" class="radio">
+														<span class="radio-bg">张银</span>
+													</label>
+												</div>
+												<div class="name fl">
+													<span>张银</span>
+												</div>
+												<div class="addr fl">
+													<span>广东</span>
+													<span>广州市</span>
+													<span>越秀区</span>
+													<span>广信晖景大厦502室</span>
+												</div>
+												<div class="tel fl">
+													<span>159****3357</span>
+												</div>
+											</div>
+											
+											<div class="btn-edit fr">
+												<a href="javascript:void(0)">编辑修改</a>
+											</div>
+										</div>
+									</li>
+								</ul>
+								
+							</div>
+							
+						</div>
+						
+						<!--支付方式-->
+						<div class="pay-info pr">
+							<div class="pay-tit clearfix">
+								<div class="tit-tips">支付方式</div>
+							</div>
+							
+							<div class="pay-list-wrap clearfix">
+								
+								<div class="pay-item-wrap fl">
+									<ul class="clearfix">
+										<li>
+											<div class="pay-item btn-radio fl">
+												<label class="pr radio-wrap fl">
+													<input type="radio" name="pay" class="radio">
+													<span class="radio-bg">货到付款</span>
+												</label>
+											</div>
+										</li>
+									</ul>
+								</div>
+								
+								<div class="btn-more fl">
+									<a href="">更多&gt;&gt;</a>
+								</div>
+								
+							</div>
+							
+						</div>
+						
+						<!--购物清单-->
+						<div class="buy-info mb-20 pr">
+							
+							<div class="buy-tit clearfix">
+								<div class="tit-tips">购物清单</div>
+							</div>
+							
+							<div class="buy-list-wrap">
+								
+								<!--满赠-->
+								<div class="mz">
+									
+									<table cellpadding="0" cellspacing="0">
+										<thead>
+											<tr>
+												<th>商品信息</th>
+												<th>规格</th>
+												<th>单价（元）</th>
+												<th>数量</th>
+												<th>金额（元）</th>
+												<th>库存</th>
+											</tr>
+										</thead>
+										<tbody>
+											<tr class="f-tr">
+												<td colspan="10">
+													<div class="tit">
+														<div class="shop">
+															<h1>西安西果仓库</h1>
+														</div>
+													</div>
+												</td>
+											</tr>
+											<tr>
+												<td>
+													<div class="good-info">
+														<a class="clearfix" href="goods-detail.html">
+															<div class="g-img fl">
+																<img src="assets/images/cart/good-item.jpg">
+															</div>
+															<p>珍宝珠泡泡糖夹心棒棒糖混合味挂板装正常装棒棒糖混合味挂板装正常装</p>
+															<p class="seal"><span>满赠</span></p>
+														</a>
+													</div>
+												</td>
+												<td>1×20×20</td>
+												<td>
+													<p><span><i class="f-rmb f-12">¥</i>40.00</span>/盒</p>
+												</td>
+												<td>55</td>
+												<td class="fw">
+													<p>120.00</p>
+													<p class="p-cost">原价：100</p>
+												</td>
+												<td>有货</td>
+											</tr>
+										</tbody>
+									</table>
+									
+								</div>
+								
+								<!--组合-->
+								<div class="group">
+										
+									<table cellpadding="0" cellspacing="0">
+										<tbody>
+											<tr class="f-tr">
+												<td colspan="10">
+													<div class="tit">
+														<div class="shop">
+															<h1>西安西果仓库</h1>
+														</div>
+													</div>
+												</td>
+											</tr>
+											<tr>
+												<td>
+													<div class="good-info">
+														<a class="clearfix" href="goods-detail.html">
+															<div class="g-img fl">
+																<img src="assets/images/cart/good-item.jpg">
+															</div>
+															<p>珍宝珠泡泡糖夹心棒棒糖混合味挂板装正常装棒棒糖混合味挂板装正常装</p>
+															<p class="seal"><span>组合</span></p>
+														</a>
+													</div>
+												</td>
+												<td>1×20×20</td>
+												<td>
+													<p><span><i class="f-rmb f-12">¥</i>40.00</span>/盒</p>
+												</td>
+												<td>55</td>
+												<td class="fw">
+													<p>120.00</p>
+													<p class="p-cost">原价：100</p>
+												</td>
+												<td>有货</td>
+											</tr>
+										</tbody>
+									</table>
+								
+								</div>
+								
+								<!--满减-->
+								<div class="mj">
+									<table cellpadding="0" cellspacing="0">
+										<tbody>
+											<tr class="f-tr">
+												<td colspan="10">
+													<div class="tit">
+														<div class="shop">
+															<h1>西安西果仓库</h1>
+														</div>
+													</div>
+												</td>
+											</tr>
+											<tr>
+												<td>
+													<div class="good-info">
+														<a class="clearfix" href="goods-detail.html">
+															<div class="g-img fl">
+																<img src="assets/images/cart/good-item.jpg">
+															</div>
+															<p>珍宝珠泡泡糖夹心棒棒糖混合味挂板装正常装棒棒糖混合味挂板装正常装</p>
+															<p class="seal"><span>满减</span></p>
+														</a>
+													</div>
+												</td>
+												<td>1×20×20</td>
+												<td>
+													<p><span><i class="f-rmb f-12">¥</i>40.00</span>/盒</p>
+												</td>
+												<td>55</td>
+												<td class="fw">
+													<p>120.00</p>
+													<p class="p-cost">原价：100</p>
+												</td>
+												<td>有货</td>
+											</tr>
+										</tbody>
+									</table>
+								</div>
+								
+							</div>
+							
+						</div>
+						
+						<!--备注-->
+						<div class="notes">
+							<p><label>订单备注：<input type="text" placeholder="您可以在下方录入该订单送货要求或其他信息，我们会尽量满足您的要求！" /></label></p>
+						</div>
+						
+						<div class="total-wrap">
+							<div class="total-money clearfix">
+								<p class="fr"><span><i class="orange">3</i>件商品，总商品金额：</span><span class="orange"><i class="f-rmb f-12">¥</i>6010.00</span></p>
+							</div>
+							<div class="p-cost clearfix">
+								<p class="fr"><span>原价：</span><span><i class="f-rmb f-12">¥</i>6010.00</span></p>
+							</div>
+							<div class="discount clearfix">
+								<p class="fr"><span>折扣金额：</span><span class="green">-<i class="f-rmb f-12">¥</i>0.00</span></p>
+							</div>
+							<div class="payable clearfix">
+								<p class="fr"><span>应付金额：</span><span><i class="f-rmb f-12">¥</i>6010.00</span></p>
+							</div>
+							<div class="gather">
+								<div class="real-pay clearfix">
+									<p class="fr"><span><i class="fw">实付款</i>：</span><span><i class="f-rmb f-12">¥</i>6010.00</span></p>
+								</div>
+								<div class="bill-info clearfix">
+									<p class="fr"><span><i class="fw">寄送至</i>：<i>广东省 广州市 越秀区 广信晖景大厦502室</i></span><span><i class="fw">收货人</i>：<i>张银 15975603357</i></span></p>
+								</div>
+							</div>
+						</div>
+						
+						<!--结账-->
+						<div class="check-out clearfix">
+							<div class="fr">
+								<a href="cart.html">返回购物车修改</a>
+								<label><input class="btn-submit" type="button" value="提交订单" /></label>
+							</div>
+						</div>
+						
+					</form>
+					
+				</div>
+
+			</div>
+		</div>
+		
+		<!--增加地址弹窗-->
+		<div class="alert-box add-address hide">
+			<div class="alert-dialog">
+				<div class="alert-content">
+					<div class="alert-header pr">
+						<h1>添加新地址</h1>
+						<a class="btn-close" href="javascript:void(0)"><img src="assets/images/cart/btn-close.png" /></a>
+					</div>
+					<div class="alert-body">
+						
+						<form>
+							<p><label><span class="tit">收货人：</span><input type="text" placeholder="姓名" /></label></p>
+							<p><label><span class="tit">联系方式：</span><input type="text" placeholder="请填写11位手机号码" /></label></p>
+							<p><label>
+								<span class="tit">所在地址：</span>
+								<span class="select">
+									<select>
+										<option>广东省</option>
+										<option>湖南省</option>
+									</select>
+									<select>
+										<option>广州市</option>
+										<option>阳江市</option>
+									</select>
+									<select>
+										<option>天河区</option>
+										<option>海珠区</option>
+									</select>
+								</span>
+							</p>
+							<p class="address"><label><span class="tit">详细地址：</span><input type="text" placeholder="请填写详细地址" /></label></p>
+							<div class="set-addr">
+								<div class="addr-checked-item">
+									<label class="pr check-wrap fl">
+										<input type="checkbox" class="chk">
+										<span class="chk-bg"></span>
+									</label>
+									<span class="item-info">设为默认地址</span>
+								</div>
+							</div>
+							<p class="btn-submit"><input type="button" value="保存收货人信息" /></p>
+						</form>
+						
+					</div>
+				</div>
+			</div>
+		</div>
+		
+		<!--修改地址弹窗-->
+		<div class="alert-box edit-address hide">
+			<div class="alert-dialog">
+				<div class="alert-content">
+					<div class="alert-header pr">
+						<h1>修改地址</h1>
+						<a class="btn-close" href="javascript:void(0)"><img src="assets/images/cart/btn-close.png" /></a>
+					</div>
+					<div class="alert-body">
+						
+						<form>
+							<p><label><span class="tit">收货人：</span><input type="text" placeholder="姓名" /></label></p>
+							<p><label><span class="tit">联系方式：</span><input type="text" placeholder="请填写11位手机号码" /></label></p>
+							<p><label>
+								<span class="tit">所在地址：</span>
+								<span class="select">
+									<select>
+										<option>广东省</option>
+										<option>湖南省</option>
+									</select>
+									<select>
+										<option>广州市</option>
+										<option>阳江市</option>
+									</select>
+									<select>
+										<option>天河区</option>
+										<option>海珠区</option>
+									</select>
+								</span>
+							</p>
+							<p class="address"><label><span class="tit">详细地址：</span><input type="text" placeholder="请填写详细地址" /></label></p>
+							<div class="set-addr">
+								<div class="addr-checked-item">
+									<label class="pr check-wrap fl">
+										<input type="checkbox" class="chk">
+										<span class="chk-bg"></span>
+									</label>
+									<span class="item-info">设为默认地址</span>
+								</div>
+							</div>
+							<p class="btn-submit"><input type="button" value="保存收货人信息" /></p>
+						</form>
+						
+					</div>
+				</div>
+			</div>
+		</div>
+		
+		<!--置顶按钮-->
+		<div class="to-top">
+			<a class="btn-top" href="javascript:void(0)"><img src="assets/images/elevator/icon-to-top.png"></a>
+		</div>
+		
+		<!--底部信息-->
+		<div class="footer">
+			<div class="footer-bar">
+				<ul class="ma clearfix">
+					<li><a href="#">万店易购</a></li>
+					<li><a href="#">招贤纳士</a></li>
+					<li><a href="#">网站地图</a></li>
+					<li><a href="#">版权说明</a></li>
+					<li><a href="service-consulting.html">常见问题</a></li>
+					<li><a href="#">使用协议</a></li>
+					<li><a href="contact-me.html">联系我们</a></li>
+					<li></li>
+				</ul>
+			</div>
+			
+			<div class="copyright pw ma">
+				<p><span class="address"></span>地址：上海市徐汇区枫林路485号枫林创意园区4号楼 <span class="tel"></span>电话：400-638-1707 <span class="email"></span>邮箱：wandian@egolm.com</p>
+				<p>版权所有 <span class="copy"></span></span>2015万店易购  沪ICP备15000078-1</p>
+			</div>
+			
+		</div>
+		
+		<script src="assets/js/jquery-2.0.3.min.js"></script>
+		<script src="assets/js/check-order.js"></script>
+		<script src="assets/js/header.js"></script>
+		<script src="assets/js/scrollTop.js"></script>
+		
+	</body>
+</html>

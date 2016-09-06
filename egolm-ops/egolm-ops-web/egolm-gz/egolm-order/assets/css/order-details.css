@@ -1,0 +1,104 @@
+.content-wrap{ border-top: 1px solid #ff6400; background-color: #ecebeb; padding-bottom: 40px; }
+
+.content-wrap .content{ top: -1px; z-index: 999; }
+.content-wrap .content p.position{ margin: 10px 0; height: 20px; line-height: 20px; padding: 0 20px; font-size: 12px; }
+
+/*订单进度*/
+.content-wrap .content .state-wrap{ border-top: 1px solid #ff6400; background-color: #fff; font-size: 12px; }
+
+.content-wrap .content .state-wrap .state-box{ width: 291px; height: 189px; border-right: 1px solid #e6e6e6; text-align: center; line-height: 1; }
+.content-wrap .content .state-wrap .state-box p.order-num{ margin-top: 19px; }
+.content-wrap .content .state-wrap .state-box p.state-txt{ margin-top: 29px; font-size: 22px; color: #ff6400; font-weight: bold; }
+.content-wrap .content .state-wrap .state-box p.hurry-wrap{ margin-top: 20px; }
+.content-wrap .content .state-wrap .state-box p.hurry-wrap a{ width: 70px; height: 24px; border: 1px solid #FF6400; color: #FF6400; line-height: 24px; font-weight: bold; }
+
+.content-wrap .content .state-wrap .progress-box{ padding: 19px 26px; width: 866px; height: 151px; line-height: 1; }
+.content-wrap .content .state-wrap .progress-box p.tips{ color: #999; }
+.content-wrap .content .state-wrap .progress-box .progress-bar{ margin-top: 40px; height: 96px; }
+.content-wrap .content .state-wrap .progress-box .progress-bar ul{ height: 100%; }
+.content-wrap .content .state-wrap .progress-box .progress-bar ul li{ width: 81px;  height: 100%; padding-right: 115px; text-align: center; background: url(../images/order-detail/progress-arrow.png) right 14px no-repeat; }
+.content-wrap .content .state-wrap .progress-box .progress-bar ul li:last-child{ width: 80px; padding-right: 0; background: none; }
+
+.content-wrap .content .state-wrap .progress-box .progress-bar ul li p{ color: #999; }
+.content-wrap .content .state-wrap .progress-box .progress-bar ul li p.progress-txt{ color: #666; }
+.content-wrap .content .state-wrap .progress-box .progress-bar ul li .progress-info > p.progress-txt{ margin-bottom: 10px; }
+.content-wrap .content .state-wrap .progress-box .progress-bar ul li .progress-info > p.ymd{ margin-bottom: 5px; }
+
+.content-wrap .content .state-wrap .progress-box .progress-bar ul li .progress-icon{ width: 36px; height: 36px; margin: 0 auto; margin-bottom: 8px; }
+.content-wrap .content .state-wrap .progress-box .progress-bar ul li:nth-child(1) .progress-icon{ background: url(../images/order-detail/submit-order.png) center no-repeat; }
+.content-wrap .content .state-wrap .progress-box .progress-bar ul li:nth-child(2) .progress-icon{ background: url(../images/order-detail/pay-success.png) center no-repeat; }
+.content-wrap .content .state-wrap .progress-box .progress-bar ul li:nth-child(3) .progress-icon{ background: url(../images/order-detail/output.png) center no-repeat; }
+.content-wrap .content .state-wrap .progress-box .progress-bar ul li:nth-child(4) .progress-icon{ background: url(../images/order-detail/waiting.png) center no-repeat; }
+.content-wrap .content .state-wrap .progress-box .progress-bar ul li:nth-child(5) .progress-icon{ background: url(../images/order-detail/done.png) center no-repeat; }
+
+.content-wrap .content .state-wrap .progress-box .progress-bar ul li:nth-child(1).active .progress-icon{ background: url(../images/order-detail/submit-order-active.png) center no-repeat; }
+.content-wrap .content .state-wrap .progress-box .progress-bar ul li:nth-child(2).active .progress-icon{ background: url(../images/order-detail/pay-success-active.png) center no-repeat; }
+.content-wrap .content .state-wrap .progress-box .progress-bar ul li:nth-child(3).active .progress-icon{ background: url(../images/order-detail/output-active.png) center no-repeat; }
+.content-wrap .content .state-wrap .progress-box .progress-bar ul li:nth-child(4).active .progress-icon{ background: url(../images/order-detail/waiting-active.png) center no-repeat; }
+.content-wrap .content .state-wrap .progress-box .progress-bar ul li:nth-child(5).active .progress-icon{ background: url(../images/order-detail/done-active.png) center no-repeat; }
+
+/*收货人信息*/
+.content-wrap .content .ship-info{ padding-top: 46px; background-color: #ededed; font-size: 12px; }
+.content-wrap .content .ship-info .info{ background-color: #fff; height: 44px; line-height: 44px; padding: 0 35px; }
+
+
+/*支付方式*/
+.content-wrap .content .pay-info{ padding-top: 46px; background-color: #ededed; font-size: 12px; }
+.content-wrap .content .pay-info .pay-list-wrap{ background-color: #fff; padding: 19px 35px; }
+
+/*订单列表*/
+.content-wrap .content .buy-info{ padding-top: 46px; font-size: 12px; }
+
+.content-wrap .content .buy-info .buy-list-wrap{ background-color: #fcfcfc; }
+.content-wrap .content .buy-info .buy-list-wrap table{ width: 100%; }
+.content-wrap .content .buy-info .buy-list-wrap table tr th{ padding: 12px 0 6px; color: #666; text-align: center; border-bottom: 1px solid #ababab; font-weight: normal; }
+.content-wrap .content .buy-info .buy-list-wrap table tr th:first-child{ padding-left: 40px; text-align: left; }
+.content-wrap .content .buy-info .buy-list-wrap table tr:first-child td{ padding: 12px 0 6px 40px; text-align: left; border-bottom: 1px solid #e6e6e6; }
+.content-wrap .content .buy-info .buy-list-wrap table tr td{ border-left: none !important; border-right: none !important; padding: 18px 0; text-align: center; border-color: #fcfcfc; background: #fcfcfc; vertical-align: top; color: #666 !important; border-bottom: 1px solid #e6e6e6; }
+.content-wrap .content .buy-info .buy-list-wrap table tr td h1{ color: #4C4C4C; font-size: 12px; }
+.content-wrap .content .buy-info .buy-list-wrap table:last-child tr:last-child td{ border-bottom: none; }
+.content-wrap .content .buy-info .buy-list-wrap table tr td:first-child{ padding-left: 40px; width: 2px; vertical-align: inherit; }
+
+.content-wrap .content .buy-info .buy-list-wrap table tr td:nth-child(2){ width: 204px; }
+.content-wrap .content .buy-info .buy-list-wrap table tr td:nth-child(3){ width: 227px; }
+.content-wrap .content .buy-info .buy-list-wrap table tr td:nth-child(4){ width: 91px; }
+.content-wrap .content .buy-info .buy-list-wrap table tr td:nth-child(5){ width: 228px; }
+.content-wrap .content .buy-info .buy-list-wrap table tr td:nth-child(6){ width: 92px; }
+
+.content-wrap .content .buy-info .buy-list-wrap table tr td .good-info{ width: 328px; height: 80px; }
+.content-wrap .content .buy-info .buy-list-wrap table tr td .good-info .g-img{ width: 80px; height: 80px; }
+.content-wrap .content .buy-info .buy-list-wrap table tr td .good-info p{ margin-left: 88px; width: 240px; text-align: left; }
+.content-wrap .content .buy-info .buy-list-wrap table tr td p.seal{ margin-top: 5px; }
+.content-wrap .content .buy-info .buy-list-wrap table tr td p.seal span{ display: inline-block; width: 44px; height: 18px; line-height: 18px; border: 1px solid #FF6400; text-align: center; color: #ff6400; margin-right: 10px; }
+.content-wrap .content .buy-info .buy-list-wrap table tr td p.p-cost{ color: #999; font-weight: normal; font-size: 12px; }
+
+/*备注*/
+.content-wrap .content .notes{ background-color: #fcfcfc; padding: 7px 30px; height: 36px; line-height: 36px; color: #4c4c4c; font-size: 14px; font-weight: bold; }
+.content-wrap .content .notes span{ font-weight: normal; font-size: 12px; }
+
+/*订单汇总*/
+.content-wrap .content .total-wrap{ padding: 16px 0 0; line-height: 1; }
+.content-wrap .content .total-wrap .total-money,.content-wrap .content .total-wrap .p-cost,.content-wrap .content .total-wrap .discount,.content-wrap .content .total-wrap .payable{ padding: 0 30px; }
+.content-wrap .content .total-wrap p{ margin-bottom: 20px; }
+.content-wrap .content .total-wrap p span{ display: inline-block; text-align: right; }
+.content-wrap .content .total-wrap p span:last-child{ padding-left: 10px; width: 95px; }
+
+.content-wrap .content .total-wrap .gather{ background-color: #fcfcfc; padding: 20px 30px; }
+.content-wrap .content .total-wrap .gather p{ margin-bottom: 0; }
+.content-wrap .content .total-wrap .gather p span{ width: auto; padding: 0; font-size: 16px; }
+
+
+
+
+
+
+
+/*自定义 radio*/
+.radio-wrap{ width: 98px; height: 30px; margin-right: 8px; }
+.radio-wrap .radio{ opacity: 0; position: absolute; z-index: 12; width: 98px; height: 30px; cursor: pointer; }
+.radio-wrap .radio-bg{ position: absolute; z-index: 11; display: block; margin: 0; width: 96px; height: 28px; line-height: 28px; border: 1px solid #e6e6e6; font-weight: normal; text-align: center; line-height: 28px; }
+.radio-wrap input[checked=checked] + span.radio-bg{ display: block; width: 94px; height: 26px; line-height: 26px; border: 2px solid #ff6400; }
+
+
+/*板块顶部文字样式*/
+.tit-tips{ position: absolute; top: 0; left: 0; width: 106px; height: 46px; line-height: 46px; color: #ff6400; font-size: 14px; text-align: center; font-weight: bold; border-bottom: 1px solid #ff6400; }

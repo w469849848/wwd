@@ -1,0 +1,40 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<beans xmlns="http://www.springframework.org/schema/beans"
+	xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" xmlns:aop="http://www.springframework.org/schema/aop"
+	xmlns:context="http://www.springframework.org/schema/context" xmlns:tx="http://www.springframework.org/schema/tx"
+	xsi:schemaLocation="http://www.springframework.org/schema/beans 
+						http://www.springframework.org/schema/beans/spring-beans.xsd
+						http://www.springframework.org/schema/aop 
+						http://www.springframework.org/schema/aop/spring-aop.xsd
+						http://www.springframework.org/schema/context 
+						http://www.springframework.org/schema/context/spring-context.xsd
+						http://www.springframework.org/schema/tx 
+						http://www.springframework.org/schema/tx/spring-tx.xsd">
+
+	<description>Spring Configuration</description>
+	
+	<bean class="com.egolm.config.core.bootstrap.EgolmPropertyPlaceholderConfigurer">
+		<property name="properties">
+			<list>
+				<value>G:zookeeper.properties</value>
+				<value>G:redis.properties</value>
+				<value>G:cas.properties</value>
+				<value>G:jdbc.properties</value>
+				<value>A:security.properties</value>
+				<value>G:system.properties</value>
+				<value>G:idc.properties</value>
+			</list>
+		</property>
+	</bean>
+	
+	<!-- 
+	
+	原dubbo中的配置通过el表达式传入相应的值
+	<dubbo:application name="${appName}" owner="egolm.com" organization="egolm.com" />
+	<dubbo:registry protocol="zookeeper" address="${zkConnString}" group="${dubboRegistryPath}" check="false" file="${user.home}/dubbo_cache/${app_name}" />
+	如果是多虚拟机环境，需要配置本地host，因为虚拟机获得的可能不是该虚拟机的ip
+	<dubbo:provider threads="150" executes="100" host="${host}" port="${port}" accesslog="true" filter="-exception" />
+	<dubbo:protocol name="dubbo" />
+	
+	 -->
+</beans>

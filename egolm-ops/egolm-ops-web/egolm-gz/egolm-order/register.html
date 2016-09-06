@@ -1,0 +1,504 @@
+<!DOCTYPE html>
+<html lang="zh-CN">
+
+	<head>
+		<meta charset="utf-8">
+		<meta http-equiv="X-UA-Compatible" content="IE=edge">
+		<meta name="viewport" content="width=device-width, initial-scale=1">
+		<title>用户注册</title>
+		<link rel="shortcut icon" href="favicon.ico">
+		<link href="assets/css/bootstrap.min.css" rel="stylesheet">
+		<link rel="stylesheet" href="assets/css/ace.min.css" />
+		<link href="assets/css/register.css" rel="stylesheet">
+	</head>
+
+	<body>
+		<div class="forget_password_titer">
+			<div class="forget_password_mar">
+				<img src="assets/images/logo.png" class="logo_bg">
+				<h2>欢迎注册</h2>
+			</div>
+		</div>
+		<div class="forget_main clearfix">
+			<div class="forget_password_main">
+				<h5 class="reg_titer">基础信息</h5>
+
+				<form>
+					<div class="user_phone">
+						<i class="ico_user"><img src="assets/images/btn_bg1.gif"></i>
+						<input type="text" class="user_inp login_input" placeholder="手机号码" autocomplete="off">
+					</div>
+
+					<div class="user_yzm">
+						<i class="ico_user"><img src="assets/images/btn_bg3.gif"></i>
+						<input type="text" class="yzm_inp login_input" placeholder="验证码" autocomplete="off">
+					</div>
+
+					<div class="user_yzm1">
+						<a href="javascript:void(0)" class="getYzm"><input type="button" value="获取验证码" onclick="setTime(this)"></a>
+					</div>
+
+					<div class="user_password_th">
+						<i class="ico_user"><img src="assets/images/btn_bg2.gif"></i>
+						<input type="password" class="user_inp login_input" placeholder="密码" autocomplete="off" minlength="6">
+					</div>
+
+					<div class="user_password_th">
+						<i class="ico_user"><img src="assets/images/btn_bg2.gif"></i>
+						<input type="password" class="user_inp login_input" placeholder="密码确认" autocomplete="off">
+					</div>
+
+					<div class="user_password">
+						<input type="text" class="text_inp login_input" placeholder="业务员推荐/其他店铺推荐" autocomplete="off">
+					</div>
+
+					<h5 class="regth_titer">店铺基础信息</h5>
+
+					<div class="user_password">
+						<input type="text" class="text_inp login_input" placeholder="店主姓名" autocomplete="off">
+					</div>
+
+					<div class="user_password">
+						<input type="text" class="text_inp login_input" placeholder="店铺名称/(门头店名)" autocomplete="off">
+					</div>
+
+					<div class="user_password">
+						<input type="text" class="text_inp login_input" placeholder="店铺地址(省市区及详细地址)" autocomplete="off">
+					</div>
+
+					<div class="Business_event">
+						<h5 class="buss_text">营业时间：早上</h5>
+						<input class="buss_am" type="text"></input>
+						<h4 class="buss_text">:</h4>
+						<input class="buss_am" type="text"></input>
+						<h5 class="buss_text">—</h5>
+						<h5 class="buss_text">晚上</h5>
+						<input class="buss_am" type="text"></input>
+						<h4 class="buss_text">:</h4>
+						<input class="buss_am" type="text"></input>
+					</div>
+
+					<h5 class="regth_titer">店铺其他信息</h5>
+
+				</form>
+				<div class="add-box">
+					<!-- 新增经销商 -->
+					<form>
+
+						<p class="row">
+							<div class="col-md-6">
+								<div class="col-md-12 mr">
+									<div class="col-md-12 dropdown-wrap">
+										<a id="salesman-type" class="dropdown-btn border border-radius bg-color dropdown-toggle" href="changImg()" data-toggle="dropdown" role="button" aria-haspopup="true" aria-expanded="true">
+											<span class="select_col">店铺所属</span>
+											<span class="dr"><img src="assets/images/arrow-black.png"/ class="arrow-bg"></span>
+										</a>
+										<ul id="salesman-menu" class="dropdown-menu" aria-labelledby="salesman-type">
+											<li>社区店</li>
+											<li>学校店</li>
+											<li>街道店</li>
+											<li>办公区</li>
+											<li>菜市场</li>
+											<li>其他</li>
+
+										</ul>
+									</div>
+								</div>
+
+								<div class="col-md-12 mr">
+									<div class="col-md-12 dropdown-wrap">
+										<a id="salesman-type" class="dropdown-btn border border-radius bg-color dropdown-toggle" href="javascript:void(0)" data-toggle="dropdown" role="button" aria-haspopup="true" aria-expanded="true">
+											<span class="select_col">店铺年龄</span>
+											<span class="dr"><img src="assets/images/arrow-black.png"/></span>
+										</a>
+										<ul id="salesman-menu" class="dropdown-menu" aria-labelledby="salesman-type">
+											<li>一年以内</li>
+											<li>1-3年</li>
+											<li>3-5年</li>
+											<li>5年以上</li>
+										</ul>
+									</div>
+								</div>
+
+								<div class="col-md-12 mr">
+									<div class="col-md-12 dropdown-wrap">
+										<a id="salesman-type" class="dropdown-btn border border-radius bg-color dropdown-toggle" href="javascript:void(0)" data-toggle="dropdown" role="button" aria-haspopup="true" aria-expanded="true">
+											<span class="select_col">店铺面积</span>
+											<span class="dr select_mbg"><img src="assets/images/arrow-black.png"/></span>
+										</a>
+										<ul id="salesman-menu" class="dropdown-menu" aria-labelledby="salesman-type">
+											<li>10平方以下</li>
+											<li>10-30平方</li>
+											<li>30-50平方</li>
+											<li>50-100平方</li>
+											<li>100平方以上</li>
+										</ul>
+									</div>
+								</div>
+
+								<div class="col-md-12 mr">
+									<div class="col-md-12 dropdown-wrap">
+										<a id="salesman-type" class="dropdown-btn border border-radius bg-color dropdown-toggle" href="javascript:void(0)" data-toggle="dropdown" role="button" aria-haspopup="true" aria-expanded="true">
+											<span class="select_col">月营业额</span>
+											<span class="dr"><img src="assets/images/arrow-black.png"/></span>
+										</a>
+										<ul id="salesman-menu" class="dropdown-menu" aria-labelledby="salesman-type">
+											<li>一万以下</li>
+											<li>1-3万</li>
+											<li>3-5万</li>
+											<li>5-10万</li>
+											<li>10万以上</li>
+										</ul>
+									</div>
+								</div>
+							</div>
+							<div class="col-md-1"></div>
+							<div class="col-md-5 upload_mr">
+								<input type="file" class="upload" onchange="previewImage(this)">
+								<div class="upload_bg" id="preview"><img src="assets/images/other/register-upload.png" id="imghead">
+									<!-- <h5>上传营业执照</h5> -->
+								</div>
+							</div>
+						</p>
+
+						<div class="col-md-12 mr">
+							<div class="col-md-12 dropdown-wrap">
+								<a id="salesman-type" class="dropdown-btn border border-radius bg-color dropdown-toggle" href="javascript:void(0)" data-toggle="dropdown" role="button" aria-haspopup="true" aria-expanded="true">
+									<span class="select_col">店铺类型</span>
+									<span class="dr"><img src="assets/images/arrow-black.png"/></span>
+								</a>
+								<ul id="salesman-menu" class="dropdown-menu" aria-labelledby="salesman-type">
+
+									<li>标准超市</li>
+									<li>母婴店</li>
+									<li>粮油店</li>
+									<li>文具店</li>
+									<li>菜场餐馆（调味、生鲜）</li>
+									<li>水果店（水果、生鲜、休闲)</li>
+
+								</ul>
+							</div>
+						</div>
+
+						<div class="col-md-12 mr">
+							<div class="col-md-12 dropdown-wrap">
+								<a id="salesman-location" class="dropdown-btn border border-radius bg-color dropdown-toggle" href="javascript:void(0)" data-toggle="dropdown" role="button" aria-haspopup="true" aria-expanded="true">
+									<span id="shop_posi" class="select_col">店铺位置(可多选)</span>
+									<span class="dr"><img src="assets/images/arrow-black.png"/></span>
+								</a>
+								<ul id="salesman-menu" class="dropdown-menu roll" aria-labelledby="salesman-location">
+									<div class="row">
+										<div class="col-md-2 position_check">
+											<label class="checked-wrap">
+							<input type="checkbox" class="chk check_md check-pd" name="社区">
+							<span class="chk-bg check_md"></span>
+							<h5 class="change_tit">社区</h5>
+							</label>
+										</div>
+
+										<div class="col-md-2 position_check">
+											<label class="checked-wrap">
+							<input type="checkbox" class="chk check_md" name="校区">
+							<span class="chk-bg"></span>
+							<h5 class="change_tit">校区</h5>
+							</label>
+										</div>
+
+										<div class="col-md-2 position_check">
+											<label class="checked-wrap">
+							<input type="checkbox" class="chk check_md" name="街道">
+							<span class="chk-bg"></span>
+							<h5 class="change_tit">街道</h5>
+							</label>
+										</div>
+
+										<div class="col-md-2 position_check">
+											<label class="checked-wrap">
+							<input type="checkbox" class="chk" name="菜市场">
+							<span class="chk-bg"></span>
+							<h5 class="change_tit">菜市场</h5>
+							</label>
+										</div>
+									</div>
+
+									<div class="row">
+										<div class="col-md-2 position_check">
+											<label class="checked-wrap">
+							<input type="checkbox" class="chk check_md check-pd" name="运动区">
+							<span class="chk-bg check_md"></span>
+							<h5 class="change_tit">运动区</h5>
+							</label>
+										</div>
+
+										<div class="col-md-2 position_check">
+											<label class="checked-wrap">
+							<input type="checkbox" class="chk check_md" name="办公区">
+							<span class="chk-bg"></span>
+							<h5 class="change_tit">办公区</h5>
+							</label>
+										</div>
+
+										<div class="col-md-2 position_check">
+											<label class="checked-wrap">
+							<input type="checkbox" class="chk check_md" name="其他">
+							<span class="chk-bg"></span>
+							<h5 class="change_tit">其他</h5>
+							</label>
+										</div>
+
+										<div class="col-md-2 position_check">
+											<label class="checked-wrap">
+							<input type="checkbox" class="chk" name="菜市场">
+							<span class="chk-bg"></span>
+							<h5 class="change_tit">菜市场</h5>
+							</label>
+										</div>
+									</div>
+
+									<div class="row">
+										<div class="col-md-2 position_check">
+											<label class="checked-wrap">
+							<input type="checkbox" class="chk check_md check-pd" name="社区">
+							<span class="chk-bg check_md"></span>
+							<h5 class="change_tit">社区</h5>
+							</label>
+										</div>
+
+										<div class="col-md-2 position_check">
+											<label class="checked-wrap">
+							<input type="checkbox" class="chk check_md" name="校区">
+							<span class="chk-bg"></span>
+							<h5 class="change_tit">校区</h5>
+							</label>
+										</div>
+
+										<div class="col-md-2 position_check">
+											<label class="checked-wrap">
+							<input type="checkbox" class="chk check_md" name="广场">
+							<span class="chk-bg"></span>
+							<h5 class="change_tit">广场</h5>
+							</label>
+										</div>
+
+										<div class="col-md-2 position_check">
+											<label class="checked-wrap">
+							<input type="checkbox" class="chk" name="菜市场">
+							<span class="chk-bg"></span>
+							<h5 class="change_tit">菜市场</h5>
+							</label>
+										</div>
+									</div>
+
+									<div class="row">
+										<div class="col-md-2 position_check">
+											<label class="checked-wrap">
+							<input type="checkbox" class="chk check_md check-pd" name="社区">
+							<span class="chk-bg check_md"></span>
+							<h5 class="change_tit">社区</h5>
+							</label>
+										</div>
+
+										<div class="col-md-2 position_check">
+											<label class="checked-wrap">
+							<input type="checkbox" class="chk check_md" name="校区">
+							<span class="chk-bg"></span>
+							<h5 class="change_tit">校区</h5>
+							</label>
+										</div>
+
+										<div class="col-md-2 position_check">
+											<label class="checked-wrap">
+							<input type="checkbox" class="chk check_md" name="办公区">
+							<span class="chk-bg"></span>
+							<h5 class="change_tit">办公区</h5>
+							</label>
+										</div>
+
+										<div class="col-md-2 position_check">
+											<label class="checked-wrap">
+							<input type="checkbox" class="chk" name="其他">
+							<span class="chk-bg"></span>
+							<h5 class="change_tit">其他</h5>
+							</label>
+										</div>
+									</div>
+
+								</ul>
+							</div>
+						</div>
+
+						<div class="col-md-12 mr">
+							<label class="co-md-2 check_select checked_wrap">
+							<input name="Fruit" type="checkbox" class="chk chk_inp" checked="checked">
+							<span class="chk-bg"></span>
+							<h5 class="check_tit">是否有宽带</h5>
+						</label>
+
+							<!-- <label class="col-md-3 check_select checked-wrap fl">
+								<input type="checkbox" class="chk chk_inp" checked="checked" >
+								<span class="chk-bg"></span>
+						</label> -->
+
+							<label class="col-md-2 check_select checked_wrap">
+						<input name="Fruit" type="checkbox" class="chk chk_inp" />
+							<span class="chk-bg"></span>
+							<h5 class="check_tit">是否有POS机</h5>
+						</label>
+
+							<label class="col-md-2 check_select checked_wrap">
+						<input name="Fruit" type="checkbox" class="chk chk_inp" />
+							<span class="chk-bg"></span>
+							<h5 class="check_tit">是否接收银行卡</h5>
+						</label>
+						</div>
+
+						<div class="col-md-12 comfirm">
+							<h5 class="chk_color">"是"的请在勾选框打钩</h5>
+						</div>
+						<div class="col-md-12 agree_check">
+
+							<h5 class="chk_color">单击"注册"即表示你同意<a href="#">万店易购服务协议</a>以及<a href="#">隐私</a></h5>
+						</div>
+
+						<div class="col-md-12 btn_pd">
+							<a href="javascript:void(0)" class="register_submit" type="submit">注册</a>
+						</div>
+
+					</form>
+				</div>
+			</div>
+		</div>
+
+		<div class="container">
+			<div class="row">
+				<ul class="list-inline text-center wd_linker">
+					<li><a href="javascript:void(o)">万店易购</a></li>
+					<li><a href="javascript:void(o)">招贤纳士</a></li>
+					<li><a href="javascript:void(o)">网站地图</a></li>
+					<li><a href="javascript:void(o)">版权说明</a></li>
+					<li><a href="javascript:void(o)">常见问题</a></li>
+					<li><a href="javascript:void(o)">使用协议</a></li>
+					<li><a href="javascript:void(o)">联系我们</a></li>
+				</ul>
+				<div class="row">
+					<div class="co-md-12">
+						<p class="text-center">地址:上海市徐汇区枫林路485号枫林创意园4号楼&nbsp;&nbsp;电话:400-638-1707&nbsp;&nbsp;邮箱:wandian@egolm.com</p>
+						<p class="text-center">版权所有 ©2016万店易购 沪ICP备15000078-1</p>
+					</div>
+				</div>
+			</div>
+		</div>
+
+		<script src="assets/js/jquery-2.0.3.min.js"></script>
+		<script src="assets/js/bootstrap.min.js"></script>
+		<script src="assets/js/ace.min.js"></script>
+		<script src="assets/js/checked.js"></script>
+		<!-- <script src="assets/js/register.js"></script> -->
+		<script type="text/javascript">
+			$('.chk').on('click', function() { //选中/取消选中
+				Checked.checked(this);
+			});
+			$('#salesman-location').click(function() {
+				$('#shop_posi').html("");
+			});
+			// 店铺位置选择
+			$(document).ready(function() {
+				var html = [];
+				$(".checked-wrap").on('click', 'input', function() {
+					var inHtml = "";
+					if (this.checked) {
+						html.push(this.name);
+					} else {
+						for (var i = 0; i < html.length; i++) {
+							if (html[i] === this.name) {
+								html.splice(i, 1);
+								i--;
+							}
+						}
+					}
+					for (var i = 0; i < html.length; i++) {
+						inHtml += html[i] + '&nbsp&nbsp';
+					}
+					inHtml = '<span id="shop_posi" class="select_col">' + inHtml + '</span><span class="dr"><img src="assets/images/arrow-open.png"></span>'
+					$('#salesman-location').html(inHtml);
+				});
+			});
+			var cNode = document.getElementById("salesman-menu").getElementsByTagName("li");
+			$(".salesman-position").click(function() {
+				$("cNode").each(function() {
+					$(".position_select").html();
+				})
+			});
+			//获取验证码倒计时
+			var wait = 60;
+
+			function setTime(o) {
+				if (wait == 0) {
+					o.removeAttribute("disabled");
+					o.value = "获取验证码";
+					wait = 60;
+				} else {
+					o.setAttribute("disabled", true);
+					o.value = "重新发送(" + wait + ")";
+					wait--;
+					setTimeout(function() {
+							setTime(o)
+						},
+						1000)
+				}
+			};
+			//上传营业执照图片
+			function previewImage(file) {
+				var MAXWIDTH = 200;
+				var MAXHEIGHT = 200;
+				var upload = document.getElementById('preview');
+				if (file.files && file.files[0]) {
+					upload.innerHTML = '<img id=imghead>';
+					var img = document.getElementById('imghead');
+					img.onload = function() {
+						var rect = clacImgZoomParam(MAXWIDTH, MAXHEIGHT, img.offsetWidth, img.offsetHeight);
+						img.width = rect.width;
+						img.height = rect.height;
+						//                 img.style.marginLeft = rect.left+'px';
+						img.style.marginTop = rect.top + 'px';
+					}
+					var reader = new FileReader();
+					reader.onload = function(evt) {
+						img.src = evt.target.result;
+					}
+					reader.readAsDataURL(file.files[0]);
+				}
+			}
+
+			function clacImgZoomParam(maxWidth, maxHeight, width, height) {
+				var param = {
+					top: 0,
+					left: 0,
+					width: width,
+					height: height
+				};
+				if (width > maxWidth || height > maxHeight) {
+					rateWidth = width / maxWidth;
+					rateHeight = height / maxHeight;
+					if (rateWidth > rateHeight) {
+						param.width = maxWidth;
+						param.height = Math.round(height / rateWidth);
+					} else {
+						param.width = Math.round(width / rateHeight);
+						param.height = maxHeight;
+					}
+				}
+				param.left = Math.round((maxWidth - param.width) / 2);
+				param.top = Math.round((maxHeight - param.height) / 2);
+				return param;
+			}
+			//下拉菜单图标向上
+			function tab() {
+				$('.dr img').attr('src', 'assets/images/arrow-black.png');
+				$('.open .dr img').attr('src', 'assets/images/arrow-open.png');
+			}
+			setInterval(tab, 100);
+		</script>
+	</body>
+
+</html>

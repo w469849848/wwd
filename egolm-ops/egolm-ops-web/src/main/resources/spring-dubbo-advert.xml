@@ -1,0 +1,32 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<beans xmlns="http://www.springframework.org/schema/beans"
+	xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" xmlns:dubbo="http://code.alibabatech.com/schema/dubbo"
+	xsi:schemaLocation="http://www.springframework.org/schema/beans http://www.springframework.org/schema/beans/spring-beans-2.5.xsd
+    http://code.alibabatech.com/schema/dubbo http://code.alibabatech.com/schema/dubbo/dubbo.xsd">
+
+  	<dubbo:reference id="tShopAdPosAddApi" interface="com.egolm.advert.api.TShopAdPosAddApi" /> 
+  	<dubbo:reference id="tShopAdPosQueryApi" interface="com.egolm.advert.api.TShopAdPosQueryApi" /> 
+  	<dubbo:reference id="tShopAdPosUpdateApi" interface="com.egolm.advert.api.TShopAdPosUpdateApi" /> 
+  	
+  	<dubbo:reference id="tShopAdvertAddApi" interface="com.egolm.advert.api.TShopAdvertAddApi" /> 
+  	<dubbo:reference id="tShopAdvertQueryApi" interface="com.egolm.advert.api.TShopAdvertQueryApi" />
+  	<dubbo:reference id="tShopAdvertUpdateApi" interface="com.egolm.advert.api.TShopAdvertUpdateApi" />
+  	
+    <dubbo:reference id="tShopAdPosVisitAddApi" interface="com.egolm.advert.api.TShopAdPosVisitAddApi" />
+    
+    <dubbo:reference id="tShopAdVisitAddApi" interface="com.egolm.advert.api.TShopAdVisitAddApi" />
+    
+    <dubbo:reference id="tShopAdShopVisitAddApi" interface="com.egolm.advert.api.TShopAdShopVisitAddApi" />
+    
+    
+     <dubbo:reference id="tShopAdBatchAddApi" interface="com.egolm.advert.api.TShopAdBatchAddApi" />
+     <dubbo:reference id="tShopAdBatchQueryApi" interface="com.egolm.advert.api.TShopAdBatchQueryApi" />
+     <dubbo:reference id="tShopAdBatchUpdateApi" interface="com.egolm.advert.api.TShopAdBatchUpdateApi" />
+     
+     <dubbo:reference id="tShopAdContractAddApi" interface="com.egolm.advert.api.TShopAdContractAddApi" />
+     <dubbo:reference id="tShopAdContractQueryApi" interface="com.egolm.advert.api.TShopAdContractQueryApi" />
+     <dubbo:reference id="tShopAdContractUpdateApi" interface="com.egolm.advert.api.TShopAdContractUpdateApi" />
+     
+      <dubbo:reference id="tShopAdPosContractAddApi" interface="com.egolm.advert.api.TShopAdPosContractAddApi" />
+      <dubbo:reference id="tShopAdPosContractUpdateApi" interface="com.egolm.advert.api.TShopAdPosContractUpdateApi" />
+</beans>

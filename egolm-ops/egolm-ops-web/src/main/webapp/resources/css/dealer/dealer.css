@@ -1,0 +1,16 @@
+.warehouse-title {
+	margin : auto -90px auto auto;
+}
+
+.col-md-3 {
+    width: 100%;
+}
+
+.add-box form .warehouse-div input[type="text"] {
+    width: 117%;
+    margin: auto auto auto -17%;
+}
+
+.add-box form .calculate-div input[type="text"] {
+    width: 90%;
+}  

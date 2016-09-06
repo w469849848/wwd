@@ -1,0 +1,59 @@
+.content-wrap{ background-color: #ecebeb; padding-top: 20px; }
+
+/*商品分类栏*/
+.content-wrap .content .brand-nav{ padding-top: 46px; background-color: #fff; }
+.content-wrap .content .brand-nav .b-sort{ padding-left: 25px; height: 44px; line-height: 44px; border-top: 1px solid #e6e6e6; }
+.content-wrap .content .brand-nav h1{ height: 100%; }
+.content-wrap .content .brand-nav h1 span{ margin-left: 5px; }
+.content-wrap .content .brand-nav ul{ font-size: 12px; }
+.content-wrap .content .brand-nav ul li{ margin-right: 28px; }
+.content-wrap .content .brand-nav ul li:first-child{ margin-left: 10px; }
+.content-wrap .content .brand-nav ul li:last-child{ margin-right: 0; }
+.content-wrap .content .brand-nav ul li .sort-item{ height: 44px; }
+.content-wrap .content .brand-nav ul li .sort-item a{ color: #0078d6; }
+.content-wrap .content .brand-nav ul li .sort-item a:hover,.content-wrap .content .brand-nav ul li.active .sort-item a{ color: #ff6400; text-decoration: underline; }
+
+
+/*品牌*/
+.content-wrap .content .brand-wrap{ background-color: #fff; }
+.content-wrap .content .brand-wrap .brand-item-wrap>ul li .brand-item{ width: 120px; height: 89px; border-top: 1px solid #e6e6e6; border-right: 1px solid #e6e6e6; }
+.content-wrap .content .brand-wrap .brand-item-wrap>ul:last-child li .brand-item{ border-bottom: 1px solid #e6e6e6; }
+.content-wrap .content .brand-wrap .brand-item-wrap>ul li:last-child .brand-item{ border-right: none; }
+.content-wrap .content .brand-wrap .brand-item-wrap>ul li .brand-item a{ position: relative; width: 100%; }
+.content-wrap .content .brand-wrap .brand-item-wrap>ul li .brand-item a img{ position: absolute; margin: auto; top: 0; left: 0; bottom: 0; right: 0; }
+
+/*广告条*/
+.content .hot-ad .hot-ad-item{ width: 1210px; height: 120px; }
+
+/*促销品牌*/
+.promo-brand{ padding-top: 46px; background-color: #fff; }
+.promo-brand .promo-list-wrap{ border-top: 1px solid #e6e6e6; background-color: #fff; }
+.promo-brand .promo-list-wrap li{ width: 915px; }
+.promo-brand .promo-list-wrap li:first-child{ width: 295px; }
+.promo-brand .promo-list-wrap li:first-child .promo-list{ width: 295px; height: 450px; }
+.promo-brand .promo-list-wrap li .promo-list-box .promo-list{ width: 295px; height: 220px; margin-left: 10px; margin-bottom: 10px; }
+
+/*brand 切换板块*/
+.more-brand{ padding-bottom: 40px; }
+.more-brand .more-brand-nav{ height: 46px; line-height: 45px; text-align: center; background-color: #fff; }
+.more-brand .more-brand-nav ul li{ width: 16.6666666%; height: 45px; }
+.more-brand .more-brand-nav ul li a{ width: 100%; height: 100%; color: #4C4C4C; font-weight: bold; }
+.more-brand .more-brand-nav ul li.active a{ border-top: 1px solid #FF6400; color: #FF6400; }
+
+.more-brand .more-brand-content{ background-color: #fff; }
+.more-brand .more-brand-content .mb-item-wrap ul li:nth-child(1){ width: 300px; }
+.more-brand .more-brand-content .mb-item-wrap ul li:nth-child(2){ width: 310px; }
+.more-brand .more-brand-content .mb-item-wrap ul li:nth-child(3){ width: 600px; }
+.more-brand .more-brand-content .mb-item-wrap .mb-item-box .mb-item{ width: 149px; height: 89px; border-top: 1px solid #e6e6e6; border-right: 1px solid #e6e6e6; }
+.more-brand .more-brand-content .mb-item-wrap ul li:nth-child(2) .mb-item-box .mb-item{ width: 310px; height: 270px; }
+.more-brand .more-brand-content .mb-item-wrap ul li:nth-child(3) .mb-item-box>div:nth-child(4),.more-brand .more-brand-content .mb-item-wrap ul li:nth-child(3) .mb-item-box>div:nth-child(8),.more-brand .more-brand-content .mb-item-wrap ul li:nth-child(3) .mb-item-box>div:nth-child(12){ border-right: none; }
+.more-brand .more-brand-content .mb-item-wrap .mb-item-box .mb-item a{ width: 100%; position: relative; }
+.more-brand .more-brand-content .mb-item-wrap .mb-item-box .mb-item a img{ position: absolute; margin: auto; top: 0; left: 0; bottom: 0; right: 0; }
+
+
+/*板块左上角文字样式*/
+.tit-tips{ position: absolute; top: 0; left: 0; width: 115px; height: 44px; line-height: 44px; color: #ff6400; font-size: 14px; text-align: center; font-weight: bold; border-top: 1px solid #ff6400; }
+
+.b-sort div h1 {
+	color: #4C4C4C;
+} 

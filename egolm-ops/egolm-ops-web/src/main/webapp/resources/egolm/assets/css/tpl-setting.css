@@ -1,0 +1,238 @@
+.sort,.banner .bd .mask,.header-nav .mask-wrap,.notice .notice-ad,.hot-wrap .hot-ad,.brand-wrap .brand .mask,.good-wrap .activity .mask:hover{ cursor: pointer; }
+
+.border-radius { border-radius: 2px !important; -webkit-border-radius: 2px !important; -moz-border-radius: 2px !important; }
+
+.table-box .tpl-nav>ul{ list-style: none; margin: 0; margin-bottom: 30px; }
+.table-box .tpl-nav>ul li{ float: left; width: 12.5%; height: 70px; line-height: 70px; border-left: 1px solid #e5e5e5; border-bottom: 1px solid #e5e5e5; text-align: center; background-color: #fbfbfb; }
+.table-box .tpl-nav>ul li:first-child{ border-left: none; }
+.table-box .tpl-nav>ul li a{ display: block; width: 100%; height: 100%; color: #959595; font-weight: bold; text-decoration: none; }
+.table-box .tpl-nav>ul li.active{ border: none; background-color: #fff; }
+.table-box .tpl-nav>ul li.active a{ color: #ff6400; }
+
+/*导航模块*/
+.tpl-content{  }
+.tpl-content .nav-module{ overflow-x: auto; overflow-y: hidden; }
+.tpl-content .banner-box{ min-width: 1210px; }
+.tpl-content .header-nav .mask-wrap>ul{ width: 1010px; padding-left: 32px; }
+
+/*广告模块*/
+.tpl-content .ad-module{ overflow-x: auto; overflow-y: hidden; }
+.tpl-content .ad-module .hot-wrap{ min-width: 1210px; }
+.tpl-content .ad-module .hot-wrap>p{ text-align: center; }
+
+/*商品推荐模块*/
+.tpl-content .rd-good-module .good-wrap > p{ text-align: center; }
+.tpl-content .rd-good-module .good-wrap > p:last-child{ margin-bottom: 20px; }
+.tpl-content .rd-good-module .good-wrap .activity{ border: 1px solid #e5e5e5; padding-top: 10px; margin-bottom: 20px; }
+
+/*楼层商品一*/
+.tpl-content .floor .f-nav .f-icon{ position: relative; top: -3px; }
+.tpl-content .floor .f-nav{ padding-bottom: 6px; margin-bottom: 0; }
+.tpl-content .floor .f-nav ul li{ height: 24px; line-height: 24px; top: 5px; }
+.tpl-content .floor-goods-type1 .floor-wrap{ overflow-x: auto; overflow-y: hidden; }
+.tpl-content .floor-goods-type1 .floor-wrap .fes-activity{ min-width: 1210px; }
+.tpl-content .floor-goods-type1 .content .fes-activity>ul li a{ position: relative; }
+
+/*楼层2*/
+.tpl-content .floor-goods-type2 .floor .f-content ul li:first-child>div{ box-sizing: content-box; -webkit-box-sizing: content-box; -moz-box-sizing: content-box; background-color: #e8fbf1; }
+.tpl-content .floor-goods-type2 .floor .f-content ul li:first-child>a{ width: auto; }
+
+
+/*按钮组*/
+.btn-wrap{ margin: 50px 0 20px; padding-top: 20px; border-top: 1px solid #e5e5e5; text-align: center; }
+.btn-wrap label{ margin-right: 30px; }
+.btn-wrap label input[type="button"]{ width: 182px; height: 40px; border: none; color: #fff; }
+.btn-wrap label.btn-submit input{ background: url(../images/tpl/btn-submit.png) no-repeat; }
+.btn-wrap label.btn-cancel input{ background: url(../images/tpl/btn-cancel.png) no-repeat; color: #FF6400; }
+.btn-wrap label.btn-preview input{ background: url(../images/tpl/btn-submit.png) no-repeat; }
+
+/*弹窗按钮组样式*/
+.modal-dialog .btn-wrap{ margin: 0; border: none; }
+.modal-dialog .btn-wrap label{ width: auto; }
+
+
+/*弹窗头部*/
+.modal-dialog .modal-header a.btn-close{ background: none; position: absolute; top: 10px; right: 10px; margin: 0; }
+.modal-dialog .modal-header a.btn-close img{ position: absolute; margin: auto; top: 0; left: 0; bottom: 0; right: 0; }
+.modal-dialog .modal-header{ padding: 0; }
+.modal-dialog .modal-header h1{ font-size: 13px; font-weight: bold; border-left: 2px solid #ff6400; line-height: 1.6; padding-left: 27px; margin: 20px 0; }
+.modal-dialog .modal-header p.line{ border-top: 1px solid #e5e5e5; margin: 0 30px 20px; }
+.modal-dialog .modal-body p.drap-tips{ color: #959595; margin: 20px 0 0; }
+.modal-dialog .modal-body table thead th:last-child,.modal-dialog .modal-body table tbody td:last-child,.modal-dialog .modal-body table tfoot td:last-child{ border-right: 1px solid #e5e5e5; }
+
+/*弹窗样式  商品分类*/
+.good-sort .modal-dialog{ width: 656px !important; margin-top: -337.5px !important; margin-left: -328px !important; }
+.good-sort .modal-dialog .modal-body{ padding: 0 64px 20px 30px; }
+.good-sort .modal-dialog .modal-body form>label{ position: relative; }
+.good-sort .modal-dialog .modal-body form>label>a{ position: absolute; display: block; width: 15px; height: 15px; top: 6px; right: -30px; }
+.good-sort .modal-dialog .modal-body label{ font-size: 13px; margin-bottom: 10px; }
+.good-sort .modal-dialog .modal-body label input{ font-size: 13px; }
+.good-sort .modal-dialog .modal-body .scroll-wrap{ max-height: 330px; border-right: none; }
+.good-sort .modal-dialog .modal-body .scroll-wrap ul{ list-style: none; margin-left: 0; }
+.good-sort .modal-dialog .modal-body .scroll-wrap ul .sort-item{ position: relative; margin: 10px 10px; padding: 0 10px; padding-bottom: 1px; background-color: #f5f5f5; }
+.good-sort .modal-dialog .modal-body .scroll-wrap ul .sort-item h2{ font-size: 13px; font-weight: bold; margin: 0; line-height: 3; }
+.good-sort .modal-dialog .modal-body .scroll-wrap ul .sort-item p{ margin-bottom: 6px; }
+.good-sort .modal-dialog .modal-body .scroll-wrap ul .sort-item p>span{ font-weight: bold; margin-right: 3px; }
+.good-sort .modal-dialog .modal-body .scroll-wrap ul .sort-item p>i{ margin-right: 8px; }
+.good-sort .modal-dialog .modal-body .scroll-wrap ul .sort-item a{ position: absolute; display: block; width: 16px; height: 16px; top: 50%; margin-top: -8px; right: 20px; }
+.good-sort .modal-dialog .modal-body .scroll-wrap ul .sort-item a img{ display: block; }
+
+/*弹窗样式 广告图*/
+.ad-pic{  }
+.ad-pic .modal-dialog{ width: 1000px !important; margin-top: -273.5px;  margin-left: -500px !important;}
+.ad-pic .modal-dialog .modal-body{ padding-left: 27px; padding-right: 27px; padding-top: 0; }
+.ad-pic .modal-dialog .modal-body .table-box{ border: none; max-height: 380px; }
+.ad-pic .modal-dialog .modal-body .table-box .filter-wrap{ padding: 0; margin-bottom: 20px; }
+.ad-pic .modal-dialog .modal-body .table-box .filter-wrap label{ width: 60%; }
+.ad-pic .modal-dialog .modal-body .table-box table td a.active{ color: #ff6400; }
+
+/*弹窗样式 专区选择*/
+.div-setting{  }
+.div-setting .modal-dialog{ width: 1000px !important; margin-top: -289px;  margin-left: -500px !important; }
+.div-setting .modal-dialog .modal-body{ padding-left: 27px; padding-right: 27px; padding-top: 0; }
+.div-setting .modal-dialog .modal-body .table-box{ border: none; max-height: 410px; }
+.div-setting .modal-dialog .modal-body .table-box .result-wrap{ padding-bottom: 12px; }
+.div-setting .modal-dialog .modal-body .table-box .result-wrap ul{ list-style: none; margin: 0; height: 38px; }
+.div-setting .modal-dialog .modal-body .table-box .result-wrap ul li{ position: relative; float: left; line-height: 36px; padding: 0 30px 0 12px; border-radius: 2px !important; -moz-border-radius: 2px !important; -webkit-border-radius: 2px !important; margin-right: 10px; }
+.div-setting .modal-dialog .modal-body .table-box .result-wrap ul li:last-child{ margin-right: 0; }
+.div-setting .modal-dialog .modal-body .table-box .result-wrap ul li>a{ position: absolute; top: 9px; right: 5px; display: block; width: 16px; height: 16px; }
+.div-setting .modal-dialog .modal-body .table-box .result-wrap ul li>a img{ display: block; }
+.div-setting .modal-dialog .modal-body .table-box table td a.active{ color: #ff6400; }
+.div-setting .modal-dialog .modal-body .table-box .result-wrap ul li>input{ border: none; background-color: #fbfbfb; padding: 0; width: 64px; height: 35px; appearance: none; -moz-appearance: none; -webkit-appearance: none; }
+
+/*弹窗样式 推荐品牌*/
+.brand-alert{  }
+.brand-alert .modal-dialog{ width: 1000px !important; margin-top: -338.5px;  margin-left: -500px !important; }
+.brand-alert .modal-dialog .modal-body{ padding-left: 27px; padding-right: 27px; padding-top: 0; }
+.brand-alert .modal-dialog .modal-body .table-box{ border: none; max-height: 510px; }
+.brand-alert .modal-dialog .modal-body .table-box .result-wrap>p{ margin: 0 0 10px 0; }
+.brand-alert .modal-dialog .modal-body .table-box .result-wrap ul{ list-style: none; margin: 0; }
+.brand-alert .modal-dialog .modal-body .table-box .result-wrap ul li{ position: relative; float: left; padding: 0 30px 0 12px; border-radius: 2px !important; -moz-border-radius: 2px !important; -webkit-border-radius: 2px !important; margin-right: 10px; }
+.brand-alert .modal-dialog .modal-body .table-box .result-wrap ul li p{ margin: 0; }
+.brand-alert .modal-dialog .modal-body .table-box .result-wrap ul li:last-child{ margin-right: 0; }
+.brand-alert .modal-dialog .modal-body .table-box .result-wrap ul li>a{ position: absolute; top: 9px; right: 5px; display: block; width: 16px; height: 16px; }
+.brand-alert .modal-dialog .modal-body .table-box .result-wrap ul li>a img{ display: block; }
+.brand-alert .modal-dialog .modal-body .table-box table td a.active{ color: #ff6400; }
+.brand-alert .modal-dialog .modal-body .table-box table td .g-icon{ position: relative; width: 80px; height: 64px; background-color: #fff; border: 1px solid #e5e5e5; }
+.brand-alert .modal-dialog .modal-body .table-box table td .g-icon img{ position: absolute; margin: auto; top: 0; left: 0; right: 0; bottom: 0; }
+
+.brand-alert .modal-dialog .modal-body .table-box .result-wrap .scroll-wrap{ height: 85px; overflow-x: hidden; overflow-y: auto; }
+.brand-alert .modal-dialog .modal-body .table-box .result-wrap ul li{ padding: 0; margin: 10px; }
+.brand-alert .modal-dialog .modal-body .table-box .result-wrap ul li .g-icon{ position: relative; width: 60px; height: 46px; border: 1px solid #e5e5e5; }
+.brand-alert .modal-dialog .modal-body .table-box .result-wrap ul li .g-icon>img{ position: absolute; margin: auto; top: 0; bottom: 0; right: 0; left: 0; }
+.brand-alert .modal-dialog .modal-body .table-box .result-wrap ul li .g-icon>a{ position: absolute; top: -9px; right: -8px; width: 16px; height: 16px; z-index: 9999; display: block; }
+.brand-alert .modal-dialog .modal-body .table-box .result-wrap ul li .g-icon>a img{ display: block; }
+.brand-alert .modal-dialog .modal-body .table-box .result-wrap ul li .g-icon>input{ position: absolute; z-index: 999; top: 0; width: 100%; height: 100%; filter: alpha(opacity=0); -moz-opacity: 0; -khtml-opacity: 0; opacity: 0; }
+
+.brand-alert .modal-dialog .modal-body .table-box .filter-wrap{ padding-left: 0; padding-right: 0; padding-top: 0; }
+.brand-alert .modal-dialog .modal-body .table-box .filter-wrap label{ width: 51%; }
+.brand-alert .modal-dialog .modal-body .table-box .filter-wrap label.filter-select{ width: 200px !important; }
+.brand-alert .modal-dialog .modal-body .table-box .filter-wrap label.filter-select a span:first-child{ width: auto !important; }
+
+
+/*提交提示 弹窗*/
+.tips-alert .modal-dialog{ width: 300px; height: 180px; margin-top: -90px; margin-left: -150px; }
+.tips-alert .modal-dialog .modal-content{ height: 100%; width: 100%; }
+.tips-alert .modal-dialog .modal-body{ padding: 25px; }
+.tips-alert .modal-dialog .modal-body p{ text-align: center; margin: 30px 0 40px; }
+.tips-alert .modal-dialog .modal-body a{ display: block; width: 97px; height: 30px; line-height: 30px; margin: 0 auto; background: url(../images/tpl/btn-alert.png); text-align: center; text-decoration: none; color: #fff; }
+
+
+/*推荐商品分类弹窗*/
+.rec-good-sort .modal-dialog{ width: 656px; margin-left: -328px; margin-top: -274px; }
+.rec-good-sort .modal-dialog .modal-header p.line{ margin-bottom: 0; }
+.rec-good-sort .modal-dialog .modal-body{ padding: 29px; }
+.rec-good-sort .modal-dialog .modal-body .input-box{ margin-bottom: 20px; }
+.rec-good-sort .modal-dialog .modal-body .input-box input{ height: 38px; line-height: 38px; width: 560px; }
+.rec-good-sort .modal-dialog .modal-body .input-box a{ position: relative; top: 9px; right: 5px; display: block; width: 15px; height: 15px; }
+.rec-good-sort .modal-dialog .modal-body .input-box a img{ display: block; }
+.rec-good-sort .modal-dialog .modal-body .input-item{ width: 560px; height: 265px; overflow-x: hidden; overflow-y: auto; }
+.rec-good-sort .modal-dialog .modal-body .input-item ul{ list-style: none; margin: 0; }
+.rec-good-sort .modal-dialog .modal-body .input-item ul li{ margin: 8px; background-color: #f5f5f5; }
+.rec-good-sort .modal-dialog .modal-body .input-item ul li>div{ position: relative; }
+.rec-good-sort .modal-dialog .modal-body .input-item ul li a{ position: absolute; display: block; width: 16px; height: 16px; top: 50%; right: 5px; margin-top: -8px; }
+.rec-good-sort .modal-dialog .modal-body .input-item ul li a img{ display: block; }
+.rec-good-sort .modal-dialog .modal-body .input-item ul li p{ margin: 0; padding: 12px 16px; }
+
+
+/*推荐商品弹窗*/
+.rec-good-alert .modal-dialog{ width: 1000px !important; margin-top: -357.5px;  margin-left: -500px !important; }
+.rec-good-alert .modal-dialog .modal-body{ padding-left: 27px; padding-right: 27px; padding-top: 0; }
+.rec-good-alert .modal-dialog .modal-body .table-box{ border: none; max-height: 550px; }
+.rec-good-alert .modal-dialog .modal-body .table-box .result-wrap>p{ margin: 0 0 10px 0; }
+.rec-good-alert .modal-dialog .modal-body .table-box .result-wrap ul{ list-style: none; margin: 0; }
+.rec-good-alert .modal-dialog .modal-body .table-box .result-wrap ul li{ position: relative; float: left; padding: 0 30px 0 12px; border-radius: 2px !important; -moz-border-radius: 2px !important; -webkit-border-radius: 2px !important; margin-right: 10px; }
+.rec-good-alert .modal-dialog .modal-body .table-box .result-wrap ul li p{ margin: 0; line-height: 2.5; }
+.rec-good-alert .modal-dialog .modal-body .table-box .result-wrap ul li:last-child{ margin-right: 0; }
+.rec-good-alert .modal-dialog .modal-body .table-box .result-wrap ul li>a{ position: absolute; top: 9px; right: 5px; display: block; width: 16px; height: 16px; }
+.rec-good-alert .modal-dialog .modal-body .table-box .result-wrap ul li>a img{ display: block; }
+.rec-good-alert .modal-dialog .modal-body .table-box table td a.active{ color: #ff6400; }
+.rec-good-alert .modal-dialog .modal-body .table-box table td .g-icon{ position: relative; width: 80px; height: 64px; background-color: #fff; border: 1px solid #e5e5e5; }
+.rec-good-alert .modal-dialog .modal-body .table-box table td .g-icon img{ position: absolute; margin: auto; top: 0; left: 0; right: 0; bottom: 0; }
+
+.rec-good-alert .modal-dialog .modal-body .table-box .result-wrap .scroll-wrap{ height: 227px; overflow-x: hidden; overflow-y: auto; margin-bottom: 10px; }
+.rec-good-alert .modal-dialog .modal-body .table-box .result-wrap ul li{ padding: 0; margin: 10px; }
+.rec-good-alert .modal-dialog .modal-body .table-box .result-wrap ul li .g-icon{ position: relative; width: 195px; height: 195px; border: 1px solid #e5e5e5; }
+.rec-good-alert .modal-dialog .modal-body .table-box .result-wrap ul li .g-icon>img{ position: absolute; margin: auto; top: 0; bottom: 0; right: 0; left: 0; }
+.rec-good-alert .modal-dialog .modal-body .table-box .result-wrap ul li .g-icon>a{ position: absolute; top: -9px; right: -8px; width: 16px; height: 16px; z-index: 9999; display: block; }
+.rec-good-alert .modal-dialog .modal-body .table-box .result-wrap ul li .g-icon>a img{ display: block; }
+.rec-good-alert .modal-dialog .modal-body .table-box .result-wrap ul li .g-icon>input{ position: absolute; z-index: 999; top: 0; width: 100%; height: 100%; filter: alpha(opacity=0); -moz-opacity: 0; -khtml-opacity: 0; opacity: 0; }
+
+.rec-good-alert .modal-dialog .modal-body .table-box .filter-wrap{ padding-left: 0; padding-right: 0; padding-top: 0; }
+.rec-good-alert .modal-dialog .modal-body .table-box .filter-wrap label{ width: 51%; }
+.rec-good-alert .modal-dialog .modal-body .table-box .filter-wrap label.filter-select{ width: 200px !important; }
+.rec-good-alert .modal-dialog .modal-body .table-box .filter-wrap label.filter-select a span:first-child{ width: auto !important; }
+
+
+/*楼层商品详细分类*/
+.sort-type2 form > label{ width: 560px; }
+.sort-type2 .modal-dialog .modal-body .input-item ul li{ width:263px; float: left; }
+.sort-type2 .modal-dialog{ margin-top: -298px; }
+
+/*自定义下拉框*/
+.modal-dialog .modal-body .dropdown-wrap{ width: 100% !important; }
+.modal-dialog .modal-body a.dropdown-btn{ position: relative; height: 38px; line-height: 28px; padding: 5px 12px; padding-right: 25px; text-decoration: none; }
+.modal-dialog .modal-body a.dropdown-btn:focus{ color: #505050; }
+.modal-dialog .modal-body a.dropdown-btn:hover{ color: #505050; }
+.modal-dialog .modal-body span.input-tips{ line-height: 38px; }
+.modal-dialog .modal-body span.dr{ position: absolute; display: block; width: 38px !important; height: 38px; top: 50%; margin-top: -19px; right: 0; background: #e5e5e5; }
+.modal-dialog .modal-body span.dr img{ position: absolute; top: 50%; left: 50%; margin-top: -3.5px; margin-left: -6px; display: block; width: 12px; height: 7px; }
+.modal-dialog .modal-body .dropdown-menu li{ text-align: left; padding: 0 12px; }
+
+/*蒙层*/
+.tpl-content .header-nav .mask-wrap .mask{ position: absolute; width: 1010px; top: 0; left: 0; height: 42px; }
+.tpl-content .header-nav .mask-wrap .mask:hover{ filter:alpha(opacity = 30); -moz-opacity: 0.7;  -khtml-opacity: 0.7; opacity: 0.7; background-color: #36a2e6; }
+
+.tpl-content .sort-wrap .sort .mask{ position: absolute; width: 200px; height: 498px; top: -42px; left: 0; z-index: 9999999; }
+.tpl-content .sort-wrap .sort .mask:hover{ filter:alpha(opacity = 30); -moz-opacity: 0.7;  -khtml-opacity: 0.7; opacity: 0.7; background-color: #36a2e6; }
+
+.tpl-content .bd .mask{ position: absolute; width: 100%; height: 456px; top: 0; left: 0; }
+.tpl-content .bd .mask:hover{ filter:alpha(opacity = 30); -moz-opacity: 0.7;  -khtml-opacity: 0.7; opacity: 0.7; background-color: #36a2e6; }
+
+.tpl-content .notice-ad .mask{ position: absolute; width: 100%; height: 100%; top: 0; left: 0; }
+.tpl-content .notice-ad .mask:hover{ filter:alpha(opacity = 30); -moz-opacity: 0.7;  -khtml-opacity: 0.7; opacity: 0.7; background-color: #36a2e6; }
+
+.tpl-content .hot-wrap .hot-ad .mask{ position: absolute; top: 0; z-index: 99999; width: 100%; height: 100%; }
+.tpl-content .hot-wrap .hot-ad .mask:hover{ filter:alpha(opacity = 30); -moz-opacity: 0.7;  -khtml-opacity: 0.7; opacity: 0.7; background-color: #36a2e6; }
+
+.tpl-content .brand-wrap .brand .mask{ position: absolute; top: 0; left: 298px; width: 912px; height: 180px; }
+.tpl-content .brand-wrap .brand li .mask{ width: 298px; height: 180px; left: 0; }
+.tpl-content .brand-wrap .brand .mask:hover{ filter:alpha(opacity = 30); -moz-opacity: 0.7;  -khtml-opacity: 0.7; opacity: 0.7; background-color: #36a2e6; }
+
+.tpl-content .rd-good-module .good-wrap .activity .mask{ position: absolute; top: 0; width: 100%; height: 100%; z-index: 999; }
+.tpl-content .rd-good-module .good-wrap .activity .mask:hover{ filter:alpha(opacity = 30); -moz-opacity: 0.7;  -khtml-opacity: 0.7; opacity: 0.7; background-color: #36a2e6; }
+
+.tpl-content .floor-wrap .nav-tit .mask{ position: absolute; top: 0; z-index: 999; width: 127px; height: 30px; }
+.tpl-content .floor-wrap .nav-content .mask{ position: absolute; top: 0; z-index: 999; width: 233px; height: 30px; }
+.tpl-content .floor-wrap .mask:hover{ cursor: pointer; filter:alpha(opacity = 30); -moz-opacity: 0.7;  -khtml-opacity: 0.7; opacity: 0.7; background-color: #36a2e6; }
+.tpl-content .fes-activity>ul .mask{ position: absolute; width: 100%; height: 100%; top: 0; z-index: 999; }
+
+.tpl-content .floor-goods-type2 li a.ad1 .mask{ position: absolute; width: 333px; height: 250px; }
+.tpl-content .floor-goods-type2 .content-sort .mask{ position: absolute; top: 0; left: 0; width: 333px; height: 250px; }
+.tpl-content .floor-goods-type2 li a.ad2 .mask{ position: absolute; width: 438px; height: 250px; }
+.tpl-content .f-content > .mask{ position: absolute; left: 333px; top: 0; width: 877px; height: 500px; }
+
+
+/*拖拽框*/
+/*.dd-handle, .dd2-content{ color: #505050; background: none; border: none; }
+.dd-handle:hover, .dd2-content:hover{ color: #505050; }*/

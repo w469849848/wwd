@@ -1,0 +1,373 @@
+<!DOCTYPE html>
+<html lang="zh-CN">
+
+	<head>
+		<meta charset="utf-8">
+		<meta http-equiv="X-UA-Compatible" content="IE=edge">
+		<meta name="viewport" content="width=device-width, initial-scale=1">
+		<title>用户注册</title>
+		<link href="http://7xqveg.com1.z0.glb.clouddn.com/bootstrap.min.css" rel="stylesheet">
+		<link href="assets/css/register.css" rel="stylesheet">
+		<link rel="stylesheet" href="assets/css/ace.min.css" />
+	</head>
+
+	<body>
+		<div class="heade">
+		</div>
+		<div class="forget_password_main">
+			<div class="forget_password_titer">
+				<img src="assets/images/register/bglogo.gif" class="logo_bg">
+				<h4>注册</h4>
+			</div>
+			<h5 class="reg_titer">基础信息</h5>
+
+			<form>
+				<div class="user_phone">
+					<i class="ico_user"><img src="assets/images/register/btn_bg1.gif"></i>
+					<input type="text" class="user_inp login_input" placeholder="手机号码" autocomplete="off">
+				</div>
+
+				<div class="user_yzm">
+					<i class="ico_user"><img src="assets/images/register/btn_bg3.gif"></i>
+					<input type="text" class="yzm_inp login_input" placeholder="验证码" autocomplete="off">
+				</div>
+
+				<div class="user_yzm1">
+					<a href="javascript:void(0)" class="getYzm"><input class="getCode" type="button" value="获取验证码" /></a>
+				</div>
+
+				<div class="user_password">
+					<i class="ico_user"><img src="assets/images/register/btn_bg2.gif"></i>
+					<input type="password" class="user_inp login_input" placeholder="密码" autocomplete="off" minlength="6">
+				</div>
+
+				<div class="user_password">
+					<i class="ico_user"><img src="assets/images/register/btn_bg2.gif"></i>
+					<input type="password" class="user_inp login_input" placeholder="密码确认" autocomplete="off">
+				</div>
+
+				<div class="user_password">
+					<input type="text" class="text_inp login_input" placeholder="业务员推荐/其他店铺推荐" autocomplete="off">
+				</div>
+
+				<h5 class="regth_titer">店铺基础信息</h5>
+
+				<div class="user_password">
+					<input type="text" class="text_inp login_input" placeholder="店主姓名" autocomplete="off">
+				</div>
+
+				<div class="user_password">
+					<input type="text" class="text_inp login_input" placeholder="店铺名称/(门头店名)" autocomplete="off">
+				</div>
+
+				<div class="user_password">
+					<input type="text" class="text_inp login_input" placeholder="店铺地址(省市区及详细地址)" autocomplete="off">
+				</div>
+
+				<div class="Business_event">
+					<h5 class="buss_text">营业时间：早上</h5>
+					<input class="buss_am" type="text"></input>
+					<h4 class="buss_text">:</h4>
+					<input class="buss_am" type="text"></input>
+					<h5 class="buss_text">—</h5>
+					<h5 class="buss_text">晚上</h5>
+					<input class="buss_am" type="text"></input>
+					<h4 class="buss_text">:</h4>
+					<input class="buss_am" type="text"></input>
+				</div>
+
+				<h5 class="regth_titer">店铺其他信息</h5>
+
+			</form>
+			<div class="add-box">
+				<!-- 新增经销商 -->
+				<form>
+
+					<p class="row">
+						<div class="col-md-5">
+							<div class="col-md-12 mr">
+								<div class="col-md-12 dropdown-wrap">
+									<a class="dropdown-btn border border-radius bg-color dropdown-toggle" href="javascript:void(0)" data-toggle="dropdown" role="button" aria-haspopup="true" aria-expanded="true">
+										<span class="item-name">店铺所属</span>
+										<span class="dr"><img src="assets/images/register/arrow-black.png"/></span>
+									</a>
+									<ul class="dropdown-menu" aria-labelledby="salesman-type">
+										<li>社区店</li>
+										<li>学校店</li>
+										<li>街道店</li>
+										<li>办公区</li>
+										<li>菜市场</li>
+										<li>其他</li>
+
+									</ul>
+								</div>
+							</div>
+
+							<div class="col-md-12 mr">
+								<div class="col-md-12 dropdown-wrap">
+									<a class="dropdown-btn border border-radius bg-color dropdown-toggle" href="javascript:void(0)" data-toggle="dropdown" role="button" aria-haspopup="true" aria-expanded="true">
+										<span class="item-name">店铺年龄</span>
+										<span class="dr"><img src="assets/images/register/arrow-black.png"/></span>
+									</a>
+									<ul class="dropdown-menu" aria-labelledby="salesman-type">
+										<li>一年以内</li>
+										<li>1-3年</li>
+										<li>3-5年</li>
+										<li>5年以上</li>
+									</ul>
+								</div>
+							</div>
+
+							<div class="col-md-12 mr">
+								<div class="col-md-12 dropdown-wrap">
+									<a class="dropdown-btn border border-radius bg-color dropdown-toggle" href="javascript:void(0)" data-toggle="dropdown" role="button" aria-haspopup="true" aria-expanded="true">
+										<span class="item-name">店铺面积</span>
+										<span class="dr"><img src="assets/images/register/arrow-black.png"/></span>
+									</a>
+									<ul class="dropdown-menu" aria-labelledby="salesman-type">
+										<li>10平方以下</li>
+										<li>10-30平方</li>
+										<li>30-50平方</li>
+										<li>50-100平方</li>
+										<li>100平方以上</li>
+									</ul>
+								</div>
+							</div>
+
+							<div class="col-md-12 mr">
+								<div class="col-md-12 dropdown-wrap">
+									<a class="dropdown-btn border border-radius bg-color dropdown-toggle" href="javascript:void(0)" data-toggle="dropdown" role="button" aria-haspopup="true" aria-expanded="true">
+										<span class="item-name">月营业额</span>
+										<span class="dr"><img src="assets/images/register/arrow-black.png"/></span>
+									</a>
+									<ul class="dropdown-menu" aria-labelledby="salesman-type">
+										<li>一万以下</li>
+										<li>1-3万</li>
+										<li>3-5万</li>
+										<li>5-10万</li>
+										<li>10万以上</li>
+									</ul>
+								</div>
+							</div>
+						</div>
+						<div class="col-md-1"></div>
+						<div class="col-md-6 upload_mr">
+							<input type="file" class="upload">
+							<div class="upload_bg"><img src="assets/images/register/upload.png">
+								<h5>上传营业执照</h5>
+							</div>
+						</div>
+					</p>
+
+					<div class="col-md-12 mr">
+						<div class="col-md-12 dropdown-wrap">
+							<a class="dropdown-btn border border-radius bg-color dropdown-toggle" href="javascript:void(0)" data-toggle="dropdown" role="button" aria-haspopup="true" aria-expanded="true">
+								<span class="item-name">店铺类型</span>
+								<span class="dr"><img src="assets/images/register/arrow-black.png"/></span>
+							</a>
+							<ul class="dropdown-menu" aria-labelledby="salesman-type">
+
+								<li>标准超市</li>
+								<li>母婴店</li>
+								<li>粮油店</li>
+								<li>文具店</li>
+								<li>菜场餐馆（调味、生鲜）</li>
+								<li>水果店（水果、生鲜、休闲)</li>
+
+							</ul>
+						</div>
+					</div>
+
+					<div class="col-md-12 mr">
+						<div class="col-md-12 dropdown-wrap">
+							<a class="dropdown-btn border border-radius bg-color dropdown-toggle" href="javascript:void(0)" data-toggle="dropdown" role="button" aria-haspopup="true" aria-expanded="true">
+								<span id="shop_posi">店铺位置(可多选)</span>
+								<span class="dr"><img src="assets/images/register/arrow-black.png"/></span>
+							</a>
+							<ul class="dropdown-menu roll" aria-labelledby="salesman-type">
+								<div class="row">
+									<div class="col-md-2 position_check">
+										<label class="checked-wrap">
+							<input type="checkbox" class="chk check_md" />
+							<span class="chk-bg check_md"></span>
+							<h5 class="change_tit">社区</h5>
+							</label>
+									</div>
+
+									<div class="col-md-2 position_check">
+										<label class="checked-wrap">
+							<input type="checkbox" class="chk check_md" />
+							<span class="chk-bg"></span>
+							<h5 class="change_tit">校区</h5>
+							</label>
+									</div>
+
+									<div class="col-md-2 position_check">
+										<label class="checked-wrap">
+							<input type="checkbox" class="chk check_md" />
+							<span class="chk-bg"></span>
+							<h5 class="change_tit">街道</h5>
+							</label>
+									</div>
+
+									<div class="col-md-2 position_check">
+										<label class="checked-wrap">
+							<input type="checkbox" class="chk" />
+							<span class="chk-bg"></span>
+							<h5 class="change_tit">菜市场</h5>
+							</label>
+									</div>
+								</div>
+
+								<div class="row">
+									<div class="col-md-2 position_check">
+										<label class="checked-wrap">
+							<input type="checkbox" class="chk check_md" />
+							<span class="chk-bg check_md"></span>
+							<h5 class="change_tit">运动区</h5>
+							</label>
+									</div>
+
+									<div class="col-md-2 position_check">
+										<label class="checked-wrap">
+							<input type="checkbox" class="chk check_md" />
+							<span class="chk-bg"></span>
+							<h5 class="change_tit">办公区</h5>
+							</label>
+									</div>
+
+									<div class="col-md-2 position_check">
+										<label class="checked-wrap">
+							<input type="checkbox" class="chk check_md" />
+							<span class="chk-bg"></span>
+							<h5 class="change_tit">其他</h5>
+							</label>
+									</div>
+
+									<div class="col-md-2 position_check">
+										<label class="checked-wrap">
+							<input type="checkbox" class="chk" />
+							<span class="chk-bg"></span>
+							<h5 class="change_tit">菜市场</h5>
+							</label>
+									</div>
+								</div>
+
+								<div class="row">
+									<div class="col-md-2 position_check">
+										<label class="checked-wrap">
+							<input type="checkbox" class="chk check_md" />
+							<span class="chk-bg check_md"></span>
+							<h5 class="change_tit">社区</h5>
+							</label>
+									</div>
+
+									<div class="col-md-2 position_check">
+										<label class="checked-wrap">
+							<input type="checkbox" class="chk check_md" />
+							<span class="chk-bg"></span>
+							<h5 class="change_tit">校区</h5>
+							</label>
+									</div>
+
+									<div class="col-md-2 position_check">
+										<label class="checked-wrap">
+							<input type="checkbox" class="chk check_md" />
+							<span class="chk-bg"></span>
+							<h5 class="change_tit">广场</h5>
+							</label>
+									</div>
+
+									<div class="col-md-2 position_check">
+										<label class="checked-wrap">
+							<input type="checkbox" class="chk" />
+							<span class="chk-bg"></span>
+							<h5 class="change_tit">菜市场</h5>
+							</label>
+									</div>
+								</div>
+
+								<div class="row">
+									<div class="col-md-2 position_check">
+										<label class="checked-wrap">
+							<input type="checkbox" class="chk check_md" />
+							<span class="chk-bg check_md"></span>
+							<h5 class="change_tit">社区</h5>
+							</label>
+									</div>
+
+									<div class="col-md-2 position_check">
+										<label class="checked-wrap">
+							<input type="checkbox" class="chk check_md" />
+							<span class="chk-bg"></span>
+							<h5 class="change_tit">校区</h5>
+							</label>
+									</div>
+
+									<div class="col-md-2 position_check">
+										<label class="checked-wrap">
+							<input type="checkbox" class="chk check_md" />
+							<span class="chk-bg"></span>
+							<h5 class="change_tit">办公区</h5>
+							</label>
+									</div>
+
+									<div class="col-md-2 position_check">
+										<label class="checked-wrap">
+							<input type="checkbox" class="chk" />
+							<span class="chk-bg"></span>
+							<h5 class="change_tit">其他</h5>
+							</label>
+									</div>
+								</div>
+
+							</ul>
+						</div>
+					</div>
+
+					<div class="col-md-12 mr">
+						<label class="co-md-3 check_select checked-wrap">
+							<input name="Fruit" type="checkbox" class="chk chk_inp" />
+							<span class="chk-bg"></span>
+							<h5 class="check_tit">是否有宽带</h5>
+						</label>
+
+						<label class="col-md-3 check_select checked-wrap">
+						<input name="Fruit" type="checkbox" class="chk chk_inp" />
+							<span class="chk-bg"></span>
+							<h5 class="check_tit">是否有POS机</h5>
+						</label>
+
+						<label class="col-md-3 check_select checked-wrap">
+						<input name="Fruit" type="checkbox" class="chk chk_inp" />
+							<span class="chk-bg"></span>
+							<h5 class="check_tit">是否接收银行卡</h5>
+						</label>
+					</div>
+
+					<div class="col-md-12 comfirm">
+						<h5>"是"的请在勾选框打钩</h5>
+					</div>
+					<div class="col-md-12 agree_check">
+
+						<h5>单击"注册"即表示你同意<a href="#">万店易购服务协议</a>以及<a href="#">隐私</a></h5>
+					</div>
+
+					<div class="col-md-12 btn_pd">
+						<a href="javascript:void(0)" class="register_submit" type="submit">注册</a>
+					</div>
+
+				</form>
+			</div>
+
+			<footer class="footer_col">
+				<p>◎ 2016 万店易购&nbsp;&nbsp;&nbsp;<a href="#">使用条款</a>&nbsp;&nbsp;&nbsp;<a href="#">隐私</a></p>
+			</footer>
+
+			<script src="assets/js/jquery-2.0.3.min.js"></script>
+			<script src="assets/js/bootstrap.min.js"></script>
+			<script src="assets/js/register.js"></script>
+			<script src="assets/js/checked.js"></script>
+	</body>
+
+</html>

@@ -1,0 +1,35 @@
+<!--推荐商品页面模板-->
+<div class="activity pw ma">
+				<ul class="activity-nav clearfix">
+					#foreach($recommendProduct in ${productList})
+						#if($velocityCount==1)
+							<li class="active" index="$velocityCount">
+						#else
+							<li index="$velocityCount">
+						#end
+						<a class="ac-nav" href="javascript:void(0)">${recommendProduct.title}</a></li>
+						#end
+				</ul>
+				
+				#foreach($recommendProduct in ${productList})
+				
+					#if($velocityCount==1)
+							<div class="brand-zone activity-item-new" index="$velocityCount">
+						#else
+							<div class="brand-zone activity-item-new hide" index="$velocityCount">
+						#end
+					<ul class="clearfix">
+						#foreach($product in ${recommendProduct.productList})
+						<li>
+							<div class="n-g-item">
+								<a href="/egolm-shop-web/goods/detail?goodsID=${product.id}">
+									<img src="${product.img}" style="width:160px;height:180px"/>
+								</a>
+							</div>
+							<i class="spacer"></i>
+						</li>
+						#end
+					</ul>
+				</div>
+				#end
+			</div>

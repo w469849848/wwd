@@ -1,0 +1,207 @@
+body {
+	background: #fff;
+}
+
+.user-infor {
+	height: 3.214rem;
+	border-bottom:1px solid #eee; 
+}
+
+.user-infor p {
+	text-align: center;
+	line-height: 3.214rem;
+	font-size: 1.4rem;
+	color: #424242;
+}
+
+.infor-select {
+	height: 6.428rem;
+	/*border-bottom:1px solid #eee;*/ 
+}
+
+.infor-select ul  {
+	height: 6.428rem;
+	margin: 0 1.428rem;
+	border-bottom:1px solid #eee; 
+}
+
+.infor-select ul li {
+	width: 6.785rem;
+	height: 2.857rem;
+	background:#eee; 
+	float:left;
+	margin-left:1.6rem; 
+	margin-top:1.785rem;
+	border-radius: 5px;
+}
+
+ .infor-select ul li:first-child {
+	margin-left: 0;
+} 
+
+.infor-select ul li select{
+	width: 6.785rem;
+	height: 2.857rem;
+	background: #eee;
+	border-radius: 5px;
+	border:0;
+	-webkit-appearance: none;
+	-o-appearance:none;
+	-ms-appearance:none;
+	text-align: center;
+	margin: 0 auto;
+	padding-left: 1.3rem;
+	color: #656565;
+	line-height: 2.857rem;
+}
+
+.infor-select ul li select option {
+	width: 6.785rem;
+	height: 2.857rem;
+	background: #eee;
+	border-top:1px solid #d3d3d3; 
+	text-align: center;
+}
+
+.infor-select ul li select option p {
+	width: 100%;
+	height: 100%;
+	text-align: center;
+}
+
+	
+/*.sec-pd{
+	padding-left: 2.5rem!important;	
+}*/
+
+.register-pd-th{
+	height: 3.214rem;
+	width: 100%;
+	margin-top:1px;	 
+}
+
+.register-pd {
+	margin: 0 1.428rem;
+	height: 3.214rem;
+	border-bottom:1px solid #eee;
+}
+
+.register-tel {
+	width: 100%;
+	height: 100%;
+	border: 0;
+}
+
+.weixin-yzm {
+	height: 100%;
+	width: 14.285rem;
+	float: left;
+}
+
+.get-yzm {
+	display: block;
+	float: left;
+	width: 6.428rem;
+	height: 2.5rem;
+	background: #ff6400;
+	color: #fff;
+	text-align: center;
+	line-height:2.142rem;
+	margin:0.4rem 0 0 2.2rem;
+	border-radius: 5px;
+}
+
+.get-yzm input {
+	width: 6.428rem;
+	height: 2.5rem;
+	background: #ff6400;
+	color: #fff;
+	text-align: center;
+	line-height:2.5rem;
+	float: left;
+	border-radius: 5px;
+}
+
+.register-pass {
+	width: 100%;
+	height: 100%;
+	border: 0;
+}
+
+.register-next {
+	height: 3.214rem;
+	margin-top:3.5rem; 
+}
+
+.register-next a {
+	display: block;
+	height: 3.214rem;
+	width: rem;
+	background: #ff6400;
+	color: #fff;
+	text-align: center;
+	line-height: 3.214rem;
+	margin:0 3.392rem; 
+	border-radius: 5px;
+}
+
+.register-find {
+	height: 3rem;
+}
+
+.register-find p {
+	text-align: center;
+	line-height: 3rem;
+	color: #949494;
+	letter-spacing: 1px;
+}
+
+.register-find p a {
+	color: #ff6400;
+}
+
+/*注册2中间选择项*/
+
+.select-type-title {
+	height: 2.142rem;
+	margin: 0 1.428rem;	
+}
+
+.select-type-title p {
+	line-height: 2.142rem;
+}
+
+.select-typeth {
+	height: 15rem;
+}
+
+.select-typeth ul {
+	margin: 0 1.428rem;
+}
+
+.select-typeth ul li {
+	float: left;
+	padding: 1rem 1rem 0 0;
+}
+
+.select-typeth ul li a {
+	display: block;
+	width: 6.7rem;
+	height: 2.5rem;
+	background: #eee;
+	color: #959595;
+	line-height: 2.5rem;
+	text-align: center;
+	border-radius: 5px;
+	border:1px solid #eee;
+}
+
+.select-typeth ul li a:hover {
+	color: #ff6400;
+	border:1px solid #ff6400;
+	background: #fff;
+}
+
+
+
+

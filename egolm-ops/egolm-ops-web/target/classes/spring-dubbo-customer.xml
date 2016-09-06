@@ -1,0 +1,16 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<beans xmlns="http://www.springframework.org/schema/beans"
+	xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" xmlns:dubbo="http://code.alibabatech.com/schema/dubbo"
+	xsi:schemaLocation="http://www.springframework.org/schema/beans http://www.springframework.org/schema/beans/spring-beans-2.5.xsd
+    http://code.alibabatech.com/schema/dubbo http://code.alibabatech.com/schema/dubbo/dubbo.xsd">
+
+	<dubbo:reference id="idCustomerApi" interface="com.egolm.customer.api.ICustomerInfo" />
+	<dubbo:reference id="idGradeApi" interface="com.egolm.customer.api.IGradeInfo" />
+	<dubbo:reference id="idShopApi" interface="com.egolm.customer.api.IShopInfo" />
+	<dubbo:reference id="idShopPicApi" interface="com.egolm.customer.api.IShopPic" />
+	<dubbo:reference id="idShopCertifApi" interface="com.egolm.customer.api.IShopCertif" />
+	<dubbo:reference id="idShopCertifPicApi" interface="com.egolm.customer.api.IShopCertifPic" />
+	<dubbo:reference id="tShopLocationInfo" interface="com.egolm.customer.api.TShopLocationInfo" />
+	<dubbo:reference id="postSaleApi" interface="com.egolm.customer.api.PostSaleApi" />
+	
+</beans>

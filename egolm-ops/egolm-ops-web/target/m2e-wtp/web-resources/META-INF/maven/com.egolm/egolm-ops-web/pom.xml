@@ -1,0 +1,194 @@
+<project xmlns="http://maven.apache.org/POM/4.0.0" xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" xsi:schemaLocation="http://maven.apache.org/POM/4.0.0 http://maven.apache.org/xsd/maven-4.0.0.xsd">
+	<modelVersion>4.0.0</modelVersion>
+	<parent>
+		<groupId>com.egolm</groupId>
+		<artifactId>egolm-ops</artifactId>
+		<version>0.0.1-SNAPSHOT</version>
+	</parent>
+	<artifactId>egolm-ops-web</artifactId>
+	<packaging>war</packaging>
+
+	<dependencies>
+		<!-- Common -->
+		<dependency>
+			<groupId>com.egolm</groupId>
+			<artifactId>egolm-domain</artifactId>
+			<version>${project.version}</version>
+		</dependency>
+		<dependency>
+			<groupId>com.egolm</groupId>
+			<artifactId>egolm-common</artifactId>
+			<version>${project.version}</version>
+		</dependency>
+		
+		<!-- Cart -->
+		<dependency>
+			<groupId>com.egolm</groupId>
+			<artifactId>egolm-cart-api</artifactId>
+			<version>${project.version}</version>
+		</dependency>
+		
+		<!-- Advert -->
+		<dependency>
+			<groupId>com.egolm</groupId>
+			<artifactId>egolm-advert-domain</artifactId>
+			<version>${project.version}</version>
+		</dependency>
+		<dependency>
+			<groupId>com.egolm</groupId>
+			<artifactId>egolm-advert-api</artifactId>
+			<version>${project.version}</version>
+		</dependency>
+		
+		<!-- Dealer -->
+		<dependency>
+			<groupId>com.egolm</groupId>
+			<artifactId>egolm-dealer-domain</artifactId>
+			<version>${project.version}</version>
+		</dependency>
+		<dependency>
+			<groupId>com.egolm</groupId>
+			<artifactId>egolm-dealer-api</artifactId>
+			<version>${project.version}</version>
+		</dependency>
+		
+		<!-- Goods -->
+		<dependency>
+			<groupId>com.egolm</groupId>
+			<artifactId>egolm-goods-domain</artifactId>
+			<version>${project.version}</version>
+		</dependency>
+		<dependency>
+			<groupId>com.egolm</groupId>
+			<artifactId>egolm-goods-api</artifactId>
+			<version>${project.version}</version>
+		</dependency>
+		
+		<!-- IDC -->
+		<dependency>
+			<groupId>com.egolm</groupId>
+			<artifactId>egolm-idc-api</artifactId>
+			<version>${project.version}</version>
+		</dependency>
+		
+		<!-- Notice -->
+		<dependency>
+			<groupId>com.egolm</groupId>
+			<artifactId>egolm-notice-domain</artifactId>
+			<version>${project.version}</version>
+		</dependency>
+		<dependency>
+			<groupId>com.egolm</groupId>
+			<artifactId>egolm-notice-api</artifactId>
+			<version>${project.version}</version>
+		</dependency>
+		
+		<!-- Sales -->
+		<dependency>
+			<groupId>com.egolm</groupId>
+			<artifactId>egolm-sales-domain</artifactId>
+			<version>${project.version}</version>
+		</dependency>
+		<dependency>
+			<groupId>com.egolm</groupId>
+			<artifactId>egolm-sales-api</artifactId>
+			<version>${project.version}</version>
+		</dependency>
+		
+		<!-- Member -->
+		<dependency>
+			<groupId>com.egolm</groupId>
+			<artifactId>egolm-member-domain</artifactId>
+			<version>${project.version}</version>
+		</dependency>
+		<dependency>
+			<groupId>com.egolm</groupId>
+			<artifactId>egolm-member-api</artifactId>
+			<version>${project.version}</version>
+		</dependency>
+
+		<!-- config support -->
+		<dependency>
+			<groupId>com.egolm</groupId>
+			<artifactId>egolm-config</artifactId>
+			<version>${project.version}</version>
+		</dependency>
+		
+		<!-- Base -->
+		<dependency>
+			<groupId>com.egolm</groupId>
+			<artifactId>egolm-base-api</artifactId>
+			<version>${project.version}</version>
+		</dependency>
+		
+		<!-- Customer -->
+		<dependency>
+			<groupId>com.egolm</groupId>
+			<artifactId>egolm-customer-domain</artifactId>
+			<version>${project.version}</version>
+		</dependency>
+		<dependency>
+			<groupId>com.egolm</groupId>
+			<artifactId>egolm-customer-api</artifactId>
+			<version>${project.version}</version>
+		</dependency>
+		
+		<!-- Security -->
+		<dependency>
+			<groupId>com.egolm</groupId>
+			<artifactId>egolm-security</artifactId>
+			<version>${project.version}</version>
+		</dependency>
+		<!-- report -->
+		<dependency>
+			<groupId>com.egolm</groupId>
+			<artifactId>egolm-report-api</artifactId>
+			<version>${project.version}</version>
+		</dependency>
+		<!-- Order -->
+		<dependency>
+			<groupId>com.egolm</groupId>
+			<artifactId>egolm-order-domain</artifactId>
+			<version>${project.version}</version>
+		</dependency>
+		<dependency>
+			<groupId>com.egolm</groupId>
+			<artifactId>egolm-order-api</artifactId>
+			<version>${project.version}</version>
+		</dependency>
+		
+		<!-- Msggate -->
+		<dependency>
+			<groupId>com.egolm</groupId>
+			<artifactId>egolm-msggate-domain</artifactId>
+			<version>${project.version}</version>
+		</dependency>
+		<dependency>
+			<groupId>com.egolm</groupId>
+			<artifactId>egolm-msggate-api</artifactId>
+			<version>${project.version}</version>
+		</dependency>
+		
+		<!-- Open -->
+		<dependency>
+			<groupId>com.egolm</groupId>
+			<artifactId>egolm-open-domain</artifactId>
+			<version>${project.version}</version>
+		</dependency>
+		<dependency>
+			<groupId>com.egolm</groupId>
+			<artifactId>egolm-open-api</artifactId>
+			<version>${project.version}</version>
+		</dependency>
+	</dependencies>
+	<build>
+		<plugins>
+			<plugin>
+				<artifactId>maven-war-plugin</artifactId>
+				<configuration>
+					<version>3.0</version>
+				</configuration>
+			</plugin>
+		</plugins>
+	</build>
+</project>

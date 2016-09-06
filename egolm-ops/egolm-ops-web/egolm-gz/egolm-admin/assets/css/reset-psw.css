@@ -1,0 +1,22 @@
+.reset-box { border: 1px solid #e5e5e5; background-color: #fff; border-radius: 5px; -webkit-border-radius: 5px; -moz-border-radius: 5px; padding: 40px 38px; font-size: 14px; }
+.reset-box form p:last-child{ margin-top: 20px; text-align: center; }
+.reset-box form p:last-child label input:first-child{ margin-right: 50px; }
+.reset-box form small>span,.reset-box form small>span>span{ padding: 0; font-size: 14px; line-height: 40px; }
+.reset-box form small select{ height: 38px; width: 100%; line-height: 26px; padding-right: 24px; }
+.reset-box form small select.province{ margin-right:10%; }
+.reset-box form input[type="text"]{ height: 38px; }
+.reset-box form input[type="text"],.reset-box form textarea{ width: 100%; }
+.reset-box form textarea{ resize: none; }
+.reset-box form input[type="button"]{ padding: 8px 15px; color: #fff; background-color: #ff6400; text-align: center; float: none; max-width: 180px; outline: none; }
+.reset-box form small label{ position: relative; }
+.reset-box form small label span.dr{ position: absolute; display: block; height: 7px; width: 12px; top: 50%; right: 10px; margin-top: -4px; }
+.reset-box form small label span.dr img{ display: block;}
+.col-xs-1, .col-xs-2, .col-xs-3, .col-xs-4, .col-xs-5, .col-xs-6, .col-xs-7, .col-xs-8, .col-xs-9, .col-xs-10, .col-xs-11, .col-xs-12, .col-sm-1, .col-sm-2, .col-sm-3, .col-sm-4, .col-sm-5, .col-sm-6, .col-sm-7, .col-sm-8, .col-sm-9, .col-sm-10, .col-sm-11, .col-sm-12, .col-md-1, .col-md-2, .col-md-3, .col-md-4, .col-md-5, .col-md-6, .col-md-7, .col-md-8, .col-md-9, .col-md-10, .col-md-11, .col-md-12, .col-lg-1, .col-lg-2, .col-lg-3, .col-lg-4, .col-lg-5, .col-lg-6, .col-lg-7, .col-lg-8, .col-lg-9, .col-lg-10, .col-lg-11, .col-lg-12{ padding: 0; }
+
+.border-radius{ border-radius: 2px !important; -webkit-border-radius: 2px !important; -moz-border-radius: 2px !important; }
+
+@media only screen and (max-width: 767px) {
+	.reset-box{ padding-left: 22px !important; padding-right: 22px !important; }
+	.reset-box form input[type="button"]{ width: 37%; }
+	.reset-box form p:last-child label input:first-child{ margin-right: 20%; }
+}

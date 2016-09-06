@@ -1,0 +1,24 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<beans xmlns="http://www.springframework.org/schema/beans" xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" xmlns:dubbo="http://code.alibabatech.com/schema/dubbo" xsi:schemaLocation="http://www.springframework.org/schema/beans http://www.springframework.org/schema/beans/spring-beans-2.5.xsd
+    http://code.alibabatech.com/schema/dubbo http://code.alibabatech.com/schema/dubbo/dubbo.xsd">
+
+	<dubbo:application name="${appName}" owner="egolm.com" organization="egolm.com" />
+	<dubbo:registry address="zookeeper://${zkConnString}" check="false" group="${dubboRegistryPath}" file="${user.home}/dubbo_cache/${appName}.cache" />
+	<dubbo:consumer timeout="120000" retries="0" check="false" />
+
+	<import resource="spring-dubbo-advert.xml" />
+	<import resource="spring-dubbo-base.xml" />
+	<import resource="spring-dubbo-customer.xml" />
+	<import resource="spring-dubbo-dealer.xml" />
+	<import resource="spring-dubbo-goods.xml" />
+	<import resource="spring-dubbo-notice.xml" />
+	<import resource="spring-dubbo-salesman.xml" />
+	<import resource="spring-dubbo-member.xml" />
+	<import resource="spring-dubbo-driver.xml" />
+	<import resource="spring-dubbo-order.xml" />
+	<import resource="spring-dubbo-report.xml" />
+	<import resource="spring-dubbo-open.xml" />
+	<import resource="spring-config.xml" /> 
+	<import resource="classpath*:spring/security/security.xml" />
+	
+</beans>

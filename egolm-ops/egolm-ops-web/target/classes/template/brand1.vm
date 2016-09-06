@@ -1,0 +1,52 @@
+
+<!--品牌模块页面模板-->
+	
+			<div class="brand pw ma mb-20">
+				<div class="brand-nav clearfix">
+					<div class="fl tit"><span style="padding-left:30px;">热门品牌</span></div>
+					<div class="fr"><a href="/egolm-shop-web/brands/brands">更多</a></div>
+				</div>
+				
+				<ul id="brandZone" class="clearfix">
+					<li>
+						<div class="brand-item" adslide="true">
+								<ul>
+													
+													#foreach($advert in $advertList)
+												
+													<li style="text-align:center;width:297px;height:100%;">
+													
+														#if(!$advert.productName)
+														<a href="${advert.url}"><img isad="true" isshow="false" data-original="${advert.img}" style="width:297px;height:179px;"  ad_id="${advert.id}" ap_id="${advert.apId}"/></a>
+														#end
+														#if($advert.productName)
+														<a href="${advert.url}">
+														<div class="good-item">
+														<div class="pic">
+															<img isshow="false" data-original="${advert.img}" isad="true" style="width:297px;height:179px;"  ad_id="${advert.id}" ap_id="${advert.apId}"/>
+														</div>
+														<div class="intro">
+															<p>${advert.productName}</p>
+															<p class="orange fw"><i class="f-rmb">¥</i>${advert.productPrice}元/<span>${advert.productUnit}</span></p>
+														</div>
+														</div>
+														</a>
+														#end
+													</li>
+													#end
+												</ul>
+						</div>
+					</li>
+					
+					#foreach($brand in $brandList)
+					<li>
+						<div class="brand-item">
+						<a href="/egolm-shop-web/brands/brandGoods?brandsID=${brand.id}">
+							<img src="${brand.img}">
+						</a>
+						</div>
+					</li>
+					#end
+					
+				
+			</div>

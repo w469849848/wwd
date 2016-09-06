@@ -1,0 +1,23 @@
+.vip-wrap{ margin-bottom: 20px; }
+.vip-wrap .vip-info{ padding: 20px 32px 0; }
+.vip-wrap .vip-info>label{ margin-right: 20px; margin-bottom: 20px; }
+.vip-wrap .vip-info>label>span{ display: inline-block; width: 90px; }
+.vip-wrap .vip-info>label input{ width: 340px; height: 38px; }
+.vip-wrap .vip-info>label .dropdown-wrap{ display: inline-block; width: 340px; height: 38px; margin-left: -7px; }
+.vip-wrap .vip-info>label .dropdown-wrap input{ padding-right: 38px; }
+.vip-wrap .vip-info>label .dropdown-wrap>label{ width: 150px; height: 38px; position: relative; }
+.vip-wrap .vip-info>label .dropdown-wrap>label input{ width: 100%; }
+.vip-wrap .vip-info>label .dropdown-wrap>label span.dr img{ width: 21px; height: 22px; margin-left: -10.5px; margin-top: -11px; }
+.vip-wrap .vip-info>label .dropdown-wrap>span{ position: relative; top: -1px; display: inline-block; width: 26px; height: 38px; text-align: center; line-height: 38px; }
+
+.filter-wrap>p{ margin: 10px 0; }
+
+
+/*自定义下拉框*/
+.vip-wrap a.dropdown-btn{ position: relative; height: 38px; line-height: 28px; padding: 5px 12px; padding-right: 25px; text-decoration: none; }
+.vip-wrap a.dropdown-btn:focus{ color: #505050; }
+.vip-wrap a.dropdown-btn:hover{ color: #505050; }
+.vip-wrap span.input-tips{ line-height: 40px; }
+.vip-wrap span.dr{ position: absolute; display: block; width: 38px; height: 38px; top: 50%; margin-top: -19px; right: 0; background: #e5e5e5; }
+.vip-wrap span.dr img{ position: absolute; top: 50%; left: 50%; margin-top: -3.5px; margin-left: -6px; display: block; width: 12px; height: 7px; }
+.vip-wrap .dropdown-menu li{ text-align: left; padding: 0 12px; }

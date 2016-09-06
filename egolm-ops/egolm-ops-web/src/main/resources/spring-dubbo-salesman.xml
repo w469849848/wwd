@@ -1,0 +1,25 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<beans xmlns="http://www.springframework.org/schema/beans"
+	xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" xmlns:dubbo="http://code.alibabatech.com/schema/dubbo"
+	xsi:schemaLocation="http://www.springframework.org/schema/beans http://www.springframework.org/schema/beans/spring-beans-2.5.xsd
+    http://code.alibabatech.com/schema/dubbo http://code.alibabatech.com/schema/dubbo/dubbo.xsd">
+
+  	<dubbo:reference id="salesManQueryApi" interface="com.egolm.sales.api.SalesManQueryApi" /> 
+  	<dubbo:reference id="salesManAddApi" interface="com.egolm.sales.api.SalesManAddApi" /> 
+  	<dubbo:reference id="salesManUpdateApi" interface="com.egolm.sales.api.SalesManUpdateApi" /> 
+  	<dubbo:reference id="salesManCleanApi" interface="com.egolm.sales.api.SalesManCleanApi" />   	
+    
+  	<dubbo:reference id="salesRewardParamQueryApi" interface="com.egolm.sales.api.SalesRewardParamQueryApi" /> 
+  	<dubbo:reference id="salesRewardParamAddApi" interface="com.egolm.sales.api.SalesRewardParamAddApi" /> 
+  	<dubbo:reference id="salesRewardParamUpdateApi" interface="com.egolm.sales.api.SalesRewardParamUpdateApi" /> 
+  	<dubbo:reference id="salesRewardParamCleanApi" interface="com.egolm.sales.api.SalesRewardParamCleanApi" />   	
+  	
+  	<dubbo:reference id="salesRewardDetailQueryApi" interface="com.egolm.sales.api.SalesRewardDetailQueryApi" /> 
+  	
+  	<!-- app -->
+  	<dubbo:reference id="salesManDailyLineApi" interface="com.egolm.sales.api.line.SalesManDailyLineApi" /> 
+  	<dubbo:reference id="salesManMetadataApi" interface="com.egolm.sales.api.metadata.SalesManMetadataApi" /> 
+  	<dubbo:reference id="salesManReportApi" interface="com.egolm.sales.api.report.SalesManReportApi" /> 
+  	<dubbo:reference id="salesManLineTaskApi"     interface="com.egolm.sales.api.line.SalesManTaskApi" />
+  	<dubbo:reference id="salesManTemplateApi"     interface="com.egolm.sales.api.line.SalesManTemplateApi" />
+</beans>

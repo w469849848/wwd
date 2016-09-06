@@ -1,0 +1,20 @@
+.filter-wrap span {
+	margin : auto 0px auto 5px;
+}
+
+.filter-wrap label {
+	width : 50%;
+}
+
+.filter-wrap label .filter {
+	width : 90%;
+}
+
+.filter-wrap .filter-select {
+	width : 13%;
+}
+
+.dropdown-btn {
+	width : 100%;
+}
+

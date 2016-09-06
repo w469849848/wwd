@@ -1,0 +1,46 @@
+a.detail{ display: inline-block; }
+.tpl{ margin-bottom: 20px; }
+.page-content .table-box table tbody tr td:nth-child(1){ width: auto !important; text-align: left; }
+
+.batch{ float: left; padding-left: 23px; }
+.batch label{ margin: 0; margin-left: 10px; }
+.batch label input{ height: 40px; padding-left: 20px; padding-right: 20px; }
+.batch label:nth-child(1){ margin: 0; }
+.batch label:nth-child(1) input[type=checkbox]{ width: 90px !important; }
+.batch label:nth-child(1) input{ margin-right: 8px; }
+.batch label:nth-child(2) input,.batch label:nth-child(3) input{ background-color: #ff6400 !important; color: #fff; }
+
+.filter-wrap{ margin-left: 0; margin-bottom: 0; margin-right: 0; padding: 12px 32px; }
+.filter-wrap label{ padding: 0; margin: 0; width: 35%; color: #505050; }
+.filter-wrap>span{ position: relative; top: -1px; }
+.filter-wrap label .filter{ -webkit-appearance: none; position: relative; left: -15px; height: 38px; line-height: 38px; width: 90%; border-radius: 2px !important; -webkit-border-radius: 2px !important; -moz-border-radius: 2px !important; border: 1px solid #e5e5e5; padding-left: 40px; }
+.filter-wrap .icon-search{ font-size: 18px; position: relative; left: 13px; z-index: 990; }
+.filter-wrap .icon-search::before{ content: ""; display: block; position: relative; top: 2px; width: 15px; height: 15px; background: url(../images/search.png) no-repeat; background-size: 100% 100%; -webkit-background-size: 100% 100%; }
+.filter-wrap .add-message{ float: right; font-weight: bold; width: 190px; height: 40px; line-height: 40px; text-align: center; text-decoration: none; color: #ff6400; background-size: 100% 100%; -webkit-background-size: 100% 100%; background: url(../images/add-man.png) no-repeat; }
+.filter-wrap .add-message a{ color: #ff6400; text-decoration: none; }
+.filter-wrap .add-message i{ margin-right: 2%; }
+.filter-wrap .add-message i.add-icon::before{ content: ""; display: inline-block; width: 15px; height: 15px; background: url(../images/add-icon.png) no-repeat; background-size: 100% 100%; -webkit-background-size: 100% 100%; position: relative; top: 2px; }
+
+
+.state{ position: relative; top: -2px; margin-right: 4px; }
+.filter-wrap .filter-select{ width: 18%; }
+.filter-wrap .dropdown-btn{ border-radius: 2px !important; -moz-border-radius: 2px !important; -webkit-border-radius: 2px !important; }
+
+/*自定义下拉框*/
+.filter-wrap div.row{ margin-bottom: 13px; }
+.filter-wrap a.dropdown-btn{ position: relative; height: 38px; line-height: 28px; padding: 5px 12px; padding-right: 38px; text-decoration: none; }
+.filter-wrap a.dropdown-btn:focus{ color: #505050; }
+.filter-wrap a.dropdown-btn:hover{ color: #505050; }
+.filter-wrap a.dropdown-btn span.item-name{ display: inline-block; width: 100%; border: none; overflow: hidden; text-overflow: ellipsis; white-space: nowrap; }
+.filter-wrap span.input-tips{ line-height: 40px; }
+.filter-wrap span.dr{ position: absolute; display: block; width: 38px; height: 38px; top: 50%; margin-top: -19px; right: 0; background: #e0e0e0; }
+.filter-wrap span.dr img{ position: absolute; top: 50%; left: 50%; margin-top: -3.5px; margin-left: -6px; display: block; width: 12px; height: 7px; }
+.filter-wrap .dropdown-menu li{ text-align: left; padding: 0 12px; }
+
+@media only screen and (max-width: 600px) {
+	.filter-wrap{ position: relative; }
+	.filter-wrap label{ width: 45%; float: left; margin-bottom: 10px; }
+	.filter-wrap .filter-select{ width: 45%; }
+	.filter-wrap .filter-select .dropdown-btn{ width: 90% !important; }
+	.filter-wrap>span{ float: left !important; margin-bottom: 10px; }
+}

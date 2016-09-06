@@ -1,0 +1,47 @@
+.traffic-analysis{ background: #e0e0e0; }
+.traffic-analysis .line-section{ padding-bottom: 10px; margin-bottom: 20px; background-color: #fff; border-radius: 2px; -webkit-border-radius: 2px; -moz-border-radius: 2px; }
+.traffic-analysis .line-section .tit{ position: relative; padding: 5px 30px 0; background-color: #f2f2f2; font-weight: bold; }
+.traffic-analysis .line-section .tit .spacer{ position: absolute; margin: auto; top: 13px; left: 15px; width: 2px; height: 12px; background-color: #ff6400; }
+.traffic-analysis .line-section .tit a{ display: inline-block; height: 30px; color: #444; text-decoration: none; line-height: 30px; padding: 0 8px; background-color: #e0e0e0; border-radius: 4px 4px 0 0; -webkit-border-radius: 4px 4px 0 0; -moz-border-radius: 4px 4px 0 0; }
+.traffic-analysis .line-section .tit a.btn-pc{ margin-right: 5px; }
+.traffic-analysis .line-section .tit a.active{ background-color: #fff; color: #4c4c4c; }
+
+.traffic-analysis .line-section .chart-type{ margin: 20px 40px; }
+.traffic-analysis .line-section .chart-type a{ display: inline-block; height: 20px; line-height:18px; text-decoration: none; border: 1px solid #bababa; padding: 0 5px; margin-right: 5px; color: #666; border-radius: 2px; -webkit-border-radius: 2px; -moz-border-radius: 2px; }
+.traffic-analysis .line-section .chart-type a.active{ background-color: #ff6400; color: #fff; border: 1px solid #ff6400; }
+
+.traffic-analysis .line-section .line-chart{ margin: 0 30px 20px; }
+
+.traffic-analysis .line-section .table-data{ padding: 0 30px; }
+.traffic-analysis .line-section .table-data table{ width: 100%; text-align: center; }
+.traffic-analysis .line-section .table-data table thead th{ border-left: 1px solid #f8f8f8; text-align: center; background-color: #f2f2f2; }
+.traffic-analysis .line-section .table-data table thead th:first-child{ border-left: 1px solid #e5e5e5; }
+.traffic-analysis .line-section .table-data table thead th:last-child{ border-right: 1px solid #e5e5e5; }
+.traffic-analysis .line-section .table-data table tbody td{ border-left: 1px solid #f8f8f8; }
+.traffic-analysis .line-section .table-data table tbody tr:last-child td{ border-bottom: 1px solid #e5e5e5; }
+.traffic-analysis .line-section .table-data table tbody td:first-child{ border-left: 1px solid #e5e5e5; }
+.traffic-analysis .line-section .table-data table tbody td:last-child{ border-right: 1px solid #e5e5e5; }
+
+.traffic-analysis .recent{ background: #fff; }
+.traffic-analysis .recent .graphical_box { margin: 0; }
+.traffic-analysis .recent .graphical_bd { padding: 0; margin: 0; line-height: 42px; }
+.traffic-analysis .recent .graphical_bd a{ display: block; font-weight: bold; color: #505050; text-decoration: none; border-bottom: 1px solid #e5e5e5; border-right: 1px solid #e5e5e5; background-color: #fcfcfc; }
+.traffic-analysis .recent .graphical_bd a.active{ color: #ff6400; border: none; background-color: #fff; }
+.traffic-analysis .recent .graphical_titer { padding: 0; }
+.traffic-analysis .recent .graphical_titer p { line-height:200%; font-weight: bold; }
+.traffic-analysis .recent .graphical_pm { padding: 1.8em 0; font-weight: bold; }
+.traffic-analysis .recent .graphical_sum { width: 100%; height: 100% border:1px solid white; }
+.traffic-analysis .recent .graphical_map { width: 100%; height: 100%; border:1px solid white; }
+.traffic-analysis .recent .graphical_col { width: 1.2em; height: 1.2em; }
+.traffic-analysis .recent .graphical_col{ float: left; margin-top: 2px; }
+.traffic-analysis .recent .graphical_num { float: left; padding-left:5px; width: 80%; }
+.traffic-analysis .recent .recent-item2 .graphical_num { width: auto; }
+.traffic-analysis .recent .graphical_main { padding: 0 0 45px 0; background: white; }
+
+
+.recent-item1,.recent-item2{ text-align: center; }
+.recent-item1 > div,.recent-item2 > div{ display: inline-block; float: none; }
+.recent-item1 .item-name{ display: inline-block; width: 60%; float: left; text-align: left; overflow: hidden; text-overflow: ellipsis; white-space: nowrap; }
+
+
+#aChart-line-chart-pc-rangeSelector,#aChart-line-chart-mobile-rangeSelector{ display: none !important; }

@@ -1,0 +1,2580 @@
+<!DOCTYPE html>
+<html lang="en">
+	<head>
+		<meta charset="utf-8" />
+		<title>万店易购运营管理平台</title>
+		<meta http-equiv="X-UA-Compatible" content="IE=edge">
+		<meta content="telephone=no" name="format-detection">
+		<meta name="renderer" content="webkit">
+		<meta name="keywords" content="万店易购运营管理平台" />
+		<meta name="description" content="万店易购运营管理平台" />
+		<meta name="viewport" content="width=device-width,initial-scale=1,user-scalable=no" />
+		<!-- basic styles -->
+		<link href="assets/css/bootstrap.min.css" rel="stylesheet" />
+		<link rel="stylesheet" href="assets/css/font-awesome.min.css" />
+
+
+		<!-- ace styles -->
+
+		<link rel="stylesheet" href="assets/css/ace.min.css" />
+		
+		<!-- notice style -->
+		<link rel="stylesheet" href="assets/css/goods-import.css" />
+		
+		<link rel="stylesheet" href="assets/css/pagination.css" />
+		
+		<!-- footable styles -->
+		<link rel="stylesheet" type="text/css" href="assets/css/footable.core.css"/>
+
+		<!--[if lte IE 8]>
+		  <link rel="stylesheet" href="assets/css/ace-ie.min.css" />
+		<![endif]-->
+
+		<!-- ace settings handler -->
+
+		<script src="assets/js/ace-extra.min.js"></script>
+
+		<!-- HTML5 shim and Respond.js IE8 support of HTML5 elements and media queries -->
+
+		<!--[if lt IE 9]>
+		<script src="assets/js/html5shiv.js"></script>
+		<script src="assets/js/respond.min.js"></script>
+		<![endif]-->
+	</head>
+
+	<body>
+		
+		<div class="navbar navbar-default" id="navbar">
+
+			<div class="navbar-container" id="navbar-container">
+				<div class="navbar-header pull-left">
+					<a href="#" class="navbar-brand">
+						<small>
+							<i class="logo"></i>
+						</small>
+					</a><!-- /.brand -->
+					<span class="top-tit">万店易购运营管理平台</span>
+				</div><!-- /.navbar-header -->
+				
+				<div class="user-operate">
+					<ul>
+						<li>
+							<a class="admin" href="javascript:void(0)"><span></span>Admin</a>
+						</li>
+						<li>
+							<img src="assets/images/border.png" />
+						</li>
+						<li class="dropdown-wrap">
+						    <a id="dropdown-btn" class="dropdown-btn dropdown-toggle" href="#" data-toggle="dropdown" role="button" aria-haspopup="true" aria-expanded="true">
+					          	<span>万店总部</span>
+					          	<span class="dr"></span>
+					        </a>
+					        <ul id="dropdown-menu" class="dropdown-menu" aria-labelledby="dropdown-btn">
+					          	<li>万店总部</li>
+					          	<li>万店分部</li>
+					        </ul>
+						</li>
+						<li>
+							<a href="javascript:void(0)">
+								消息
+								<span class="badge badge-assertive">8</span>
+							</a>
+						</li>
+						<li>
+							<a href="javascript:void(0)">注销</a>
+						</li>
+					</ul>
+				</div>
+				
+			</div><!-- /.container -->
+		
+		</div>
+		
+		<div class="main-container" id="main-container">
+
+			<div class="main-container-inner">
+				<a class="menu-toggler" id="menu-toggler" href="#"><span></span>分类</a>
+
+				<div class="sidebar" id="sidebar">
+					
+					<ul class="nav nav-list">
+						<li class="open active">
+							<a href="javascript:void(0)" class="dropdown-toggle">
+								<i class="icon icon-goods"></i>
+								<span class="menu-text"> 商品管理 </span>
+								<b class="arrow"></b>
+							</a>
+							<ul class="submenu">
+								<li class="active">
+									<a href="goods-import.html">
+										商品导入
+									</a>
+								</li>
+								<li>
+									<a href="goods-audit.html">
+										商品审核
+									</a>
+								</li>
+								<li>
+									<a href="good-import-audit.html">
+										单品引入审核
+									</a>
+								</li>
+								<li>
+									<a href="goods-putaway.html">
+										商品上下架
+									</a>
+								</li>
+								<li>
+									<a href="add-goods.html">
+										新品提报
+									</a>
+								</li>
+							</ul>
+						</li>
+
+						<li>
+							<a href="javascript:void(0)" class="dropdown-toggle">
+								<i class="icon icon-promotion"></i>
+								<span class="menu-text"> 促销管理 </span>
+								
+								<b class="arrow icon icon-angle-down"></b>
+							</a>
+							<ul class="submenu">
+								<li>
+									<a href="activity-manage.html">
+										活动管理
+									</a>
+								</li>
+								<li>
+									<a href="promotion-apply.html">
+										促销申请
+									</a>
+								</li>
+							</ul>
+						</li>
+
+						<li>
+							<a href="javascript:void(0)" class="dropdown-toggle">
+								<i class="icon icon-notice"></i>
+								<span class="menu-text"> 公告管理 </span>
+
+								<b class="arrow icon icon-angle-down"></b>
+							</a>
+
+							<ul class="submenu">
+								<li>
+									<a href="notice-manage.html">
+										公告管理
+									</a>
+								</li>
+
+								<li>
+									<a href="message-manage.html">
+										消息管理
+									</a>
+								</li>
+							</ul>
+						</li>
+
+						<li>
+							<a href="#" class="dropdown-toggle">
+								<i class="icon icon-dealer"></i>
+								<span class="menu-text"> 经销商管理 </span>
+
+								<b class="arrow icon icon-angle-down"></b>
+							</a>
+
+							<ul class="submenu">
+								<li>
+									<a href="dealer-manage.html">
+										经销商管理
+									</a>
+								</li>
+								
+								<li>
+									<a href="dealer-contract.html">
+										合同管理
+									</a>
+								</li>
+
+								<li>
+									<a href="#">
+										信用管理
+									</a>
+								</li>
+							</ul>
+						</li>
+						
+						<li>
+							<a href="#" class="dropdown-toggle">
+								<i class="icon icon-supplier"></i>
+								<span class="menu-text"> 供应商管理 </span>
+
+								<b class="arrow icon icon-angle-down"></b>
+							</a>
+
+							<ul class="submenu">
+								<li>
+									<a href="supplier-manage.html">
+										供应商管理
+									</a>
+								</li>
+								
+								<li>
+									<a href="supplier-contract.html">
+										合同管理
+									</a>
+								</li>
+
+								<li>
+									<a href="#">
+										信用管理
+									</a>
+								</li>
+							</ul>
+						</li>
+
+						<li>
+							<a href="javascript:void(0)" class="dropdown-toggle">
+								<i class="icon icon-salesman"></i>
+								<span class="menu-text"> 业务员管理 </span>
+
+								<b class="arrow icon icon-angle-down"></b>
+							</a>
+
+							<ul class="submenu">
+								<li>
+									<a href="salesman-manage.html">
+										业务员管理
+									</a>
+								</li>
+
+								<li>
+									<a href="award-setting.html">
+										奖励设置
+									</a>
+								</li>
+
+								<li>
+									<a href="award-query.html">
+										奖励查询
+									</a>
+								</li>
+							</ul>
+						</li>
+
+						<li>
+							<a href="javascript:void(0)" class="dropdown-toggle">
+								<i class="icon icon-logistics"></i>
+								<span class="menu-text"> 物流管理 </span>
+								<b class="arrow icon icon-angle-down"></b>
+							</a>
+							<ul class="submenu">
+								<li>
+									<a href="driver-evaluate.html">
+										司机评价
+									</a>
+								</li>
+
+								<li>
+									<a href="driver-manage.html">
+										司机管理
+									</a>
+								</li>
+							</ul>
+						</li>
+
+						<li>
+							<a href="javascript:void(0)" class="dropdown-toggle">
+								<i class="icon icon-user"></i>
+								<span class="menu-text"> 用户管理 </span>
+								<b class="arrow icon icon-angle-down"></b>
+							</a>
+							<ul class="submenu">
+								<li>
+									<a href="user-manage.html">
+										用户管理
+									</a>
+								</li>
+
+								<li>
+									<a href="psw-manage.html">
+										密码管理
+									</a>
+								</li>
+								<li>
+									<a href="fund-manage.html">
+										资产管理
+									</a>
+								</li>
+								<li>
+									<a href="integral-exchange.html">
+										积分管理
+									</a>
+								</li>
+								<li>
+									<a href="#">
+										增值服务
+									</a>
+								</li>
+							</ul>
+						</li>
+
+						<li>
+							<a href="javascript:void(0)" class="dropdown-toggle">
+								<i class="icon icon-data"></i>
+								<span class="menu-text"> 数据管理 </span>
+								<b class="arrow icon icon-angle-down"></b>
+							</a>
+							<ul class="submenu">
+								<li>
+									<a href="salesdata-chart.html">
+										销售数据管理
+									</a>
+								</li>
+
+								<li>
+									<a href="#">
+										用户数据管理
+									</a>
+								</li>
+								<li>
+									<a href="#">
+										平台数据管理
+									</a>
+								</li>
+								<li>
+									<a href="#">
+										活动数据管理
+									</a>
+								</li>
+							</ul>
+						</li>
+
+						<li>
+							<a href="javascript:void(0)" class="dropdown-toggle">
+								<i class="icon icon-tpl"></i>
+								<span class="menu-text">模板管理</span>
+
+								<b class="arrow icon icon-angle-down"></b>
+							</a>
+
+							<ul class="submenu">
+								<li>
+									<a href="tpl-manage.html">
+										模板管理
+									</a>
+								</li>
+
+								<li>
+									<a href="module-manage.html">
+										模块管理
+									</a>
+								</li>
+							</ul>
+						</li>
+
+						<li>
+							<a href="javascript:void(0)" class="dropdown-toggle">
+								<i class="icon icon-order"></i>
+								<span class="menu-text">订单管理</span>
+
+								<b class="arrow icon icon-angle-down"></b>
+							</a>
+
+							<ul class="submenu">
+								<li>
+									<a href="#">
+										订单管理
+									</a>
+								</li>
+
+								<li>
+									<a href="#">
+										退单管理
+									</a>
+								</li>
+							</ul>
+						</li>
+						
+						<li>
+							<a href="javascript:void(0)" class="dropdown-toggle">
+								<i class="icon icon-ad"></i>
+								<span class="menu-text">广告管理</span>
+
+								<b class="arrow icon icon-angle-down"></b>
+							</a>
+
+							<ul class="submenu">
+								<li>
+									<a href="ad-position-manage.html">
+										广告位管理
+									</a>
+								</li>
+
+								<li>
+									<a href="advertisement-manage.html">
+										广告管理
+									</a>
+								</li>
+								
+								<li>
+									<a href="advertisement-audit.html">
+										广告审核
+									</a>
+								</li>
+							</ul>
+						</li>
+						
+					</ul><!-- /.nav-list -->
+
+					<div class="sidebar-collapse" id="sidebar-collapse">
+						<i class="fa icon-double-angle-left" data-icon1="icon-double-angle-left" data-icon2="icon-double-angle-right"></i>
+					</div>
+
+				</div>
+
+				<div class="main-content">
+
+					<div class="page-content">
+						
+						<div class="wh_titer">
+							<p class="wh_titer_f">
+								您的位置：
+								<a href="index.html">首页</a> &gt; 
+								<a href="javascript:void(0)">商品管理</a> &gt; 
+								<a class="active" href="goods-import.html">商品导入</a>
+							</p>
+						</div>
+						
+						<div class="goods-import table-box">
+							
+							<ul class="import-nav clearfix">
+								<li>
+									<p class="dashed dashed-step1 active"></p>
+								</li>
+								<li>
+									<a class="btn-step btn-step1 bg-color border active" href="javascript:void(0)">第一步</a>
+								</li>
+								<li>
+									<p class="dashed dashed-step2"></p>
+								</li>
+								<li>
+									<a class="btn-step btn-step2 bg-color border" href="javascript:void(0)">第二步</a>
+								</li>
+								<li>
+									<p class="dashed dashed-step3"></p>
+								</li>
+								<li>
+									<a class="btn-step btn-step3 bg-color border" href="javascript:void(0)">第三步</a>
+								</li>
+								<li>
+									<p class="dashed"></p>
+								</li>
+							</ul>
+							
+							<div class="table-step1">
+								<div class="scroll-wrap">
+									<table class="footable table even">
+										<thead class="bg-color hide">
+											<tr>
+												<th></th>
+												<th data-toggle="true"></th>
+												<th data-hide="phone"></th>
+												<th data-hide="phone"></th>
+												<th></th>
+											</tr>
+										</thead>
+										<tbody>
+											<tr>
+												<td>
+													<label class="checked-wrap">
+														<input type="radio" name="contract" class="chk-radio" />
+														<span class="chk-bg"></span>
+													</label>
+												</td>
+												<td>
+													<div class="td-box">
+														<p>合同编码：<span>WD0001</span></p>
+														<p>合同时间：<span>2016.05.08</span></p>
+														<p>合同状态：<span>已生效</span></p>
+													</div>
+												</td>
+												<td>
+													<div class="td-box">
+														<p>经销商ID：<span>8123456</span></p>
+														<p>合同类型：<span>XX合同</span></p>
+														<p>税别：<span>税别</span></p>
+													</div>
+												</td>
+												<td>
+													<div class="td-box">
+														<p>组织机构编码：<span>JD99999</span></p>
+														<p>生效日期：<span>2015.08.15</span></p>
+														<p>税率：<span>5.8%</span></p>
+													</div>
+												</td>
+												<td>
+													<div class="td-box">
+														<p>合同类型ID：<span>ht0002</span></p>
+														<p>失效日期：<span>2018.01.05</span></p>
+														<p>税比：<span>税比</span></p>
+													</div>
+												</td>
+											</tr>
+											<tr>
+												<td>
+													<label class="checked-wrap">
+														<input type="radio" name="contract" class="chk-radio" />
+														<span class="chk-bg"></span>
+													</label>
+												</td>
+												<td>
+													<div class="td-box">
+														<p>合同编码：<span>WD0001</span></p>
+														<p>合同时间：<span>2016.05.08</span></p>
+														<p>合同状态：<span>已生效</span></p>
+													</div>
+												</td>
+												<td>
+													<div class="td-box">
+														<p>经销商ID：<span>8123456</span></p>
+														<p>合同类型：<span>XX合同</span></p>
+														<p>税别：<span>税别</span></p>
+													</div>
+												</td>
+												<td>
+													<div class="td-box">
+														<p>组织机构编码：<span>JD99999</span></p>
+														<p>生效日期：<span>2015.08.15</span></p>
+														<p>税率：<span>5.8%</span></p>
+													</div>
+												</td>
+												<td>
+													<div class="td-box">
+														<p>合同类型ID：<span>ht0002</span></p>
+														<p>失效日期：<span>2018.01.05</span></p>
+														<p>税比：<span>税比</span></p>
+													</div>
+												</td>
+											</tr>
+											<tr>
+												<td>
+													<label class="checked-wrap">
+														<input type="radio" name="contract" class="chk-radio" />
+														<span class="chk-bg"></span>
+													</label>
+												</td>
+												<td>
+													<div class="td-box">
+														<p>合同编码：<span>WD0001</span></p>
+														<p>合同时间：<span>2016.05.08</span></p>
+														<p>合同状态：<span>已生效</span></p>
+													</div>
+												</td>
+												<td>
+													<div class="td-box">
+														<p>经销商ID：<span>8123456</span></p>
+														<p>合同类型：<span>XX合同</span></p>
+														<p>税别：<span>税别</span></p>
+													</div>
+												</td>
+												<td>
+													<div class="td-box">
+														<p>组织机构编码：<span>JD99999</span></p>
+														<p>生效日期：<span>2015.08.15</span></p>
+														<p>税率：<span>5.8%</span></p>
+													</div>
+												</td>
+												<td>
+													<div class="td-box">
+														<p>合同类型ID：<span>ht0002</span></p>
+														<p>失效日期：<span>2018.01.05</span></p>
+														<p>税比：<span>税比</span></p>
+													</div>
+												</td>
+											</tr>
+											<tr>
+												<td>
+													<label class="checked-wrap">
+														<input type="radio" name="contract" class="chk-radio" />
+														<span class="chk-bg"></span>
+													</label>
+												</td>
+												<td>
+													<div class="td-box">
+														<p>合同编码：<span>WD0001</span></p>
+														<p>合同时间：<span>2016.05.08</span></p>
+														<p>合同状态：<span>已生效</span></p>
+													</div>
+												</td>
+												<td>
+													<div class="td-box">
+														<p>经销商ID：<span>8123456</span></p>
+														<p>合同类型：<span>XX合同</span></p>
+														<p>税别：<span>税别</span></p>
+													</div>
+												</td>
+												<td>
+													<div class="td-box">
+														<p>组织机构编码：<span>JD99999</span></p>
+														<p>生效日期：<span>2015.08.15</span></p>
+														<p>税率：<span>5.8%</span></p>
+													</div>
+												</td>
+												<td>
+													<div class="td-box">
+														<p>合同类型ID：<span>ht0002</span></p>
+														<p>失效日期：<span>2018.01.05</span></p>
+														<p>税比：<span>税比</span></p>
+													</div>
+												</td>
+											</tr>
+											<tr>
+												<td>
+													<label class="checked-wrap">
+														<input type="radio" name="contract" class="chk-radio" />
+														<span class="chk-bg"></span>
+													</label>
+												</td>
+												<td>
+													<div class="td-box">
+														<p>合同编码：<span>WD0001</span></p>
+														<p>合同时间：<span>2016.05.08</span></p>
+														<p>合同状态：<span>已生效</span></p>
+													</div>
+												</td>
+												<td>
+													<div class="td-box">
+														<p>经销商ID：<span>8123456</span></p>
+														<p>合同类型：<span>XX合同</span></p>
+														<p>税别：<span>税别</span></p>
+													</div>
+												</td>
+												<td>
+													<div class="td-box">
+														<p>组织机构编码：<span>JD99999</span></p>
+														<p>生效日期：<span>2015.08.15</span></p>
+														<p>税率：<span>5.8%</span></p>
+													</div>
+												</td>
+												<td>
+													<div class="td-box">
+														<p>合同类型ID：<span>ht0002</span></p>
+														<p>失效日期：<span>2018.01.05</span></p>
+														<p>税比：<span>税比</span></p>
+													</div>
+												</td>
+											</tr>
+											<tr>
+												<td>
+													<label class="checked-wrap">
+														<input type="radio" name="contract" class="chk-radio" />
+														<span class="chk-bg"></span>
+													</label>
+												</td>
+												<td>
+													<div class="td-box">
+														<p>合同编码：<span>WD0001</span></p>
+														<p>合同时间：<span>2016.05.08</span></p>
+														<p>合同状态：<span>已生效</span></p>
+													</div>
+												</td>
+												<td>
+													<div class="td-box">
+														<p>经销商ID：<span>8123456</span></p>
+														<p>合同类型：<span>XX合同</span></p>
+														<p>税别：<span>税别</span></p>
+													</div>
+												</td>
+												<td>
+													<div class="td-box">
+														<p>组织机构编码：<span>JD99999</span></p>
+														<p>生效日期：<span>2015.08.15</span></p>
+														<p>税率：<span>5.8%</span></p>
+													</div>
+												</td>
+												<td>
+													<div class="td-box">
+														<p>合同类型ID：<span>ht0002</span></p>
+														<p>失效日期：<span>2018.01.05</span></p>
+														<p>税比：<span>税比</span></p>
+													</div>
+												</td>
+											</tr>
+											<tr>
+												<td>
+													<label class="checked-wrap">
+														<input type="radio" name="contract" class="chk-radio" />
+														<span class="chk-bg"></span>
+													</label>
+												</td>
+												<td>
+													<div class="td-box">
+														<p>合同编码：<span>WD0001</span></p>
+														<p>合同时间：<span>2016.05.08</span></p>
+														<p>合同状态：<span>已生效</span></p>
+													</div>
+												</td>
+												<td>
+													<div class="td-box">
+														<p>经销商ID：<span>8123456</span></p>
+														<p>合同类型：<span>XX合同</span></p>
+														<p>税别：<span>税别</span></p>
+													</div>
+												</td>
+												<td>
+													<div class="td-box">
+														<p>组织机构编码：<span>JD99999</span></p>
+														<p>生效日期：<span>2015.08.15</span></p>
+														<p>税率：<span>5.8%</span></p>
+													</div>
+												</td>
+												<td>
+													<div class="td-box">
+														<p>合同类型ID：<span>ht0002</span></p>
+														<p>失效日期：<span>2018.01.05</span></p>
+														<p>税比：<span>税比</span></p>
+													</div>
+												</td>
+											</tr>
+											<tr>
+												<td>
+													<label class="checked-wrap">
+														<input type="radio" name="contract" class="chk-radio" />
+														<span class="chk-bg"></span>
+													</label>
+												</td>
+												<td>
+													<div class="td-box">
+														<p>合同编码：<span>WD0001</span></p>
+														<p>合同时间：<span>2016.05.08</span></p>
+														<p>合同状态：<span>已生效</span></p>
+													</div>
+												</td>
+												<td>
+													<div class="td-box">
+														<p>经销商ID：<span>8123456</span></p>
+														<p>合同类型：<span>XX合同</span></p>
+														<p>税别：<span>税别</span></p>
+													</div>
+												</td>
+												<td>
+													<div class="td-box">
+														<p>组织机构编码：<span>JD99999</span></p>
+														<p>生效日期：<span>2015.08.15</span></p>
+														<p>税率：<span>5.8%</span></p>
+													</div>
+												</td>
+												<td>
+													<div class="td-box">
+														<p>合同类型ID：<span>ht0002</span></p>
+														<p>失效日期：<span>2018.01.05</span></p>
+														<p>税比：<span>税比</span></p>
+													</div>
+												</td>
+											</tr>
+											<tr>
+												<td>
+													<label class="checked-wrap">
+														<input type="radio" name="contract" class="chk-radio" />
+														<span class="chk-bg"></span>
+													</label>
+												</td>
+												<td>
+													<div class="td-box">
+														<p>合同编码：<span>WD0001</span></p>
+														<p>合同时间：<span>2016.05.08</span></p>
+														<p>合同状态：<span>已生效</span></p>
+													</div>
+												</td>
+												<td>
+													<div class="td-box">
+														<p>经销商ID：<span>8123456</span></p>
+														<p>合同类型：<span>XX合同</span></p>
+														<p>税别：<span>税别</span></p>
+													</div>
+												</td>
+												<td>
+													<div class="td-box">
+														<p>组织机构编码：<span>JD99999</span></p>
+														<p>生效日期：<span>2015.08.15</span></p>
+														<p>税率：<span>5.8%</span></p>
+													</div>
+												</td>
+												<td>
+													<div class="td-box">
+														<p>合同类型ID：<span>ht0002</span></p>
+														<p>失效日期：<span>2018.01.05</span></p>
+														<p>税比：<span>税比</span></p>
+													</div>
+												</td>
+											</tr>
+											<tr>
+												<td>
+													<label class="checked-wrap">
+														<input type="radio" name="contract" class="chk-radio" />
+														<span class="chk-bg"></span>
+													</label>
+												</td>
+												<td>
+													<div class="td-box">
+														<p>合同编码：<span>WD0001</span></p>
+														<p>合同时间：<span>2016.05.08</span></p>
+														<p>合同状态：<span>已生效</span></p>
+													</div>
+												</td>
+												<td>
+													<div class="td-box">
+														<p>经销商ID：<span>8123456</span></p>
+														<p>合同类型：<span>XX合同</span></p>
+														<p>税别：<span>税别</span></p>
+													</div>
+												</td>
+												<td>
+													<div class="td-box">
+														<p>组织机构编码：<span>JD99999</span></p>
+														<p>生效日期：<span>2015.08.15</span></p>
+														<p>税率：<span>5.8%</span></p>
+													</div>
+												</td>
+												<td>
+													<div class="td-box">
+														<p>合同类型ID：<span>ht0002</span></p>
+														<p>失效日期：<span>2018.01.05</span></p>
+														<p>税比：<span>税比</span></p>
+													</div>
+												</td>
+											</tr>
+											<tr>
+												<td>
+													<label class="checked-wrap">
+														<input type="radio" name="contract" class="chk-radio" />
+														<span class="chk-bg"></span>
+													</label>
+												</td>
+												<td>
+													<div class="td-box">
+														<p>合同编码：<span>WD0001</span></p>
+														<p>合同时间：<span>2016.05.08</span></p>
+														<p>合同状态：<span>已生效</span></p>
+													</div>
+												</td>
+												<td>
+													<div class="td-box">
+														<p>经销商ID：<span>8123456</span></p>
+														<p>合同类型：<span>XX合同</span></p>
+														<p>税别：<span>税别</span></p>
+													</div>
+												</td>
+												<td>
+													<div class="td-box">
+														<p>组织机构编码：<span>JD99999</span></p>
+														<p>生效日期：<span>2015.08.15</span></p>
+														<p>税率：<span>5.8%</span></p>
+													</div>
+												</td>
+												<td>
+													<div class="td-box">
+														<p>合同类型ID：<span>ht0002</span></p>
+														<p>失效日期：<span>2018.01.05</span></p>
+														<p>税比：<span>税比</span></p>
+													</div>
+												</td>
+											</tr>
+											<tr>
+												<td>
+													<label class="checked-wrap">
+														<input type="radio" name="contract" class="chk-radio" />
+														<span class="chk-bg"></span>
+													</label>
+												</td>
+												<td>
+													<div class="td-box">
+														<p>合同编码：<span>WD0001</span></p>
+														<p>合同时间：<span>2016.05.08</span></p>
+														<p>合同状态：<span>已生效</span></p>
+													</div>
+												</td>
+												<td>
+													<div class="td-box">
+														<p>经销商ID：<span>8123456</span></p>
+														<p>合同类型：<span>XX合同</span></p>
+														<p>税别：<span>税别</span></p>
+													</div>
+												</td>
+												<td>
+													<div class="td-box">
+														<p>组织机构编码：<span>JD99999</span></p>
+														<p>生效日期：<span>2015.08.15</span></p>
+														<p>税率：<span>5.8%</span></p>
+													</div>
+												</td>
+												<td>
+													<div class="td-box">
+														<p>合同类型ID：<span>ht0002</span></p>
+														<p>失效日期：<span>2018.01.05</span></p>
+														<p>税比：<span>税比</span></p>
+													</div>
+												</td>
+											</tr>
+											<tr>
+												<td>
+													<label class="checked-wrap">
+														<input type="radio" name="contract" class="chk-radio" />
+														<span class="chk-bg"></span>
+													</label>
+												</td>
+												<td>
+													<div class="td-box">
+														<p>合同编码：<span>WD0001</span></p>
+														<p>合同时间：<span>2016.05.08</span></p>
+														<p>合同状态：<span>已生效</span></p>
+													</div>
+												</td>
+												<td>
+													<div class="td-box">
+														<p>经销商ID：<span>8123456</span></p>
+														<p>合同类型：<span>XX合同</span></p>
+														<p>税别：<span>税别</span></p>
+													</div>
+												</td>
+												<td>
+													<div class="td-box">
+														<p>组织机构编码：<span>JD99999</span></p>
+														<p>生效日期：<span>2015.08.15</span></p>
+														<p>税率：<span>5.8%</span></p>
+													</div>
+												</td>
+												<td>
+													<div class="td-box">
+														<p>合同类型ID：<span>ht0002</span></p>
+														<p>失效日期：<span>2018.01.05</span></p>
+														<p>税比：<span>税比</span></p>
+													</div>
+												</td>
+											</tr>
+											<tr>
+												<td>
+													<label class="checked-wrap">
+														<input type="radio" name="contract" class="chk-radio" />
+														<span class="chk-bg"></span>
+													</label>
+												</td>
+												<td>
+													<div class="td-box">
+														<p>合同编码：<span>WD0001</span></p>
+														<p>合同时间：<span>2016.05.08</span></p>
+														<p>合同状态：<span>已生效</span></p>
+													</div>
+												</td>
+												<td>
+													<div class="td-box">
+														<p>经销商ID：<span>8123456</span></p>
+														<p>合同类型：<span>XX合同</span></p>
+														<p>税别：<span>税别</span></p>
+													</div>
+												</td>
+												<td>
+													<div class="td-box">
+														<p>组织机构编码：<span>JD99999</span></p>
+														<p>生效日期：<span>2015.08.15</span></p>
+														<p>税率：<span>5.8%</span></p>
+													</div>
+												</td>
+												<td>
+													<div class="td-box">
+														<p>合同类型ID：<span>ht0002</span></p>
+														<p>失效日期：<span>2018.01.05</span></p>
+														<p>税比：<span>税比</span></p>
+													</div>
+												</td>
+											</tr>
+										</tbody>
+									</table>
+								</div>
+								<div class="footer clearfix">
+									<a class="next-step border border-radius f-50" href="javascript:void(0)">下一步</a>
+									<div class="navigation_bar pull-right">
+										<ul class="clearfix">
+											<li>
+												<a href="javascript:void(0)" class="nav_first"></a>
+											</li>
+											<li>
+												<a href="javascript:void(0)" class="nav_float"></a>
+											</li>
+											<li class="active"><a href="javascript:void(0)">1</a></li>
+											<li><a href="javascript:void(0)">2</a></li>
+											<li><a href="javascript:void(0)">3</a></li>
+											<li><a href="javascript:void(0)">…</a></li>
+											<li><a href="javascript:void(0)">7</a></li>
+											<li><a href="javascript:void(0)">8</a></li>
+											<li><a href="javascript:void(0)">9</a></li>
+											<li><a href="javascript:void(0)" class="nav_right"></a></li>
+											<li><a href="javascript:void(0)" class="nav_last"></a></li>
+										</ul>
+									</div>
+								</div>							
+							</div>
+							
+							<div class="table-step2 hide">
+								
+								<div class="filter-wrap">
+									<span class="orange fl">供应商：万店易购</span>
+									<label class="fl">
+										<i class="icon-search f-95"></i><input class="filter border-radius bg-color" placeholder="商品名称/条码" id="filter" type="text" />
+									</label>
+									<label class="filter-select dropdown-wrap fl">
+										<a class="dropdown-btn border border-radius bg-color dropdown-toggle" href="#" data-toggle="dropdown" role="button" aria-haspopup="true" aria-expanded="true">
+											<span class="item-name">商品分类</span>
+											<span class="dr"><img src="assets/images/arrow-black.png"/></span>
+										</a>
+										<ul class="dropdown-menu" aria-labelledby="goods-type">
+											<li>商品分类</li>
+											<li>商品分类</li>
+											<li>商品分类</li>
+										</ul>
+									</label>
+									
+									<label class="filter-select dropdown-wrap fl">
+										<a class="dropdown-btn border border-radius bg-color dropdown-toggle" href="#" data-toggle="dropdown" role="button" aria-haspopup="true" aria-expanded="true">
+											<span class="item-name">品牌</span>
+											<span class="dr"><img src="assets/images/arrow-black.png"/></span>
+										</a>
+										<ul class="dropdown-menu" aria-labelledby="brand">
+											<li>品牌</li>
+											<li>品牌</li>
+											<li>品牌</li>
+										</ul>
+									</label>
+									
+									<span>
+										<a class="btn-filter" href="javascript:void(0)">查询</a>
+									</span>
+		
+								</div>
+								<div class="table-head">
+									<table class="footable table even">
+										<thead class="bg-color">
+											<tr>
+												<th></th>
+												<th data-toggle="true">商品名称</th>
+												<th data-hide="phone">保质期</th>
+												<th data-hide="phone">规格</th>
+												<th data-hide="phone">商品价格</th>
+												<th data-hide="phone">包装数量</th>
+											</tr>
+										</thead>
+									</table>
+								</div>
+								<div class="scroll-wrap">
+									<table class="footable table even">
+										<thead class="bg-color hide">
+											<tr>
+												<th></th>
+												<th data-toggle="true">商品名称</th>
+												<th data-hide="phone">保质期</th>
+												<th data-hide="phone">规格</th>
+												<th data-hide="phone">商品价格</th>
+												<th data-hide="phone">包装数量</th>
+											</tr>
+										</thead>
+										<tbody>
+											<tr>
+												<td>
+													<label class="checked-wrap">
+														<input type="checkbox" class="chk" />
+														<span class="chk-bg"></span>
+													</label>
+												</td>
+												<td>
+													<div class="good-info clearfix">
+														<img class="pull-left" src="assets/goods/good.jpg" />
+														<p>乐事薯片</p>
+														<p>原味47克X4桶休闲小吃膨化食品</p>
+														<p>0000000000001</p>
+													</div>
+												</td>
+												<td>180天</td>
+												<td>4*10</td>
+												<td>￥1838</td>
+												<td>10*30/箱</td>
+											</tr>
+											
+											<tr>
+												<td>
+													<label class="checked-wrap">
+														<input type="checkbox" class="chk" />
+														<span class="chk-bg"></span>
+													</label>
+												</td>
+												<td>
+													<div class="good-info clearfix">
+														<img class="pull-left" src="assets/goods/good.jpg" />
+														<p>乐事薯片</p>
+														<p>原味47克X4桶休闲小吃膨化食品</p>
+														<p>0000000000001</p>
+													</div>
+												</td>
+												<td>180天</td>
+												<td>4*10</td>
+												<td>￥1838</td>
+												<td>10*30/箱</td>
+											</tr>
+											<tr>
+												<td>
+													<label class="checked-wrap">
+														<input type="checkbox" class="chk" />
+														<span class="chk-bg"></span>
+													</label>
+												</td>
+												<td>
+													<div class="good-info clearfix">
+														<img class="pull-left" src="assets/goods/good.jpg" />
+														<p>乐事薯片</p>
+														<p>原味47克X4桶休闲小吃膨化食品</p>
+														<p>0000000000001</p>
+													</div>
+												</td>
+												<td>180天</td>
+												<td>4*10</td>
+												<td>￥1838</td>
+												<td>10*30/箱</td>
+											</tr>
+											<tr>
+												<td>
+													<label class="checked-wrap">
+														<input type="checkbox" class="chk" />
+														<span class="chk-bg"></span>
+													</label>
+												</td>
+												<td>
+													<div class="good-info clearfix">
+														<img class="pull-left" src="assets/goods/good.jpg" />
+														<p>乐事薯片</p>
+														<p>原味47克X4桶休闲小吃膨化食品</p>
+														<p>0000000000001</p>
+													</div>
+												</td>
+												<td>180天</td>
+												<td>4*10</td>
+												<td>￥1838</td>
+												<td>10*30/箱</td>
+											</tr>
+											<tr>
+												<td>
+													<label class="checked-wrap">
+														<input type="checkbox" class="chk" />
+														<span class="chk-bg"></span>
+													</label>
+												</td>
+												<td>
+													<div class="good-info clearfix">
+														<img class="pull-left" src="assets/goods/good.jpg" />
+														<p>乐事薯片</p>
+														<p>原味47克X4桶休闲小吃膨化食品</p>
+														<p>0000000000001</p>
+													</div>
+												</td>
+												<td>180天</td>
+												<td>4*10</td>
+												<td>￥1838</td>
+												<td>10*30/箱</td>
+											</tr>
+											<tr>
+												<td>
+													<label class="checked-wrap">
+														<input type="checkbox" class="chk" />
+														<span class="chk-bg"></span>
+													</label>
+												</td>
+												<td>
+													<div class="good-info clearfix">
+														<img class="pull-left" src="assets/goods/good.jpg" />
+														<p>乐事薯片</p>
+														<p>原味47克X4桶休闲小吃膨化食品</p>
+														<p>0000000000001</p>
+													</div>
+												</td>
+												<td>180天</td>
+												<td>4*10</td>
+												<td>￥1838</td>
+												<td>10*30/箱</td>
+											</tr>
+											<tr>
+												<td>
+													<label class="checked-wrap">
+														<input type="checkbox" class="chk" />
+														<span class="chk-bg"></span>
+													</label>
+												</td>
+												<td>
+													<div class="good-info clearfix">
+														<img class="pull-left" src="assets/goods/good.jpg" />
+														<p>乐事薯片</p>
+														<p>原味47克X4桶休闲小吃膨化食品</p>
+														<p>0000000000001</p>
+													</div>
+												</td>
+												<td>180天</td>
+												<td>4*10</td>
+												<td>￥1838</td>
+												<td>10*30/箱</td>
+											</tr>
+											<tr>
+												<td>
+													<label class="checked-wrap">
+														<input type="checkbox" class="chk" />
+														<span class="chk-bg"></span>
+													</label>
+												</td>
+												<td>
+													<div class="good-info clearfix">
+														<img class="pull-left" src="assets/goods/good.jpg" />
+														<p>乐事薯片</p>
+														<p>原味47克X4桶休闲小吃膨化食品</p>
+														<p>0000000000001</p>
+													</div>
+												</td>
+												<td>180天</td>
+												<td>4*10</td>
+												<td>￥1838</td>
+												<td>10*30/箱</td>
+											</tr>
+											<tr>
+												<td>
+													<label class="checked-wrap">
+														<input type="checkbox" class="chk" />
+														<span class="chk-bg"></span>
+													</label>
+												</td>
+												<td>
+													<div class="good-info clearfix">
+														<img class="pull-left" src="assets/goods/good.jpg" />
+														<p>乐事薯片</p>
+														<p>原味47克X4桶休闲小吃膨化食品</p>
+														<p>0000000000001</p>
+													</div>
+												</td>
+												<td>180天</td>
+												<td>4*10</td>
+												<td>￥1838</td>
+												<td>10*30/箱</td>
+											</tr>
+											<tr>
+												<td>
+													<label class="checked-wrap">
+														<input type="checkbox" class="chk" />
+														<span class="chk-bg"></span>
+													</label>
+												</td>
+												<td>
+													<div class="good-info clearfix">
+														<img class="pull-left" src="assets/goods/good.jpg" />
+														<p>乐事薯片</p>
+														<p>原味47克X4桶休闲小吃膨化食品</p>
+														<p>0000000000001</p>
+													</div>
+												</td>
+												<td>180天</td>
+												<td>4*10</td>
+												<td>￥1838</td>
+												<td>10*30/箱</td>
+											</tr>
+											<tr>
+												<td>
+													<label class="checked-wrap">
+														<input type="checkbox" class="chk" />
+														<span class="chk-bg"></span>
+													</label>
+												</td>
+												<td>
+													<div class="good-info clearfix">
+														<img class="pull-left" src="assets/goods/good.jpg" />
+														<p>乐事薯片</p>
+														<p>原味47克X4桶休闲小吃膨化食品</p>
+														<p>0000000000001</p>
+													</div>
+												</td>
+												<td>180天</td>
+												<td>4*10</td>
+												<td>￥1838</td>
+												<td>10*30/箱</td>
+											</tr>
+											<tr>
+												<td>
+													<label class="checked-wrap">
+														<input type="checkbox" class="chk" />
+														<span class="chk-bg"></span>
+													</label>
+												</td>
+												<td>
+													<div class="good-info clearfix">
+														<img class="pull-left" src="assets/goods/good.jpg" />
+														<p>乐事薯片</p>
+														<p>原味47克X4桶休闲小吃膨化食品</p>
+														<p>0000000000001</p>
+													</div>
+												</td>
+												<td>180天</td>
+												<td>4*10</td>
+												<td>￥1838</td>
+												<td>10*30/箱</td>
+											</tr>
+											<tr>
+												<td>
+													<label class="checked-wrap">
+														<input type="checkbox" class="chk" />
+														<span class="chk-bg"></span>
+													</label>
+												</td>
+												<td>
+													<div class="good-info clearfix">
+														<img class="pull-left" src="assets/goods/good.jpg" />
+														<p>乐事薯片</p>
+														<p>原味47克X4桶休闲小吃膨化食品</p>
+														<p>0000000000001</p>
+													</div>
+												</td>
+												<td>180天</td>
+												<td>4*10</td>
+												<td>￥1838</td>
+												<td>10*30/箱</td>
+											</tr>
+											<tr>
+												<td>
+													<label class="checked-wrap">
+														<input type="checkbox" class="chk" />
+														<span class="chk-bg"></span>
+													</label>
+												</td>
+												<td>
+													<div class="good-info clearfix">
+														<img class="pull-left" src="assets/goods/good.jpg" />
+														<p>乐事薯片</p>
+														<p>原味47克X4桶休闲小吃膨化食品</p>
+														<p>0000000000001</p>
+													</div>
+												</td>
+												<td>180天</td>
+												<td>4*10</td>
+												<td>￥1838</td>
+												<td>10*30/箱</td>
+											</tr>
+											<tr>
+												<td>
+													<label class="checked-wrap">
+														<input type="checkbox" class="chk" />
+														<span class="chk-bg"></span>
+													</label>
+												</td>
+												<td>
+													<div class="good-info clearfix">
+														<img class="pull-left" src="assets/goods/good.jpg" />
+														<p>乐事薯片</p>
+														<p>原味47克X4桶休闲小吃膨化食品</p>
+														<p>0000000000001</p>
+													</div>
+												</td>
+												<td>180天</td>
+												<td>4*10</td>
+												<td>￥1838</td>
+												<td>10*30/箱</td>
+											</tr>
+										</tbody>
+									</table>
+								</div>
+								<div class="footer clearfix">
+									<div class="batch">
+										<label>
+											<input type="checkbox" class="chk" />
+												<span class="chk-bg"></span>
+												<span class="txt">全选/取消</span>
+										</label>
+										<label><input class="border border-radius bg-color f-50" type="button" value="批量选择" /></label>
+										<label class="clearfix"><input class="border border-radius bg-color btn-database f-50" type="button" value="从资料库中选择商品" /></label>
+									</div>
+									<a class="next-step border border-radius f-50" href="javascript:void(0)">下一步</a>
+									<div class="navigation_bar pull-right">
+										<ul class="clearfix">
+											<li>
+												<a href="javascript:void(0)" class="nav_first"></a>
+											</li>
+											<li>
+												<a href="javascript:void(0)" class="nav_float"></a>
+											</li>
+											<li class="active"><a href="javascript:void(0)">1</a></li>
+											<li><a href="javascript:void(0)">2</a></li>
+											<li><a href="javascript:void(0)">3</a></li>
+											<li><a href="javascript:void(0)">…</a></li>
+											<li><a href="javascript:void(0)">7</a></li>
+											<li><a href="javascript:void(0)">8</a></li>
+											<li><a href="javascript:void(0)">9</a></li>
+											<li>
+												<a href="javascript:void(0)" class="nav_right"></a>
+											</li>
+											<li>
+												<a href="javascript:void(0)" class="nav_last"></a>
+											</li>
+										</ul>
+									</div>
+								</div>
+							</div>
+							
+														
+							<div class="table-step3 hide">
+								<div class="table-head">
+									<table class="footable table even">
+										<thead class="bg-color">
+											<tr>
+												<th></th>
+												<th data-toggle="true">商品名称</th>
+												<th data-hide="">定货倍数</th>
+												<th data-hide="phone">最低起订量</th>
+												<th data-hide="phone">建议零售价</th>
+												<th data-hide="phone">建议零售单位</th>
+												<th data-hide="phone">推荐描述</th>
+												<th data-hide="phone,tablet">是否拆零（物流）</th>
+												<th data-hide="phone,tablet">是否季节性商品</th>
+												<th data-hide="phone,,tablet">是否可退换货</th>
+											</tr>
+										</thead>
+									</table>
+								</div>
+								<div class="scroll-wrap">
+									<table class="footable table even">
+										<thead class="bg-color hide">
+											<tr>
+												<th></th>
+												<th data-toggle="true">商品名称</th>
+												<th data-hide="">定货倍数</th>
+												<th data-hide="phone">最低起订量</th>
+												<th data-hide="phone">建议零售价</th>
+												<th data-hide="phone">建议零售单位</th>
+												<th data-hide="phone">推荐描述</th>
+												<th data-hide="phone,tablet">是否拆零（物流）</th>
+												<th data-hide="phone,tablet">是否季节性商品</th>
+												<th data-hide="phone,,tablet">是否可退换货</th>
+											</tr>
+										</thead>
+										<tbody>
+											<tr>
+												<td class="td-1">
+													<label class="checked-wrap">
+														<input type="checkbox" class="chk" />
+														<span class="chk-bg"></span>
+													</label>
+												</td>
+												<td class="td-2">乐事薯片原味47克</td>
+												<td  class="td-3">
+													<input type="text" />
+												</td>
+												<td class="td-4">
+													<input type="text" />
+												</td>
+												<td class="td-5">
+													<input type="text" />
+												</td>
+												<td class="td-6">
+													<input type="text" />
+												</td>
+												<td class="td-7">
+													<input type="text" />
+												</td>
+												<td class="td-8">
+													<label class="checked-wrap">
+														<input type="checkbox" class="chk">
+														<span class="chk-bg"></span>
+													</label>
+												</td>
+												<td class="td-9">
+													<label class="checked-wrap">
+														<input type="checkbox" class="chk">
+														<span class="chk-bg"></span>
+													</label>
+												</td>
+												<td class="td-10">
+													<label class="checked-wrap">
+														<input type="checkbox" class="chk">
+														<span class="chk-bg"></span>
+													</label>
+												</td>
+											</tr>
+											
+											<tr>
+												<td class="td-1">
+													<label class="checked-wrap">
+														<input type="checkbox" class="chk" />
+														<span class="chk-bg"></span>
+													</label>
+												</td>
+												<td class="td-2">乐事薯片原味47克</td>
+												<td  class="td-3">
+													<input type="text" />
+												</td>
+												<td class="td-4">
+													<input type="text" />
+												</td>
+												<td class="td-5">
+													<input type="text" />
+												</td>
+												<td class="td-6">
+													<input type="text" />
+												</td>
+												<td class="td-7">
+													<input type="text" />
+												</td>
+												<td class="td-8">
+													<label class="checked-wrap">
+														<input type="checkbox" class="chk">
+														<span class="chk-bg"></span>
+													</label>
+												</td>
+												<td class="td-9">
+													<label class="checked-wrap">
+														<input type="checkbox" class="chk">
+														<span class="chk-bg"></span>
+													</label>
+												</td>
+												<td class="td-10">
+													<label class="checked-wrap">
+														<input type="checkbox" class="chk">
+														<span class="chk-bg"></span>
+													</label>
+												</td>
+											</tr>
+											<tr>
+												<td class="td-1">
+													<label class="checked-wrap">
+														<input type="checkbox" class="chk" />
+														<span class="chk-bg"></span>
+													</label>
+												</td>
+												<td class="td-2">乐事薯片原味47克</td>
+												<td  class="td-3">
+													<input type="text" />
+												</td>
+												<td class="td-4">
+													<input type="text" />
+												</td>
+												<td class="td-5">
+													<input type="text" />
+												</td>
+												<td class="td-6">
+													<input type="text" />
+												</td>
+												<td class="td-7">
+													<input type="text" />
+												</td>
+												<td class="td-8">
+													<label class="checked-wrap">
+														<input type="checkbox" class="chk">
+														<span class="chk-bg"></span>
+													</label>
+												</td>
+												<td class="td-9">
+													<label class="checked-wrap">
+														<input type="checkbox" class="chk">
+														<span class="chk-bg"></span>
+													</label>
+												</td>
+												<td class="td-10">
+													<label class="checked-wrap">
+														<input type="checkbox" class="chk">
+														<span class="chk-bg"></span>
+													</label>
+												</td>
+											</tr>
+											<tr>
+												<td class="td-1">
+													<label class="checked-wrap">
+														<input type="checkbox" class="chk" />
+														<span class="chk-bg"></span>
+													</label>
+												</td>
+												<td class="td-2">乐事薯片原味47克</td>
+												<td  class="td-3">
+													<input type="text" />
+												</td>
+												<td class="td-4">
+													<input type="text" />
+												</td>
+												<td class="td-5">
+													<input type="text" />
+												</td>
+												<td class="td-6">
+													<input type="text" />
+												</td>
+												<td class="td-7">
+													<input type="text" />
+												</td>
+												<td class="td-8">
+													<label class="checked-wrap">
+														<input type="checkbox" class="chk">
+														<span class="chk-bg"></span>
+													</label>
+												</td>
+												<td class="td-9">
+													<label class="checked-wrap">
+														<input type="checkbox" class="chk">
+														<span class="chk-bg"></span>
+													</label>
+												</td>
+												<td class="td-10">
+													<label class="checked-wrap">
+														<input type="checkbox" class="chk">
+														<span class="chk-bg"></span>
+													</label>
+												</td>
+											</tr>
+											<tr>
+												<td class="td-1">
+													<label class="checked-wrap">
+														<input type="checkbox" class="chk" />
+														<span class="chk-bg"></span>
+													</label>
+												</td>
+												<td class="td-2">乐事薯片原味47克</td>
+												<td  class="td-3">
+													<input type="text" />
+												</td>
+												<td class="td-4">
+													<input type="text" />
+												</td>
+												<td class="td-5">
+													<input type="text" />
+												</td>
+												<td class="td-6">
+													<input type="text" />
+												</td>
+												<td class="td-7">
+													<input type="text" />
+												</td>
+												<td class="td-8">
+													<label class="checked-wrap">
+														<input type="checkbox" class="chk">
+														<span class="chk-bg"></span>
+													</label>
+												</td>
+												<td class="td-9">
+													<label class="checked-wrap">
+														<input type="checkbox" class="chk">
+														<span class="chk-bg"></span>
+													</label>
+												</td>
+												<td class="td-10">
+													<label class="checked-wrap">
+														<input type="checkbox" class="chk">
+														<span class="chk-bg"></span>
+													</label>
+												</td>
+											</tr>
+											<tr>
+												<td class="td-1">
+													<label class="checked-wrap">
+														<input type="checkbox" class="chk" />
+														<span class="chk-bg"></span>
+													</label>
+												</td>
+												<td class="td-2">乐事薯片原味47克</td>
+												<td  class="td-3">
+													<input type="text" />
+												</td>
+												<td class="td-4">
+													<input type="text" />
+												</td>
+												<td class="td-5">
+													<input type="text" />
+												</td>
+												<td class="td-6">
+													<input type="text" />
+												</td>
+												<td class="td-7">
+													<input type="text" />
+												</td>
+												<td class="td-8">
+													<label class="checked-wrap">
+														<input type="checkbox" class="chk">
+														<span class="chk-bg"></span>
+													</label>
+												</td>
+												<td class="td-9">
+													<label class="checked-wrap">
+														<input type="checkbox" class="chk">
+														<span class="chk-bg"></span>
+													</label>
+												</td>
+												<td class="td-10">
+													<label class="checked-wrap">
+														<input type="checkbox" class="chk">
+														<span class="chk-bg"></span>
+													</label>
+												</td>
+											</tr>
+											<tr>
+												<td class="td-1">
+													<label class="checked-wrap">
+														<input type="checkbox" class="chk" />
+														<span class="chk-bg"></span>
+													</label>
+												</td>
+												<td class="td-2">乐事薯片原味47克</td>
+												<td  class="td-3">
+													<input type="text" />
+												</td>
+												<td class="td-4">
+													<input type="text" />
+												</td>
+												<td class="td-5">
+													<input type="text" />
+												</td>
+												<td class="td-6">
+													<input type="text" />
+												</td>
+												<td class="td-7">
+													<input type="text" />
+												</td>
+												<td class="td-8">
+													<label class="checked-wrap">
+														<input type="checkbox" class="chk">
+														<span class="chk-bg"></span>
+													</label>
+												</td>
+												<td class="td-9">
+													<label class="checked-wrap">
+														<input type="checkbox" class="chk">
+														<span class="chk-bg"></span>
+													</label>
+												</td>
+												<td class="td-10">
+													<label class="checked-wrap">
+														<input type="checkbox" class="chk">
+														<span class="chk-bg"></span>
+													</label>
+												</td>
+											</tr>
+											<tr>
+												<td class="td-1">
+													<label class="checked-wrap">
+														<input type="checkbox" class="chk" />
+														<span class="chk-bg"></span>
+													</label>
+												</td>
+												<td class="td-2">乐事薯片原味47克</td>
+												<td  class="td-3">
+													<input type="text" />
+												</td>
+												<td class="td-4">
+													<input type="text" />
+												</td>
+												<td class="td-5">
+													<input type="text" />
+												</td>
+												<td class="td-6">
+													<input type="text" />
+												</td>
+												<td class="td-7">
+													<input type="text" />
+												</td>
+												<td class="td-8">
+													<label class="checked-wrap">
+														<input type="checkbox" class="chk">
+														<span class="chk-bg"></span>
+													</label>
+												</td>
+												<td class="td-9">
+													<label class="checked-wrap">
+														<input type="checkbox" class="chk">
+														<span class="chk-bg"></span>
+													</label>
+												</td>
+												<td class="td-10">
+													<label class="checked-wrap">
+														<input type="checkbox" class="chk">
+														<span class="chk-bg"></span>
+													</label>
+												</td>
+											</tr>
+											<tr>
+												<td class="td-1">
+													<label class="checked-wrap">
+														<input type="checkbox" class="chk" />
+														<span class="chk-bg"></span>
+													</label>
+												</td>
+												<td class="td-2">乐事薯片原味47克</td>
+												<td  class="td-3">
+													<input type="text" />
+												</td>
+												<td class="td-4">
+													<input type="text" />
+												</td>
+												<td class="td-5">
+													<input type="text" />
+												</td>
+												<td class="td-6">
+													<input type="text" />
+												</td>
+												<td class="td-7">
+													<input type="text" />
+												</td>
+												<td class="td-8">
+													<label class="checked-wrap">
+														<input type="checkbox" class="chk">
+														<span class="chk-bg"></span>
+													</label>
+												</td>
+												<td class="td-9">
+													<label class="checked-wrap">
+														<input type="checkbox" class="chk">
+														<span class="chk-bg"></span>
+													</label>
+												</td>
+												<td class="td-10">
+													<label class="checked-wrap">
+														<input type="checkbox" class="chk">
+														<span class="chk-bg"></span>
+													</label>
+												</td>
+											</tr>
+											<tr>
+												<td class="td-1">
+													<label class="checked-wrap">
+														<input type="checkbox" class="chk" />
+														<span class="chk-bg"></span>
+													</label>
+												</td>
+												<td class="td-2">乐事薯片原味47克</td>
+												<td  class="td-3">
+													<input type="text" />
+												</td>
+												<td class="td-4">
+													<input type="text" />
+												</td>
+												<td class="td-5">
+													<input type="text" />
+												</td>
+												<td class="td-6">
+													<input type="text" />
+												</td>
+												<td class="td-7">
+													<input type="text" />
+												</td>
+												<td class="td-8">
+													<label class="checked-wrap">
+														<input type="checkbox" class="chk">
+														<span class="chk-bg"></span>
+													</label>
+												</td>
+												<td class="td-9">
+													<label class="checked-wrap">
+														<input type="checkbox" class="chk">
+														<span class="chk-bg"></span>
+													</label>
+												</td>
+												<td class="td-10">
+													<label class="checked-wrap">
+														<input type="checkbox" class="chk">
+														<span class="chk-bg"></span>
+													</label>
+												</td>
+											</tr>
+											<tr>
+												<td class="td-1">
+													<label class="checked-wrap">
+														<input type="checkbox" class="chk" />
+														<span class="chk-bg"></span>
+													</label>
+												</td>
+												<td class="td-2">乐事薯片原味47克</td>
+												<td  class="td-3">
+													<input type="text" />
+												</td>
+												<td class="td-4">
+													<input type="text" />
+												</td>
+												<td class="td-5">
+													<input type="text" />
+												</td>
+												<td class="td-6">
+													<input type="text" />
+												</td>
+												<td class="td-7">
+													<input type="text" />
+												</td>
+												<td class="td-8">
+													<label class="checked-wrap">
+														<input type="checkbox" class="chk">
+														<span class="chk-bg"></span>
+													</label>
+												</td>
+												<td class="td-9">
+													<label class="checked-wrap">
+														<input type="checkbox" class="chk">
+														<span class="chk-bg"></span>
+													</label>
+												</td>
+												<td class="td-10">
+													<label class="checked-wrap">
+														<input type="checkbox" class="chk">
+														<span class="chk-bg"></span>
+													</label>
+												</td>
+											</tr>
+											<tr>
+												<td class="td-1">
+													<label class="checked-wrap">
+														<input type="checkbox" class="chk" />
+														<span class="chk-bg"></span>
+													</label>
+												</td>
+												<td class="td-2">乐事薯片原味47克</td>
+												<td  class="td-3">
+													<input type="text" />
+												</td>
+												<td class="td-4">
+													<input type="text" />
+												</td>
+												<td class="td-5">
+													<input type="text" />
+												</td>
+												<td class="td-6">
+													<input type="text" />
+												</td>
+												<td class="td-7">
+													<input type="text" />
+												</td>
+												<td class="td-8">
+													<label class="checked-wrap">
+														<input type="checkbox" class="chk">
+														<span class="chk-bg"></span>
+													</label>
+												</td>
+												<td class="td-9">
+													<label class="checked-wrap">
+														<input type="checkbox" class="chk">
+														<span class="chk-bg"></span>
+													</label>
+												</td>
+												<td class="td-10">
+													<label class="checked-wrap">
+														<input type="checkbox" class="chk">
+														<span class="chk-bg"></span>
+													</label>
+												</td>
+											</tr>
+											<tr>
+												<td class="td-1">
+													<label class="checked-wrap">
+														<input type="checkbox" class="chk" />
+														<span class="chk-bg"></span>
+													</label>
+												</td>
+												<td class="td-2">乐事薯片原味47克</td>
+												<td  class="td-3">
+													<input type="text" />
+												</td>
+												<td class="td-4">
+													<input type="text" />
+												</td>
+												<td class="td-5">
+													<input type="text" />
+												</td>
+												<td class="td-6">
+													<input type="text" />
+												</td>
+												<td class="td-7">
+													<input type="text" />
+												</td>
+												<td class="td-8">
+													<label class="checked-wrap">
+														<input type="checkbox" class="chk">
+														<span class="chk-bg"></span>
+													</label>
+												</td>
+												<td class="td-9">
+													<label class="checked-wrap">
+														<input type="checkbox" class="chk">
+														<span class="chk-bg"></span>
+													</label>
+												</td>
+												<td class="td-10">
+													<label class="checked-wrap">
+														<input type="checkbox" class="chk">
+														<span class="chk-bg"></span>
+													</label>
+												</td>
+											</tr>
+											<tr>
+												<td class="td-1">
+													<label class="checked-wrap">
+														<input type="checkbox" class="chk" />
+														<span class="chk-bg"></span>
+													</label>
+												</td>
+												<td class="td-2">乐事薯片原味47克</td>
+												<td  class="td-3">
+													<input type="text" />
+												</td>
+												<td class="td-4">
+													<input type="text" />
+												</td>
+												<td class="td-5">
+													<input type="text" />
+												</td>
+												<td class="td-6">
+													<input type="text" />
+												</td>
+												<td class="td-7">
+													<input type="text" />
+												</td>
+												<td class="td-8">
+													<label class="checked-wrap">
+														<input type="checkbox" class="chk">
+														<span class="chk-bg"></span>
+													</label>
+												</td>
+												<td class="td-9">
+													<label class="checked-wrap">
+														<input type="checkbox" class="chk">
+														<span class="chk-bg"></span>
+													</label>
+												</td>
+												<td class="td-10">
+													<label class="checked-wrap">
+														<input type="checkbox" class="chk">
+														<span class="chk-bg"></span>
+													</label>
+												</td>
+											</tr>
+											<tr>
+												<td class="td-1">
+													<label class="checked-wrap">
+														<input type="checkbox" class="chk" />
+														<span class="chk-bg"></span>
+													</label>
+												</td>
+												<td class="td-2">乐事薯片原味47克</td>
+												<td  class="td-3">
+													<input type="text" />
+												</td>
+												<td class="td-4">
+													<input type="text" />
+												</td>
+												<td class="td-5">
+													<input type="text" />
+												</td>
+												<td class="td-6">
+													<input type="text" />
+												</td>
+												<td class="td-7">
+													<input type="text" />
+												</td>
+												<td class="td-8">
+													<label class="checked-wrap">
+														<input type="checkbox" class="chk">
+														<span class="chk-bg"></span>
+													</label>
+												</td>
+												<td class="td-9">
+													<label class="checked-wrap">
+														<input type="checkbox" class="chk">
+														<span class="chk-bg"></span>
+													</label>
+												</td>
+												<td class="td-10">
+													<label class="checked-wrap">
+														<input type="checkbox" class="chk">
+														<span class="chk-bg"></span>
+													</label>
+												</td>
+											</tr>
+										</tbody>
+									</table>
+								</div>
+								<div class="footer">
+									<div class="batch">
+										<label>
+											<input type="checkbox" class="chk" />
+											<span class="chk-bg"></span>
+											<span class="txt">全选/取消</span>
+										</label>
+									</div>
+									<a class="btn-apply border border-radius f-50" href="javascript:void(0)">提交申请</a>
+									<div class="navigation_bar pull-right">
+										<ul class="clearfix">
+											<li>
+												<a href="javascript:void(0)" class="nav_first"></a>
+											</li>
+											<li>
+												<a href="javascript:void(0)" class="nav_float"></a>
+											</li>
+											<li class="active"><a href="javascript:void(0)">1</a></li>
+											<li><a href="javascript:void(0)">2</a></li>
+											<li><a href="javascript:void(0)">3</a></li>
+											<li><a href="javascript:void(0)">…</a></li>
+											<li><a href="javascript:void(0)">7</a></li>
+											<li><a href="javascript:void(0)">8</a></li>
+											<li><a href="javascript:void(0)">9</a></li>
+											<li>
+												<a href="javascript:void(0)" class="nav_right"></a>
+											</li>
+											<li>
+												<a href="javascript:void(0)" class="nav_last"></a>
+											</li>
+										</ul>
+									</div>
+								</div>
+							</div>
+						
+						</div>
+						
+						<!-- 编辑 -->
+						<div class="modal fade database" id="database" tabindex="-1" role="dialog" aria-labelledby="databaseLabel">
+						  	<div class="modal-dialog" role="document">
+						    	<div class="modal-content border-radius">
+							      	<div class="modal-body">
+							        	<form>
+							        		
+							        		<div class="filter-wrap">
+												<label class="search-input">
+													<i class="icon-search f-95"></i><input class="filter border-radius bg-color" placeholder="经销商名字" id="filter" type="text">
+												</label>
+												<label class="filter-select dropdown-wrap">
+													<a class="dropdown-btn border border-radius bg-color dropdown-toggle" href="#" data-toggle="dropdown" role="button" aria-haspopup="true" aria-expanded="true">
+														<span class="item-name">商品分类</span>
+														<span class="dr"><img src="assets/images/arrow-black.png"/></span>
+													</a>
+													<ul class="dropdown-menu lv-first no-scroll" aria-labelledby="adv-position">
+														
+														<li>
+															<span class="item-name">休闲食品</span>
+															<ul class="lv-second">
+																<li>
+																	<span class="item-name">膨化食品</span>
+																	<ul class="lv-third">
+																		<li><span class="item-name">薯片</span></li>
+																		<li><span class="item-name">锅巴</span></li>
+																		<li><span class="item-name">爆米花</span></li>
+																		<li><span class="item-name">虾片/虾条</span></li>
+																	</ul>
+																</li>
+																<li>
+																	<span class="item-name">膨化食品</span>
+																	<ul class="lv-third">
+																		<li><span class="item-name">薯片</span></li>
+																		<li><span class="item-name">锅巴</span></li>
+																		<li><span class="item-name">爆米花</span></li>
+																		<li><span class="item-name">虾片/虾条</span></li>
+																	</ul>
+																</li>
+																<li>
+																	<span class="item-name">膨化食品</span>
+																	<ul class="lv-third">
+																		<li><span class="item-name">薯片</span></li>
+																		<li><span class="item-name">锅巴</span></li>
+																		<li><span class="item-name">爆米花</span></li>
+																		<li><span class="item-name">虾片/虾条</span></li>
+																	</ul>
+																</li>
+																<li>
+																	<span class="item-name">膨化食品</span>
+																	<ul class="lv-third">
+																		<li><span class="item-name">薯片</span></li>
+																		<li><span class="item-name">锅巴</span></li>
+																		<li><span class="item-name">爆米花</span></li>
+																		<li><span class="item-name">虾片/虾条</span></li>
+																	</ul>
+																</li>
+															</ul>
+														</li>
+														
+														<li>
+															<span class="item-name">休闲食品</span>
+															<ul class="lv-second">
+																<li>
+																	<span class="item-name">膨化食品</span>
+																	<ul class="lv-third">
+																		<li><span class="item-name">薯片</span></li>
+																		<li><span class="item-name">锅巴</span></li>
+																		<li><span class="item-name">爆米花</span></li>
+																		<li><span class="item-name">虾片/虾条</span></li>
+																	</ul>
+																</li>
+																<li>
+																	<span class="item-name">膨化食品</span>
+																	<ul class="lv-third">
+																		<li><span class="item-name">薯片</span></li>
+																		<li><span class="item-name">锅巴</span></li>
+																		<li><span class="item-name">爆米花</span></li>
+																		<li><span class="item-name">虾片/虾条</span></li>
+																	</ul>
+																</li>
+																<li>
+																	<span class="item-name">膨化食品</span>
+																	<ul class="lv-third">
+																		<li><span class="item-name">薯片</span></li>
+																		<li><span class="item-name">锅巴</span></li>
+																		<li><span class="item-name">爆米花</span></li>
+																		<li><span class="item-name">虾片/虾条</span></li>
+																	</ul>
+																</li>
+																<li>
+																	<span class="item-name">膨化食品</span>
+																	<ul class="lv-third">
+																		<li><span class="item-name">薯片</span></li>
+																		<li><span class="item-name">锅巴</span></li>
+																		<li><span class="item-name">爆米花</span></li>
+																		<li><span class="item-name">虾片/虾条</span></li>
+																	</ul>
+																</li>
+															</ul>
+														</li>
+														
+														<li>
+															<span class="item-name">休闲食品</span>
+															<ul class="lv-second">
+																<li>
+																	<span class="item-name">膨化食品</span>
+																	<ul class="lv-third">
+																		<li><span class="item-name">薯片</span></li>
+																		<li><span class="item-name">锅巴</span></li>
+																		<li><span class="item-name">爆米花</span></li>
+																		<li><span class="item-name">虾片/虾条</span></li>
+																	</ul>
+																</li>
+																<li>
+																	<span class="item-name">膨化食品</span>
+																	<ul class="lv-third">
+																		<li><span class="item-name">薯片</span></li>
+																		<li><span class="item-name">锅巴</span></li>
+																		<li><span class="item-name">爆米花</span></li>
+																		<li><span class="item-name">虾片/虾条</span></li>
+																	</ul>
+																</li>
+																<li>
+																	<span class="item-name">膨化食品</span>
+																	<ul class="lv-third">
+																		<li><span class="item-name">薯片</span></li>
+																		<li><span class="item-name">锅巴</span></li>
+																		<li><span class="item-name">爆米花</span></li>
+																		<li><span class="item-name">虾片/虾条</span></li>
+																	</ul>
+																</li>
+																<li>
+																	<span class="item-name">膨化食品</span>
+																	<ul class="lv-third">
+																		<li><span class="item-name">薯片</span></li>
+																		<li><span class="item-name">锅巴</span></li>
+																		<li><span class="item-name">爆米花</span></li>
+																		<li><span class="item-name">虾片/虾条</span></li>
+																	</ul>
+																</li>
+															</ul>
+														</li>
+														
+														<li>
+															<span class="item-name">休闲食品</span>
+															<ul class="lv-second">
+																<li>
+																	<span class="item-name">膨化食品</span>
+																	<ul class="lv-third">
+																		<li><span class="item-name">薯片</span></li>
+																		<li><span class="item-name">锅巴</span></li>
+																		<li><span class="item-name">爆米花</span></li>
+																		<li><span class="item-name">虾片/虾条</span></li>
+																	</ul>
+																</li>
+																<li>
+																	<span class="item-name">膨化食品</span>
+																	<ul class="lv-third">
+																		<li><span class="item-name">薯片</span></li>
+																		<li><span class="item-name">锅巴</span></li>
+																		<li><span class="item-name">爆米花</span></li>
+																		<li><span class="item-name">虾片/虾条</span></li>
+																	</ul>
+																</li>
+																<li>
+																	<span class="item-name">膨化食品</span>
+																	<ul class="lv-third">
+																		<li><span class="item-name">薯片</span></li>
+																		<li><span class="item-name">锅巴</span></li>
+																		<li><span class="item-name">爆米花</span></li>
+																		<li><span class="item-name">虾片/虾条</span></li>
+																	</ul>
+																</li>
+																<li>
+																	<span class="item-name">膨化食品</span>
+																	<ul class="lv-third">
+																		<li><span class="item-name">薯片</span></li>
+																		<li><span class="item-name">锅巴</span></li>
+																		<li><span class="item-name">爆米花</span></li>
+																		<li><span class="item-name">虾片/虾条</span></li>
+																	</ul>
+																</li>
+															</ul>
+														</li>
+														
+														<li>
+															<span class="item-name">休闲食品</span>
+															<ul class="lv-second">
+																<li>
+																	<span class="item-name">膨化食品</span>
+																	<ul class="lv-third">
+																		<li><span class="item-name">薯片</span></li>
+																		<li><span class="item-name">锅巴</span></li>
+																		<li><span class="item-name">爆米花</span></li>
+																		<li><span class="item-name">虾片/虾条</span></li>
+																	</ul>
+																</li>
+																<li>
+																	<span class="item-name">膨化食品</span>
+																	<ul class="lv-third">
+																		<li><span class="item-name">薯片</span></li>
+																		<li><span class="item-name">锅巴</span></li>
+																		<li><span class="item-name">爆米花</span></li>
+																		<li><span class="item-name">虾片/虾条</span></li>
+																	</ul>
+																</li>
+																<li>
+																	<span class="item-name">膨化食品</span>
+																	<ul class="lv-third">
+																		<li><span class="item-name">薯片</span></li>
+																		<li><span class="item-name">锅巴</span></li>
+																		<li><span class="item-name">爆米花</span></li>
+																		<li><span class="item-name">虾片/虾条</span></li>
+																	</ul>
+																</li>
+																<li>
+																	<span class="item-name">膨化食品</span>
+																	<ul class="lv-third">
+																		<li><span class="item-name">薯片</span></li>
+																		<li><span class="item-name">锅巴</span></li>
+																		<li><span class="item-name">爆米花</span></li>
+																		<li><span class="item-name">虾片/虾条</span></li>
+																	</ul>
+																</li>
+															</ul>
+														</li>
+														
+													</ul>
+												</label>
+												<label class="btn-wrap">
+													<input class="btn-filter" type="button" value="查询" />
+												</label>
+											</div>
+							        		
+							        		<div class="clearfix">
+							        			
+							        			<div class="pull-left select-box">
+							        				<div class="scroll-wrap">
+							        					<table class="footable table even">
+															<thead class="bg-color">
+																<tr>
+																	<th></th>
+																	<th data-toggle="true">商品名称</th>
+																	<th data-hide="">规格</th>
+																	<th data-hide="phone">包装数量</th>
+																</tr>
+															</thead>
+															<tbody>
+																<tr>
+																	<td>
+																		<label class="checked-wrap">
+																			<input type="checkbox" class="chk" />
+																			<span class="chk-bg"></span>
+																		</label>
+																	</td>
+																	<td>
+																		<div class="g-info clearfix">
+																			<img class="pull-left" src="assets/avatars/user1.jpg">
+																			<p>乐事薯片</p>
+																			<p>原味47克X4桶休闲小吃膨化食品</p>
+																			<p class="nb">0000000000001</p>
+																		</div>
+																	</td>
+																	<td>4*10</td>
+																	<td>10*30/箱</td>
+																</tr>
+																<tr>
+																	<td>
+																		<label class="checked-wrap">
+																			<input type="checkbox" class="chk" />
+																			<span class="chk-bg"></span>
+																		</label>
+																	</td>
+																	<td>
+																		<div class="g-info clearfix">
+																			<img class="pull-left" src="assets/avatars/user1.jpg">
+																			<p>乐事薯片</p>
+																			<p>原味47克X4桶休闲小吃膨化食品</p>
+																			<p class="nb">0000000000001</p>
+																		</div>
+																	</td>
+																	<td>4*10</td>
+																	<td>10*30/箱</td>
+																</tr>
+																<tr>
+																	<td>
+																		<label class="checked-wrap">
+																			<input type="checkbox" class="chk" />
+																			<span class="chk-bg"></span>
+																		</label>
+																	</td>
+																	<td>
+																		<div class="g-info clearfix">
+																			<img class="pull-left" src="assets/avatars/user1.jpg">
+																			<p>乐事薯片</p>
+																			<p>原味47克X4桶休闲小吃膨化食品</p>
+																			<p class="nb">0000000000001</p>
+																		</div>
+																	</td>
+																	<td>4*10</td>
+																	<td>10*30/箱</td>
+																</tr>
+																<tr>
+																	<td>
+																		<label class="checked-wrap">
+																			<input type="checkbox" class="chk" />
+																			<span class="chk-bg"></span>
+																		</label>
+																	</td>
+																	<td>
+																		<div class="g-info clearfix">
+																			<img class="pull-left" src="assets/avatars/user1.jpg">
+																			<p>乐事薯片</p>
+																			<p>原味47克X4桶休闲小吃膨化食品</p>
+																			<p class="nb">0000000000001</p>
+																		</div>
+																	</td>
+																	<td>4*10</td>
+																	<td>10*30/箱</td>
+																</tr>
+															</tbody>
+														</table>
+							        				</div>
+							        				<div class="pagination-wrap clearfix">
+														<div class="batch">
+															<label>
+																<input type="checkbox" class="chk" />
+																<span class="chk-bg"></span>
+																<span class="txt">全选/取消</span>
+															</label>
+														</div>
+													
+														<div class="navigation_bar pull-right">
+															<ul class="clearfix">
+																<li>
+																	<a href="javascript:void(0)" class="nav_first"></a>
+																</li>
+																<li>
+																	<a href="javascript:void(0)" class="nav_float"></a>
+																</li>
+																<li class="active"><a href="javascript:void(0)">1</a></li>
+																<li><a href="javascript:void(0)">2</a></li>
+																<li><a href="javascript:void(0)">3</a></li>
+																<li><a href="javascript:void(0)">…</a></li>
+																<li><a href="javascript:void(0)">7</a></li>
+																<li><a href="javascript:void(0)">8</a></li>
+																<li><a href="javascript:void(0)">9</a></li>
+																<li>
+																	<a href="javascript:void(0)" class="nav_right"></a>
+																</li>
+																<li>
+																	<a href="javascript:void(0)" class="nav_last"></a>
+																</li>
+															</ul>
+														</div>
+													</div>
+							        			</div>
+							        			
+							        			<div class="btn-box pull-left">
+							        				<a class="btn-select" href="javascript:void(0)"><img src="assets/images/select-ok.png" /></a>
+							        				<a class="btn-remove" href="javascript:void(0)"><img src="assets/images/select-cancel.png"/></a>
+							        			</div>
+							        			
+							        			<div class="pull-left result-box">
+								        			<div class="scroll-wrap">
+								        				
+								        				<table class="footable table even">
+															<thead class="bg-color">
+																<tr>
+																	<th>已选商品</th>
+																	<th data-toggle="true">商品名称</th>
+																</tr>
+															</thead>
+															<tbody>
+																<!--已选商品-->
+																
+															</tbody>
+															<tfoot>
+																<tr>
+																	<td colspan="10" class="clearfix">
+																		<div class="batch">
+																			<label>
+																				<input type="checkbox" class="chk" />
+																				<span class="chk-bg"></span>
+																				<span class="txt">全选/取消</span>
+																			</label>
+																		</div>
+																	</td>
+																</tr>
+															</tfoot>
+														</table>
+								        					
+								        			</div>
+							        			</div>
+							        			
+							        		</div>
+							        		
+							        		<div class="btn-wrap">
+												<label class="btn-submit"><input type="button" value="确定"></label>
+												<label class="btn-cancel" data-dismiss="modal"><input type="button" value="返回"></label>
+											</div>
+							        	</form>
+							      	</div>
+						    	</div>
+						  	</div>
+						</div>
+						
+					</div><!-- /.page-content -->
+				</div><!-- /.main-content -->
+			</div><!-- /.main-container-inner -->
+		</div><!-- /.main-container -->
+
+		<!-- basic scripts -->
+		
+		<!--[if !IE]> -->
+
+		<script type="text/javascript">
+			window.jQuery || document.write("<script src='assets/js/jquery-2.0.3.min.js'>"+"<"+"script>");
+		</script>
+
+		<!-- <![endif]-->
+		
+		<!--[if IE]>
+		<script type="text/javascript">
+			window.jQuery || document.write("<script src='assets/js/jquery-1.10.2.min.js'>"+"<"+"script>");
+		</script>
+		<![endif]-->
+
+		<script type="text/javascript">
+			if("ontouchend" in document) document.write("<script src='assets/js/jquery.mobile.custom.min.js'>"+"<"+"script>");
+		</script>
+		<script src="assets/js/bootstrap.min.js"></script>
+
+		<!-- ace scripts -->
+
+		<script src="assets/js/ace-elements.min.js"></script>
+		<script src="assets/js/ace.min.js"></script>
+		<script src="assets/js/footable.js"></script>
+		<script src="assets/js/checked.js"></script>
+		
+		<!--商品导入js-->
+		<script src="assets/js/goods-import.js"></script>
+		<script src="assets/js/selectBox.js"></script>
+		
+</body>
+</html>
+

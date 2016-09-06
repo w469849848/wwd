@@ -1,0 +1,58 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<beans xmlns="http://www.springframework.org/schema/beans"
+	xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" xmlns:dubbo="http://code.alibabatech.com/schema/dubbo"
+	xsi:schemaLocation="http://www.springframework.org/schema/beans http://www.springframework.org/schema/beans/spring-beans-2.5.xsd
+    http://code.alibabatech.com/schema/dubbo http://code.alibabatech.com/schema/dubbo/dubbo.xsd">
+
+ 
+	
+  	<dubbo:reference id="tBarcodeAddApi" interface="com.egolm.goods.api.TBarcodeAddApi" /> 
+  	<dubbo:reference id="tBarcodeQueryApi" interface="com.egolm.goods.api.TBarcodeQueryApi" /> 
+  	<dubbo:reference id="tBarcodeUpdateApi" interface="com.egolm.goods.api.TBarcodeUpdateApi" /> 
+  					 	 
+  	<dubbo:reference id="tBasicElementQueryApi" interface="com.egolm.goods.api.TBasicElementQueryApi" /> 
+  	
+  	<dubbo:reference id="tBrandAddApi" interface="com.egolm.goods.api.TBrandAddApi" /> 
+  	<dubbo:reference id="tBrandQueryApi" interface="com.egolm.goods.api.TBrandQueryApi" />
+  	<dubbo:reference id="tBrandUpdateApi" interface="com.egolm.goods.api.TBrandUpdateApi" />
+  	
+    <dubbo:reference id="tCategoryAddApi" interface="com.egolm.goods.api.TCategoryAddApi" />
+     <dubbo:reference id="tCategoryQueryApi" interface="com.egolm.goods.api.TCategoryQueryApi" />
+    <dubbo:reference id="tCategoryUpdateApi" interface="com.egolm.goods.api.TCategoryUpdateApi" />
+    
+    <dubbo:reference id="tGoodsAddApi" interface="com.egolm.goods.api.TGoodsAddApi" />
+    <dubbo:reference id="tGoodsUpdateApi" interface="com.egolm.goods.api.TGoodsUpdateApi" /> 
+    <dubbo:reference id="tGoodsQueryApi" interface="com.egolm.goods.api.TGoodsQueryApi" />
+    
+    <dubbo:reference id="tGoodsCategoryAddApi" interface="com.egolm.goods.api.TGoodsCategoryAddApi" />
+    <dubbo:reference id="tGoodsCategoryQueryApi" interface="com.egolm.goods.api.TGoodsCategoryQueryApi" />
+    <dubbo:reference id="tGoodsCategoryUpdateApi" interface="com.egolm.goods.api.TGoodsCategoryUpdateApi" />
+          
+    <dubbo:reference id="tGoodsColorGroupAddApi" interface="com.egolm.goods.api.TGoodsColorGroupAddApi" />
+    <dubbo:reference id="tGoodsColorGroupQueryApi" interface="com.egolm.goods.api.TGoodsColorGroupQueryApi" />
+    <dubbo:reference id="tGoodsColorGroupUpdateApi" interface="com.egolm.goods.api.TGoodsColorGroupUpdateApi" />
+         
+    <dubbo:reference id="tGoodsPicAddApi" interface="com.egolm.goods.api.TGoodsPicAddApi" />
+    <dubbo:reference id="tGoodsPicQueryApi" interface="com.egolm.goods.api.TGoodsPicQueryApi" />
+    <dubbo:reference id="tGoodsPicUpdateApi" interface="com.egolm.goods.api.TGoodsPicUpdateApi" />
+         
+    <dubbo:reference id="tGoodsPropertyAddApi" interface="com.egolm.goods.api.TGoodsPropertyAddApi" />
+    <dubbo:reference id="tGoodsPropertyQueryApi" interface="com.egolm.goods.api.TGoodsPropertyQueryApi" />
+    <dubbo:reference id="tGoodsPropertyUpdateApi" interface="com.egolm.goods.api.TGoodsPropertyUpdateApi" />
+         
+    <dubbo:reference id="tGoodsSizeGroupAddApi" interface="com.egolm.goods.api.TGoodsSizeGroupAddApi" />
+    <dubbo:reference id="tGoodsSizeGroupQueryApi" interface="com.egolm.goods.api.TGoodsSizeGroupQueryApi" />
+    <dubbo:reference id="tGoodsSizeGroupUpdateApi" interface="com.egolm.goods.api.TGoodsSizeGroupUpdateApi" />
+           
+     <dubbo:reference id="tGoodsSubCodeAddApi" interface="com.egolm.goods.api.TGoodsSubCodeAddApi" />
+     <dubbo:reference id="tGoodsSubCodeQueryApi" interface="com.egolm.goods.api.TGoodsSubCodeQueryApi" />
+     <dubbo:reference id="tGoodsSubCodeUpdateApi" interface="com.egolm.goods.api.TGoodsSubCodeUpdateApi" />
+     
+     <!-- 资 料录入 -->
+      <dubbo:reference id="tImpTmpGoodsAddApi" interface="com.egolm.goods.api.TImpTmpGoodsAddApi" />
+     <dubbo:reference id="tImpTmpGoodsQueryApi" interface="com.egolm.goods.api.TImpTmpGoodsQueryApi" />
+     <dubbo:reference id="tImpTmpGoodsUpdateApi" interface="com.egolm.goods.api.TImpTmpGoodsUpdateApi" />  
+     
+                           
+     
+</beans>

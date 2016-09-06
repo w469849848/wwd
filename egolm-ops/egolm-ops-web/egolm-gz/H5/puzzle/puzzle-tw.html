@@ -1,0 +1,131 @@
+<!DOCTYPE html>
+<html>
+	<head>
+		<meta charset="UTF-8">
+		<meta name="author" content="name=Insect"/>
+		<meta http-equiv="Pragma" content="no-cache">
+		<meta http-equiv="Cache-Control" content="no-cache">
+		<meta http-equiv="Expires" content="0">	
+		<meta name="viewport" content="initial-scale=1, maximum-scale=1, user-scalable=no" />
+		<meta name="apple-mobile-web-app-status-bar-style" content="black" />
+		<meta name="format-detection" content="telephone=no" />
+		<meta name="format-detection" content="email=no" />
+		<meta name="x5-orientation" content="portrait">
+		<title>万店订货惠</title>
+		<link rel="stylesheet" type="text/css" href="assets/css/common.css"/>
+		<link rel="stylesheet" type="text/css" href="assets/css/puzzle.css"/>
+		<link rel="stylesheet" type="text/css" href="assets/css/game.css">
+    	<!-- <link rel="stylesheet" type="text/css" href="assets/css/rem.css"> -->
+	</head>
+	<body>
+
+		<!--首页-->
+	<div class="puzzle-bg">
+		<div class="puzzle-wrap">
+			<div class="puzzle-element-th">
+				<div class="puzzle-titer-th">
+					<img src="assets/images/puzzle-titer.png">
+				</div>
+
+			<div class="rember-picter">
+				<div class="rember-text">
+					<p id="reminderTime">你还有<span id="begTime">10</span>秒时间看原图哦</p>
+				</div>
+
+		<div class="rember-img">
+			<div class="game-box">
+        		<div class="game-pop-box ui-center play" id="layer">
+                	<div class="game-warp">
+                    	<div class="game-pop-hd">
+                        	<h2>挑战失败！</h2>
+                        	<p>再接再厉！</p>
+                    	</div>
+                    <a href="javascript:;" class="game-start-btn play-btn" id="start"></a>
+                </div>
+            </div>
+
+            <ul id="gameBox">
+                <li><img src="" alt=""></li>
+                <li><img src="" alt=""></li>
+                <li><img src="" alt=""></li>
+                <li><img src="" alt=""></li>
+                <li><img src="" alt=""></li>
+                <li><img src="" alt=""></li>
+                <li><img src="" alt=""></li>
+                <li><img src="" alt=""></li>
+                <li><img src="" alt=""></li>
+            </ul>
+        </div>
+	</div>
+
+</div>
+
+
+		 	<div class="puzzle-begin">
+				<a href="#" class="puzzle-button-th"><img src="assets/images/puzzle-begin.png" id="ptButton"></a>
+			</div> 
+		</div>
+	</div>
+</div>
+
+	<canvas id="canvas" style="display: none" width="300" height="300"></canvas>
+
+		<!--弹窗-->
+		<div class="popup-wrap hide">
+			<div class="popup">
+				<a class="btn-close" href="javascript:void(0)"><img src="assets/images/btn_close.png" /></a>
+				<p class="prize-lv">恭喜您获得三等奖</p>
+				<p class="prize-name">2000金币</p>
+				<button class="btn-get">前往领奖</button>
+			</div>
+		</div>
+
+	<script type="text/javascript" src="assets/js/zepto.js"></script>
+    <script type="text/javascript" src="assets/js/game.js"></script>
+    <script type="text/javascript">
+// /*   /* 10秒倒计时*/
+/*    function timeRun(
+	var s = document.getElementById("begTime");
+	s.innerHTML = s.innerHTML * 1 - 1;
+}
+	setInterval("timeRun();", 1000);*/
+
+
+	/*60秒倒计时*/
+/*	function gameText() {
+		$("#reminderTime").innerHTML="<p id="countTime">还剩<span id="time">60</span>秒完成拼图</p>";
+	}
+	setInterval("gameText()",10000)*/
+
+
+	    function timeRun(){
+	var s = document.getElementById("begTime");
+	var b = document.getElementById("reminderTime");
+	if(s.innerHTML>0){
+		s.innerHTML = s.innerHTML * 1 - 1;
+	}else{
+		b.innerHTML="<p id='countTime'>还剩<span id='timing'>60</span>秒完成拼图</p>";
+		clearInterval(beg);
+	/*	setInterval(reg,1000);*/
+	}
+	
+}
+  //   function reg(){
+  //   	var s = document.getElementById("regTime");
+  //   	if(s.innerHTML>0){
+		// s.innerHTML = s.innerHTML * 1 - 1;
+		// }else{
+		
+		// }
+  //   }
+	var beg=setInterval("timeRun();", 1000);
+	
+	/*置换按钮背景*/
+	function button_bg() {
+		$("#ptButton").attr("src","assets/images/puzzle-begin1.png")
+	}
+    setInterval("button_bg()",10000)
+
+    </script>
+</body>
+</html>

@@ -1,0 +1,21 @@
+<div class="elevator">
+			<ul class="clearfix">
+				<li>
+					<a href="/egolm-shop-web/goods/oneKeyOrderPage">
+						<font class='onekey-span'>快捷订货</font>
+						<span class='show-span hide'>快捷订货</span>
+					</a>
+				</li>
+				#foreach($floornav in ${floornavList})
+				<li>
+					<a flid='${floornav.floorId}'  href="javascript:void(0)">
+
+						<font class='fixed-span' style="font-size:23px; ">${floornav.floorNum}</font>
+						<span class='show-span hide'>${floornav.floorName}</span>
+					</a>
+				</li>
+				#end
+				
+				<li><a href="#"><img style="margin: 7.3px auto;" src="/egolm-shop-web/resources/common/images/elevator/icon-to-top.png"/></a></li>
+			</ul>
+		</div>

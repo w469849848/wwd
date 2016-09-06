@@ -1,0 +1,106 @@
+
+<!DOCTYPE html>
+<html lang="zh-CN">
+
+	<head>
+		<meta charset="utf-8">
+		<meta http-equiv="X-UA-Compatible" content="IE=edge">
+		<meta name="viewport" content="width=device-width, initial-scale=1">
+		<title>万店易购商品后台登录</title>
+		<link href="assets/css/bootstrap.min.css" rel="stylesheet">
+		<link href="assets/css/login.css" rel="stylesheet">
+	</head>
+
+	<body>
+	<div class="hander"></div>
+
+	<div class="login_main">
+		<div class="login_main_l">
+		 	<div class="login_logo">
+		 		<img src="assets/images/login/logo.png" class="img-responsive wh_logo" alt="Responsive image">
+		 		<img src="assets/images/login/slogan.png" alt="img" class="img-responsive slogan">
+		 	</div>
+		 <div class="login_sum">
+		 	<h1>400-638-1707</h1>
+		 	<p class="login_total">全国统一热线</p>
+		</div>
+	</div>
+
+		<div class="login_main_r">
+		 	<div class="login_content">
+		 	<!-- <span href="javascript:void(0)" class="erweima"></span> -->
+		 		<div class="wh_form">
+					<div class="wh_login_titer">
+						<a href="javascript:void(0)" class="erweima"></a>
+							</div>
+
+	<form class="login_hid login-qrcode">
+		<h4 class="login-tit">登录</h4>	
+						<div class="wh_username">
+					<i class="ico_user"><img src="assets/images/login/login_check1.jpg"></i>
+				<input type="user" class="user_inp login_input" placeholder="手机号" autocomplete="off">
+			</div>
+		<div class="wh_password">
+			<i class="ico_user"><img src="assets/images/login/login_check2.jpg"></i>
+				<input type="password" class="password_inp login_input" placeholder="密码" autocomplete="off">
+					</div>
+						<div class="yzm_loginth">
+							<div class="wh_login_yzm">
+								<div class="wh_yzm">
+									<i class="ico_user"><img src="assets/images/login/login_check3.png"></i>
+										<input type="text" class="yzm_inp login_input" placeholder="验证码" autocomplete="off" maxlength="4">
+											</div>
+										</div>
+									<div class="yzm_img">
+								<a href="javascript:void(0)"><img src="assets/images/login/yzm.gif" alt="Responsive image">
+							</div>
+						</div>
+					<div class="wh_login_chk">
+				<div class="login_chk">
+					<input type="checkbox">&nbsp;&nbsp;&nbsp;<span class="chk_inp">记住密码</span>
+						</div>
+							<div class="chk_paw"><a href="javascript:void(0)" class="chk_inp">忘记密码?</a></div>
+								</div>
+							<div class="login_btn">
+						<input type="submit" value="登录" class="login_btnth"></input>
+					</div>
+			<!-- 	<div class="register_titer">
+			<p>没有账号？<a href="javascript:void(0)">立即注册</a></p>
+		</div> -->
+	</form>
+
+	<!-- 扫二维码 -->
+	<div class="sm_login login-2qrcode">
+	<h4 class="sm_login_titer">扫码登录</h4>
+	<p class="sm_bg text-center"><img src="assets/images/login/qr_code.png"></p>
+	<p class="sm_titer text-center">用万店易购APP,扫码安全登录</p>
+	</div>
+
+		</div>
+		 	</div>
+				</div>
+					</div>
+
+<script src="assets/js/jquery-2.0.3.min.js" type="text/javascript"></script>
+<script src="assets/js/countUp.js"></script>
+
+<script type="text/javascript">
+	$(document).ready(function() {
+		   $('.erweima').on("click",function(){
+			   	if($('.login_hid').hasClass('btn-2qrcode')){
+			   		$('.erweima').css("background","url(assets/images/login/erweima_th.png) no-repeat");
+			   		$('.login_hid').removeClass('btn-2qrcode').addClass('btn-2login');
+			   		$('.login_hid').css("display","none");
+			   		$('.sm_login').css("display","block");
+			   	}else{
+			   		$('.erweima').css("background","url(assets/images/login/erweima.png) no-repeat");
+			   		$('.login_hid').removeClass('btn-2login').addClass('btn-2qrcode');
+			   		$('.sm_login').css("display","none");
+			   		$('.login_hid').css("display","block");
+			   }
+			});
+	})
+</script>
+
+	</body>
+</html>
