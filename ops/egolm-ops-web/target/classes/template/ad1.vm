@@ -1,0 +1,6 @@
+<!--广告页面模板-->
+<div class="hot-ad mb-20 pw ma">
+				<div class="hot-ad-item">
+					<a href="${advert.url}"><img isshow="false" data-original="${advert.img}" isad="true" style="width:1210px;height:120px" ad_id="${advert.id}" ap_id="${advert.apId}"/></a>
+				</div>
+			</div>

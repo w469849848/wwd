@@ -1,0 +1,69 @@
+.batch{ float: left; padding-left: 23px; }
+.batch label{ margin: 0; margin-left: 10px; }
+.batch label input{ height: 40px; padding-left: 20px; padding-right: 20px; }
+.batch label:nth-child(1) input { background-color: #ff6400 !important; color: #fff; }
+
+.pagination{ float: right; }
+.dealer{ border: 1px solid #e5e5e5; background-color: #fff; border-radius: 5px; -webkit-border-radius: 5px; -moz-border-radius: 5px; }
+.state{ position: relative; top: -2px; margin-right: 4px; }
+
+.filter-wrap{ margin-left: 0; margin-bottom: 0; margin-right: 0; padding: 12px 32px; }
+.filter-wrap label{ position: relative; width: 15%; padding: 0; margin: 0; }
+.filter-wrap label .filter{ -webkit-appearance: none; position: relative; left: -15px; height: 38px; line-height: 38px; width: 90%; border-radius: 2px !important; -webkit-border-radius: 2px !important; -moz-border-radius: 2px !important; border: 1px solid #e5e5e5; padding-left: 40px; }
+.filter-wrap .icon-search{ font-size: 18px; position: relative; left: 13px; z-index: 990; }
+.filter-wrap .icon-search::before{ content: ""; display: block; position: relative; top: 2px; width: 15px; height: 15px; background: url(../images/search.png) no-repeat; background-size: 100% 100%; -webkit-background-size: 100% 100%; }
+.filter-wrap .add-level{ float: right; font-weight: bold; width: 135px; height: 40px; line-height: 40px; text-align: center; text-decoration: none; color: #ff6400; background-size: 100% 100%; -webkit-background-size: 100% 100%; background: url(../images/add-man.png) no-repeat; }
+.filter-wrap .add-level a{ color: #ff6400; text-decoration: none; }
+.filter-wrap .add-level i{ font-size: 15px; margin-right: 2%; }
+
+/*自定义下拉框*/
+.filter-wrap div.row{ margin-bottom: 13px; }
+.filter-wrap a.dropdown-btn{ position: relative; height: 38px; line-height: 28px; padding: 5px 12px; padding-right: 25px; text-decoration: none; }
+.filter-wrap a.dropdown-btn:focus{ color: #505050; }
+.filter-wrap a.dropdown-btn:hover{ color: #505050; }
+.filter-wrap span.input-tips{ line-height: 40px; }
+.filter-wrap span.dr{ position: absolute; display: block; width: 38px; height: 38px; top: 50%; margin-top: -19px; right: 0; background: #e5e5e5; }
+.filter-wrap span.dr img{ position: absolute; top: 50%; left: 50%; margin-top: -3.5px; margin-left: -6px; display: block; width: 12px; height: 7px; }
+.filter-wrap .dropdown-menu li{ text-align: left; padding: 0 12px; }
+.filter-wrap .add-level i.add-icon::before{ content: ""; display: inline-block; width: 15px; height: 15px; background: url(../images/add-icon.png) no-repeat; background-size: 100% 100%; -webkit-background-size: 100% 100%; position: relative; top: 2px; }
+
+/**/
+tfoot div.row{ margin-bottom: 13px; }
+tfoot a.dropdown-btn{ position: relative; height: 38px; line-height: 28px; padding: 5px 12px; padding-right: 25px; text-decoration: none; }
+tfoot a.dropdown-btn:focus{ color: #505050; }
+tfoot a.dropdown-btn:hover{ color: #505050; }
+tfoot span.input-tips{ line-height: 40px; }
+tfoot span.dr{ position: absolute; display: block; width: 38px; height: 38px; top: 50%; margin-top: -19px; right: 0; background: #e5e5e5; }
+tfoot span.dr img{ position: absolute; top: 50%; left: 50%; margin-top: -3.5px; margin-left: -6px; display: block; width: 12px; height: 7px; }
+tfoot .dropdown-menu li{ text-align: left; padding: 0 12px; }
+tfoot .add-level i.add-icon::before{ content: ""; display: inline-block; width: 15px; height: 15px; background: url(../images/add-icon.png) no-repeat; background-size: 100% 100%; -webkit-background-size: 100% 100%; position: relative; top: 2px; }
+tfoot label{ position: relative; width: 15%; padding: 0; margin: 0; }
+
+.apply { margin: 0; margin-left: 10px; }
+.apply input{ height: 40px; padding-left: 20px; padding-right: 20px;  background-color: #ff6400 !important; color: #fff; }
+
+.table-box .table tbody>tr>td input[type=text]{
+    width: 100%;
+    border: none;
+    border-bottom: 1px solid #e5e5e5;
+    background-color: #fff;
+}
+.table-box .table tfoot>tr>td input[type=text]{
+    width: 100%;
+    border: none;
+    border-bottom: 1px solid #e5e5e5;
+    background-color: #fff;
+}
+
+.td-3{
+	min-width: auto;
+    max-width: 10%;
+    width: 10%;
+}
+.table-box .table tfoot .foot-label{width: 100%;}
+
+.edit-box .modal-dialog{ margin-top: -185px; }
+
+@media only screen and (max-width: 360px) {
+	.edit-box .modal-body{ padding-left: 12px; }
+}

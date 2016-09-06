@@ -1,0 +1,17 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<beans xmlns="http://www.springframework.org/schema/beans"
+	xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" xmlns:dubbo="http://code.alibabatech.com/schema/dubbo"
+	xsi:schemaLocation="http://www.springframework.org/schema/beans http://www.springframework.org/schema/beans/spring-beans-2.5.xsd
+    http://code.alibabatech.com/schema/dubbo http://code.alibabatech.com/schema/dubbo/dubbo.xsd">
+
+  	<dubbo:reference id="tSalesOrderSubQueryApi" interface="com.egolm.order.api.TSalesOrderSubQueryApi" /> 
+  	
+  	<dubbo:reference id="tSalesOrderSubDtlQueryApi" interface="com.egolm.order.api.TSalesOrderSubDtlQueryApi" /> 
+  	
+  	<dubbo:reference id="tSalesOrderSubUpdateApi" interface="com.egolm.order.api.TSalesOrderSubUpdateApi" /> 
+  	   	
+  	<dubbo:reference id="tSalesOrderSubStatusAddApi" interface="com.egolm.order.api.TSalesOrderSubStatusAddApi" />
+  	
+  	<dubbo:reference id="orderNoCreatorApi" interface="com.egolm.order.api.OrderNoCreatorApi" />
+  	
+</beans>

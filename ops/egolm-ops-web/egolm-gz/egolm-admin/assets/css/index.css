@@ -1,0 +1,82 @@
+.demand_btn {
+	background: #FFF;
+	border-radius: 5px;
+}
+
+.wh_demand {
+	background: #FAFAFA;
+	color: #666;
+	border: 1px solid #E0E0E0;
+}
+
+.wh_demand:hover,
+.wh_demand:checked {
+	background: #F96200;
+	color: white;
+	border: 1px solid #E0E0E0;
+}
+
+.quantity {
+	display: inline-block;
+	background: #F96200;
+	margin:0px 2px -5px 2px;
+	border-radius:8px;
+	color: white;
+	white-space:nowrap;
+	text-overflow:ellipsis;
+	overflow:hidden;
+	width:30px;		
+
+}
+
+.fcenter tr td {
+	text-align: center;
+}
+
+.demand_btn {
+	padding: 30px 0;
+	margin: 0;
+	min-width: 100%;
+}
+
+.sChart {
+	background: #FFF;
+	margin: 0;
+	margin-top: 30px;
+	min-width: 100%;
+	padding: 0;
+}
+
+.demand_btn button {
+	margin: 30px 0;
+}
+
+.all_choice {
+	margin-left: -320px;
+}
+
+.data_titer {
+	margin: 10px 0 0 15px;
+}
+.row{
+	margin: 0;
+}
+
+
+@media screen and (max-width: 1200px){
+	.mb_demand1,.mb_demand2{
+		width: 50%;
+		height: auto;
+		float: left;
+	}
+}
+
+
+@media screen and (max-width: 1200px){
+	.mb_demands {
+		width: 100%;
+		height: auto;
+		text-align: center;
+		display: block;
+	}
+}

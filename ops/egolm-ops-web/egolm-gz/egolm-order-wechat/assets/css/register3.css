@@ -1,0 +1,299 @@
+body {
+	background: #fff;
+}
+
+.user-infor {
+	height: 3.214rem;
+	border-bottom:1px solid #eee; 
+}
+
+.user-infor p {
+	text-align: center;
+	line-height: 3.214rem;
+	font-size: 1.4rem;
+	color: #424242;
+}
+
+.infor-select {
+	height: 6.428rem;
+	/*border-bottom:1px solid #eee;*/ 
+}
+
+.infor-select ul  {
+	height: 6.428rem;
+	margin: 0 1.428rem;
+	border-bottom:1px solid #eee; 
+}
+
+.infor-select ul li {
+	width: 6.785rem;
+	height: 2.857rem;
+	background:#eee; 
+	float:left;
+	margin-left:1.6rem; 
+	margin-top:1.785rem;
+	border-radius: 5px;
+}
+
+ .infor-select ul li:first-child {
+	margin-left: 0;
+} 
+
+.infor-select ul li select{
+	width: 6.785rem;
+	height: 2.857rem;
+	background: #eee;
+	border-radius: 5px;
+	border:0;
+	-webkit-appearance: none;
+	-o-appearance:none;
+	-ms-appearance:none;
+	text-align: center;
+	margin: 0 auto;
+	padding-left: 1.6rem;
+	color: #656565;
+}
+
+.infor-select ul li select option {
+	width: 6.785rem;
+	height: 2.857rem;
+	background: #eee;
+	border-top:1px solid #d3d3d3; 
+}
+
+	
+.sec-pd{
+	padding-left: 1.6rem!important;	
+}
+
+.register-pd-th{
+	height: 3.214rem;
+	width: 100%;
+	margin-top:1px;	 
+}
+
+.register-pd {
+	margin: 0 1.428rem;
+	height: 3.214rem;
+	border-bottom:1px solid #eee;
+}
+
+.register-tel {
+	width: 100%;
+	height: 100%;
+	border: 0;
+}
+
+.weixin-yzm {
+	height: 100%;
+	width: 14.285rem;
+	float: left;
+}
+
+.get-yzm {
+	display: block;
+	float: left;
+	width: 6.428rem;
+	height: 2.5rem;
+	background: #ff6400;
+	color: #fff;
+	text-align: center;
+	line-height:2.142rem;
+	margin:0.4rem 0 0 2.2rem;
+	border-radius: 5px;
+}
+
+.get-yzm input {
+	width: 6.428rem;
+	height: 2.5rem;
+	background: #ff6400;
+	color: #fff;
+	text-align: center;
+	line-height:2.142rem;
+	float: left;
+	border-radius: 5px;
+}
+
+.register-pass {
+	width: 100%;
+	height: 100%;
+	border: 0;
+}
+
+.register-next {
+	height: 3.214rem;
+	margin-top:3.5rem; 
+}
+
+.register-tit {
+	display: block;
+	height: 3.214rem;
+	width:20rem;
+	background: #ff6400;
+	color: #fff;
+	text-align: center;
+	line-height: 3.214rem;
+	margin:0 3.392rem; 
+	border-radius: 5px;
+}
+
+.register-find {
+	height: 3rem;
+}
+
+.register-find p {
+	text-align: center;
+	line-height: 3rem;
+	color: #949494;
+	letter-spacing: 1px;
+}
+
+.register-find p a {
+	color: #ff6400;
+}
+
+.register-uploadth {
+	height: 10.714rem;
+}
+
+.register-upload {
+	height: 10.714rem;
+	border-bottom: 1px solid #eee;
+	margin: 0 1.428rem;
+}
+
+.register-pd input{
+	width: 100%;
+	height: 100%;
+	line-height: 3.6rem;
+}
+
+
+.upload {
+	width: 14.285rem;
+	height: 8.928rem;
+	position: relative;
+	background: #fff;
+	opacity: 0;
+	z-index: 10;
+}
+
+.upload_bg {
+	width: 14.285rem;
+	height: 8.928rem; 
+	z-index: 1;
+	position: absolute;
+	top: 0;
+	left: 0;
+}
+
+.upload_bg img{
+	width: 14.285rem;
+	height: 8.928rem; 
+	position: absolute;
+	top: 1rem;
+	left: 5.357rem;
+}
+
+.register-load {
+	width: 14.285rem;
+	height: 8.928rem;
+	padding: 1rem 0 0 5.357rem; 
+	position: relative;
+}
+
+/*删除弹窗*/
+.delete-alert{ 
+	position: fixed; 
+	z-index: 999999999; 
+	top: 0; 
+	left: 0; 
+	width: 100%;
+	height: 100%;
+	background: rgba(0,0,0,0.8);
+}
+
+.delete-alert .alert-content{
+	 position: absolute; 
+	 margin: auto; 
+	 top: 0; 
+	 left: 0; 
+	 bottom: 0;
+	 right: 0; 
+	 width: 20.357rem; 
+	 height: 10.357rem; 
+	 font-size: 1.286rem; 
+	 color: #333;
+	 background: #fff; 
+	 border-radius: 0.143rem; 
+	 -webkit-border-radius: 0.143rem; 
+}
+
+.alert-reg {
+	height: 4.285rem;
+	width: 20.178rem;
+}
+
+.alert-reg-img {
+	float: left;
+	width: 7.857rem;
+	height: 100%;
+}
+
+.alert-reg-img img {
+	float: right;
+	width: 1.5rem;
+	height: 1.5rem;
+	padding-top: 1.357rem;
+}
+
+.alert-reg-tit {
+	width: 6.071rem;
+	height: 100%;
+	float: left;
+}
+
+.alert-reg-tit h1{
+	line-height: 4.285rem;
+	font-size: 1.286rem; 
+	font-weight: normal;
+	 font-weight: bold;
+	 text-align: center;
+}
+
+
+.delete-alert .alert-content .btn-wrap{
+ 	position: absolute; 
+ 	bottom: 0; 
+ 	width: 100%; 
+ 	border-top: 1px solid #959595;
+  }
+
+
+.delete-alert .alert-content .btn-wrap p{
+	font-size: 0.9rem;
+	padding:1.357rem 1.357rem 1.357rem 1.357rem;
+	color: #9d9d9d;
+	letter-spacing: 1px;  
+}
+
+.banck-nav {
+	width:100%;
+	height: 2rem;
+}
+
+.banck-nav a {
+	width: 100%;
+	height: 2rem;
+	line-height: 2rem;
+	text-align: center;
+	margin: 0 auto;
+	font-size: 1rem;	
+	padding-left: 4rem;
+}
+
+
+
+
+
+

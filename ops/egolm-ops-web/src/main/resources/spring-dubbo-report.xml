@@ -1,0 +1,15 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<beans xmlns="http://www.springframework.org/schema/beans"
+	xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" xmlns:dubbo="http://code.alibabatech.com/schema/dubbo"
+	xsi:schemaLocation="http://www.springframework.org/schema/beans http://www.springframework.org/schema/beans/spring-beans-2.5.xsd
+    http://code.alibabatech.com/schema/dubbo http://code.alibabatech.com/schema/dubbo/dubbo.xsd">
+
+  	<dubbo:reference id="reportEChartsQueryApi" interface="com.egolm.report.api.ReportEChartsQueryApi" /> 
+  	<dubbo:reference id="tCustAccessLogQueryApi" interface="com.egolm.report.api.TCustAccessLogQueryApi" />
+    <dubbo:reference id="tCustTrafficAnalysisQueryApi" interface="com.egolm.report.api.TCustTrafficAnalysisQueryApi" />
+  	    
+  	<dubbo:reference id="tYWReportSQLAddApi" interface="com.egolm.report.api.TYWReportSQLAddApi" />
+  	<dubbo:reference id="tYWReportSQLQueryApi" interface="com.egolm.report.api.TYWReportSQLQueryApi" />
+  	<dubbo:reference id="tYWReportSQLUpdateApi" interface="com.egolm.report.api.TYWReportSQLUpdateApi" />
+  	    
+</beans>

@@ -1,0 +1,29 @@
+.add-box{ background: none; border: none; padding: 0; }
+.add-box h1{ font-size: 13px; font-weight: bold; border-left: 3px solid #ff6400; line-height: 1.6; padding: 0 23px; margin: 30px 0; }
+.add-box p.line{ border-top: 1px solid #e5e5e5; margin: 0 27px 30px; }
+.add-box .dealer-info,.add-box .dealer-addr{ border: 1px solid #e5e5e5; background-color: #fff; border-radius: 5px; -webkit-border-radius: 5px; -moz-border-radius: 5px; font-size: 13px; }
+.add-box .dealer-info{ margin-bottom: 20px; }
+
+.add-box .dealer-info .info-box,.add-box .dealer-addr .addr-box{ padding: 0px 38px; }
+.add-box .dealer-info .info-box span,.add-box .dealer-addr .addr-box span{ text-align: left; }
+
+input[disabled]{ background-color: #fbfbfb !important; border: none !important; }
+
+.dealer-addr.margin-bottom{ margin-bottom: 20px; }
+
+@media only screen and (max-width: 991px) {
+	.add-box h1{ padding: 0 15px; }
+	.add-box p.line{ margin: 0 20px 30px; }
+	.add-box .dealer-info .info-box, .add-box .dealer-addr .addr-box{ padding: 0px 30px; }
+	.add-box{ padding: 0 !important; }
+}
+
+@media only screen and (max-width: 767px) {
+	.add-box form p:last-child label input:first-child{ margin-right: 6%; }
+}
+
+@media only screen and (max-width: 360px) {
+	.add-box h1{ padding: 0 5px; }
+	.add-box p.line{ margin: 0 10px 30px; }
+	.add-box .dealer-info .info-box, .add-box .dealer-addr .addr-box{ padding: 0px 20px; }
+}

@@ -1,0 +1,84 @@
+	/*清除浮动*/
+	.clearfix:after{ content:"."; display:block; height:0; clear:both; visibility:hidden; }
+	.clearfix{ *+height:1%; }
+
+	a:hover{
+      text-decoration:none;
+    }
+
+    a{
+      text-decoration: none;
+    }
+
+    a:visited {
+      text-decoration: none;
+    }
+
+    .navigation_bar {
+      height: 32px;
+    }
+    
+    .navigation_bar ul{ margin: 0; padding: 0; display: inline-block; }
+
+    .navigation_bar ul li {
+      float: left;
+      list-style-type:none; 
+      margin: 0 10px; 
+    }
+
+    .navigation_bar ul li.active a{ color: #ff6400; }
+
+    .navigation_bar ul li a {
+      color: #515151;
+      font-size: 16px;
+      line-height: 30px;
+      text-decoration: none;
+    }
+
+     .navigation_bar ul li a:hover {
+        color: #ff6400;
+      }
+
+    .nav_first {
+      display: inline-block;
+      width: 60px;
+      height: 30px;
+      text-align: center;
+      background: url(../images/paging/navbar_f.gif) no-repeat;
+       margin-top: -3px;
+    }
+
+    .nav_float {
+      display: inline-block;
+      width: 30px;
+      height: 30px;
+      line-height: 30px;
+      text-align: center;
+      background: url(../images/paging/navbar_r.gif) no-repeat;
+       margin-top: -3px;
+    }
+
+    .nav_right {
+      display: inline-block;
+      width: 30px;
+      height: 30px;
+      line-height: 30px;
+      text-align: center;
+      background: url(../images/paging/navbar_y.gif) no-repeat;
+      margin-top: -3px;
+    }
+
+    .nav_last {
+      display: inline-block;
+      width: 60px;
+      height: 30px;
+      text-align: center;
+      background: url(../images/paging/navbar_l.gif) no-repeat;
+      margin-top: -3px;
+    }
+    
+	.table-box table tfoot .navigation_bar{ margin-top: 7px; }
+	
+	.page-disable {
+	  opacity:0.5;
+	}

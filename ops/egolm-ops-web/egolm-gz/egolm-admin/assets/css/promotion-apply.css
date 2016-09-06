@@ -1,0 +1,9 @@
+.filter-select{ position: absolute; top: 13px; left: 103px; width: 320px; height: 38px; margin-bottom: 0; }
+.filter-select span.dr{ width: 38px !important; height: 38px !important; margin-top: -19px !important; }
+.filter-select ul.dropdown-menu{ margin: 0; padding: 0; }
+.filter-select ul.dropdown-menu li{ margin: 0; }
+
+.add-box .add-activity a.dropdown-btn{ height: 38px; line-height: 28px; }
+.add-box .add-activity a.dropdown-btn>span:first-child{ width: auto; height: 100%; line-height: 38px; }
+
+.temp2 table td>p{ margin: 0 !important; text-align: left !important; padding: 8px; }

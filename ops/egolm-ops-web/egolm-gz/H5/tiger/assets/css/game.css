@@ -1,0 +1,60 @@
+@charset "utf-8";
+
+html,body{ height: 100%; background: #230550; }
+
+/*首页*/
+.index-wrap{ height: 100%; }
+
+.index-wrap .header{ height: 3.1428rem; background: #ff6400; }
+.index-wrap .header .btn-back{ display: block; position: absolute; top: 0; left: 0; width: 2.2857rem; height: 3.143rem; }
+.index-wrap .header .btn-back img{ position: absolute; margin: auto; top: 0; left: 0; bottom: 0; right: 0; width: 0.7143rem; height: 1.3214rem; }
+.index-wrap .header h1{ line-height: 3.1428rem; text-align: center; font-size: 18px; }
+
+.index-wrap .index{ height: 43.0714rem; background: url(../images/index_bg.jpg) no-repeat; background-size: 100% 100%; }
+.index-wrap .index .prize{ position: absolute; margin: auto; top: 19.0357rem; left: 0; right: 0; width: 19.4286rem; padding: 0 0.5rem 0.75rem; background: rgba(221,0,255,0.3); border-radius: 0.3571rem; -webkit-border-radius: 0.3571rem; }
+.index-wrap .index .prize h2{ line-height: 2.3928rem; font-size: 15px; text-align: center; color: #ffdb0d; }
+.index-wrap .index .prize ul li{ padding-left: 3.7857rem; line-height: 1.6071rem; font-size: 11px; }
+.index-wrap .index .prize ul li:nth-child(odd){ background: rgba(152,3,215,0.7); }
+.index-wrap .index .prize ul li:nth-child(even){ background: rgba(152,3,215,0.5); }
+.index-wrap .index .prize ul li .icon{ position: relative; top: 0.25rem; width: 1.3571rem; height: 1.0357rem; margin-right: 0.6rem; }
+.index-wrap .index .prize ul li .icon-first{ background: url(../images/first.png) no-repeat; }
+.index-wrap .index .prize ul li .icon-second{ background: url(../images/second.png) no-repeat; }
+.index-wrap .index .prize ul li .icon-third{ background: url(../images/third.png) no-repeat; }
+.index-wrap .index .prize ul li .prize-name{ margin-left: 1.75rem; }
+.index-wrap .index .btn-box{ position: absolute; margin: auto; top: 29.1786rem; left: 0; right: 0; width: 22rem; height: 5rem; text-align: center; background: rgba(32,0,71,0.6); border-radius: 2.5rem; -webkit-border-radius: 2.5rem; }
+.index-wrap .index .btn-box button{ width: 20.3571rem; height: 3.5714rem; text-indent: -9999999px; border: none; padding: 0; margin-top: 0.7143rem; background: url(../images/btn_join.png) no-repeat; background-size: 100% 100%; outline: none; }
+.index-wrap .index .activity-intro{ position: absolute; top: 36.4286rem; width: 100%; text-align: center; }
+.index-wrap .index .activity-intro p{ line-height: 1.4286rem; font-size: 12px; }
+
+
+/*游戏页*/
+.game-wrap{ height: 46.2143rem; background: url(../images/game_bg.jpg) no-repeat; background-size: 100% 100%; }
+.game-wrap .tiger-wrap{ position: absolute; top: 12.2857rem; width: 100%; }
+.game-wrap .tiger-wrap .tiger-box{ width: 24.0714rem; height: 19.7857rem; margin: 0 auto; background: url(../images/tiger_box.png) no-repeat; background-size: 100% 100%; }
+.game-wrap .tiger-wrap .tiger-box .num-box{ position: absolute; top: 6.8214rem; left: 1.6786rem; width: 20.2501rem; height: 11.2857rem; padding-left: 0.4642rem; border-radius: 0.3571rem; -webkit-border-radius: 0.3571rem; }
+.game-wrap .tiger-wrap .tiger-box .num-box .num{ position: relative; float: left; margin-left: 0.2857rem; margin-top: 0.22rem; width: 6.4286rem; height: 10.8571rem; background: url(../images/num.png) repeat-y; background-size: 100% auto; background-position-y: -1.75rem; border-radius: 0.45rem; -webkit-border-radius: 0.45rem; }
+.game-wrap .tiger-wrap .tiger-box .num-box .num:first-child{ margin-left: 0; }
+.game-wrap .tiger-wrap .tiger-box .num-box .num .shadow{ position: absolute; top: 0; left: 0; width: 100%; height: 100%; background: url(../images/shadow.png) no-repeat; background-size: auto 100%; }
+.game-wrap .tiger-wrap .prize-box{ width: 23.7143rem; margin: 0 auto; margin-top: -0.2rem; text-align: center; background: rgba(221,0,255,0.15); border-bottom-left-radius: 0.3571rem; -webkit-border-bottom-left-radius: 0.3571rem; border-bottom-right-radius: 0.3571rem; -webkit-border-bottom-right-radius: 0.3571rem; }
+.game-wrap .tiger-wrap .prize-box p{ line-height: 2.1429rem; font-size: 11px; color: #6d3591; }
+.game-wrap .btn-box{ position: absolute; margin: auto; top: 35.7857rem; left: 0; right: 0; width: 23.5714rem; height: 5rem; text-align: center; background: rgba(32,0,71,0.6); border-radius: 2.5rem; -webkit-border-radius: 2.5rem; }
+.game-wrap .btn-box button{ width: 21.7857rem; height: 3.5714rem; text-indent: -9999999px; border: none; padding: 0; margin-top: 0.7143rem; background: url(../images/btn_start.png) no-repeat; background-size: 100% 100%; outline: none; }
+.game-wrap .times-box{ position: absolute; top: 41.25rem; width: 100%; text-align: center; }
+.game-wrap .times-box p{ color: #ec00ff; font-size: 12px; line-height: 1.5; letter-spacing: 3px; }
+
+/*底部波浪*/
+.footer{ position: fixed; bottom: 0; width: 100%; height: 4.5357rem; background: url(../images/footer_bg.png) no-repeat; background-size: 100% 100%; }
+
+
+/*动画*/
+.tiger-animate{ transition: all cubic-bezier(0.86, 0, 0.07, 1); -webkit-transition: all cubic-bezier(0.86, 0, 0.07, 1); }
+
+
+/*奖品弹窗*/
+.popup-wrap{ position: fixed; top: 0; left: 0; width: 100%; height: 100%; background: rgba(0,0,0,0.5); }
+.popup-wrap .popup{ position: absolute; margin: auto; top: 14.3rem; left: 0; right: 0; width: 17.8571rem; height: 12.8571rem; text-align: center; background: url(../images/prize_box.png) no-repeat; background-size: 100% 100%; }
+.popup-wrap .popup .btn-close{ position: absolute; top: -0.5rem; right: -0.5rem; display: block; width: 1.7143rem; height: 1.7143rem; }
+.popup-wrap .popup .btn-close img{ width: 100%; height: 100%; }
+.popup-wrap .popup .prize-lv{ font-size: 15px; line-height: 4.64rem; }
+.popup-wrap .popup .prize-name{ font-size: 24px; color: #ffde00; }
+.popup-wrap .popup .btn-get{ width: 10rem; height: 3.2143rem; text-indent: -9999999px; border: none; padding: 0; margin-top: 1.5rem; background: url(../images/btn_get.png) no-repeat; background-size: 100% 100%; outline: none; }

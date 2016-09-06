@@ -1,0 +1,166 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<beans xmlns="http://www.springframework.org/schema/beans" 
+xmlns:dubbo="http://code.alibabatech.com/schema/dubbo" 
+xmlns:context="http://www.springframework.org/schema/context"
+xmlns:task="http://www.springframework.org/schema/task"
+xmlns:aop="http://www.springframework.org/schema/aop" 
+xmlns:tx="http://www.springframework.org/schema/tx"
+xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" 
+xmlns:mvc="http://www.springframework.org/schema/mvc" 
+xsi:schemaLocation="http://www.springframework.org/schema/beans 
+http://www.springframework.org/schema/beans/spring-beans.xsd
+    http://www.springframework.org/schema/context 
+    http://www.springframework.org/schema/context/spring-context-3.1.xsd 
+    http://www.springframework.org/schema/mvc
+    http://www.springframework.org/schema/mvc/spring-mvc-3.1.xsd 
+    http://www.springframework.org/schema/aop 
+	http://www.springframework.org/schema/aop/spring-aop.xsd
+    http://www.springframework.org/schema/tx
+	http://www.springframework.org/schema/tx/spring-tx-3.2.xsd
+    http://code.alibabatech.com/schema/dubbo 
+    http://code.alibabatech.com/schema/dubbo/dubbo.xsd
+    http://www.springframework.org/schema/task
+    http://www.springframework.org/schema/task/spring-task-3.1.xsd">
+    
+	<context:annotation-config />
+	<context:component-scan base-package="com.egolm.ops.web" />
+	<context:component-scan base-package="com.egolm.tpl" />
+	<context:component-scan base-package="com.egolm.member.web" />
+	<context:component-scan base-package="com.egolm.base.web" />
+	<context:component-scan base-package="com.egolm.postsale.web" />
+	<context:component-scan base-package="com.egolm.dealer.web" />
+	<context:component-scan base-package="com.egolm.advert.web" />
+	<context:component-scan base-package="com.egolm.customer.web" />
+	<context:component-scan base-package="com.egolm.goods.web" />
+	<context:component-scan base-package="com.egolm.notice.web" />
+	<context:component-scan base-package="com.egolm.sales.web" />
+	<context:component-scan base-package="com.egolm.driver.web" />
+	<context:component-scan base-package="com.egolm.order.web" />
+	<context:component-scan base-package="com.egolm.report.web" />
+	<context:component-scan base-package="com.egolm.template" />
+	<context:component-scan base-package="com.egolm.promo" />
+	<mvc:annotation-driven>
+        <mvc:argument-resolvers>  
+            <bean class="org.springframework.plugin.web.ArgumentsResolver" />
+        </mvc:argument-resolvers>
+    </mvc:annotation-driven>
+	
+	<mvc:resources location="/resources/" mapping="/resources/**" />
+	<!--文件上传设置 -->
+	<bean id="multipartResolver" class="org.springframework.web.multipart.commons.CommonsMultipartResolver">
+		<property name="maxUploadSize">
+			<value>10485760</value>
+		</property>
+		<property name="maxInMemorySize" value="4096" />
+	</bean>
+
+	<bean id="jspViewResolver" class="org.springframework.web.servlet.view.InternalResourceViewResolver">
+		<property name="prefix" value="/WEB-INF/ops/" />
+		<property name="suffix" value="" />
+		<property name="contentType" value="text/html;charset=UTF-8"></property>
+	</bean>
+
+	<bean id="freeMarkerViewResolver" class="org.springframework.web.servlet.view.freemarker.FreeMarkerViewResolver">
+		<property name="contentType" value="text/html;charset=UTF-8"></property>
+	</bean>
+
+	<bean id="freemarkerConfig" class="org.springframework.web.servlet.view.freemarker.FreeMarkerConfigurer">
+		<property name="templateLoaderPath" value="/WEB-INF/ftl/" />
+		<property name="freemarkerSettings">
+			<props>
+				<prop key="template_update_delay">0</prop>
+				<prop key="default_encoding">UTF-8</prop>
+				<prop key="number_format">0.##</prop>
+				<prop key="datetime_format">yyyy-MM-dd HH:mm:ss</prop>
+				<prop key="classic_compatible">true</prop>
+				<prop key="template_exception_handler">ignore</prop>
+			</props>
+		</property>
+	</bean>
+
+	<bean id="dataSource" class="com.mchange.v2.c3p0.ComboPooledDataSource">
+		<property name="user" value="${jdbc.connection.username}" />
+		<property name="password" value="${jdbc.connection.password}" />
+		<property name="driverClass" value="${jdbc.connection.driverClassName}" />
+		<property name="jdbcUrl" value="${jdbc.connection.url}" />
+	</bean>
+
+	<bean id="sqlServerDialect" class="org.springframework.plugin.jdbc.dialect.SqlServerDialect"></bean>
+
+	<bean id="jdbcTemplate" class="org.springframework.plugin.jdbc.JdbcTemplate">
+		<property name="dataSource" ref="dataSource" />
+		<property name="dialect" ref="sqlServerDialect" />
+		<property name="sql_level" value="2" />
+	</bean>
+
+	<bean id="transactionManager" class="org.springframework.jdbc.datasource.DataSourceTransactionManager">
+		<property name="dataSource" ref="dataSource" />
+	</bean>
+	
+	<aop:aspectj-autoproxy proxy-target-class="true"/>
+	
+	<aop:config>
+		<aop:pointcut id="pc" expression="execution(* com.egolm.*.service..*(..))" />
+		<aop:advisor pointcut-ref="pc" advice-ref="transactionAdvice" />
+	</aop:config>
+	
+	<!--  拦截器方式配置事务 -->
+	<tx:advice id="transactionAdvice" transaction-manager="transactionManager">
+		<tx:attributes>
+			<tx:method name="*" propagation="REQUIRED" />
+		</tx:attributes>
+	</tx:advice>
+
+	<bean id="jedisPoolConfig" class="redis.clients.jedis.JedisPoolConfig">
+		<property name="maxTotal" value="${redis.pool.config.maxTotal}" />
+		<property name="maxIdle" value="${redis.pool.config.maxIdle}" />
+		<property name="numTestsPerEvictionRun" value="${redis.pool.config.numTestsPerEvictionRun}" />
+		<property name="timeBetweenEvictionRunsMillis" value="${redis.pool.config.timeBetweenEvictionRunsMillis}" />
+		<property name="minEvictableIdleTimeMillis" value="${redis.pool.config.minEvictableIdleTimeMillis}" />
+		<property name="softMinEvictableIdleTimeMillis" value="${redis.pool.config.softMinEvictableIdleTimeMillis}" />
+		<property name="maxWaitMillis" value="${redis.pool.config.maxWaitMillis}" />
+		<property name="testOnBorrow" value="${redis.pool.config.testOnBorrow}" />
+		<property name="testWhileIdle" value="${redis.pool.config.testWhileIdle}" />
+		<property name="testOnReturn" value="${redis.pool.config.testOnReturn}" />
+		<property name="jmxEnabled" value="${redis.pool.config.jmxEnabled}" />
+		<property name="jmxNamePrefix" value="${redis.pool.config.jmxNamePrefix}" />
+		<property name="blockWhenExhausted" value="${redis.pool.config.blockWhenExhausted}" />
+	</bean>
+
+	<bean id="connectionFactory" class="org.springframework.data.redis.connection.jedis.JedisConnectionFactory">
+		<property name="hostName" value="${redis.host}" />
+		<property name="port" value="${redis.port}" />
+		<!-- <property name="password" value="${redis.passwd}" /> -->
+		<property name="poolConfig" ref="jedisPoolConfig" />
+	</bean>
+
+	<bean id="redisTemplate" class="org.springframework.data.redis.core.RedisTemplate">
+		<property name="connectionFactory" ref="connectionFactory" />
+		<property name="keySerializer">
+			<bean class="org.springframework.data.redis.serializer.StringRedisSerializer" />
+		</property>
+	</bean>
+	
+	
+	<!-- 静态页面生成定时任务，每天凌晨3点，执行一次更新 -->
+    <bean id="templateHtmlGenerator" class="com.egolm.tpl.generator.TemplateHtmlGenerator" scope="prototype">
+    	<property name="prefix" value="COM.EGOLM.OPS.TPL.PAGE"></property>
+    	<property name="moduleConfig">
+    		<map>
+    			<entry key="template/nav1.vm" value-ref="nav1ModuleGenerator"/>
+    			<entry key="template/ad1.vm" value-ref="advert1ModuleGenerator"/>
+    			<entry key="template/brand1.vm" value-ref="brand1ModuleGenerator"/>
+    			<entry key="template/floor1.vm" value-ref="floor1ModuleGenerator"/>
+    			<entry key="template/floor2.vm" value-ref="floor2ModuleGenerator"/>
+    			<entry key="template/product1.vm" value-ref="product1ModuleGenerator"/>
+	       </map>
+    	</property>
+    </bean>
+    
+    <task:scheduled-tasks>
+        <task:scheduled ref="templateHtmlGenerator" method="execute" cron="0 0 3 * * ?"/>
+    </task:scheduled-tasks>
+
+	<import resource="spring-context.xml" />
+
+</beans>

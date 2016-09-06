@@ -1,0 +1,425 @@
+<!DOCTYPE html>
+<html>
+
+	<head>
+		<meta charset="utf-8">
+		<meta http-equiv="X-UA-Compatible" content="IE=edge">
+		<meta name="viewport" content="width=device-width, initial-scale=1">
+		<title>香料配方交换网</title>
+		<link href="assets/css/comm.css" rel="stylesheet">
+		<link href="assets/css/hf.css" rel="stylesheet">
+		<link href="assets/css/list-goods.css" rel="stylesheet">
+	</head>
+
+	<body>
+
+		<div class="splce-mainth">
+			<header class="splce-main">
+				<div class="login-usename">
+					<p>Hi，<a href="javascript:void(0)">用户名</a>，欢迎来到香料配方交换网</p>
+				</div>
+				<div class="splce-navs">
+					<ul>
+						<li><a href="login.html">请登录</a></li>
+						<li><a href="javascript:void(0)">·</a></li>
+						<li><a href="download.html">配方上传</a></li>
+						<li><a href="javascript:void(0)">·</a></li>
+						<li><a href="personal-center.html">会员中心</a></li>
+						<li><a href="javascript:void(0)">·</a></li>
+						<li><a href="javascript:void(0)">互动交流</a></li>
+						<li><a href="javascript:void(0)">·</a></li>
+						<li><a href="javascript:void(0)">工具箱</a></li>
+						<li><a href="javascript:void(0)">·</a></li>
+						<li><a href="javascript:void(0)">联系客服</a></li>
+					</ul>
+				</div>
+			</header>
+		</div>
+
+		<div class="splce-navth">
+			<div class="splce-nav">
+
+				<div class="logo">
+					<a href="index.html">
+						<img src="assets/images/index/logo.png">
+					</a>
+				</div>
+
+				<div class="search-th">
+					<div class="search">
+						<input type="text" placeholder="搜索您喜欢的香型">
+						<button>搜索</button>
+					</div>
+
+					<div class="splce-order-th">
+						<div class="splce-order">
+							<i><img src="assets/images/index/order.png"></i>
+							<a href="javascript:void(0)">我的订单</a>
+							<i><img src="assets/images/index/spice-next.png"></i>
+						</div>
+
+						<div class="splce-order">
+							<i><img src="assets/images/index/shopping.png"></i>
+							<a href="my-download.html">购物车</a>
+							<i><img src="assets/images/index/spice-next.png"></i>
+						</div>
+					</div>
+
+				</div>
+
+				<div class="splce-show">
+					<ul>
+						<li><a href="javascript:void(0)">苹果香型</a></li>
+						<li><a href="javascript:void(0)">奶香型</a></li>
+						<li><a href="javascript:void(0)">酒香型</a></li>
+						<li><a href="javascript:void(0)">DIY香型</a></li>
+						<li><a href="javascript:void(0)">康乃馨</a></li>
+					</ul>
+				</div>
+
+			</div>
+		</div>
+
+		<!-- 中部样式 -->
+		<div class="list-goods-mainth">
+			<div class="list-goods-main">
+				<div class="list-goods-l">
+					<div class="list-goods-select">
+						<ul>
+							<li><a href="list-essien.html">辛香香型</a></li>
+							<li><a href="list-fruld.html">水果香型</a></li>
+							<li><a href="list-goods.html">奶香香型</a></li>
+							<li><a href="list-alcohol.html">酒香香型</a></li>
+							<li><a href="list-meat.html">肉类香型</a></li>
+							<li><a href="list-other.html">其他香型</a></li>
+							<li><a href="list-bean.html">豆类香型</a></li>
+							<li><a href="javascript:void(0)" class="active">花草香型</a></li>
+							<li><a href="list-nut.html">坚果香型</a></li>
+							<li><a href="list-tea.html">茶香香型</a></li>
+							<li><a href="list-vegtab.html">蔬菜香型</a></li>
+							<li><a href="list-hbm.html">草药香型</a></li>
+						</ul>
+					</div>
+				</div>
+
+				<div class="list-goods-r">
+					<div class="list-goods-nav">
+						<ul>
+							<li>您的位置：</li>
+							<li><a href="index.html">首页</a></li>
+							<li>></li>
+							<li><a href="javascript:void(0)" class="select-col">花草香型</a></li>
+						</ul>
+					</div>
+
+					<div class="list-goods-search">
+						<div class="list-search">
+							<input type="text" placeholder="搜索香精">
+						</div>
+
+						<div id="container">
+								<div class="btn1">
+									<div id="btn"></div>
+										<span id="val">请选择</span>
+								</div>
+							<ul id="containerth" style="display:none">
+								<li>花香香型</li>
+								<li>水果香型</li>
+								<li>肉香香型</li>
+								<li>草香香型</li>
+								<li>豆香香型</li>
+							</ul>
+						</div>
+
+					</div>
+
+					<div class="list-goods-connert">
+						<table>
+							<thead class="list-name">
+								<tr>
+									<th>香精编码</th>
+									<th>香精名称</th>
+									<th>溶剂</th>
+									<th>成本价</th>
+									<th>香气描述</th>
+									<th>调香师</th>
+									<th>上传时间</th>
+									<th>下载次数</th>
+									<th>评分</th>
+									<th>客户评价</th>
+									<th>操作</th>
+								</tr>
+							</thead>
+							<tbody class="list-connert">
+								<tr>
+									<td>A01</td>
+									<td><a href="list-detail.html">苹果</a></td>
+									<td>饼二纯</td>
+									<td>￥80</td>
+									<td>清新苹果香</td>
+									<td>张三</td>
+									<td>2016-10-12</td>
+									<td>1</td>
+									<td>70</td>
+									<td>B</td>
+									<td><a href="javascript:void(0)" class="list-download">下载</a></td>
+								</tr>
+
+								<tr>
+									<td>A01</td>
+									<td><a href="list-detail.html">苹果</a></td>
+									<td>饼二纯</td>
+									<td>￥80</td>
+									<td>清新苹果香</td>
+									<td>张三</td>
+									<td>2016-10-12</td>
+									<td>1</td>
+									<td>70</td>
+									<td>B</td>
+									<td><a href="javascript:void(0)" class="list-download">下载</a></td>
+								</tr>
+
+								<tr>
+									<td>A01</td>
+									<td><a href="list-detail.html">苹果</a></td>
+									<td>饼二纯</td>
+									<td>￥80</td>
+									<td>清新苹果香</td>
+									<td>张三</td>
+									<td>2016-10-12</td>
+									<td>1</td>
+									<td>70</td>
+									<td>B</td>
+									<td><a href="javascript:void(0)" class="list-download">下载</a></td>
+								</tr>
+
+								<tr>
+									<td>A01</td>
+									<td><a href="list-detail.html">苹果</a></td>
+									<td>饼二纯</td>
+									<td>￥80</td>
+									<td>清新苹果香</td>
+									<td>张三</td>
+									<td>2016-10-12</td>
+									<td>1</td>
+									<td>70</td>
+									<td>B</td>
+									<td><a href="javascript:void(0)" class="list-download">下载</a></td>
+								</tr>
+
+								<tr>
+									<td>A01</td>
+									<td><a href="list-detail.html">苹果</a></td>
+									<td>饼二纯</td>
+									<td>￥80</td>
+									<td>清新苹果香</td>
+									<td>张三</td>
+									<td>2016-10-12</td>
+									<td>1</td>
+									<td>70</td>
+									<td>B</td>
+									<td><a href="javascript:void(0)" class="list-download">下载</a></td>
+								</tr>
+
+								<tr>
+									<td>A01</td>
+									<td><a href="list-detail.html">苹果</a></td>
+									<td>饼二纯</td>
+									<td>￥80</td>
+									<td>清新苹果香</td>
+									<td>张三</td>
+									<td>2016-10-12</td>
+									<td>1</td>
+									<td>70</td>
+									<td>B</td>
+									<td><a href="javascript:void(0)" class="list-download">下载</a></td>
+								</tr>
+
+								<tr>
+									<td>A01</td>
+									<td><a href="list-detail.html">苹果</a></td>
+									<td>饼二纯</td>
+									<td>￥80</td>
+									<td>清新苹果香</td>
+									<td>张三</td>
+									<td>2016-10-12</td>
+									<td>1</td>
+									<td>70</td>
+									<td>B</td>
+									<td><a href="javascript:void(0)" class="list-download">下载</a></td>
+								</tr>
+
+								<tr>
+									<td>A01</td>
+									<td><a href="list-detail.html">苹果</a></td>
+									<td>饼二纯</td>
+									<td>￥80</td>
+									<td>清新苹果香</td>
+									<td>张三</td>
+									<td>2016-10-12</td>
+									<td>1</td>
+									<td>70</td>
+									<td>B</td>
+									<td><a href="javascript:void(0)" class="list-download">下载</a></td>
+								</tr>
+
+								<tr>
+									<td>A01</td>
+									<td><a href="list-detail.html">苹果</a></td>
+									<td>饼二纯</td>
+									<td>￥80</td>
+									<td>清新苹果香</td>
+									<td>张三</td>
+									<td>2016-10-12</td>
+									<td>1</td>
+									<td>70</td>
+									<td>B</td>
+									<td><a href="javascript:void(0)" class="list-download">下载</a></td>
+								</tr>
+
+								<tr>
+									<td>A01</td>
+									<td><a href="list-detail.html">苹果</a></td>
+									<td>饼二纯</td>
+									<td>￥80</td>
+									<td>清新苹果香</td>
+									<td>张三</td>
+									<td>2016-10-12</td>
+									<td>1</td>
+									<td>70</td>
+									<td>B</td>
+									<td><a href="javascript:void(0)" class="list-download">下载</a></td>
+								</tr>
+
+								<tr>
+									<td>A01</td>
+									<td><a href="list-detail.html">苹果</a></td>
+									<td>饼二纯</td>
+									<td>￥80</td>
+									<td>清新苹果香</td>
+									<td>张三</td>
+									<td>2016-10-12</td>
+									<td>1</td>
+									<td>70</td>
+									<td>B</td>
+									<td><a href="javascript:void(0)" class="list-download">下载</a></td>
+								</tr>
+
+								<!-- <tr>
+									<td>A01</td>
+									<td>苹果</td>
+									<td>饼二纯</td>
+									<td>￥80</td>
+									<td>清新苹果香</td>
+									<td>张三</td>
+									<td>2016-10-12</td>
+									<td>1</td>
+									<td>70</td>
+									<td>B</td>
+									<td><a href="javascript:void(0)" class="list-download">下载</a></td>
+								</tr>
+
+								<tr>
+									<td>A01</td>
+									<td>苹果</td>
+									<td>饼二纯</td>
+									<td>￥80</td>
+									<td>清新苹果香</td>
+									<td>张三</td>
+									<td>2016-10-12</td>
+									<td>1</td>
+									<td>70</td>
+									<td>B</td>
+									<td><a href="javascript:void(0)" class="list-download">下载</a></td>
+								</tr> -->
+							</tbody>
+						</table>
+
+								<!-- 分页导航 -->
+					<div class="paging-wrap clearfix">
+							<div class="fr paging-box">
+								<div class="paging">
+									<div class="prev fl">
+										<a href="javascript:void(0)">&lt;</a>
+									</div>
+									<div class="btn-paging fl">
+										<ul class="clearfix">
+											<li class="active">
+												<a href="javascript:void(0)">1</a>
+											</li>
+											<li>
+												<a href="javascript:void(0)">2</a>
+											</li>
+											<li>
+												<a href="javascript:void(0)">3</a>
+											</li>
+											<li>
+												<a href="javascript:void(0)">4</a>
+											</li>
+											<li>
+												<span>...</span>
+											</li>
+											<li>
+												<a href="javascript:void(0)">100</a>
+											</li>
+										</ul>
+									</div>
+									<div class="next fl">
+										<a href="javascript:void(0)">&gt;</a>
+									</div>
+								</div>
+								<div class="ipt-wrap fl">
+									<div class="ipt fl">
+										<p>共<span>100</span>页，到第<input type="text" />页</p>
+									</div>
+									<div class="btn-sub fl">
+										<p><input type="button" value="确定" /></p>
+									</div>
+								</div>
+							</div>
+						</div>
+						
+					</div>
+				</div>
+			</div>
+		</div>
+
+		<!-- 底部 -->
+		<footer class="footer-th">
+			<div class="footer">
+				<ul class="footer-link">
+					<li><a href="javascript:void(0)">网站简介</a></li>
+					<li><a href="javascript:void(0)">|</a></li>
+					<li><a href="javascript:void(0)">联系我们</a></li>
+					<li><a href="javascript:void(0)">|</a></li>
+					<li><a href="javascript:void(0)">隐私政策</a></li>
+					<li><a href="javascript:void(0)">|</a></li>
+					<li><a href="javascript:void(0)">服务中心</a></li>
+					<li><a href="javascript:void(0)">|</a></li>
+					<li><a href="javascript:void(0)">网站地图</a></li>
+					<li><a href="javascript:void(0)">|</a></li>
+					<li><a href="javascript:void(0)">意见反馈</a></li>
+					<li><a href="javascript:void(0)">|</a></li>
+					<li><a href="javascript:void(0)">不良信息举报</a></li>
+				</ul>
+				<p>1997-2016 香料配方交换网版权所有</p>
+			</div>
+		</footer>
+	</body>
+	<script src="assets/js/jquery-2.0.3.min.js"></script>
+	<script src="assets/js/conn.js"></script>
+	<script type="text/javascript">
+		$(document).ready(function() {
+			$(".list-connert tr:even").css({"background":"#fff","border":"1px solide #f5f5f5"});
+			$(".list-connert tr:odd").css("background","#FBFBFB");
+		});
+		/*$(".list-goods-select ul li").mouseover(function(){
+			$(this).children().addClass("select-col")
+		});
+
+		$(".list-goods-select ul li").mouseout(function(){
+			$(this).children().addClass("select-color").removeClass("select-col")
+		});*/
+	</script>
+
+</html>

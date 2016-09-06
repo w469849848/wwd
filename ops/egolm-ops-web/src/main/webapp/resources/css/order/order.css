@@ -1,0 +1,11 @@
+.filter-wrap label .filter {
+	width : 80%;
+}
+
+.filter-wrap .filter-select {
+	width : 14%;
+}
+
+.filter-wrap .add-message {
+	width : 150px;
+}

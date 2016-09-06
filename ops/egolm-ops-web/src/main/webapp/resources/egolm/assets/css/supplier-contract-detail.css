@@ -1,0 +1,20 @@
+.contract-table{ margin-bottom: 20px; }
+
+.table-box table thead:first-child tr:first-child th{ border-top: none; }
+.table-box table tbody tr td:nth-child(1){ text-align: left; width: auto; }
+.table-box table tfoot>tr>td{ padding-top: 12px; padding-bottom: 12px; }
+.table-box table tfoot>tr>td span{ margin-right: 5px; }
+.table-box table thead>tr>th:first-child,.table-box table tbody>tr>td:first-child,.table-box table tfoot>tr>td:first-child{ padding-left: 30px; }
+.table-box table .down-contract img{ width: 33px; height: 38px; }
+.table-box table .down-contract>p{ margin-left: 40px; margin-bottom: 3px; }
+.table-box table tbody tr td.good-info>div{ display: inline-block; }
+.table-box table tbody tr td.good-info>div>div{ padding-top: 18px; margin-left: 86px; }
+.table-box table tbody tr td.good-info>div>div p{ margin-bottom: 6px; }
+
+.footable.breakpoint > tbody > tr > td.good-info > span.footable-toggle{ position: relative; top: -10px; }
+
+@media only screen and (max-width: 991px) {
+	.page-content .table-box table tbody tr td:nth-child(1){ width: auto; }
+	.table-box table thead>tr>th:first-child, .table-box table tbody>tr>td:first-child, .table-box table tfoot>tr>td:first-child{ padding-left: 20px; }
+	.table-box table tbody tr td.good-info{  }
+}

@@ -1,0 +1,18 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<beans xmlns="http://www.springframework.org/schema/beans"
+	xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" xmlns:dubbo="http://code.alibabatech.com/schema/dubbo"
+	xsi:schemaLocation="http://www.springframework.org/schema/beans http://www.springframework.org/schema/beans/spring-beans-2.5.xsd
+    http://code.alibabatech.com/schema/dubbo http://code.alibabatech.com/schema/dubbo/dubbo.xsd">
+
+  	<dubbo:reference id="tCommonQueryApi" interface="com.egolm.base.api.TCommonQueryApi" />
+  	
+  	<dubbo:reference id="tOrgsQueryApi" interface="com.egolm.base.api.TOrgsQueryApi" />
+  	
+  	<dubbo:reference id="regionApi" interface="com.egolm.base.api.RegionApi" /> 
+  	
+  	
+  	<dubbo:reference id="tYWAppVersionManagerAddApi" interface="com.egolm.base.api.TYWAppVersionManagerAddApi" /> 
+  	<dubbo:reference id="tYWAppVersionManagerQueryApi" interface="com.egolm.base.api.TYWAppVersionManagerQueryApi" /> 
+  	<dubbo:reference id="tYWAppVersionManagerUpdateApi" interface="com.egolm.base.api.TYWAppVersionManagerUpdateApi" /> 
+  	 
+</beans>

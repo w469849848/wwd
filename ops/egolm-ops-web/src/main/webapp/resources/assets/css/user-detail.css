@@ -1,0 +1,4 @@
+input.border{ border: none !important; }
+.dropdown-btn.border{ border: none !important; }
+textarea.border{ border: none !important; }
+input[disabled]{ background: #fbfbfb !important; }

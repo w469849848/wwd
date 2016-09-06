@@ -1,0 +1,100 @@
+@charset "utf-8";
+/*--------------------功能: 重设浏览器默认样式 START--------------------*/
+a, abbr, acronym, address, applet, article, aside, audio,
+b, blockquote, big, body,
+center, canvas, caption, cite, code, command,
+datalist, dd, del, details, dfn, dl, div, dt,
+em, embed,
+fieldset, figcaption, figure, font, footer, form,
+h1, h2, h3, h4, h5, h6, header, hgroup, html,
+i, iframe, img, ins,
+kbd,
+keygen,
+label, legend, li,
+meter,
+nav,
+object, ol, output,
+p, pre, progress,
+q,
+s, samp, section, small, span, source, strike, strong, sub, sup,
+table, tbody, tfoot, thead, th, tr, tt,
+u, ul,
+var { background: transparent; border: 0 none; margin: 0;padding: 0; border: 0;outline:0;vertical-align: top; -webkit-tap-highlight-color:rgba(0,0,0,0);-webkit-font-smoothing: antialiased;}
+blockquote, q { quotes: none;}
+table, table td { padding: 0; border: none; border-collapse: collapse;}
+img {border: 0;}
+select {white-space: nowrap}
+caption {text-align: left;}
+embed {vertical-align: top;}
+div, ul, li, ol, dl, dd, p { word-wrap: break-word;}
+ul, li, ol, dl, dd{ list-style-type: none;}
+input, textarea, select { font-family: inherit; outline: none; font-size: inherit; font-weight: inherit; padding: 0; margin: 0;}
+h1, h2, h3, h4, h5, h6 { font-size: 100%; font-weight:normal;}
+body { text-align: left;color: #fff;overflow-x: hidden;}
+html,body{ font:12px/1.5 Microsoft YaHei,\5b8b\4f53, Arial, Verdana; width: 100%;}
+a{text-decoration: none;white-space:nowrap; color: #fff;}
+button,input,input[type="button"], input[type="submit"], input[type="reset"],input[type="number"] {-webkit-appearance: none; }
+input::-webkit-inner-spin-button { -webkit-appearance: none;}
+input::-webkit-outer-spin-button { -webkit-appearance: none;}
+/*--------------------功能: 重设浏览器默认样式 END--------------------*/
+
+
+/* ---------- Responsive accurate start ---------- */
+@media (min-width:750px){html{font-size:28px;}}
+@media (min-width:739px) and (max-width:747px){html{font-size:27.66px;}}
+@media (min-width:730px) and (max-width:738px){html{font-size:27.33px;}}
+@media (min-width:721px) and (max-width:729px){html{font-size:27px;}}
+@media (min-width:712px) and (max-width:720px){html{font-size:26.66px;}}
+@media (min-width:703px) and (max-width:711px){html{font-size:26.33px;}}
+@media (min-width:694px) and (max-width:702px){html{font-size:26px;}}
+@media (min-width:685px) and (max-width:693px){html{font-size:25.66px;}}
+@media (min-width:676px) and (max-width:684px){html{font-size:25.33px;}}
+@media (min-width:667px) and (max-width:675px){html{font-size:25px;}}
+@media (min-width:658px) and (max-width:666px){html{font-size:24.66px;}}
+@media (min-width:649px) and (max-width:657px){html{font-size:24.33px;}}
+@media (min-width:640px) and (max-width:648px){html{font-size:24px;}}
+@media (min-width:631px) and (max-width:639px){html{font-size:23.66px;}}
+@media (min-width:622px) and (max-width:630px){html{font-size:23.33px;}}
+@media (min-width:613px) and (max-width:621px){html{font-size:23px;}}
+@media (min-width:604px) and (max-width:612px){html{font-size:22.66px;}}
+@media (min-width:595px) and (max-width:603px){html{font-size:22.33px;}}
+@media (min-width:586px) and (max-width:594px){html{font-size:22px;}}
+@media (min-width:577px) and (max-width:585px){html{font-size:21.66px;}}
+@media (min-width:568px) and (max-width:576px){html{font-size:21.33px;}}
+@media (min-width:559px) and (max-width:567px){html{font-size:21px;}}
+@media (min-width:550px) and (max-width:558px){html{font-size:20.66px;}}
+@media (min-width:541px) and (max-width:549px){html{font-size:20.33px;}}
+@media (min-width:533px) and (max-width:540px){html{font-size:20px;}}
+@media (min-width:524px) and (max-width:532px){html{font-size:19.66px;}}
+@media (min-width:515px) and (max-width:523px){html{font-size:19.33px;}}
+@media (min-width:506px) and (max-width:514px){html{font-size:19px;}}
+@media (min-width:497px) and (max-width:505px){html{font-size:18.66px;}}
+@media (min-width:488px) and (max-width:496px){html{font-size:18.33px;}}
+@media (min-width:480px) and (max-width:487px){html{font-size:18px;}}
+@media (min-width:471px) and (max-width:479px){html{font-size:17.66px;}}
+@media (min-width:462px) and (max-width:470px){html{font-size:17.33px;}}
+@media (min-width:453px) and (max-width:461px){html{font-size:17px;}}
+@media (min-width:444px) and (max-width:452px){html{font-size:17.12px;}}
+@media (min-width:435px) and (max-width:443px){html{font-size:16.33px;}}
+@media (min-width:426px) and (max-width:434px){html{font-size:16px;}}
+@media (min-width:417px) and (max-width:425px){html{font-size:15.66px;}}
+@media (min-width:408px) and (max-width:416px){html{font-size:15.33px;}}
+@media (min-width:400px) and (max-width:407px){html{font-size:15px;}}
+@media (min-width:391px) and (max-width:399px){html{font-size:14.66px;}}
+@media (min-width:382px) and (max-width:390px){html{font-size:14.33px;}}
+@media (min-width:374px) and (max-width:381px){html{font-size:14px;}}
+@media (min-width:365px) and (max-width:373px){html{font-size:13.66px;}}
+@media (min-width:356px) and (max-width:364px){html{font-size:13.33px;}}
+@media (min-width:347px) and (max-width:355px){html{font-size:13px;}}
+@media (min-width:338px) and (max-width:346px){html{font-size:12.66px;}}
+@media (min-width:329px) and (max-width:337px){html{font-size:12.44px;}}
+@media (max-width:328px){html{font-size:12px;}}
+/* ---------- Responsive accurate end ---------- */
+
+.clearfix:after{visibility:hidden;display:block;font-size:0;content:" ";clear:both;height:0;}
+.clearfix{zoom:1;}
+.pr{ position: relative; }
+.fl{ float: left; }
+.fr{ float: right; }
+.hide{ display: none; }
+.icon{ display: inline-block; background-size: 100% 100% !important; }

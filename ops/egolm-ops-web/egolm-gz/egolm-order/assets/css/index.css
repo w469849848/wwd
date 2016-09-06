@@ -1,0 +1,128 @@
+
+/*content*/
+.content{ top: -1px; z-index: 999;margin-bottom:40px;  }
+.content .activity{ margin-top: 24px; }
+.content .activity ul.activity-nav{ width: 100%; height: 36px; line-height: 36px; font-size: 16px; }
+.content .activity ul.activity-nav li{ width: 25%; text-align: center; }
+.content .activity ul.activity-nav li a{ color: #4c4c4c; width: 100%; border-bottom: 1px solid #ebebeb; font-weight: bold; }
+.content .activity ul.activity-nav li.active a{ border-bottom: 1px solid #ff6400; color: #FF6400; }
+.content .activity ul.activity-nav li a:hover{ color: #FF6400; }
+
+.content .activity .exchange{ width: 110px; height: 36px; border-bottom: 1px solid #e6e6e6; }
+.content .activity .exchange .btn-refresh{ position: relative; top: 9px; height: 16px; width: auto; font-size: 12px; line-height: 16px; }
+.content .activity .exchange .btn-refresh img{ margin-right: 5px; }
+.content .activity .exchange .btn-refresh span {font-size: 14px;}
+
+
+.content .activity .activity-item{ margin: 16px 0; height: 180px; width: 100%; }
+.content .activity .activity-item ul li{ height: 180px; width: 16.66666%; position: relative; }
+.content .activity .activity-item ul li .n-g-item{ width: 138px; height: 180px; margin: 0 auto; }
+.content .activity .activity-item ul li .n-g-item .item-box{ width: 138px; }
+.content .activity .activity-item ul li .n-g-item .item-box .pic{ position: relative; width: 110px; height: 110px; padding: 14px; }
+.content .activity .activity-item ul li .n-g-item .item-box .pic img{ position: absolute; margin: auto; top: 0; left: 0; bottom: 0; right: 0; }
+.content .activity .activity-item ul li .n-g-item .item-box .intro p{ text-align: center; font-size: 14px; }
+.content .activity .activity-item ul li i{ position: absolute; top: 24px; right: 4px; display: block; height: 100px; border-right: 1px solid #e6e6e6; }
+
+.content .notice{ position: absolute; display: none; top: 1px; width: 248px; height: 456px; font-size: 12px; }
+.content .notice > ul{ height: 182px; background-color: #fff; }
+.content .notice > ul li{ height: 33.33333%; float: none; }
+.content .notice > ul li a{ border-bottom: 1px solid #ebebeb; width: 100%; }
+.content .notice > ul li:last-child a{ border-bottom: none; }
+.content .notice > ul li a i.icon{ position: absolute; margin: auto; top: 0; bottom: 0; left: 32px; width: 32px; height: 40px; }
+.content .notice > ul li a i.icon-order{ background: url(../images/icon-order.png) no-repeat; }
+.content .notice > ul li a i.icon-brand{ background: url(../images/icon-brand.png) no-repeat; }
+.content .notice > ul li a i.icon-promotion{ background: url(../images/icon-promotion.png) no-repeat; }
+.content .notice > ul li a > div{ margin-left: 95px;padding-top: 11px; }
+
+.content .notice .notice-ad{ height: 274px; width: 248px; overflow: hidden; background-color: #bd073a; }
+.content .notice .notice-ad .notice-ad-item{ height: 100%; width: 100%; }
+.content .hot-ad{ height: 120px; }
+.content .hot-ad .hot-ad-item{ width: 1210px; height: 120px; }
+
+.content .fes-activity .fes-sort ul{ border-top: 1px solid #FF6400; }
+.content .fes-activity .fes-sort ul li .fes-item{ height: 450px; width: 295px; }
+.content .fes-activity .fes-sort ul li:nth-child(2){ width: 620px; }
+.content .fes-activity .fes-sort ul li:nth-child(2) .fes-item{ height: 220px; width: 295px; float: left; margin: 0 10px 10px 10px; }
+.content .fes-activity .fes-sort ul li:nth-child(2) > div:nth-child(2),.content .fes-activity .fes-sort ul li:nth-child(2) > div:nth-child(4){ margin-left: 0; }
+
+.content .fes-activity .fes-sort ul li:nth-child(2) > div:nth-child(3),.content .fes-activity .fes-sort ul li:nth-child(2) > div:nth-child(4){ margin-bottom: 0; }
+
+/*品牌条 新*/
+.brand .brand-nav{ font-size: 12px; line-height: 36px; }
+.brand .brand-nav .tit{ font-size: 24px; font-family: simhei; color: #222; }
+.brand .brand-nav .tit .icon-hot{ position: relative; top: 3px; margin-right: 10px; }
+.brand .brand-nav .more{ position: relative; top: 6px; line-height: 24px;font-size: 14px;}
+.brand>ul{ border-top: 1px solid #ff6400; }
+.brand>ul li>a{ display: inline; }
+.brand>ul li .brand-item{ position: relative; width: 113px; height: 89px; float: left; background-color: #fff; border-right: 1px solid #ebebeb; border-bottom: 1px solid #ebebeb; }
+.brand>ul li:first-child .brand-item{ width: 297px; height: 179px; }
+.brand>ul li .brand-item .brand-name{ position: absolute; display: none; top: 0; left: 0; width: 113px; height: 89px; font-weight: bold; font-size: 12px; color: #fff; line-height: 89px; text-align: center; z-index: 99999; background: rgba(0,0,0); background: rgba(0,0,0,0.5); }
+.brand>ul li .brand-item:hover .brand-name{ display: block; }
+.brand>ul li .brand-item .pic{ position: relative; width: 100%; }
+/*.brand>ul li .brand-item a img{ position: absolute; margin: auto; top: 0; left: 0; right: 0; bottom: 0; }*/
+
+/*楼层*/
+.floor .f-nav{ position: relative; height: 40px; }
+.floor .f-nav .f-icon-wrap{ position: relative; top: 0px; height: 31px; font-size: 24px; font-family: simhei; color: #222; line-height: 1; }
+.floor .f-nav .f-icon-wrap .floor-tit{ position: relative; top: 6px; line-height: 1; }
+.floor .f-nav .f-icon{ display: inline-block; margin-right: 10px; }
+.floor .f-nav .nav-bar-wrap{ position: absolute; bottom: -1px; left: 50%; margin-left: -250px; height: 35px; }
+.floor .f-nav .nav-bar-wrap ul{ position: relative; height: 35px; }
+.floor .f-nav .nav-bar-wrap ul li{ position: relative; width: 100px; height: 35px; }
+.floor .f-nav .nav-bar-wrap ul li a{ border-top: 3px solid #fff; }
+.floor .f-nav .nav-bar-wrap ul li a.active{ position: relative; z-index: 999; border: 1px solid #ff6400; border-bottom: 1px solid #fff; border-top: 3px solid #ff6400; box-sizing: border-box; -moz-box-sizing: border-box; -webkit-box-sizing: border-box; }
+.floor .f-nav .nav-bar-wrap ul li a.active + i{ display: none !important; }
+.floor .f-nav .nav-bar-wrap ul li:last-child{ padding-right: 0; }
+.floor .f-nav .nav-bar-wrap ul li a{ width: 100%; text-align: center; line-height: 35px; }
+.floor .f-nav .nav-bar-wrap ul li i{ position: absolute; top: 13px; right: 0; display: block; height: 14px; border-right: 1px solid #e6e6e6; }
+
+.floor .f-content{ border-top: 1px solid #f27320; }
+.floor .f-content ul li:first-child{ width: 333px; }
+.floor .f-content ul li:first-child .f-item{ width: 333px; height: 250px; }
+.floor .f-content ul li:first-child .f-sort{ width: 213px; height: 198px; padding: 26px 60px; }
+.floor .f-content ul li:first-child .f-sort a{ background-color: #f4fff9; width: 91px; height: 27px; line-height: 27px; text-align: center; margin-bottom: 15px; }
+
+.floor2 .f-content ul li:first-child .f-sort a{ background-color: #f4fff9; }
+.floor3 .f-content ul li:first-child .f-sort a{ background-color: #fff7fe; }
+.floor4 .f-content ul li:first-child .f-sort a{ background-color: #e4faff; }
+
+.floor .f-content ul li:first-child>div p{ line-height: 2.5; }
+.floor .f-content ul li:nth-child(2) .f-item,.floor .f-content ul li:nth-child(3) .f-item{ height: 249px; border-bottom: 1px solid #ebebeb; border-right: 1px solid #ebebeb; }
+.floor .f-content ul li:nth-child(2) .f-item{ width: 218px; }
+.floor .f-content ul li:nth-child(2) > div:first-child{ width: 437px; }
+.floor .f-content ul li:nth-child(2) > div:last-child{ padding-right: 1px; }
+.floor .f-content ul li:nth-child(3) .f-item{ width: 218px; }
+.floor .f-content ul li:last-child > div:last-child{ padding-right: 1px; }
+
+/*楼层商品文字图片分开*/
+.floor .f-item .good-item{ width: 218px; height: 249px; }
+.floor .f-item .good-item .pic{ position: relative; width: 130px; height: 130px; padding: 16px; margin: 0 auto; }
+.floor .f-item .good-item .pic img{ position: absolute; margin: auto; top: 0; left: 0; bottom: 0; right: 0; }
+.floor .f-item .good-item .intro{ padding: 0 28px; }
+.floor .f-item .good-item .intro p:nth-child(1){ margin: 8px 0; height: 30px; font-size: 14px; line-height: 1.3; }
+.floor .f-item .good-item .intro p:nth-child(2) span{ font-size: 14px; }
+.floor .f-item .good-item .intro p:nth-child(2) i{ font-size: 14px; }
+
+/*悬浮导航*/
+.elevator{ position: fixed; top: 50%; margin-top: -171px; z-index: 999999999; }
+.elevator ul{ background-color: #fafafa; }
+.elevator ul li{ position: relative; float: none; width: 50px; height: 50px; text-align: center; }
+.elevator ul li a{ width: 40px; height: 49px; line-height: 49px; position: relative; }
+.elevator ul li:last-child a{ background-color: #ccc; width: 100%; height: 100%; }
+.elevator ul li a img{ position: absolute; margin: auto; top: 0; bottom: 0; right: 0; left: 0; }
+.elevator ul li a i{ display: inline-block; width: 33px; height: 100%; text-align: center; color: #b6b6b6; font-weight: bold; border-bottom: 1px solid #e5e5e5; }
+.elevator ul li span{ position: absolute; z-index: 999; top: 0; left: -5px; display: block; width: 50px; height: 50px; background-color: #ff6400; font-size: 12px; color: #fff; text-align: center; line-height: 1.2; padding: 10px 8px; box-sizing: border-box; -moz-box-sizing: border-box; -webkit-box-sizing: border-box; display: none; }
+.elevator ul li span.qr-hover{ background-color: #fff; left: 44px; top: -23px; width: 80px; height: 80px; border: 1px solid #ff6400; border-radius: 6px; -moz-border-radius: 6px; -moz-border-radius: 6px; }
+
+/*广告轮播部分样式*/
+.slideItem .hd{ position: absolute; width: 100%; height: 10px; bottom: 5px; text-align: center; }
+.slideItem .hd li{ float: none; display: inline-block; width: 10px !important; height: 10px; background: #3e3e3e; margin-right: 5px; border-radius: 50%; -webkit-border-radius: 50%; -moz-border-radius: 50%; }
+.slideItem .hd li:last-child{ margin-right: 0; }
+.slideItem .hd li.on{ background: #ff6400; }
+
+.slideItem .prev{ position: absolute; display: none; top: 50%; left: 0 !important; margin-top: -28px; width: 24px; height: 56px; background: rgba(0,0,0); background: rgba(0,0,0,0.4); }
+.slideItem .next{ position: absolute; display: none; top: 50%; right: 0 !important; margin-top: -28px; width: 24px; height: 56px; background: rgba(0,0,0); background: rgba(0,0,0,0.4); }
+
+.slideItem:hover .prev,.slideItem:hover .next{ display: block; }
+
+.slideItem .prev img,.slideItem .next img{ position: absolute; margin: auto; top: 0; left: 0; bottom: 0; right: 0; }

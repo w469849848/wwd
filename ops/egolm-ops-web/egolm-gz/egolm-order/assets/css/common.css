@@ -1,0 +1,105 @@
+html { min-height: 100%; position: relative }
+body{ min-height: 100%; background-color: #fff; }
+
+a{ color: #666; display: inline-block; height: 100%; }
+
+a:hover{ color: #FF6400; }
+
+button,input{ -webkit-appearance: none; -moz-appearance: none; appearance: none; outline: none; }
+
+ul li{ float: left; }
+
+/*标题字体大小*/
+h1{ font-size: 14px; }
+
+/*字体*/
+.fw{ font-weight: bold; }
+
+.f-12{ font-size: 12px !important; }
+.f-14{ font-size: 14px; }
+.f-16{ font-size: 16px; }
+.f-18{ font-size: 18px; }
+.f-20{ font-size: 20px; }
+.f-22{ font-size: 22px; }
+
+.t-d{ text-decoration: line-through; }
+
+/*人民币符号*/
+.f-rmb{ font-family: "microsoft yahei"; font-size: 14px; }
+
+/*主页面宽度*/
+.pw{ width: 1210px; }
+
+/*居中*/
+.ma{ margin: 0 auto; }
+
+/*清除浮动*/
+.clearfix:after{ content:"."; display:block; height:0; clear:both; visibility:hidden; }
+.clearfix{ *+height:1%; }
+
+/*浮左*/
+.fl{ float: left; }
+
+/*浮右*/
+.fr{ float: right; }
+
+/*隐藏*/
+.hide{ display: none; }
+
+/*icon*/
+.icon{ display: inline-block; position: relative; top: 2px; }
+
+/*相对定位*/
+.pr{ position: relative; }
+
+/*居中*/
+.center{ position: absolute; margin: auto; top: 0; right: 0; bottom: 0; left: 0; }
+
+/*选中*/
+.active{ color: #ff6400 !important; }
+
+/*下外边距*/
+.mb-0{ margin-bottom: 0 !important; }
+.mb-5{ margin-bottom:5px; }
+.mb-10{ margin-bottom: 10px; }
+.mb-20{ margin-bottom: 20px; }
+.mb-30{ margin-bottom: 30px; }
+.mb-40{ margin-bottom: 40px; }
+.mb-60{ margin-bottom: 60px; }
+
+/*内边距*/
+.pt-30{ padding-top: 30px !important; }
+
+/*底色*/
+.bg-2f{ background-color: #e8fbf1; }
+.bg-3f{ background-color: #fdeefb; }
+.bg-4f{ background-color: #d9f5fc; }
+
+/*字体颜色*/
+.orange{ color: #ff6400; }
+.green{ color: #01a753; }
+.f-99{ color: #999; }
+.f-4c{ color: #4c4c4c; }
+
+
+/*行高*/
+.l-14{ line-height: 1.4; }
+
+.content-wrap{ min-width: 1210px; }
+
+/*自定义 checkbox*/
+.check-wrap{ width: 14px; height: 14px; margin-right: 8px; }
+.check-wrap .chk{ opacity: 0; position: absolute; z-index: 12; width: 14px; height: 14px; cursor: pointer; }
+.check-wrap .chk-bg{ position: absolute; z-index: 11; display: inline-block; margin: 0; width: 14px; height: 14px; font-weight: normal; }
+.check-wrap .chk-bg::before{ content: ""; display: block; height: 14px; width: 14px; background: url(../images/default.png); }
+.check-wrap input[checked=checked] + span.chk-bg:before{ content: ""; display: block; height: 14px; width: 14px; background: url(../images/checked.png); }
+
+/*置顶按钮样式*/
+.to-top{ position: fixed; bottom: 228px; display: none; }
+.to-top a{ position: relative; display: block; width: 36px; height: 36px; background-color: #aeaeae; }
+.to-top a img{ position: absolute; margin: auto; top: 0; right: 0; left: 0; bottom: 0; }
+
+/*成功加入购物车*/
+.add-cart-success{ position: absolute; margin: auto; top: -75px; left: 0; bottom: 0; right: 0; z-index: 99999; width: 150px; height: 34px; background: rgba(255,255,255); background: rgba(255,255,255,0.9); }
+.add-cart-success p{ height: 20px; line-height: 20px; padding: 7px 0 0 20px; }
+.add-cart-success p i{ margin-right: 6px; }

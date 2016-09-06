@@ -1,0 +1,15 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<beans xmlns="http://www.springframework.org/schema/beans"
+	xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" xmlns:dubbo="http://code.alibabatech.com/schema/dubbo"
+	xsi:schemaLocation="http://www.springframework.org/schema/beans http://www.springframework.org/schema/beans/spring-beans-2.5.xsd
+    http://code.alibabatech.com/schema/dubbo http://code.alibabatech.com/schema/dubbo/dubbo.xsd">
+
+	<dubbo:reference cluster="failsafe" loadbalance="roundrobin" id="smsApi" interface="com.egolm.msggate.api.rpc.SmsApi" protocol="dubbo" />
+	
+	<dubbo:reference cluster="failsafe" loadbalance="roundrobin" id="mailApi" interface="com.egolm.msggate.api.rpc.MailApi" protocol="dubbo" />
+	
+	<dubbo:reference cluster="failsafe" loadbalance="roundrobin" id="wechatApi" interface="com.egolm.msggate.api.rpc.WechatApi" protocol="dubbo" />
+	
+	<dubbo:reference cluster="failsafe" loadbalance="roundrobin" id="appApi" interface="com.egolm.msggate.api.rpc.AppApi" protocol="dubbo" />
+
+</beans>

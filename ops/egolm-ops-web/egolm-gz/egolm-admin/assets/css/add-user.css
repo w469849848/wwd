@@ -1,0 +1,61 @@
+.border-radius{ border-radius: 2px !important; -moz-border-radius: 2px !important; -webkit-border-radius: 2px !important; }
+input{ height: 38px; }
+
+.info{ background-color: #fff !important; }
+.info h1{ font-size: 13px; font-weight: bold; border-left: 3px solid #ff6400; line-height: 1.6; padding-left: 27px; margin: 30px 0; }
+.info .form{ padding: 0 30px; }
+.info .form .form-box{ border-top: 1px solid #e5e5e5; padding: 30px 0; }
+.info .form .form-box div:nth-child(1){ width: 70%; margin-bottom: 0; }
+.info .form .form-box div:nth-child(1) label{ width: 49.04%; margin-bottom: 20px; }
+.info .form .form-box div:nth-child(1) label:last-child{ width: 100%; margin-bottom: 0; }
+.info .form .form-box div:nth-child(1) label span{ display: inline-block; width: 90px; }
+.info .form .form-box div:nth-child(1) label input{ width: 66%; }
+.info .form .form-box div:nth-child(1) label textarea{ resize: none; width: 82%; }
+
+.info .form .form-box div:nth-child(2){ width: 29%; margin-bottom: 0; }
+.info .form .form-box div:nth-child(2) .tips-txt{ position: absolute; top: 6px; display: inline-block; width: 90px; }
+.info .form .form-box div:nth-child(2) .pic-box{ position: relative; width: 54%; left: 97px; }
+.info .form .form-box div:nth-child(2) .pic-box img{ display: block; width: 100%; }
+.info .form .form-box div:nth-child(2) .pic-box input{ position: absolute; z-index: 999; top: 0; width: 100%; height: 100%; filter:alpha(opacity=0); -moz-opacity:0;  -khtml-opacity:0; opacity: 0;  }
+.info .form .form-box div:nth-child(2) .btn-box{ display: block; margin-top: 10px; margin-bottom: 10px; }
+.info .form .form-box div:nth-child(2) .btn-box label{ width: 54%; margin-left: 97px; text-align: center; }
+.info .form .form-box div:nth-child(2) .btn-box label input{ background-color: #fcfcfc; border: 1px solid #e5e5e5; outline: none; }
+
+/*自定义弹窗*/
+.info .form .form-box .dropdown-wrap{ width: 66% !important; left: -7px; }
+.info .form .form-box a.dropdown-btn{ position: relative; height: 38px; line-height: 28px; padding: 5px 12px; padding-right: 38px; text-decoration: none; }
+.info .form .form-box a.dropdown-btn:focus{ color: #505050; }
+.info .form .form-box a.dropdown-btn:hover{ color: #505050; }
+.info .form .form-box a.dropdown-btn span.item-name{ display: inline-block; width: 100%; border: none; overflow: hidden; text-overflow: ellipsis; white-space: nowrap; }
+.info .form .form-box span.input-tips{ line-height: 38px; }
+.info .form .form-box span.dr{ position: absolute; display: block; width: 38px !important; height: 38px; top: 50%; margin-top: -19px; right: 0; background: #e0e0e0; }
+.info .form .form-box span.dr img{ position: absolute; top: 50%; left: 50%; margin-top: -3.5px; margin-left: -6px; display: block; width: 12px; height: 7px; }
+.info .form .form-box .dropdown-menu li{ text-align: left; padding: 0 12px; }
+
+.personal-info{ margin-bottom: 20px; }
+.vip-info .form .form-box div:nth-child(1) label:last-child{ width: 49.04%; margin-bottom: 20px; }
+.permit-wrap,.pic-wrap{ position: relative; display: block; }
+
+@media only screen and (max-width: 1280px) {
+	.info .form .form-box div:nth-child(1){ margin-bottom: 20px; width: 100%; }
+	.info .form .form-box div:nth-child(2){ width: 38%; min-width: 175px; }
+	.vip-info .form .form-box div:nth-child(1){ margin-bottom: 0px; }
+	.info .form .form-box div{ float: none !important; }
+	.info .form .form-box div:nth-child(2) .pic-box{ left: 90px; }
+}
+
+@media only screen and (max-width: 800px) {
+	.info .form .form-box div:nth-child(1) label{ width: 100%; }
+	.info .form .form-box div:nth-child(1) label span{ width: 16%; min-width: 75px; }	
+	.info .form .form-box div:nth-child(1) label textarea{ width: 66%; }
+	.vip-info .form .form-box div:nth-child(1) label:last-child{ width: 100%; }
+	
+	.info .form .form-box div:nth-child(2) .pic-box{ left: 42%; min-width: 96px; }
+	.info .form .form-box div:nth-child(2) .btn-box label{ width: 95%; min-width: 171px; margin-left: 0; }
+	.info h1{ padding: 0 15px; }
+	.info .form{ padding: 0 15px; }
+	.info .form .form-box span.dr{ min-width: 38px !important; }
+}
+@media only screen and (max-width: 500px) {
+	.info .form .form-box div:nth-child(2) .pic-box{ left: 75px; }
+}

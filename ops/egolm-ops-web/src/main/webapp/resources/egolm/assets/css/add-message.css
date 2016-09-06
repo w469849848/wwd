@@ -1,0 +1,6 @@
+.add-box form .checked-wrap{ position: relative; top: 3px; }
+span.dropdown-wrap{ margin-right: 30px; }
+
+@media only screen and (max-width: 414px) {
+	.add-box form .dropdown-wrap:nth-child(3){ display: block; }
+}

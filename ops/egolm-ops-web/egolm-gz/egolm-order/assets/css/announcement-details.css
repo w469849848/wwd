@@ -1,0 +1,189 @@
+.announcement-details-th {
+	width: 100%;
+	background: #ededed;
+	border-top: 1px solid #ff6400;
+	padding-bottom: 40px;
+}
+
+.announcement-details {
+	width: 1210px;
+	margin: 0 auto;
+}
+
+.announcement-details-l {
+	width: 940px;
+	height: 715px;
+	float: left;
+	background: white;
+	margin-top:20px; 
+}
+
+.announcement-th{
+	width: 100%;
+	height: 735px;
+	border-bottom:0px solid white; 
+}
+
+.announcement-details-r {
+	width: 260px;
+	height: 715px;
+	float: left;
+	background: white;
+	margin: 20px 0 0 10px;
+}
+
+.announcement-details-main {
+	width: 92%;
+	height: 100%;
+	margin: 0 auto;
+}
+
+.announcement-details-tilte {
+	width: 100%;
+	height: 70px;
+	border-bottom: 1px solid #e6e6e6;
+}
+
+.announcement-details-tilte h1 {
+	line-height: 70px;
+	text-align: center;
+	font-size: 20px;
+}
+
+.announcement-details-foot {
+	width: 100%;
+}
+
+.announcement-details-foot p {
+	text-align: center;
+	height: 14px;
+	line-height: 14px;
+	padding: 26px 0;
+	font-size: 12px;
+	color: #999;
+}
+.announcement-details-foot p span.wd {
+	margin-right: 12px;
+}
+
+.announcement-details-text {
+	width: 100%;
+	/*height: 90px;*/
+	background: #ededed;
+}
+
+.announcement-details-text p {
+	padding:25px;	
+	font-size: 12px; 
+}
+
+.announcement-img {
+	height: 237px;
+	width: 100%;
+}
+
+.announcement-img img {
+	margin: 0 auto;
+	padding-top: 26px;
+}
+
+.announcement-text {
+	width: 100%;
+}
+
+.announcement-text p {
+	padding:24px 0 0 0; 
+	font-size: 12px;
+}
+
+.announcement-text p span {
+	display: block;
+	padding-left:20px;
+	width: 808px;
+}
+.announcement-text p i {
+	font-weight: bold;
+	color: 4c4c4c;
+}
+
+/*往期公告样式*/
+.announcement-more {
+	width: 100%;
+	height: 40px;
+	border-bottom: 1px solid #e6e6e6;
+}
+
+.announcement-more h1 {
+	width: 115px;
+	height: 40px;
+	border-top: 1px solid #ff6400;
+	float: left;
+	line-height: 40px;
+	text-align: center;
+	color: #ff6400;
+}
+
+.announcement-more a {
+	float: left;
+	line-height: 40px;
+	float: right;
+	padding-right:5px;
+	color: #ff6400; 
+	padding-right:25px;
+	font-size: 12px;
+}
+
+.announcement-time {
+	width: 200px;
+	height: 100%;
+	margin: 0 auto;
+}
+
+.announcement-title {
+	border-bottom:1px solid #f5f5f5; 
+	height: 70px;
+	width: 100%;
+}
+
+.announcement-title a{
+	padding-top: 20px;
+	height: 20px;
+	font-weight: bold;
+}
+
+.announcement-title p{
+	font-size: 12px;
+	color: #999;
+}
+
+
+/*商品列表*/
+.good-box.detail-wrap{ width: 100%; padding: 0; background-color: #fff; }
+.good-box.detail-wrap .tit-wrap{ height: 36px; border-bottom: 1px solid #e6e6e6; }
+
+.detail-wrap .ad-content{ width: 200px; height: 309px; }
+.detail-wrap .ad-content .ad-link{ height: 200px; }
+.detail-wrap .ad-content .ad-item p{ line-height: 1; margin-top: 10px; font-size: 14px; }
+.detail-wrap .ad-content .ad-item p.size{ color: #999; }
+.detail-wrap .ad-content .btn-buy{ width: 200px; margin-top: 12px; }
+.detail-wrap .ad-content .collect{ position: absolute; display: none; top: 0; right: 0; z-index: 9999; background: rgba(91,91,91,0.8); color: #fff; padding: 4px 12px;  }
+.detail-wrap .ad-content .collect a{ position: relative; top: 2px; margin-right: 5px; display: inline-block; width: 14px; height: 12px; background: url(../images/detail/goods/collect-defalut.png) no-repeat; }
+.detail-wrap .ad-content .collect a.active{ background: url(../images/detail/goods/collect.png) no-repeat; }
+
+.detail-wrap .g-wrap>ul>li{ position: relative; padding: 20.5px; border-right: 1px solid #e6e6e6; border-bottom: 1px solid #e6e6e6; }
+.detail-wrap .g-wrap>ul>li:last-child{ border-right: none; padding-right: 21.5px; }
+
+/*购买数量*/
+.ipt-num{ display: inline-block; width: 82px; height: 25px; }
+.ipt-num input{ width: 32px; padding: 0 24px; height: 23px; border: 1px solid #eee; text-align: center; }
+.ipt-num a{ position: absolute; top: 0; display: block; width: 23px; height: 24px; background-color: #eee; }
+.ipt-num a.sub{ left: 0; }
+.ipt-num a.add{ right: 0; }
+.ipt-num a img{ position: absolute; margin: auto; top: 0; left: 0; bottom: 0; right:0; }
+
+/*购买按钮*/
+.ad-content .add-cart{ display: block; width: 80px; height: 24px; line-height: 24px; font-size: 12px; background-color: #ff6400; color: #fff; text-align: center; }
+.ad-content .add-cart:hover{ background-color: #ea5507; }
+
+/*板块顶部文字样式*/
+.good-box .tit-tips{ position: absolute; top: 0; left: 0; width: 92px; height: 36px; line-height: 36px; color: #ff6400; font-size: 14px; text-align: center; font-weight: bold; border-top: 1px solid #ff6400; }

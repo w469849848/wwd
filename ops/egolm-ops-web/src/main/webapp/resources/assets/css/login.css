@@ -1,0 +1,370 @@
+
+body{
+	overflow: hidden;
+}
+
+
+a:hover {
+	text-decoration: none;
+}
+
+a:visited {
+	text-decoration: none;
+}
+
+.login_main {
+	width: 100%;
+	height: 900px;
+}
+
+.login_main_l {
+	width: 30%;
+	height: 900px;
+	float: left;
+	background:#FF6400;
+}
+
+.hander {
+	height: 60px;
+	width: 100%;
+	background: #DADADA;
+}
+
+.login_main_r {
+	width: 70%;
+	height: 900px;
+	float: left;
+	background: #EAE5E1;
+	background-image:url(../images/login/login_bg1.gif);
+	background-repeat:no-repeat; 
+	background-size: 100% 100%;
+}
+
+.wh_logo{
+	padding-top: 40%;
+	text-align: center;
+	margin: 0 auto;
+}
+
+.slogan {
+	padding-top: 8%;
+	margin:0 auto;
+	text-align: center; 
+}
+
+
+.login_logo {
+	width: 100%;
+	height: 55%;
+	background:#FF6400;
+}
+
+.login_sum {
+	width: 100%;
+	height: 45%%;
+}
+
+.login_sum h1 {
+	text-align: center;
+	color: white;
+}
+
+.login_total {
+	text-align: center;
+	color: white;
+	font-family: "微软雅黑";
+}
+
+.login_content {
+	width: 400px;
+	height: 400px;
+	background: white;
+	margin:0 auto; 
+	margin-top: 19%;
+	z-index:1;
+}
+
+.login_sum img {
+	text-align: center;
+}
+
+.wh_form {
+	/*display: none;*/
+}
+
+.wh_login_titer {
+	width: 100%;
+	height: auto;
+	position: relative;
+}
+
+
+.login-qrcode h4 {
+	text-align: center;
+	line-height: 60%;
+	padding-top: 30px;
+}
+
+.erweima {
+	float: left;
+	width: 50px;
+	height: 50px;
+	position: absolute;
+	top: 5px;
+	right:-1px;
+	background: url(../images/login/erweima.png) no-repeat;
+}
+
+
+.wh_username,.wh_password {
+ 	position: relative;
+ 	margin: 20px 40px 11px 37px;
+ 	border: 1px solid #ddd;
+ 	background: #EEE;
+ }
+
+ .wh_login_yzm {
+ 	position: relative;
+ 	margin: 8px 25px 0px 35px;
+ 	border: 1px solid #ddd;
+ 	background: #fff;
+ 	float: left;
+ }
+
+
+  .ico_user {
+ 	display: block;
+ 	position: absolute;
+ 	top: 1px;
+ 	left: 1px;
+ 	width: 37px;
+ 	height: 38px;
+ 	background:white;
+ 	z-index: 4;
+ 
+ }
+
+ .ico_user img {
+ 	margin: 0px 0 0 0px;
+ 	width: 37px;
+ 	height: 38px;
+ }
+
+
+  .user_inp,.password_inp {
+ 	width: 321px;
+ 	height:40px;	
+ 	background:white;
+ 	color: #333;
+ 	overflow: hidden;
+ 	border: 0;
+ 	padding-left:40px; 
+ }
+
+ .user_inp:focus,.password_inp:focus,.yzm_inp:focus {
+ 	outline: none;
+ 	border:1px solid #FF6400;
+ }
+
+
+ .yzm_inp{
+	width: 155px;
+	height: 40px;
+	background: #fff;
+	color: #333;
+	overflow: hidden;
+	border: 0;
+	padding-left:40px; 
+ }
+
+  .yzm_loginth {
+ 	margin: 0px 0px 0px 0px;
+ 	border:1px solid white;
+ 	float: left;
+ }
+
+
+ .wh_login_yzm {
+ 	position: relative;
+ 	margin: 8px 30px 0px 35px;
+ 	border: 1px solid #ddd;
+ 	background: #fff;
+ 	float: left;
+ }
+
+ .yzm_img {
+ 	width: 135px;
+ 	height: 45px;
+ 	float: left;
+ 	padding-top:0px;
+ 	line-height: 0.429;
+ }
+
+ .yzm_img a img{
+ 	width: 137px;
+ 	height: 40px;
+ }
+
+.yzm_img img {
+	line-height: 0.429;
+}
+
+ .wh_login_chk {
+ 	width: 100%;
+ 	height: 40px;
+ 	margin: 87px 0 0 0;
+ }
+
+
+.login_chk {
+	margin:30px 0 0 37px; 
+}
+
+.chk_inp {
+	color: #666;
+}
+
+ .chk_paw {
+ 	float: right;
+  	padding-right:40px; 
+  	margin-top: -20px;
+ }
+
+.chk_inp {
+	color: #666
+}
+
+.chk_inp:hover {
+	color: #666;
+}
+
+ .chk_inp:visited{
+ 	text-decoration:none;
+ }
+
+
+.login_btn {
+ 	width: 100%;
+ 	height: 40px;
+ }						
+
+ .login_btnth {
+ 	width: 325px;
+ 	height: 40px;
+ 	background: #FF6400;
+ 	color: white;
+ 	margin-left:35px; 
+ 	border: 1px solid #FF6400;
+ }
+
+
+.register_titer {
+ 	height: 80px;
+ 	width: 100%;
+ 	margin-top: 30px; 
+ 	text-align: center;
+ }
+
+ .register_titer p a {
+ 	color: #FF6400;	
+ }
+
+.footer_col {
+	width: 100%;
+	height: 170px;
+	background: #f9f9f9;
+	/*	margin-top:600px;*/
+}
+
+.wd_address {
+	height: 70px;
+	width: 100%;
+	margin-top: 30px;
+}
+
+
+.wd_link {
+	width: 100%;
+	min-width: 1200px;
+	height: 60px;
+	margin:0 auto;
+	text-align: center;
+	padding-left: 20%; 
+}
+
+.wd_link a {
+	text-align: center;
+	margin: 0 auto;
+	line-height: 60px;
+	float: left;
+	padding: 0 50px;
+	font-size: 12px;
+	color: #4c4c4c;
+}
+
+.wd_address p {
+	text-align: center;
+	font-size: 12px;
+}
+
+
+.sm_login {
+	height: 300px;
+	width: 100%;
+	padding-top:10px;
+}
+
+.sm_bg img{
+	text-align: center;
+}
+
+.sm_bg {
+	padding-top: 25px;
+}
+
+.sm_titer {
+	color: #FF6400;
+	padding-top: 20px;
+}
+
+.btn-2qrcode {
+	display: none;
+}
+
+.btn-2login {
+	display: none;;
+}
+
+.sm_login {
+	display: none;
+}
+
+.sm_login_titer {
+	text-align: center;
+}
+
+.wd_linker {
+	padding:20px 0; 
+}
+
+.wd_linker li a{
+	color: #4c4c4c;
+	padding:0 40px; 
+}
+
+
+/* 输入框字体大小 */
+input::-webkit-input-placeholder {
+	font-size: 12px;
+	padding-left: 12px;
+}
+
+input::-moz-input-placeholder {
+	font-size: 12px;
+	padding-left: 12px;
+}
+
+input::-ms-input-placeholder {
+	font-size: 12px;
+	padding-left: 12px;
+}

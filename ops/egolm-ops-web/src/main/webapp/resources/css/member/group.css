@@ -1,0 +1,33 @@
+.scroll-wrap label {
+    margin : 20px auto auto 100px;
+}
+
+.scroll-wrap label span {
+	margin : auto 20px auto 20px;
+	display: inline-block;
+	width : 100px;	
+}
+
+.scroll-wrap input,.scroll-wrap  select {
+	width : 220px;	
+}
+
+.clearfix .pull-left {
+	margin : 40px auto auto 200px;
+	width : 120px;
+}
+
+.clearfix .pull-right {
+	margin : 40px 200px auto auto;
+	width : 120px;
+}
+
+#create-group-form .select {
+	margin: 20px auto auto 100px;
+}
+
+.select #province-label, .select #city-label {
+	margin : auto 20px auto 20px;
+	display: inline-block;
+	width : 97px;	
+}

@@ -1,0 +1,10 @@
+.tpl-content .content{ top: 0; z-index: 999; }
+.tpl-content .content .banner{ width: 100%; border-top: 1px solid #eb5e03; height: 456px; }
+.tpl-content .content .banner .slideBox{ height: 456px; width: 100%; overflow: hidden; }
+.tpl-content .content .banner .slideBox .hd{ position: absolute; bottom: 10px; left: 50%; margin-left: -34px; z-index: 99999; }
+.tpl-content .content .banner .slideBox .hd li{ width: 16px; height: 16px; margin-right: 10px; }
+.tpl-content .content .banner .slideBox .hd li:last-child{ margin-right: 0; }
+.tpl-content .content .banner .slideBox .hd li a{ display: inline-block; width: 10px; height: 10px; background: url(../../images/tpl/circle-default.png) no-repeat; }
+.tpl-content .content .banner .slideBox .hd li.on a{ background: url(../../images/tpl/circle-on.png) no-repeat; }
+.tpl-content .content .banner .slideBox .bd li{ width: 100%; }
+.tpl-content .content .banner .slideBox .bd li .banner-item{ margin: 0 auto; width: 1210px; }

@@ -1,0 +1,70 @@
+.add-box{ border: 1px solid #e5e5e5; background-color: #fff; border-radius: 5px; -webkit-border-radius: 5px; -moz-border-radius: 5px; padding: 40px 38px; font-size: 14px; }
+.add-box form p:last-child{ margin-top: 20px; text-align: center; }
+.add-box form p:last-child label input:first-child{ margin-right: 50px; }
+.add-box form input[type="text"]{ height: 38px; }
+.add-box form input[type="text"],.add-box form textarea{ width: 100%; }
+.add-box form textarea{ resize: none; }
+.add-box form input[type="button"]{ padding: 8px 15px; color: #fff; background-color: #ff6400; text-align: center; float: none; max-width: 180px; outline: none; }
+.add-box form input.cancel{ background-color: #f5f5f5; color: #FF6400; }
+
+.add-box form small label{ position: relative; }
+.add-box form small>span,.add-box form small>span>span{ padding: 0; font-size: 14px; line-height: 40px; }
+
+/*自定义下拉框*/
+.add-box form div.row{ margin-bottom: 13px; }
+.add-box form a.dropdown-btn{ position: relative; height: 38px; line-height: 28px; padding: 5px 12px; padding-right: 38px; text-decoration: none; }
+.add-box form a.dropdown-btn:focus{ color: #505050; }
+.add-box form a.dropdown-btn:hover{ color: #505050; }
+.add-box form a.dropdown-btn span.item-name{ display: inline-block; width: 100%; border: none; overflow: hidden; text-overflow: ellipsis; white-space: nowrap; }
+.add-box form span.input-tips{ line-height: 40px; }
+.add-box form span.dr{ position: absolute; display: block; width: 38px; height: 38px; top: 50%; margin-top: -19px; right: 0; background: #e0e0e0; }
+.add-box form span.dr img{ position: absolute; top: 50%; left: 50%; margin-top: -3.5px; margin-left: -6px; display: block; width: 12px; height: 7px; }
+.add-box form .dropdown-menu li{ text-align: left; padding: 0 12px; }
+
+.col-xs-1, .col-xs-2, .col-xs-3, .col-xs-4, .col-xs-5, .col-xs-6, .col-xs-7, .col-xs-8, .col-xs-9, .col-xs-10, .col-xs-11, .col-xs-12, .col-sm-1, .col-sm-2, .col-sm-3, .col-sm-4, .col-sm-5, .col-sm-6, .col-sm-7, .col-sm-8, .col-sm-9, .col-sm-10, .col-sm-11, .col-sm-12, .col-md-1, .col-md-2, .col-md-3, .col-md-4, .col-md-5, .col-md-6, .col-md-7, .col-md-8, .col-md-9, .col-md-10, .col-md-11, .col-md-12, .col-lg-1, .col-lg-2, .col-lg-3, .col-lg-4, .col-lg-5, .col-lg-6, .col-lg-7, .col-lg-8, .col-lg-9, .col-lg-10, .col-lg-11, .col-lg-12{ padding: 0; }
+
+.border-radius{ border-radius: 2px !important; -webkit-border-radius: 2px !important; -moz-border-radius: 2px !important; }
+
+.module-wrap .tit{ margin-top: 20px; margin-bottom: 20px; }
+.module-wrap .tit a{ margin-right: 10px; }
+.module-wrap .module small input{ padding-left: 20px; }
+.module-wrap .line{ border-bottom: 1px solid #e5e5e5; margin: 25px 0 !important; }
+
+.module-wrap ul{ list-style: none; }
+.module-wrap ul li p input{ padding-right: 30px; }
+.module-wrap ul li p label{ position: relative; }
+.module-wrap ul li p a.btn-delete{ position: absolute; top: 11px; right: 10px; display: block; width: 16px; height: 16px; }
+.module-wrap ul li p a.btn-delete img{ display: block; }
+
+
+/*添加模块弹窗*/
+.add-tpl .modal-dialog{ position: absolute; padding: 0; width: 798px; height: 479px; top: 50%; left: 50%; margin-left: -399px; margin-top: -239.5px; }
+.add-tpl .modal-dialog .modal-header{ position: relative; height: 78px; }
+.add-tpl .modal-dialog .modal-header .tit-tips{ position: absolute; top: 30px; left: 0; height: 20px; line-height: 20px; padding-left: 30px; border-left: 2px solid #ff6400; color: #505050; font-weight: bold; }
+.add-tpl .modal-dialog .modal-header a{ position: absolute; right: 6px; top: 20px; z-index: 10000; display: inline-block; width: 24px; height: 24px; background: url(../images/alert_close.png) center no-repeat; cursor: pointer; }
+
+.add-tpl .modal-dialog .modal-body{ padding: 0; height: 347px; }
+.add-tpl .modal-dialog .modal-body .tpl-nav ul{ list-style: none; margin: 0; }
+.add-tpl .modal-dialog .modal-body .tpl-nav ul li{ float: left; width: 25%; height: 45px; line-height: 45px; text-align: center; font-weight: bold; border: 1px solid #e5e5e5; border-right: none; }
+.add-tpl .modal-dialog .modal-body .tpl-nav ul li:first-child{ border-left: 0; }
+.add-tpl .modal-dialog .modal-body .tpl-nav ul li:last-child{ border-right: 0; }
+.add-tpl .modal-dialog .modal-body .tpl-nav ul li a{ display: block; color: #505050; width: 100%; height: 100%; text-decoration: none; }
+.add-tpl .modal-dialog .modal-body .tpl-nav ul li.active{ border-bottom: none; }
+.add-tpl .modal-dialog .modal-body .tpl-nav ul li.active a{ color: #ff6400; }
+
+.add-tpl .modal-dialog .modal-body .tpl-list-wrap{ padding: 0 32px; height: 302px; overflow-x: hidden; overflow-y: auto; }
+.add-tpl .modal-dialog .modal-body .tpl-list ul{ margin: 0; list-style: none; }
+.add-tpl .modal-dialog .modal-body .tpl-list ul li{ border-bottom: 1px solid #e5e5e5; padding: 16px 10px; }
+.add-tpl .modal-dialog .modal-body .tpl-list ul li .tpl-item{ height: 67px; }
+.add-tpl .modal-dialog .modal-body .tpl-list ul li .tpl-item .pic{ width: 161px; height: 67px; }
+.add-tpl .modal-dialog .modal-body .tpl-list ul li .tpl-item .intro{ font-size: 13px; width: 438px; line-height: 1.5; padding-left: 10px; }
+.add-tpl .modal-dialog .modal-body .tpl-list ul li .tpl-item .intro h1{ margin: 0; color: #505050; font-size: 13px; line-height: 2; margin-top: 8px; }
+.add-tpl .modal-dialog .modal-body .tpl-list ul li .tpl-item .intro p{ margin: 0; color: #959595; }
+
+.add-tpl .modal-dialog .modal-body .pagging-wrap{ background: #fff; padding: 10px 0; }
+
+@media only screen and (max-width: 767px) {
+	.add-box{ padding-left: 22px !important; padding-right: 22px !important; }
+	.add-box form input[type="button"]{ width: 37%; }
+	.add-box form p:last-child label input:first-child{ margin-right: 20%; }
+}

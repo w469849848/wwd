@@ -1,0 +1,9 @@
+.user-wrap{ margin-bottom: 20px; }
+.user-wrap .u-info ul{ list-style: none; margin: 20px 32px; }
+.user-wrap .u-info ul li{ float: left; margin-right: 20px; line-height: 28px; }
+.user-wrap .u-info ul li:last-child{ margin-right: 0; }
+
+.batch{ width: 100%; text-align: center; }
+.batch .exchange-record{ list-style: none; margin-left: 0; }
+.batch .exchange-record li{ float: left; margin-right: 20px; }
+.batch .exchange-record li:last-child{ margin-right: 0; }

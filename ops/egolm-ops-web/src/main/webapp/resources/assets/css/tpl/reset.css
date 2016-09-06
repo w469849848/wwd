@@ -1,0 +1,23 @@
+/* 清除内外边距 */
+.tpl-content h1,.tpl-content p,.tpl-content ul,.tpl-content li,.tpl-content button,.tpl-content input,.tpl-content textarea{ margin: 0; padding: 0; }
+
+/* 设置默认字体 */
+.tpl-content button,.tpl-content input,.tpl-content select,.tpl-content textarea { font-family: 'Open Sans'; font-size: 14px; color: #666; line-height: 1.5; }
+
+.tpl-content h1 { font-size: 18px; }
+
+.tpl-content small { font-size: 12px; } /* 小于 12px 的中文很难阅读，让 small 正常化 */
+
+/* 重置列表元素 */
+.tpl-content ul{ list-style: none; }
+
+/*正常显示文字*/
+i{ font-style: normal; }
+
+/* 重置文本格式元素 */
+.tpl-content a { text-decoration: none; }
+.tpl-content a:hover { text-decoration: none; }
+
+.tpl-content img { border: none; display: block; } /* img 搭车：让链接里的 img 无边框 */
+
+.tpl-content button,.tpl-content input,.tpl-content select,.tpl-content textarea { font-size: 100%; } /* 使得表单元素在 ie 下能继承字体大小 */

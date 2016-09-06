@@ -1,0 +1,23 @@
+.filter-wrap ul{ list-style: none; margin: 0; margin-top: 10px; }
+.filter-wrap ul li{ float: left; margin-right: 6%; }
+.dropdown-wrap ul,.dropdown-wrap ul li{ margin: 0; }
+
+.table tbody>tr:hover{ background: #f2f2f2 !important; }
+.table tbody>tr.reject-elem{ background: #f2f2f2; }
+.table-box .table tbody>tr.reject-elem td{  text-align: left; padding: 0 20px 0 88px; }
+.table-box .table tbody>tr.reject-elem td span{ display: inline-block; padding: 0 10px; width: 90%; height: 40px; line-height: 40px; background-color: #fff; }
+.table-box .table tbody>tr.reject-elem input{ margin: 0 5px; width: 40%; }
+
+/*三级菜单*/
+.filter-wrap .lv-first{ box-shadow: none; border: 1px solid #e5e5e5; max-height: 1000px; }
+.filter-wrap .lv-first li{ padding-right: 28px; }
+.filter-wrap .lv-first>li{ position: relative; background: url(../images/icon-arrow-menu.png) 90% center no-repeat; }
+.filter-wrap .lv-first ul.lv-second,.filter-wrap .lv-first ul.lv-third{ display: none; }
+.filter-wrap .lv-first ul.lv-second > li{ background: url(../images/icon-arrow-menu.png) 90% center no-repeat; position: relative; }
+.filter-wrap .lv-first ul.lv-third > li:hover{ background: #fcfcfc; color: #ff6400; }
+.filter-wrap .lv-first ul{ list-style: none; position: absolute; left: 100%; top: -1px; margin: 0; width: 100%; border: 1px solid #e5e5e5; background-color: #fff; }
+
+.filter-wrap .lv-first li.select,.filter-wrap .lv-first li:hover{ background: #fcfcfc !important; }
+.filter-wrap .lv-first li.select>span.item-name,.filter-wrap .lv-first li:hover>span.item-name{ color: #ff6400 !important; }
+.filter-wrap .lv-first li.select>ul,.filter-wrap .lv-first li:hover>ul{ display: block; }
+

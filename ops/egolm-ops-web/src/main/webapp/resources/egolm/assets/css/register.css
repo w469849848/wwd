@@ -1,0 +1,544 @@
+body {
+	background: #FAFAFA;
+}
+
+a:hover {
+	text-decoration: none;
+}
+
+.heade {
+	height: 60px;
+	width: 100%;
+	background: #ff6400;
+}
+
+.header {
+	height: 60px;
+	width: 100%;
+	background: #ff6400;
+}
+
+.forget_password_main {
+	width: 800px;
+	height: auto;
+	margin: 0 auto;
+}
+
+.forget_password_titer {
+	position:relative;
+	height: 120px;
+	width: 100%;
+	/*background: url(../images/register/bglogo.gif) no-repeat 30px;*/
+}
+
+.forget_password_titer img {
+	position: absolute;
+	top: 30px;
+	left: 40px;
+}
+
+.forget_password_titer h4 {
+	text-align: center;
+	line-height: 120px;
+	font-family: "宋体";
+}
+
+.user_phone,
+.user_password {
+	position: relative;
+	margin: 20px 40px 11px 37px;
+	border: 1px solid #ddd;
+	background: #fff;
+}
+
+.user_yzm {
+	position: relative;
+	margin: 20px 330px 11px 37px;
+	border: 1px solid #ddd;
+	background: #fff;
+}
+
+.user_yzm1 {
+	width: 200px;
+	height: 40px;
+	border: 0px solid #ddd;
+	background: #fff;
+	float: right;
+	margin: -52px 40px 0 -60px;
+	text-align: center;
+	line-height: 40px;
+}
+
+.getYzm {
+	display: block;
+	color: #ff6400;
+}
+
+.getYzm input {
+	width: 200px;
+	height: 40px;
+	background: #fff;
+	border: 1px solid #ddd;
+}
+
+
+
+.getYzm:hover {
+	text-decoration: none;
+	color: #ff6400;
+}
+
+.ico_user {
+	display: block;
+	position: absolute;
+	top: 9px;
+	left: 9px;
+	width: 20px;
+	height: 20px;
+	z-index: 4;
+}
+
+.user_inp,
+.password_inp {
+	width: 100%;
+	height: 40px;
+	background: #fff;
+	color: #333;
+	overflow: hidden;
+	border: 0!important;
+	padding-left: 40px!important;
+}
+
+.text_inp {
+	width: 100%;
+	height: 40px;
+	background: #fff;
+	color: #333;
+	overflow: hidden;
+	border: 0!important;
+	padding-left: 20px!important;
+}
+
+.yzm_inp {
+	width: 431px;
+	height: 40px;
+	background: #fff;
+	color: #333;
+	overflow: hidden;
+	border: 0!important;
+	padding-left: 40px !important;
+}
+
+.fw_submit {
+	margin-top: 65px;
+}
+
+.fw_password_p {
+	width: 90.3%;
+	height: 40px;
+	margin: 0 auto;
+	font-size: 20px;
+	color: white;
+	background: #ff6400;
+	text-align: center;
+	line-height: 40px;
+	border-radius: 3px;
+}
+
+.fw_password {
+	display: block;
+	color: white;
+}
+
+.fw_password:hover {
+	color: white;
+	text-decoration: none;
+}
+
+.reg_titer {
+	margin-left: 40px;
+}
+
+.regth_titer {
+	margin: 60px 0 0 40px;
+}
+
+.Business_event {
+	width: 90.3%;
+	height: 40px;
+	margin: 0 auto;
+	margin-top: 30px;
+}
+
+.buss_text {
+	float: left;
+	padding: 0 15px;
+}
+
+.buss_am {
+	width: 100px;
+	height: 35px;
+	display: inline-block;
+	float: left;
+}
+
+.a {
+	padding: 30px 0;
+}
+
+.b {
+	margin: 0 auto;
+}
+
+.upload_mr {
+	position: relative;
+}
+
+.upload {
+	position: absolute;
+	width: 360px;
+	height: 212px;
+	opacity: 0;
+	z-index: 10;
+}
+
+.upload_bg {
+	position: absolute;
+	width: 360px;
+	height: 212px;
+	/*background: url(../images/register/upload.gif);*/
+	z-index: 1;
+	border: 1px solid #e5e5e5;
+}
+
+.upload_bg img {
+	position: absolute;
+	top: 35%;
+	left: 45%;
+}
+
+.upload_bg h5 {
+	margin: 35% 0 0 38%;
+}
+
+.bussness_select {
+	width: 290px;
+	height: 40px;
+	background: white url(../images/register/select.gif) no-repeat right;
+	/*color: #959595;*/
+	color: #666;
+	font-family: "宋体";
+	-webkit-appearance: none;
+	overflow: hidden;
+	border-radius: 3px;
+	padding-left: 12px;
+}
+
+.bussness_type {
+	width: 100%;
+	height: 40px;
+	background: white url(../images/register/select.gif) no-repeat right;
+	color: #666;
+	font-family: "宋体";
+	-webkit-appearance: none;
+	border-radius: 3px;
+	padding-left: 12px;
+}
+
+.bussness_top {
+	margin-top: 25px;
+}
+
+.bussiness_event {
+	width: 100%;
+	height: 60px;
+	background: pink;
+	margin-top: 20px;
+}
+
+.bussiness_event_mar {
+	width: 90.5%;
+	height: 60px;
+	margin: 0 auto;
+	background: red;
+}
+
+
+/********************新样式 **********************/
+
+.add-box {
+	border: 0px solid white;
+	background-color: #fff;
+	border-radius: 5px;
+	-webkit-border-radius: 5px;
+	-moz-border-radius: 5px;
+	padding: 30px 38px;
+	font-size: 14px;
+}
+
+.add-box form p:last-child {
+	margin-top: 20px;
+	text-align: center;
+}
+
+.add-box form p:last-child label input:first-child {
+	margin-right: 50px;
+}
+
+.add-box form input[type="text"] {
+	height: 38px;
+}
+
+.add-box form input[type="text"],
+.add-box form textarea {
+	width: 100%;
+}
+
+.add-box form textarea {
+	resize: none;
+}
+
+.add-box form input[type="button"] {
+	padding: 8px 15px;
+	color: #fff;
+	background-color: #ff6400;
+	text-align: center;
+	float: none;
+	max-width: 180px;
+	outline: none;
+}
+
+.add-box form small label {
+	position: relative;
+}
+
+.add-box form small>span,
+.add-box form small>span>span {
+	padding: 0;
+	font-size: 14px;
+	line-height: 40px;
+}
+
+
+/*自定义下拉框*/
+
+.add-box form div.row {
+	margin-bottom: 13px;
+}
+
+.add-box form a.dropdown-btn {
+	position: relative;
+	height: 38px;
+	line-height: 28px;
+	padding: 5px 12px;
+	padding-right: 25px;
+	text-decoration: none;
+}
+
+.add-box form a.dropdown-btn:focus {
+	color: #505050;
+}
+
+.add-box form a.dropdown-btn:hover {
+	color: #505050;
+}
+
+.add-box form span.input-tips {
+	line-height: 40px;
+}
+
+.add-box form span.dr {
+	position: absolute;
+	display: block;
+	width: 38px;
+	height: 38px;
+	top: 50%;
+	margin-top: -19px;
+	right: 0;
+	background: #e5e5e5;
+}
+
+.add-box form span.dr img {
+	position: absolute;
+	top: 50%;
+	left: 50%;
+	margin-top: -3.5px;
+	margin-left: -6px;
+	display: block;
+	width: 12px;
+	height: 7px;
+}
+
+.add-box form .dropdown-menu li {
+	text-align: left;
+	padding: 0 12px;
+}
+
+.col-xs-1,
+.col-xs-2,
+.col-xs-3,
+.col-xs-4,
+.col-xs-5,
+.col-xs-6,
+.col-xs-7,
+.col-xs-8,
+.col-xs-9,
+.col-xs-10,
+.col-xs-11,
+.col-xs-12,
+.col-sm-1,
+.col-sm-2,
+.col-sm-3,
+.col-sm-4,
+.col-sm-5,
+.col-sm-6,
+.col-sm-7,
+.col-sm-8,
+.col-sm-9,
+.col-sm-10,
+.col-sm-11,
+.col-sm-12,
+.col-md-1,
+.col-md-2,
+.col-md-3,
+.col-md-4,
+.col-md-5,
+.col-md-6,
+.col-md-7,
+.col-md-8,
+.col-md-9,
+.col-md-10,
+.col-md-11,
+.col-md-12,
+.col-lg-1,
+.col-lg-2,
+.col-lg-3,
+.col-lg-4,
+.col-lg-5,
+.col-lg-6,
+.col-lg-7,
+.col-lg-8,
+.col-lg-9,
+.col-lg-10,
+.col-lg-11,
+.col-lg-12 {
+	padding: 0;
+}
+
+.border-radius {
+	border-radius: 2px !important;
+	-webkit-border-radius: 2px !important;
+	-moz-border-radius: 2px !important;
+}
+
+@media only screen and (max-width: 767px) {
+	.add-box {
+		padding-left: 22px !important;
+		padding-right: 22px !important;
+	}
+	.add-box form input[type="button"] {
+		width: 37%;
+	}
+	.add-box form p:last-child label input:first-child {
+		margin-right: 20%;
+	}
+}
+
+.mr {
+	margin-bottom: 20px;
+}
+
+.chk_inp {
+	float: left;
+}
+
+.check_tit {
+	float: left;
+	margin-top: 5px;
+}
+
+.chk-bg {
+	float: left;
+}
+
+.check_select {
+	display: inline-block;
+}
+
+.register_submit {
+	display: block;
+	width: 100%;
+	height: 40px;
+	margin: 0 auto;
+	font-size: 20px;
+	color: white;
+	background: #ff6400;
+	text-align: center;
+	line-height: 40px;
+	border-radius: 3px;
+}
+
+.register_submit:focus {
+	color: white;
+}
+
+.register_submit:hover {
+	color: white;
+}
+
+.btn_pd {
+	margin: 0 0 100px 0;
+}
+
+.footer_col {
+	width: 100%;
+	height: 60px;
+	background: #e5e5e5;
+	position: absolute;
+	bottom: 0;
+	left: 0;
+}
+
+.footer_col p {
+	text-align: center;
+	line-height: 60px;
+}
+
+.dropdown-menu li:hover {
+	color: #ff6400;
+}
+
+.comfirm {
+	margin: -30px 0 60px 0;
+}
+
+.agree_check {
+	margin-bottom: 10px;
+}
+
+.agree_check a {
+	color: #ff6400;
+}
+
+.position_check {
+	padding-top:20px;
+	margin-left:50px; 
+}
+
+.check_md {
+	margin-left: 30px;
+	float: left;
+}
+S
+.change_tit {
+	float: left;
+	margin-top:5px;
+}
+
+.roll {
+	width: 100%;
+	height: 200px;
+	overflow: auto;
+	overflow-x:hidden;
+}
+

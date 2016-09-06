@@ -1,0 +1,401 @@
+<!DOCTYPE html>
+<html lang="en">
+	<head>
+		<meta charset="utf-8" />
+		<title>万店易购运营管理平台</title>
+		<meta http-equiv="X-UA-Compatible" content="IE=edge">
+		<meta name="renderer" content="webkit">
+		<meta name="keywords" content="万店易购运营管理平台" />
+		<meta name="description" content="万店易购运营管理平台" />
+		<meta name="viewport" content="width=device-width, initial-scale=1.0" />
+		<!-- basic styles -->
+		<link href="assets/css/bootstrap.min.css" rel="stylesheet" />
+		<link rel="stylesheet" href="assets/css/font-awesome.min.css" />
+
+
+		<!-- ace styles -->
+
+		<link rel="stylesheet" href="assets/css/ace.min.css" />
+		<link rel="stylesheet" href="assets/css/ace-rtl.min.css" />
+		<link rel="stylesheet" href="assets/css/ace-skins.min.css" />
+		
+		<!-- personal style -->
+		<link rel="stylesheet" type="text/css" href="assets/css/index.css"/>
+
+		<!--[if lte IE 8]>
+		  <link rel="stylesheet" href="assets/css/ace-ie.min.css" />
+		<![endif]-->
+
+		<!-- ace settings handler -->
+
+		<script src="assets/js/ace-extra.min.js"></script>
+
+		<!-- HTML5 shim and Respond.js IE8 support of HTML5 elements and media queries -->
+
+		<!--[if lt IE 9]>
+		<script src="assets/js/html5shiv.js"></script>
+		<script src="assets/js/respond.min.js"></script>
+		<![endif]-->
+	</head>
+
+	<body>
+		
+		<div class="navbar navbar-default" id="navbar">
+
+			<div class="navbar-container" id="navbar-container">
+				<div class="navbar-header pull-left">
+					<a href="#" class="navbar-brand">
+						<small>
+							<i class="logo"><img src="assets/images/logo.png" /></i>
+							万店易购运营管理平台
+						</small>
+					</a><!-- /.brand -->
+				</div><!-- /.navbar-header -->
+				
+				<div class="user-operate">
+					<ul>
+						<li>
+							<a href="javascript:void(0)"><a class="admin" href="javascript:void(0)"><span><img src="assets/images/admin.png" /></span>Admin</a></a>
+						</li>
+						<li>
+							<img src="assets/images/border.png" />
+						</li>
+						<li>
+						    <label>
+						    	<select>
+							    	<option value="万店总部">万店总部</option>
+							    	<option value="万店总部">万店分部</option>
+							    </select>
+							    <span class="dr"><img src="assets/images/dropdown.png"/></span>
+						    </label>
+						</li>
+						<li>
+							<a href="javascript:void(0)">
+								消息
+								<span class="badge badge-assertive">8</span>
+							</a>
+						</li>
+						<li>
+							<a href="javascript:void(0)">注销</a>
+						</li>
+					</ul>
+				</div>
+				
+			</div><!-- /.container -->
+		
+		</div>
+		
+		<div class="main-container" id="main-container">
+
+			<div class="main-container-inner">
+				<a class="menu-toggler" id="menu-toggler" href="#">
+					<span class="menu-text"></span>
+				</a>
+
+				<div class="sidebar" id="sidebar">
+					
+					<ul class="nav nav-list">
+						<li class="">
+							<a href="javascript:void(0)" class="dropdown-toggle">
+								<i class="fa fa-dashboard icon-dashboard" aria-hidden="true"></i>
+								<span class="menu-text"> 商品管理 </span>
+								<b class="arrow"></b>
+							</a>
+							<ul class="submenu">
+								<li>
+									<a href="goods-import.html">
+										商品导入
+									</a>
+								</li>
+								<li>
+									<a href="goods-audit.html">
+										商品审核
+									</a>
+								</li>
+								<li>
+									<a href="goods-putaway.html">
+										商品上下架
+									</a>
+								</li>
+								<li>
+									<a href="add-goods.html">
+										商品新增
+									</a>
+								</li>
+							</ul>
+						</li>
+
+						<li>
+							<a href="javascript:void(0)" class="dropdown-toggle">
+								<i class="fa fa-text-width icon-text-width" aria-hidden="true"></i>
+								<span class="menu-text"> 促销管理 </span>
+								
+								<b class="arrow icon-angle-down fa fa-angle-down" aria-hidden="true"></b>
+							</a>
+							<ul class="submenu">
+								<li>
+									<a href="activity-manage.html">
+										活动管理
+									</a>
+								</li>
+								<li>
+									<a href="promotion-setting.html">
+										促销设置
+									</a>
+								</li>
+							</ul>
+						</li>
+
+						<li>
+							<a href="javascript:void(0)" class="dropdown-toggle">
+								<i class="fa fa-desktop icon-desktop" aria-hidden="true"></i>
+								<span class="menu-text"> 公告管理 </span>
+
+								<b class="arrow icon-angle-down fa fa-angle-down" aria-hidden="true"></b>
+							</a>
+
+							<ul class="submenu">
+								<li>
+									<a href="notice-manage.html">
+										公告管理
+									</a>
+								</li>
+
+								<li>
+									<a href="advertisement-manage.html">
+										广告管理
+									</a>
+								</li>
+
+								<li>
+									<a href="message-manage.html">
+										消息管理
+									</a>
+								</li>
+							</ul>
+						</li>
+
+						<li>
+							<a href="#" class="dropdown-toggle">
+								<i class="fa fa-list icon-list" aria-hidden="true"></i>
+								<span class="menu-text"> 供应商管理 </span>
+
+								<b class="arrow icon-angle-down fa fa-angle-down" aria-hidden="true"></b>
+							</a>
+
+							<ul class="submenu">
+								<li>
+									<a href="supplier-manage.html">
+										供应商管理
+									</a>
+								</li>
+								
+								<li>
+									<a href="#">
+										合同管理
+									</a>
+								</li>
+
+								<li>
+									<a href="#">
+										信用管理
+									</a>
+								</li>
+							</ul>
+						</li>
+
+						<li>
+							<a href="javascript:void(0)" class="dropdown-toggle">
+								<i class="fa fa-edit icon-edit" aria-hidden="true"></i>
+								<span class="menu-text"> 业务员管理 </span>
+
+								<b class="arrow icon-angle-down fa fa-angle-down" aria-hidden="true"></b>
+							</a>
+
+							<ul class="submenu">
+								<li>
+									<a href="salesman-manage.html">
+										业务员管理
+									</a>
+								</li>
+
+								<li>
+									<a href="#">
+										奖励设置
+									</a>
+								</li>
+
+								<li>
+									<a href="#">
+										奖励查询
+									</a>
+								</li>
+							</ul>
+						</li>
+
+						<li>
+							<a href="javascript:void(0)" class="dropdown-toggle">
+								<i class="fa fa-list-alt icon-list-alt" aria-hidden="true"></i>
+								<span class="menu-text"> 物流管理 </span>
+								<b class="arrow icon-angle-down fa fa-angle-down" aria-hidden="true"></b>
+							</a>
+							<ul class="submenu">
+								<li>
+									<a href="driver-evaluate.html">
+										司机评价
+									</a>
+								</li>
+
+								<li>
+									<a href="driver-manage.html">
+										司机管理
+									</a>
+								</li>
+							</ul>
+						</li>
+
+						<li>
+							<a href="javascript:void(0)" class="dropdown-toggle">
+								<i class="fa fa-calendar icon-calendar" aria-hidden="true"></i>
+								<span class="menu-text"> 用户管理 </span>
+								<b class="arrow icon-angle-down fa fa-angle-down" aria-hidden="true"></b>
+							</a>
+							<ul class="submenu">
+								<li>
+									<a href="user-manage.html">
+										用户管理
+									</a>
+								</li>
+
+								<li>
+									<a href="psw-manage.html">
+										密码管理
+									</a>
+								</li>
+								<li>
+									<a href="fund-manage.html">
+										资产管理
+									</a>
+								</li>
+							</ul>
+						</li>
+
+						<li class="open active">
+							<a href="javascript:void(0)" class="dropdown-toggle">
+								<i class="fa fa-database icon-database" aria-hidden="true"></i>
+								<span class="menu-text"> 数据管理 </span>
+								<b class="arrow icon-angle-down fa fa-angle-down" aria-hidden="true"></b>
+							</a>
+							<ul class="submenu">
+								<li class="active">
+									<a href="salsedata-manage.html">
+										销售数据管理
+									</a>
+								</li>
+
+								<li>
+									<a href="#">
+										用户数据管理
+									</a>
+								</li>
+								<li>
+									<a href="#">
+										平台数据管理
+									</a>
+								</li>
+								<li>
+									<a href="#">
+										活动数据管理
+									</a>
+								</li>
+							</ul>
+						</li>
+
+						<li>
+							<a href="#">
+								<i class="fa fa-tag icon-tag" aria-hidden="true"></i>
+								<span class="menu-text"> 模板管理 </span>
+							</a>
+						</li>
+
+						<li>
+							<a href="javascript:void(0)" class="dropdown-toggle">
+								<i class="fa fa-opera icon-opera" aria-hidden="true"></i>
+								<span class="menu-text">订单管理</span>
+
+								<b class="arrow icon-angle-down fa fa-angle-down" aria-hidden="true"></b>
+							</a>
+
+							<ul class="submenu">
+								<li>
+									<a href="#">
+										订单管理
+									</a>
+								</li>
+
+								<li>
+									<a href="#">
+										退单管理
+									</a>
+								</li>
+							</ul>
+						</li>
+					</ul><!-- /.nav-list -->
+
+					<div class="sidebar-collapse" id="sidebar-collapse">
+						<i class="fa icon-double-angle-left" data-icon1="icon-double-angle-left" data-icon2="icon-double-angle-right"></i>
+					</div>
+
+				</div>
+
+				<div class="main-content">
+
+					<div class="page-content">
+						
+						<div class="wh_titer">
+							<p class="wh_titer_f">首页 ></p>
+						</div>
+						
+						
+						
+					</div><!-- /.page-content -->
+				</div><!-- /.main-content -->
+			</div><!-- /.main-container-inner -->
+		</div><!-- /.main-container -->
+
+		<!-- basic scripts -->
+		
+		<!--[if !IE]> -->
+
+		<script type="text/javascript">
+			window.jQuery || document.write("<script src='assets/js/jquery-2.0.3.min.js'>"+"<"+"script>");
+		</script>
+
+		<!-- <![endif]-->
+		
+		<!--[if IE]>
+		<script type="text/javascript">
+			window.jQuery || document.write("<script src='assets/js/jquery-1.10.2.min.js'>"+"<"+"script>");
+		</script>
+		<![endif]-->
+
+		<script type="text/javascript">
+			if("ontouchend" in document) document.write("<script src='assets/js/jquery.mobile.custom.min.js'>"+"<"+"script>");
+		</script>
+		<script src="assets/js/bootstrap.min.js"></script>
+
+		<!-- ace scripts -->
+
+		<script src="assets/js/ace-elements.min.js"></script>
+		<script src="assets/js/ace.min.js"></script>
+
+		<script type="text/javascript">
+			jQuery(function($) {
+				
+				
+				
+			});
+		</script>
+</body>
+</html>
+

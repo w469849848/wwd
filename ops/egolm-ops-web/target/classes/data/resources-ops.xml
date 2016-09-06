@@ -1,0 +1,222 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<!-- Author coyzeng@gmail.com -->
+<!-- egolm ops permission xml mapping -->
+<!-- if url is blank, use the value of namespace -->
+<resources platform="OPS" version="5206">
+	<module name="万店运营平台" keys="OPS_INDEX" namespace="/">
+		<module name="组织架构管理" keys="OM" namespace="/member" url="javascript:void(0);" icon="icon-supplier" > <!-- coyzeng -->
+			<module name="用户" keys="OM_USER" namespace="/member/user/index" >
+				<module name="登录" keys="OM_USER_IN" namespace="/member/user/signIn" />
+				<module name="注销" keys="OM_USER_OUT" namespace="/member/user/signOut" />
+				<module name="详情" keys="OM_USER_INFO" namespace="/member/user/info" />
+				<module name="查询用户" keys="OM_USER_QUERY" namespace="/member/user/index" />
+				<module name="分配角色" keys="OM_USER_BROLE" namespace="/member/user/bindRole"/>
+			</module>
+			<module name="组织机构" keys="OM_GROUP" namespace="/member/group/index">
+				<module name="查询组织机构" keys="OM_GROUP_QALL" namespace="/member/group/queryAll" />
+				<module name="新建组织机构" keys="OM_GROUP_CREATE" namespace="/member/group/create" />
+				<module name="修改组织机构" keys="OM_GROUP_MODIFY" namespace="/member/group/modify" />
+				<module name="删除组织机构" keys="OM_GROUP_DELETE" namespace="/member/group/delete" />
+				<module name="组织机构详情" keys="OM_GROUP_INFO" namespace="/member/group/info" />
+				<module name="分配角色" keys="OM_GROUP_AROLE" namespace="/member/group/allocateRoles" />
+				<module name="移除角色" keys="OM_GROUP_RROLE" namespace="/member/group/removeRoles" />
+				<module name="修改权限" keys="OM_GROUP_MPERM" namespace="/member/group/modifyPerms" />
+				<module name="授权" keys="OM_GROUP_AUTH" namespace="/member/group/authorization" />
+			</module>
+			<module name="角色" keys="OM_ROLE" namespace="/member/role/index">
+				<module name="查询角色" keys="OM_ROLE_QUERY" namespace="/member/role/queryRoles" />
+				<module name="查询组织机构下的角色" keys="OM_ROLE_QUGROUP" namespace="member/role/queryRolesUnderGroup" />
+				<module name="创建角色" keys="OM_ROLE_CREATE" namespace="/member/role/create" />
+				<module name="修改角色" keys="OM_ROLE_MODIFY" namespace="/member/role/modify" />
+				<module name="删除角色" keys="OM_ROLE_DELETE" namespace="/member/role/delete" />
+				<module name="角色详情" keys="OM_ROLE_INFO" namespace="member/role/info" />
+				<module name="绑定组织机构" keys="OM_ROLE_BGROUP" namespace="/member/role/bindGroup" />
+				<module name="分配用户" keys="OM_ROLE_AUSER" namespace="/member/role/allocateUsers" />
+				<module name="移除用户" keys="OM_ROLE_RUSER" namespace="/member/role/removeUsers" />
+				<module name="授权" keys="OM_ROLE_AUTH" namespace="/member/role/authorization" />
+			</module>
+			<module name="权限" keys="OM_PERMISSION" namespace="/member/permission/index">
+				<module name="查询权限" keys="OM_PERMISSION_QALL" namespace="/member/permission/queryAll" />
+				<module name="查询组织机构下的权限" keys="OM_PERMISSION_QUGROUP" namespace="/member/permission/queryPermsUnderGroup" />
+				<module name="权限树" keys="OM_PERMISSION_TREE" namespace="/member/permission/tree" />
+				<module name="激活权限" keys="OM_PERMISSION_ACTIVE" namespace="/member/permission/active" />
+				<module name="冻结权限 " keys="OM_PERMISSION_FREEZE" namespace="/member/permission/freeze" />
+			</module>
+		</module>
+		
+		
+		<module name="商品管理" keys="GM" namespace="/goods" url="javascript:void(0);" icon="icon-goods" >   <!-- 张永 -->
+			<module name="商品导入" keys="GM_GOODS_IMPORT" namespace="/goods/tGoodsDealer/importFirst" > 
+				<module name="第一页下一步" keys="GM_GOODS_IMPORT_FIRST" namespace="/goods/tGoodsDealer/importSecond" />
+			    <module name="第二页查询" keys="GM_GOODS_IMPORT_SECOND_QUERY" namespace="/goods/tGoodsDealer/loadSecondMsg" /> 
+			    <module name="第二页从资料库选商品" keys="GM_GOODS_IMPORT_SECOND_SELECT_GOODS" namespace="/goods/tGoodsDealer/listGoods" /> 
+			    <module name="第二页下一步" keys="GM_GOODS_IMPORT_SECOND_NEXT" namespace="/goods/tGoodsDealer/importThird" /> 
+			    <module name="提交申请" keys="GM_GOODS_IMPORT_THIRD_SUBMIT" namespace="/submitAgentContractGoods" />
+			</module>
+			<module name="商品审核" keys="GM_GOODS_AUDIT" namespace="/dealer/acGoods/list" >
+				<module name="查询" keys="GM_GOODS_AUDIT_QUERY" namespace="/dealer/acGoods/list" />
+			   	<module name="详情" keys="GM_GOODS_AUDIT_DETAIL" namespace="/dealer/acGoodsDtl/toDtlPage" />
+			</module>
+			<module name="商品上下架" keys="GM_GOODS_UPDOWN" namespace="/dealer/goods/indexPage" >
+				<module name="查询" keys="GM_GOODS_UPDOWN_QUERY" namespace="/dealer/goods/indexPage" />
+ 				<module name="批量上下架" keys="GM_GOODS_UPDOWN_BATCH" namespace="/dealer/goods/updateNTag" />
+ 			</module>
+		</module>
+		
+		
+		<module name="促销管理" keys="PMM" namespace="/promotion" url="javascript:void(0);" icon="icon-promotion">   <!-- 张永 -->
+			<module name="活动管理" keys="PMM_PROMOTIOM" namespace="/tmpPromo/list" >
+			   <module name="新增" keys="PMM_PROMOTIOM_ADD" namespace="/tmpPromo/addIndex" />
+			   <module name="删除" keys="PMM_PROMOTIOM_DEL" namespace="/delete" />
+			   <module name="修改" keys="PMM_PROMOTIOM_UPDATE" namespace="/tmpPromo/loadMsgById" />
+			   <module name="详情" keys="PMM_PROMOTIOM_DETAL" namespace="/tmpPromo/loadDetailMsgById" />
+			   <module name="查询" keys="PMM_PROMOTIOM_QUERY" namespace="/tmpPromo/list" />
+			   <module name="批量通过/不通过" keys="PMM_PROMOTIOM_AUDIT" namespace="/auditPromo" />
+			</module>
+			<module name="促销活动管理" keys="PMM_LIST" namespace="/promotion/list" />
+		</module>
+		
+		<module name="公告管理" keys="NOM" namespace="/notice" url="javascript:void(0);" icon="icon-notice" > <!-- coyzeng -->
+			<module name="公告管理" keys="NOM_NOTICE" namespace="/api/notice/index" >
+				<module name="查询公告" keys="NOM_NOTICE_QUERY" namespace="/api/notice/query" />
+				<module name="新建公告" keys="NOM_NOTICE_ADD" namespace="/api/notice/add" />
+				<module name="编辑公告" keys="NOM_NOTICE_MODIFY" namespace="/api/notice/update" />
+				<module name="删除公告" keys="NOM_NOTICE_DELETE" namespace="/api/notice/delete" />
+			</module>
+		</module>
+		
+		
+		<module name="经销商管理" keys="DEM" namespace="/dealer" url="javascript:void(0);" icon="icon-dealer">
+			<module name="经销商管理" keys="DEM_DEALER" namespace="/dealer/agentList" />
+			<module name="合同管理" keys="DEM_CONTRACT" namespace="/dealer/agentContractList" />
+		</module>
+		
+		
+		<module name="业务员管理" keys="BIZM" namespace="/salesman" url="javascript:void(0);" icon="icon-salesman" >
+			<module name="业务员管理" keys="BIZM_BIZMAN" namespace="/salesman/toSalesManList" />
+			<module name="拜访线路" keys="BIZM_LINE" namespace="/salesman/line/index" >
+				<module name="新建线路" keys="BIZM_LINE_CREATE" namespace="/salesman/line/create" />
+				<module name="审核线路" keys="BIZM_LINE_AUDIT" namespace="/salesman/line/audit" />
+				<module name="修改线路" keys="BIZM_LINE_MODIFY" namespace="/salesman/line/modify" />
+				<module name="删除线路" keys="BIZM_LINE_DELETE" namespace="/salesman/line/delete" />
+			</module>
+			<module name="工作指标" keys="BIZM_AIM" namespace="/salesman/aim/index" >
+				<module name="新建指标" keys="BIZM_AIM_CREATE" namespace="/salesman/aim/create" />
+				<module name="审核指标" keys="BIZM_AIM_AUDIT" namespace="/salesman/aim/audit" />
+				<module name="修改指标" keys="BIZM_AIM_MODIFY" namespace="/salesman/aim/modify" />
+				<module name="删除指标" keys="BIZM_AIM_DELETE" namespace="/salesman/aim/delete" />
+			</module>
+			
+			<!-- 任务管理 -->
+			<module name="任务管理" keys="BIZM_TASK" namespace="/salesman/taskList" />
+			<module name="线路管理" keys="BIZM_ROUTE" namespace="/salesman/lineList" />
+			<module name="模板配置" keys="BIZM_TEMPLATE" namespace="/salesman/templateList" />
+		</module>
+		
+		
+		<module name="物流管理" keys="LOGM" namespace="/logistics" url="javascript:void(0);" icon="icon-logistics" > <!-- coyzeng -->
+			<module name="司机管理" keys="LOGM_DM" namespace="/logistics/driver/index" >
+				<module name="查询司机" keys="LOGM_DM_QUERY" namespace="/logistics/driver/queryDrivers" />
+				<module name="新增司机" keys="LOGM_DM_ADD" namespace="/logistics/driver/addDriver" />
+				<module name="编辑司机" keys="LOGM_DM_MODIFY" namespace="/logistics/driver/modifyDriver" />
+				<module name="审核司机" keys="LOGM_DM_AUDIT" namespace="/logistics/driver/auditDriver" />
+				<module name="导出Excel" keys="LOGM_DM_EXCEL" namespace="/logistics/driver/exeproExcel" />
+			</module>
+		</module>
+		
+		<module name="会员管理" keys="UM" namespace="/cust" url="javascript:void(0);" icon="icon-user" >
+			<module name="会员管理" keys="UM_CUST" namespace="/customer/customerList" />
+			<module name="店铺管理" keys="SM_CUSTSHOP" namespace="/shop/shopList" />
+		</module>
+		
+		<!-- 
+		<module name="店铺管理" keys="SM" namespace="/shop" url="javascript:void(0);" icon="icon-shop" >
+			<module name="会员等级" keys="UM_LEVE" namespace="/grade/leveList" />
+			<module name="密码管理" keys="UM_PASSWORD" namespace="/customer/custPswManage" />
+			<module name="店铺证照" keys="SM_CERTIF" namespace="/certif/certifList" />
+		</module>
+		 -->
+		
+		
+		<module name="数据管理" keys="DAM" namespace="/data" icon="icon-data" >
+			<module name="销售数据管理" keys="DAM_SALE" namespace="/data/sale" />
+			<module name="用户数据管理" keys="DAM_USER" namespace="/data/user" />
+			<module name="平台数据管理" keys="DAM_PLATFORM" namespace="/data/platform" />
+			<module name="活动数据管理" keys="DAM_PROMOTION" namespace="/data/promotion" />
+			<module name="店铺数据管理" keys="DAM_SHOPFLOW" namespace="/data/shopFlowReport/index" />
+			
+			<module name="IDC统计报表" keys="DAM_GOODS_SALE_REPORT" namespace="/data/generalReport/index?moduleID=10035%26type=S%26ModuleName=IDC统计报表" /> 
+			<module name="IDC图形报表" keys="DAM_ECHART_SALE_REPORT" namespace="/data/generalReport/index?moduleID=83949%26type=G%26ModuleName=IDC图形报表" /> 
+
+		</module>
+		
+		<module name="模板管理-微信" keys="TPL" namespace="/tpl" icon="icon-tpl" >
+			<module name="模板列表" keys="TPL_GET" namespace="/tpl/get" />
+		</module>
+		
+		<module name="模板管理" keys="TEM" namespace="/template" icon="icon-tpl" >
+			<module name="模板管理" keys="TEM_TEM_LIST" namespace="/template/list" />
+			<module name="模块列表" keys="DAM_TEM_MLIST" namespace="/template/module/list" />
+		</module>
+		
+		<module name="订单管理" keys="ORM" namespace="/order" icon="icon-order" >                 <!-- 张永 -->
+			<module name="订单管理" keys="ORM_ORDER" namespace="/order/tSalesOrderSub/list" >
+				<module name="订单查询" keys="ORM_ORDER_QUERY" namespace="/order/tSalesOrderSub/list" />
+			    <module name="订单详情" keys="ORM_ORDER_DETAL" namespace="/order/tSalesOrderSubDtl/list" />
+			    <module name="批量标记" keys="ORM_ORDER_MARK" namespace="/order/tSalesOrderSub/marked" />
+			    <module name="批量导出" keys="ORM_ORDER_EXPORT" namespace="/order/tSalesOrderSub/export" />
+			</module>
+			<!-- <module name="退单管理" keys="ORM_BACK_ORDER" namespace="/order/backOrder" /> -->
+		</module>
+		
+		
+		<module name="广告管理" keys="ADM" namespace="/media" icon="icon-ad" >                             <!-- 张永 -->
+			<module name="广告位管理" keys="ADM_POSITION" namespace="/media/mediaPos/list" >
+			   <module name="查询" keys="ADM_POSITION_QUERY" namespace="/media/mediaPos/list" />
+			   <module name="新增" keys="ADM_POSITION_ADD" namespace="/media/mediaPos/addIndex" />
+			   <module name="编辑" keys="ADM_POSITION_UPDATE" namespace="/media/mediaPos/loadMsgByID" />
+			   <module name="删除" keys="ADM_POSITION_DEL" namespace="/media/mediaPos/delete" />
+			</module>
+			    
+			<module name="广告管理" keys="ADM_ADVERT" namespace="/media/mediaContext/list" >
+			   <module name="新增" keys="ADM_ADVERT_ADD" namespace="/media/mediaContext/addIndex" />
+			   <module name="编辑" keys="ADM_ADVERT_UPDATE" namespace="/media/mediaContext/loadMsgById" />
+			   <module name="删除" keys="ADM_ADVERT_DEL" namespace="/media/mediaContext/delete" />
+			</module>
+			     
+			<module name="广告审核" keys="ADM_AUDIT" namespace="/media/mediaContext/waitAuditlist" >
+			   <module name="审核" keys="ADM_AUDIT_BUTTON" namespace="/media/mediaContext/auditTShopAdvert" />
+			</module>
+			<module name="广告合同管理" keys="ADM_CONTRACT" namespace="/media/mediaContract/list" >
+			   <module name="新增" keys="ADM_CONTRACT_ADD" namespace="/media/mediaContract/addIndex" />
+			   <module name="删除" keys="ADM_CONTRACT_DEL" namespace="/media/mediaContract/delete" />
+			   <module name="查询" keys="ADM_CONTRACT_QUERY" namespace="/media/mediaContract/list" />
+			   <module name="编辑" keys="ADM_CONTRACT_UPDATE" namespace="/media/mediaContract/loadMsgById" />
+			   <module name="详情" keys="ADM_CONTRACT_DETAIL" namespace="/media/mediaContract/loadDetailMsgById" />
+			</module>
+			
+			<module name="广告统计" keys="ADM_REPORT" namespace="/media/mediaContext/adVertReport" >
+			</module>
+		</module>
+		<module name="商品价格管理" keys="LEVEL" namespace="/goods/price" url="javascript:void(0);" icon="icon-goods" >
+			<module name="基础等级管理" keys="DEM_BASE_LEVEL" namespace="/goods/price/baseLevelList" />
+			<module name="商铺等级设置" keys="DEM_SHOP_LEVEL" namespace="/goods/price/shopLevelList" />
+			<module name="商品价格管理" keys="DEM_GOODS_PRICE_LEVEL" namespace="/goods/price/goodsPriceLevelList" />
+		</module>
+		<module name="仓库管理" keys="WH" namespace="/agent/warehouse" url="javascript:void(0);" icon="icon-dealer" >
+			<module name="基础资料管理" keys="DEM_WH_DATA_MANAGE" namespace="/agent/warehouse/warehouseList" />
+			<module name="仓库商品管理" keys="DEM_WH_GOODS_MANAGE" namespace="/agent/warehouse/warehouseGoodsList">
+ 				<module name="批量上下架" keys="WH_GOODS_UPDOWN_BATCH" namespace="/agent/warehouse/updateNTag" />
+			</module>
+		</module>
+		<module name="城市管理" keys="CITY" namespace="/city/manage" url="javascript:void(0);" icon="icon-dealer" >
+			<module name="分类管理" keys="CATEGORY_LIST" namespace="/category/list" />
+			<module name="配送优先级管理" keys="DEM_PRIORITY_MANAGE" namespace="/city/manage/priorityManageList" />
+		</module>
+		<module name="系统管理" keys="SYSTEM" namespace="/system" url="javascript:void(0);" icon="icon-dealer" >
+			<!-- <module name="报表数据配置" keys="SYSTEM_REPORT_DATA" namespace="/system/ywReport/index" /> --> 
+			<module name="版本配置" keys="SYSTEM_APP_VERSION_DATA" namespace="/system/appVersion/list" /> 
+		</module>
+	</module>
+
+</resources>

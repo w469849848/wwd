@@ -1,0 +1,4203 @@
+<!DOCTYPE html>
+<html lang="en">
+	<head>
+		<meta charset="utf-8" />
+		<title>万店易购运营管理平台</title>
+		<meta http-equiv="X-UA-Compatible" content="IE=edge">
+		<meta content="telephone=no" name="format-detection">
+		<meta name="renderer" content="webkit">
+		<meta name="keywords" content="万店易购运营管理平台" />
+		<meta name="description" content="万店易购运营管理平台" />
+		<meta name="viewport" content="width=device-width,initial-scale=1,user-scalable=no" />
+		<!-- basic styles -->
+		<link href="assets/css/bootstrap.min.css" rel="stylesheet" />
+		<link rel="stylesheet" href="assets/css/font-awesome.min.css" />
+
+
+		<!-- ace styles -->
+
+		<link rel="stylesheet" href="assets/css/ace.min.css" />
+		
+		<link rel="stylesheet" href="assets/css/tpl-manage.css" />
+		
+		<link rel="stylesheet" href="assets/css/tpl-setting.css" />
+		
+		<link rel="stylesheet" href="assets/css/tpl/reset.css" />
+		<link rel="stylesheet" href="assets/css/tpl/common.css" />
+		<link rel="stylesheet" href="assets/css/tpl/index.css" />
+		<link rel="stylesheet" href="assets/css/tpl/header.css" />
+		<link rel="stylesheet" href="assets/css/tpl/banner.css" />
+		<link rel="stylesheet" href="assets/css/pagination.css" />
+		
+		<!-- footable styles -->
+		<link rel="stylesheet" type="text/css" href="assets/css/footable.core.css"/>
+
+		<!--[if lte IE 8]>
+		  <link rel="stylesheet" href="assets/css/ace-ie.min.css" />
+		<![endif]-->
+
+		<!-- ace settings handler -->
+
+		<script src="assets/js/ace-extra.min.js"></script>
+
+		<!-- HTML5 shim and Respond.js IE8 support of HTML5 elements and media queries -->
+
+		<!--[if lt IE 9]>
+		<script src="assets/js/html5shiv.js"></script>
+		<script src="assets/js/respond.min.js"></script>
+		<![endif]-->
+	</head>
+
+	<body>
+		
+		<div class="navbar navbar-default" id="navbar">
+
+			<div class="navbar-container" id="navbar-container">
+				<div class="navbar-header pull-left">
+					<a href="#" class="navbar-brand">
+						<small>
+							<i class="logo"></i>
+						</small>
+					</a><!-- /.brand -->
+					<span class="top-tit">万店易购运营管理平台</span>
+				</div><!-- /.navbar-header -->
+				
+				<div class="user-operate">
+					<ul>
+						<li>
+							<a class="admin" href="javascript:void(0)"><span></span>Admin</a>
+						</li>
+						<li>
+							<img src="assets/images/border.png" />
+						</li>
+						<li class="dropdown-wrap">
+						    <a id="dropdown-btn" class="dropdown-btn dropdown-toggle" href="#" data-toggle="dropdown" role="button" aria-haspopup="true" aria-expanded="true">
+					          	<span>万店总部</span>
+					          	<span class="dr"></span>
+					        </a>
+					        <ul id="dropdown-menu" class="dropdown-menu" aria-labelledby="dropdown-btn">
+					          	<li>万店总部</li>
+					          	<li>万店分部</li>
+					        </ul>
+						</li>
+						<li>
+							<a href="javascript:void(0)">
+								消息
+								<span class="badge badge-assertive">8</span>
+							</a>
+						</li>
+						<li>
+							<a href="javascript:void(0)">注销</a>
+						</li>
+					</ul>
+				</div>
+				
+			</div><!-- /.container -->
+		
+		</div>
+		
+		<div class="main-container" id="main-container">
+
+			<div class="main-container-inner">
+				<a class="menu-toggler" id="menu-toggler" href="#"><span></span>分类</a>
+
+				<div class="sidebar" id="sidebar">
+					
+					<ul class="nav nav-list">
+						<li class="">
+							<a href="javascript:void(0)" class="dropdown-toggle">
+								<i class="icon icon-goods"></i>
+								<span class="menu-text"> 商品管理 </span>
+								<b class="arrow"></b>
+							</a>
+							<ul class="submenu">
+								<li>
+									<a href="goods-import.html">
+										商品导入
+									</a>
+								</li>
+								<li>
+									<a href="goods-audit.html">
+										商品审核
+									</a>
+								</li>
+								<li>
+									<a href="good-import-audit.html">
+										单品引入审核
+									</a>
+								</li>
+								<li>
+									<a href="goods-putaway.html">
+										商品上下架
+									</a>
+								</li>
+								<li>
+									<a href="add-goods.html">
+										新品提报
+									</a>
+								</li>
+							</ul>
+						</li>
+
+						<li>
+							<a href="javascript:void(0)" class="dropdown-toggle">
+								<i class="icon icon-promotion"></i>
+								<span class="menu-text"> 促销管理 </span>
+								
+								<b class="arrow icon icon-angle-down"></b>
+							</a>
+							<ul class="submenu">
+								<li>
+									<a href="activity-manage.html">
+										活动管理
+									</a>
+								</li>
+								<li>
+									<a href="promotion-apply.html">
+										促销申请
+									</a>
+								</li>
+							</ul>
+						</li>
+
+						<li>
+							<a href="javascript:void(0)" class="dropdown-toggle">
+								<i class="icon icon-notice"></i>
+								<span class="menu-text"> 公告管理 </span>
+
+								<b class="arrow icon icon-angle-down"></b>
+							</a>
+
+							<ul class="submenu">
+								<li>
+									<a href="notice-manage.html">
+										公告管理
+									</a>
+								</li>
+
+								<li>
+									<a href="message-manage.html">
+										消息管理
+									</a>
+								</li>
+							</ul>
+						</li>
+
+						<li>
+							<a href="#" class="dropdown-toggle">
+								<i class="icon icon-dealer"></i>
+								<span class="menu-text"> 经销商管理 </span>
+
+								<b class="arrow icon icon-angle-down"></b>
+							</a>
+
+							<ul class="submenu">
+								<li>
+									<a href="dealer-manage.html">
+										经销商管理
+									</a>
+								</li>
+								
+								<li>
+									<a href="dealer-contract.html">
+										合同管理
+									</a>
+								</li>
+
+								<li>
+									<a href="#">
+										信用管理
+									</a>
+								</li>
+							</ul>
+						</li>
+						
+						<li>
+							<a href="#" class="dropdown-toggle">
+								<i class="icon icon-supplier"></i>
+								<span class="menu-text"> 供应商管理 </span>
+
+								<b class="arrow icon icon-angle-down"></b>
+							</a>
+
+							<ul class="submenu">
+								<li>
+									<a href="supplier-manage.html">
+										供应商管理
+									</a>
+								</li>
+								
+								<li>
+									<a href="supplier-contract.html">
+										合同管理
+									</a>
+								</li>
+
+								<li>
+									<a href="#">
+										信用管理
+									</a>
+								</li>
+							</ul>
+						</li>
+
+						<li>
+							<a href="javascript:void(0)" class="dropdown-toggle">
+								<i class="icon icon-salesman"></i>
+								<span class="menu-text"> 业务员管理 </span>
+
+								<b class="arrow icon icon-angle-down"></b>
+							</a>
+
+							<ul class="submenu">
+								<li>
+									<a href="salesman-manage.html">
+										业务员管理
+									</a>
+								</li>
+
+								<li>
+									<a href="award-setting.html">
+										奖励设置
+									</a>
+								</li>
+
+								<li>
+									<a href="award-query.html">
+										奖励查询
+									</a>
+								</li>
+							</ul>
+						</li>
+
+						<li>
+							<a href="javascript:void(0)" class="dropdown-toggle">
+								<i class="icon icon-logistics"></i>
+								<span class="menu-text"> 物流管理 </span>
+								<b class="arrow icon icon-angle-down"></b>
+							</a>
+							<ul class="submenu">
+								<li>
+									<a href="driver-evaluate.html">
+										司机评价
+									</a>
+								</li>
+
+								<li>
+									<a href="driver-manage.html">
+										司机管理
+									</a>
+								</li>
+							</ul>
+						</li>
+
+						<li>
+							<a href="javascript:void(0)" class="dropdown-toggle">
+								<i class="icon icon-user"></i>
+								<span class="menu-text"> 用户管理 </span>
+								<b class="arrow icon icon-angle-down"></b>
+							</a>
+							<ul class="submenu">
+								<li>
+									<a href="user-manage.html">
+										用户管理
+									</a>
+								</li>
+
+								<li>
+									<a href="psw-manage.html">
+										密码管理
+									</a>
+								</li>
+								<li>
+									<a href="fund-manage.html">
+										资产管理
+									</a>
+								</li>
+								<li>
+									<a href="integral-exchange.html">
+										积分管理
+									</a>
+								</li>
+								<li>
+									<a href="#">
+										增值服务
+									</a>
+								</li>
+							</ul>
+						</li>
+
+						<li>
+							<a href="javascript:void(0)" class="dropdown-toggle">
+								<i class="icon icon-data"></i>
+								<span class="menu-text"> 数据管理 </span>
+								<b class="arrow icon icon-angle-down"></b>
+							</a>
+							<ul class="submenu">
+								<li>
+									<a href="salesdata-chart.html">
+										销售数据管理
+									</a>
+								</li>
+
+								<li>
+									<a href="#">
+										用户数据管理
+									</a>
+								</li>
+								<li>
+									<a href="#">
+										平台数据管理
+									</a>
+								</li>
+								<li>
+									<a href="#">
+										活动数据管理
+									</a>
+								</li>
+							</ul>
+						</li>
+
+						<li class="open active">
+							<a href="javascript:void(0)" class="dropdown-toggle">
+								<i class="icon icon-tpl"></i>
+								<span class="menu-text">模板管理</span>
+
+								<b class="arrow icon icon-angle-down"></b>
+							</a>
+
+							<ul class="submenu">
+								<li class="active">
+									<a href="tpl-manage.html">
+										模板管理
+									</a>
+								</li>
+
+								<li>
+									<a href="module-manage.html">
+										模块管理
+									</a>
+								</li>
+							</ul>
+						</li>
+
+						<li>
+							<a href="javascript:void(0)" class="dropdown-toggle">
+								<i class="icon icon-order"></i>
+								<span class="menu-text">订单管理</span>
+
+								<b class="arrow icon icon-angle-down"></b>
+							</a>
+
+							<ul class="submenu">
+								<li>
+									<a href="#">
+										订单管理
+									</a>
+								</li>
+
+								<li>
+									<a href="#">
+										退单管理
+									</a>
+								</li>
+							</ul>
+						</li>
+						
+						<li>
+							<a href="javascript:void(0)" class="dropdown-toggle">
+								<i class="icon icon-ad"></i>
+								<span class="menu-text">广告管理</span>
+
+								<b class="arrow icon icon-angle-down"></b>
+							</a>
+
+							<ul class="submenu">
+								<li>
+									<a href="ad-position-manage.html">
+										广告位管理
+									</a>
+								</li>
+
+								<li>
+									<a href="advertisement-manage.html">
+										广告管理
+									</a>
+								</li>
+								
+								<li>
+									<a href="advertisement-audit.html">
+										广告审核
+									</a>
+								</li>
+							</ul>
+						</li>
+						
+					</ul><!-- /.nav-list -->
+
+					<div class="sidebar-collapse" id="sidebar-collapse">
+						<i class="fa icon-double-angle-left" data-icon1="icon-double-angle-left" data-icon2="icon-double-angle-right"></i>
+					</div>
+
+				</div>
+
+				<div class="main-content">
+
+					<div class="page-content">
+						
+						<div class="wh_titer">
+							<p class="wh_titer_f">
+								您的位置：
+								<a href="index.html">首页</a> &gt; 
+								<a href="javascript:void(0)">模板管理</a> &gt; 
+								<a class="active" href="tpl-setting.html">模板设置</a>
+							</p>
+						</div>
+						
+						<div class="tpl table-box"> <!-- 模板设置 -->
+							
+							<div class="tpl-nav">
+								<div class="btn-left hide">
+									<a class="btn-prev" href="javascript:void(0)">&lt;</a>
+								</div>
+								<div class="scroll-box">
+									<ul class="clearfix">
+										<li class="active"><a href="javascript:void(0)">导航模块</a></li>
+										<li><a href="javascript:void(0)">推荐品牌模块</a></li>
+										<li><a href="javascript:void(0)">推荐商品模块</a></li>
+										<li><a href="javascript:void(0)">广告模块</a></li>
+										<li><a href="javascript:void(0)">楼层商品模块</a></li>
+										<li><a href="javascript:void(0)">楼层商品模块</a></li>
+										<li><a href="javascript:void(0)">楼层商品模块</a></li>
+										<li><a href="javascript:void(0)">楼层商品模块</a></li>
+									</ul>
+								</div>
+								<div class="btn-right hide">
+									<a class="btn-next" href="javascript:void(0)">&gt;</a>
+								</div>
+							</div>
+							
+							<div class="tpl-content">
+								
+								<!--导航模块-->
+								<div class="nav-module tab-1">
+									
+									<!--顶部导航-->
+									<div class="header">
+										
+										<!--商品分类-->
+										<div class="header-nav-wrap">
+											<div class="header-nav ma pw clearfix pr">
+												<div class="fl pr sort-wrap">
+													<a class="pr" href="javascript:void(0)">休闲食品</a>
+													
+													<div class="sort">
+														<div class="mask">
+															<a class="edit-tips" href="javascript:void(0)"><img src="assets/images/tpl/edit-tips.png"/></a>
+														</div>
+														<ul class="clearfix">
+															<li>
+																<div class="sort-title">
+																	<a href="#">饼干糕点</a>
+																	<span class="dr"></span>
+																</div>
+																
+																<div class="sort-content hide">
+																	<div class="sort-list clearfix">
+																		<h1 class="fl"><a href="#">剑南春</a></h1>
+																		<ul class="clearfix fl">
+																			<li><a href="#">茅台</a></li>
+																			<li><a href="#">茅台</a></li>
+																			<li><a href="#">茅台</a></li>
+																			<li><a href="#">茅台</a></li>
+																			<li><a href="#">茅台</a></li>
+																			<li><a href="#">茅台</a></li>
+																		</ul>
+																	</div>
+																	
+																	<div class="sort-list clearfix">
+																		<h1 class="fl"><a href="#">剑南春</a></h1>
+																		<ul class="clearfix fl">
+																			<li><a href="#">茅台</a></li>
+																			<li><a href="#">茅台</a></li>
+																			<li><a href="#">茅台</a></li>
+																			<li><a href="#">茅台</a></li>
+																			<li><a href="#">茅台</a></li>
+																			<li><a href="#">茅台</a></li>
+																		</ul>
+																	</div>
+																	
+																</div>
+															
+															</li>
+															<li>
+																<div class="sort-title">
+																	<a href="#">巧克力</a>
+																	<span class="dr"></span>
+																</div>
+																<div class="sort-content hide">
+																	<div class="sort-list clearfix">
+																		<h1 class="fl"><a href="#">剑南春</a></h1>
+																		<ul class="clearfix fl">
+																			<li><a href="#">茅台</a></li>
+																			<li><a href="#">茅台</a></li>
+																			<li><a href="#">茅台</a></li>
+																			<li><a href="#">茅台</a></li>
+																			<li><a href="#">茅台</a></li>
+																			<li><a href="#">茅台</a></li>
+																		</ul>
+																	</div>
+																	
+																	<div class="sort-list clearfix">
+																		<h1 class="fl"><a href="#">剑南春</a></h1>
+																		<ul class="clearfix fl">
+																			<li><a href="#">茅台</a></li>
+																			<li><a href="#">茅台</a></li>
+																			<li><a href="#">茅台</a></li>
+																			<li><a href="#">茅台</a></li>
+																			<li><a href="#">茅台</a></li>
+																			<li><a href="#">茅台</a></li>
+																		</ul>
+																	</div>
+																	<div class="sort-list clearfix">
+																		<h1 class="fl"><a href="#">剑南春</a></h1>
+																		<ul class="clearfix fl">
+																			<li><a href="#">茅台</a></li>
+																			<li><a href="#">茅台</a></li>
+																			<li><a href="#">茅台</a></li>
+																			<li><a href="#">茅台</a></li>
+																			<li><a href="#">茅台</a></li>
+																			<li><a href="#">茅台</a></li>
+																		</ul>
+																	</div>
+																	
+																</div>
+															</li>
+															<li>
+																<div class="sort-title">
+																	<a href="#">糖果/口香糖</a>
+																	<span class="dr"></span>
+																</div>
+																<div class="sort-content hide">
+																	<div class="sort-list clearfix">
+																		<h1 class="fl"><a href="#">剑南春</a></h1>
+																		<ul class="clearfix fl">
+																			<li><a href="#">茅台</a></li>
+																			<li><a href="#">茅台</a></li>
+																			<li><a href="#">茅台</a></li>
+																			<li><a href="#">茅台</a></li>
+																			<li><a href="#">茅台</a></li>
+																			<li><a href="#">茅台</a></li>
+																		</ul>
+																	</div>
+																	
+																	<div class="sort-list clearfix">
+																		<h1 class="fl"><a href="#">剑南春</a></h1>
+																		<ul class="clearfix fl">
+																			<li><a href="#">茅台</a></li>
+																			<li><a href="#">茅台</a></li>
+																			<li><a href="#">茅台</a></li>
+																			<li><a href="#">茅台</a></li>
+																			<li><a href="#">茅台</a></li>
+																			<li><a href="#">茅台</a></li>
+																		</ul>
+																	</div>
+																	<div class="sort-list clearfix">
+																		<h1 class="fl"><a href="#">剑南春</a></h1>
+																		<ul class="clearfix fl">
+																			<li><a href="#">茅台</a></li>
+																			<li><a href="#">茅台</a></li>
+																			<li><a href="#">茅台</a></li>
+																			<li><a href="#">茅台</a></li>
+																			<li><a href="#">茅台</a></li>
+																			<li><a href="#">茅台</a></li>
+																		</ul>
+																	</div>
+																	<div class="sort-list clearfix">
+																		<h1 class="fl"><a href="#">剑南春</a></h1>
+																		<ul class="clearfix fl">
+																			<li><a href="#">茅台</a></li>
+																			<li><a href="#">茅台</a></li>
+																			<li><a href="#">茅台</a></li>
+																			<li><a href="#">茅台</a></li>
+																			<li><a href="#">茅台</a></li>
+																			<li><a href="#">茅台</a></li>
+																		</ul>
+																	</div>
+																	
+																</div>
+															</li>
+															<li>
+																<div class="sort-title">
+																	<a href="#">果冻</a>
+																	<span class="dr"></span>
+																</div>
+																<div class="sort-content hide">
+																	<div class="sort-list clearfix">
+																		<h1 class="fl"><a href="#">剑南春</a></h1>
+																		<ul class="clearfix fl">
+																			<li><a href="#">茅台</a></li>
+																			<li><a href="#">茅台</a></li>
+																			<li><a href="#">茅台</a></li>
+																			<li><a href="#">茅台</a></li>
+																			<li><a href="#">茅台</a></li>
+																			<li><a href="#">茅台</a></li>
+																		</ul>
+																	</div>
+																	
+																	<div class="sort-list clearfix">
+																		<h1 class="fl"><a href="#">剑南春</a></h1>
+																		<ul class="clearfix fl">
+																			<li><a href="#">茅台</a></li>
+																			<li><a href="#">茅台</a></li>
+																			<li><a href="#">茅台</a></li>
+																			<li><a href="#">茅台</a></li>
+																			<li><a href="#">茅台</a></li>
+																			<li><a href="#">茅台</a></li>
+																		</ul>
+																	</div>
+																	<div class="sort-list clearfix">
+																		<h1 class="fl"><a href="#">剑南春</a></h1>
+																		<ul class="clearfix fl">
+																			<li><a href="#">茅台</a></li>
+																			<li><a href="#">茅台</a></li>
+																			<li><a href="#">茅台</a></li>
+																			<li><a href="#">茅台</a></li>
+																			<li><a href="#">茅台</a></li>
+																			<li><a href="#">茅台</a></li>
+																		</ul>
+																	</div>
+																	<div class="sort-list clearfix">
+																		<h1 class="fl"><a href="#">剑南春</a></h1>
+																		<ul class="clearfix fl">
+																			<li><a href="#">茅台</a></li>
+																			<li><a href="#">茅台</a></li>
+																			<li><a href="#">茅台</a></li>
+																			<li><a href="#">茅台</a></li>
+																			<li><a href="#">茅台</a></li>
+																			<li><a href="#">茅台</a></li>
+																		</ul>
+																	</div>
+																	
+																	<div class="sort-list clearfix">
+																		<h1 class="fl"><a href="#">剑南春</a></h1>
+																		<ul class="clearfix fl">
+																			<li><a href="#">茅台</a></li>
+																			<li><a href="#">茅台</a></li>
+																			<li><a href="#">茅台</a></li>
+																			<li><a href="#">茅台</a></li>
+																			<li><a href="#">茅台</a></li>
+																			<li><a href="#">茅台</a></li>
+																		</ul>
+																	</div>
+																	
+																</div>
+															</li>
+															<li>
+																<div class="sort-title">
+																	<a href="#">牛奶/果汁</a>
+																	<span class="dr"></span>
+																</div>
+																<div class="sort-content hide">
+																	<div class="sort-list clearfix">
+																		<h1 class="fl"><a href="#">剑南春</a></h1>
+																		<ul class="clearfix fl">
+																			<li><a href="#">茅台</a></li>
+																			<li><a href="#">茅台</a></li>
+																			<li><a href="#">茅台</a></li>
+																			<li><a href="#">茅台</a></li>
+																			<li><a href="#">茅台</a></li>
+																			<li><a href="#">茅台</a></li>
+																		</ul>
+																	</div>
+																	
+																	<div class="sort-list clearfix">
+																		<h1 class="fl"><a href="#">剑南春</a></h1>
+																		<ul class="clearfix fl">
+																			<li><a href="#">茅台</a></li>
+																			<li><a href="#">茅台</a></li>
+																			<li><a href="#">茅台</a></li>
+																			<li><a href="#">茅台</a></li>
+																			<li><a href="#">茅台</a></li>
+																			<li><a href="#">茅台</a></li>
+																		</ul>
+																	</div>
+																	<div class="sort-list clearfix">
+																		<h1 class="fl"><a href="#">剑南春</a></h1>
+																		<ul class="clearfix fl">
+																			<li><a href="#">茅台</a></li>
+																			<li><a href="#">茅台</a></li>
+																			<li><a href="#">茅台</a></li>
+																			<li><a href="#">茅台</a></li>
+																			<li><a href="#">茅台</a></li>
+																			<li><a href="#">茅台</a></li>
+																		</ul>
+																	</div>
+																	<div class="sort-list clearfix">
+																		<h1 class="fl"><a href="#">剑南春</a></h1>
+																		<ul class="clearfix fl">
+																			<li><a href="#">茅台</a></li>
+																			<li><a href="#">茅台</a></li>
+																			<li><a href="#">茅台</a></li>
+																			<li><a href="#">茅台</a></li>
+																			<li><a href="#">茅台</a></li>
+																			<li><a href="#">茅台</a></li>
+																		</ul>
+																	</div>
+																	
+																	<div class="sort-list clearfix">
+																		<h1 class="fl"><a href="#">剑南春</a></h1>
+																		<ul class="clearfix fl">
+																			<li><a href="#">茅台</a></li>
+																			<li><a href="#">茅台</a></li>
+																			<li><a href="#">茅台</a></li>
+																			<li><a href="#">茅台</a></li>
+																			<li><a href="#">茅台</a></li>
+																			<li><a href="#">茅台</a></li>
+																		</ul>
+																	</div>
+																	<div class="sort-list clearfix">
+																		<h1 class="fl"><a href="#">剑南春</a></h1>
+																		<ul class="clearfix fl">
+																			<li><a href="#">茅台</a></li>
+																			<li><a href="#">茅台</a></li>
+																			<li><a href="#">茅台</a></li>
+																			<li><a href="#">茅台</a></li>
+																			<li><a href="#">茅台</a></li>
+																			<li><a href="#">茅台</a></li>
+																		</ul>
+																	</div>
+																	
+																</div>
+															</li>
+															<li>
+																<div class="sort-title">
+																	<a href="#">饮用水</a>
+																	<span class="dr"></span>
+																</div>
+																<div class="sort-content hide">
+																	<div class="sort-list clearfix">
+																		<h1 class="fl"><a href="#">剑南春</a></h1>
+																		<ul class="clearfix fl">
+																			<li><a href="#">茅台</a></li>
+																			<li><a href="#">茅台</a></li>
+																			<li><a href="#">茅台</a></li>
+																			<li><a href="#">茅台</a></li>
+																			<li><a href="#">茅台</a></li>
+																			<li><a href="#">茅台</a></li>
+																		</ul>
+																	</div>
+																	
+																	<div class="sort-list clearfix">
+																		<h1 class="fl"><a href="#">剑南春</a></h1>
+																		<ul class="clearfix fl">
+																			<li><a href="#">茅台</a></li>
+																			<li><a href="#">茅台</a></li>
+																			<li><a href="#">茅台</a></li>
+																			<li><a href="#">茅台</a></li>
+																			<li><a href="#">茅台</a></li>
+																			<li><a href="#">茅台</a></li>
+																		</ul>
+																	</div>
+																	<div class="sort-list clearfix">
+																		<h1 class="fl"><a href="#">剑南春</a></h1>
+																		<ul class="clearfix fl">
+																			<li><a href="#">茅台</a></li>
+																			<li><a href="#">茅台</a></li>
+																			<li><a href="#">茅台</a></li>
+																			<li><a href="#">茅台</a></li>
+																			<li><a href="#">茅台</a></li>
+																			<li><a href="#">茅台</a></li>
+																		</ul>
+																	</div>
+																	<div class="sort-list clearfix">
+																		<h1 class="fl"><a href="#">剑南春</a></h1>
+																		<ul class="clearfix fl">
+																			<li><a href="#">茅台</a></li>
+																			<li><a href="#">茅台</a></li>
+																			<li><a href="#">茅台</a></li>
+																			<li><a href="#">茅台</a></li>
+																			<li><a href="#">茅台</a></li>
+																			<li><a href="#">茅台</a></li>
+																		</ul>
+																	</div>
+																	
+																	<div class="sort-list clearfix">
+																		<h1 class="fl"><a href="#">剑南春</a></h1>
+																		<ul class="clearfix fl">
+																			<li><a href="#">茅台</a></li>
+																			<li><a href="#">茅台</a></li>
+																			<li><a href="#">茅台</a></li>
+																			<li><a href="#">茅台</a></li>
+																			<li><a href="#">茅台</a></li>
+																			<li><a href="#">茅台</a></li>
+																		</ul>
+																	</div>
+																	<div class="sort-list clearfix">
+																		<h1 class="fl"><a href="#">剑南春</a></h1>
+																		<ul class="clearfix fl">
+																			<li><a href="#">茅台</a></li>
+																			<li><a href="#">茅台</a></li>
+																			<li><a href="#">茅台</a></li>
+																			<li><a href="#">茅台</a></li>
+																			<li><a href="#">茅台</a></li>
+																			<li><a href="#">茅台</a></li>
+																		</ul>
+																	</div>
+																	
+																</div>
+															</li>
+														</ul>
+													</div>
+												
+												</div>
+												
+												<div class="mask-wrap fl pr">
+													<div class="mask">
+														<a class="edit-tips" href="javascript:void(0)"><img src="assets/images/tpl/edit-tips.png"/></a>
+													</div>
+													<ul class="clearfix">
+														<li><a class="active" href="#">首页</a></li>
+														<li><a href="#">新品上线</a></li>
+														<li><a href="#">优惠特价</a></li>
+														<li><a href="#">酒水饮料</a></li>
+														<li><a href="#">方便速食</a></li>
+														<li><a href="#">品牌专区</a></li>
+														<li><a href="#">优选推荐</a></li>
+														<li><a href="#">公告</a></li>
+													</ul>
+												</div>
+											
+											</div>
+										
+										</div>
+										
+									</div>
+
+									<!--中部楼层-->
+									<div class="content ma pr">
+										
+										<div class="banner-box pr">
+											
+											<!--banner-->
+											<div class="banner">
+												<div class="mask">
+													<a class="edit-tips" href="javascript:void(0)"><img src="assets/images/tpl/edit-tips.png"/></a>
+													<span class="size">1210 × 456（PX）</span>
+												</div>
+												<div class="item-wrap">
+													<a href="#"><img src="assets/images/tpl/banner.jpg"></a>
+												</div>
+											</div>
+											
+											<!--新闻 公告-->
+											<div class="notice">
+												<ul class="clearfix">
+													<li>
+														<a class="pr" href="javascript:void(0)">
+															<i class="icon icon-order"></i>
+															<div>
+																<h1>一键订货</h1>
+																<span>我是一段文字代替</span>
+															</div>
+														</a>
+													</li>
+													<li>
+														<a class="pr" href="javascript:void(0)">
+															<i class="icon icon-brand"></i>
+															<div>
+																<h1>品牌专区</h1>
+																<span>我是一段文字代替</span>
+															</div>
+														</a>
+													</li>
+													<li>
+														<a class="pr" href="javascript:void(0)">
+															<i class="icon icon-promotion"></i>
+															<div>
+																<h1>促销特惠</h1>
+																<span>我是一段文字代替</span>
+															</div>
+														</a>
+													</li>
+												</ul>
+												<div class="notice-ad pr">
+													<div class="mask">
+														<a class="edit-tips" href="javascript:void(0)"><img src="assets/images/tpl/edit-tips.png"/></a>
+														<span class="size">248 × 274（PX）</span>
+													</div>
+													<div class="notice-ad-item">
+														<a href="#"><img src="assets/images/tpl/advertise/notice-ad.jpg"/></a>
+													</div>
+												</div>
+											</div>
+										</div>
+									
+									</div>
+									
+									<div class="btn-wrap">
+										<label class="btn-submit"><input type="button" value="提交" /></label>
+										<label class="btn-cancel"><input type="button" value="取消" /></label>
+										<label class="btn-preview pull-right"><input type="button" value="生成预览" /></label>
+									</div>
+									
+								</div>
+								
+								<!--推荐品牌模块-->
+								<div class="rd-brand-module hide tab-2">
+									
+									<!--中部楼层-->
+									<div class="content pr">
+										<div class="brand-wrap">
+																			
+											<!--品牌条 新-->
+											<div class="brand pw pr ma mb-20">
+												<div class="mask">
+													<a class="edit-tips" href="javascript:void(0)"><img src="assets/images/tpl/edit-tips.png"/></a>
+												</div>
+												<div class="brand-nav clearfix">
+													<div class="fl clearfix tit"><i class="icon-hot fl"><img src="assets/images/tpl/icon-hot.png"></i><span class="fl">热门品牌</span></div>
+													<div class="fr"><a href="#">更多&gt;&gt;</a></div>
+												</div>
+												
+												<ul class="clearfix">
+													<li>
+														<div class="brand-item pr">
+															<div class="mask">
+																<a class="edit-tips" href="javascript:void(0)"><img src="assets/images/tpl/edit-tips.png"/></a>
+																<span class="size">297 × 179（PX）</span>
+															</div>
+															<div class="item-wrap">
+																<a href="#"><img src="assets/images/tpl/brand/item1.jpg" /></a>
+															</div>
+														</div>
+													</li>
+													<li>
+														<div class="brand-item">
+															<a href="#"><img src="assets/images/tpl/brand/item2.jpg"/></a>
+														</div>
+														<div class="brand-item">
+															<a href="#"><img src="assets/images/tpl/brand/item2.jpg"/></a>
+														</div>
+													</li>
+													<li>
+														<div class="brand-item">
+															<a href="#"><img src="assets/images/tpl/brand/item2.jpg"/></a>
+														</div>
+														<div class="brand-item">
+															<a href="#"><img src="assets/images/tpl/brand/item2.jpg"/></a>
+														</div>
+													</li>
+													<li>
+														<div class="brand-item">
+															<a href="#"><img src="assets/images/tpl/brand/item2.jpg"/></a>
+														</div>
+														<div class="brand-item">
+															<a href="#"><img src="assets/images/tpl/brand/item2.jpg"/></a>
+														</div>
+													</li>
+													<li>
+														<div class="brand-item">
+															<a href="#"><img src="assets/images/tpl/brand/item2.jpg"/></a>
+														</div>
+														<div class="brand-item">
+															<a href="#"><img src="assets/images/tpl/brand/item2.jpg"/></a>
+														</div>
+													</li>
+													<li>
+														<div class="brand-item">
+															<a href="#"><img src="assets/images/tpl/brand/item2.jpg"/></a>
+														</div>
+														<div class="brand-item">
+															<a href="#"><img src="assets/images/tpl/brand/item2.jpg"/></a>
+														</div>
+													</li>
+													<li>
+														<div class="brand-item">
+															<a href="#"><img src="assets/images/tpl/brand/item2.jpg"/></a>
+														</div>
+														<div class="brand-item">
+															<a href="#"><img src="assets/images/tpl/brand/item2.jpg"/></a>
+														</div>
+													</li>
+													<li>
+														<div class="brand-item">
+															<a href="#"><img src="assets/images/tpl/brand/item2.jpg"/></a>
+														</div>
+														<div class="brand-item">
+															<a href="#"><img src="assets/images/tpl/brand/item2.jpg"/></a>
+														</div>
+													</li>
+													<li>
+														<div class="brand-item">
+															<a href="#"><img src="assets/images/tpl/brand/item2.jpg"/></a>
+														</div>
+														<div class="brand-item">
+															<a href="#"><img src="assets/images/tpl/brand/item2.jpg"/></a>
+														</div>
+													</li>
+												</ul>
+												
+											</div>
+											
+										</div>
+									</div>
+									
+									<div class="btn-wrap">
+										<label class="btn-submit"><input type="button" value="提交" /></label>
+										<label class="btn-cancel"><input type="button" value="取消" /></label>
+										<label class="btn-preview pull-right"><input type="button" value="生成预览" /></label>
+									</div>
+									
+								</div>
+								
+								<!--推荐商品模块-->
+								<div class="rd-good-module hide tab-3">
+									
+									<!--中部楼层-->
+									<div class="content pr">
+										
+										<div class="good-wrap">
+											
+											<!--分类一-->							
+											<div class="activity pw ma">
+												<div class="clearfix nav pr">
+													<span class="edit-tips" href="javascript:void(0)"><img src="assets/images/tpl/edit-tips.png"/></span>
+													<ul class="activity-nav fl clearfix">
+														<li class="active">
+															<a class="ac-nav" href="javascript:void(0)">
+																<div class="mask"></div>
+																<span>新品上架</span>
+															</a>
+														</li>
+														<li>
+															<a class="ac-nav" href="javascript:void(0)">
+																<div class="mask"></div>
+																<span>疯狂抢购</span>
+															</a>
+														</li>
+														<li>
+															<a class="ac-nav" href="javascript:void(0)">
+																<div class="mask"></div>
+																<span>热卖商品</span>
+															</a>
+														</li>
+														<li>
+															<a class="ac-nav" href="javascript:void(0)">
+																<div class="mask"></div>
+																<span>猜您喜欢</span>
+															</a>
+														</li>
+													</ul>
+													<div class="fl exchange clearfix">
+														<a class="btn-refresh fr" class="clearfix" href="javascript:void(0)"><img class="fl" src="assets/images/tpl/refresh.png"/><span class="fl">换一换</span></a>
+													</div>
+												</div>
+												<div class="activity-item">
+													
+													<!--新品上市-->
+													<div class="mask-wrap pr">
+														<div class="mask">
+															<a class="edit-tips" href="javascript:void(0)"><img src="assets/images/tpl/edit-tips.png"/></a>
+														</div>
+														<ul class="new-goods clearfix">
+															<li>
+																<div class="n-g-item">
+																	<a href="">
+																		<div class="item-box">
+																			<div class="pic">
+																				<img src="assets/images/tpl/activity/item1.jpg"/>
+																			</div>
+																			<div class="intro">
+																				<p>欢乐家黄桃980g</p>
+																			</div>
+																		</div>
+																	</a>
+																</div>
+															</li>
+															<li>
+																<div class="n-g-item">
+																	<a href="">
+																		<div class="item-box">
+																			<div class="pic">
+																				<img src="assets/images/tpl/activity/item1.jpg"/>
+																			</div>
+																			<div class="intro">
+																				<p>欢乐家黄桃980g</p>
+																			</div>
+																		</div>
+																	</a>
+																</div>
+															</li>
+															<li>
+																<div class="n-g-item">
+																	<a href="">
+																		<div class="item-box">
+																			<div class="pic">
+																				<img src="assets/images/tpl/activity/item1.jpg"/>
+																			</div>
+																			<div class="intro">
+																				<p>欢乐家黄桃980g</p>
+																			</div>
+																		</div>
+																	</a>
+																</div>
+															</li>
+															<li>
+																<div class="n-g-item">
+																	<a href="">
+																		<div class="item-box">
+																			<div class="pic">
+																				<img src="assets/images/tpl/activity/item1.jpg"/>
+																			</div>
+																			<div class="intro">
+																				<p>欢乐家黄桃980g</p>
+																			</div>
+																		</div>
+																	</a>
+																</div>
+															</li>
+															<li>
+																<div class="n-g-item">
+																	<a href="">
+																		<div class="item-box">
+																			<div class="pic">
+																				<img src="assets/images/tpl/activity/item1.jpg"/>
+																			</div>
+																			<div class="intro">
+																				<p>欢乐家黄桃980g</p>
+																			</div>
+																		</div>
+																	</a>
+																</div>
+															</li>
+															<li>
+																<div class="n-g-item">
+																	<a href="">
+																		<div class="item-box">
+																			<div class="pic">
+																				<img src="assets/images/tpl/activity/item1.jpg"/>
+																			</div>
+																			<div class="intro">
+																				<p>欢乐家黄桃980g</p>
+																			</div>
+																		</div>
+																	</a>
+																</div>
+															</li>
+														</ul>
+														
+													</div>
+													
+													<!--今日抢购-->
+													<div class="mask-wrap pr hide">
+														<div class="mask">
+															<a class="edit-tips" href="javascript:void(0)"><img src="assets/images/tpl/edit-tips.png"/></a>
+														</div>
+														<ul class="buy-today clearfix">
+															<li>
+																<div class="n-g-item">
+																	<a href="">
+																		<div class="item-box">
+																			<div class="pic">
+																				<img src="assets/images/tpl/activity/item1.jpg"/>
+																			</div>
+																			<div class="intro">
+																				<p>欢乐家黄桃980g</p>
+																			</div>
+																		</div>
+																	</a>
+																</div>
+															</li>
+															<li>
+																<div class="n-g-item">
+																	<a href="">
+																		<div class="item-box">
+																			<div class="pic">
+																				<img src="assets/images/tpl/activity/item1.jpg"/>
+																			</div>
+																			<div class="intro">
+																				<p>欢乐家黄桃980g</p>
+																			</div>
+																		</div>
+																	</a>
+																</div>
+															</li>
+															<li>
+																<div class="n-g-item">
+																	<a href="">
+																		<div class="item-box">
+																			<div class="pic">
+																				<img src="assets/images/tpl/activity/item1.jpg"/>
+																			</div>
+																			<div class="intro">
+																				<p>欢乐家黄桃980g</p>
+																			</div>
+																		</div>
+																	</a>
+																</div>
+															</li>
+															<li>
+																<div class="n-g-item">
+																	<a href="">
+																		<div class="item-box">
+																			<div class="pic">
+																				<img src="assets/images/tpl/activity/item1.jpg"/>
+																			</div>
+																			<div class="intro">
+																				<p>欢乐家黄桃980g</p>
+																			</div>
+																		</div>
+																	</a>
+																</div>
+															</li>
+															<li>
+																<div class="n-g-item">
+																	<a href="">
+																		<div class="item-box">
+																			<div class="pic">
+																				<img src="assets/images/tpl/activity/item1.jpg"/>
+																			</div>
+																			<div class="intro">
+																				<p>欢乐家黄桃980g</p>
+																			</div>
+																		</div>
+																	</a>
+																</div>
+															</li>
+															<li>
+																<div class="n-g-item">
+																	<a href="">
+																		<div class="item-box">
+																			<div class="pic">
+																				<img src="assets/images/tpl/activity/item1.jpg"/>
+																			</div>
+																			<div class="intro">
+																				<p>欢乐家黄桃980g</p>
+																			</div>
+																		</div>
+																	</a>
+																</div>
+															</li>
+														</ul>
+														
+													</div>
+													
+													<!--热卖商品-->
+													<div class="mask-wrap pr hide">
+														<div class="mask">
+															<a class="edit-tips" href="javascript:void(0)"><img src="assets/images/tpl/edit-tips.png"/></a>
+														</div>
+														<ul class="hot-sales clearfix">
+															<li>
+																<div class="n-g-item">
+																	<a href="">
+																		<div class="item-box">
+																			<div class="pic">
+																				<img src="assets/images/tpl/activity/item1.jpg"/>
+																			</div>
+																			<div class="intro">
+																				<p>欢乐家黄桃980g</p>
+																			</div>
+																		</div>
+																	</a>
+																</div>
+															</li>
+															<li>
+																<div class="n-g-item">
+																	<a href="">
+																		<div class="item-box">
+																			<div class="pic">
+																				<img src="assets/images/tpl/activity/item1.jpg"/>
+																			</div>
+																			<div class="intro">
+																				<p>欢乐家黄桃980g</p>
+																			</div>
+																		</div>
+																	</a>
+																</div>
+															</li>
+															<li>
+																<div class="n-g-item">
+																	<a href="">
+																		<div class="item-box">
+																			<div class="pic">
+																				<img src="assets/images/tpl/activity/item1.jpg"/>
+																			</div>
+																			<div class="intro">
+																				<p>欢乐家黄桃980g</p>
+																			</div>
+																		</div>
+																	</a>
+																</div>
+															</li>
+															<li>
+																<div class="n-g-item">
+																	<a href="">
+																		<div class="item-box">
+																			<div class="pic">
+																				<img src="assets/images/tpl/activity/item1.jpg"/>
+																			</div>
+																			<div class="intro">
+																				<p>欢乐家黄桃980g</p>
+																			</div>
+																		</div>
+																	</a>
+																</div>
+															</li>
+															<li>
+																<div class="n-g-item">
+																	<a href="">
+																		<div class="item-box">
+																			<div class="pic">
+																				<img src="assets/images/tpl/activity/item1.jpg"/>
+																			</div>
+																			<div class="intro">
+																				<p>欢乐家黄桃980g</p>
+																			</div>
+																		</div>
+																	</a>
+																</div>
+															</li>
+															<li>
+																<div class="n-g-item">
+																	<a href="">
+																		<div class="item-box">
+																			<div class="pic">
+																				<img src="assets/images/tpl/activity/item1.jpg"/>
+																			</div>
+																			<div class="intro">
+																				<p>欢乐家黄桃980g</p>
+																			</div>
+																		</div>
+																	</a>
+																</div>
+															</li>
+														</ul>
+														
+													</div>
+													
+													<!--猜你喜欢-->
+													<div class="mask-wrap pr hide">
+														<div class="mask">
+															<a class="edit-tips" href="javascript:void(0)"><img src="assets/images/tpl/edit-tips.png"/></a>
+														</div>
+														<ul class="recommend-goods clearfix">
+														<li>
+															<div class="n-g-item">
+																<a href="">
+																	<div class="item-box">
+																		<div class="pic">
+																			<img src="assets/images/tpl/activity/item1.jpg"/>
+																		</div>
+																		<div class="intro">
+																			<p>欢乐家黄桃980g</p>
+																		</div>
+																	</div>
+																</a>
+															</div>
+														</li>
+														<li>
+															<div class="n-g-item">
+																<a href="">
+																	<div class="item-box">
+																		<div class="pic">
+																			<img src="assets/images/tpl/activity/item1.jpg"/>
+																		</div>
+																		<div class="intro">
+																			<p>欢乐家黄桃980g</p>
+																		</div>
+																	</div>
+																</a>
+															</div>
+														</li>
+														<li>
+															<div class="n-g-item">
+																<a href="">
+																	<div class="item-box">
+																		<div class="pic">
+																			<img src="assets/images/tpl/activity/item1.jpg"/>
+																		</div>
+																		<div class="intro">
+																			<p>欢乐家黄桃980g</p>
+																		</div>
+																	</div>
+																</a>
+															</div>
+														</li>
+														<li>
+															<div class="n-g-item">
+																<a href="">
+																	<div class="item-box">
+																		<div class="pic">
+																			<img src="assets/images/tpl/activity/item1.jpg"/>
+																		</div>
+																		<div class="intro">
+																			<p>欢乐家黄桃980g</p>
+																		</div>
+																	</div>
+																</a>
+															</div>
+														</li>
+														<li>
+															<div class="n-g-item">
+																<a href="">
+																	<div class="item-box">
+																		<div class="pic">
+																			<img src="assets/images/tpl/activity/item1.jpg"/>
+																		</div>
+																		<div class="intro">
+																			<p>欢乐家黄桃980g</p>
+																		</div>
+																	</div>
+																</a>
+															</div>
+														</li>
+														<li>
+															<div class="n-g-item">
+																<a href="">
+																	<div class="item-box">
+																		<div class="pic">
+																			<img src="assets/images/tpl/activity/item1.jpg"/>
+																		</div>
+																		<div class="intro">
+																			<p>欢乐家黄桃980g</p>
+																		</div>
+																	</div>
+																</a>
+															</div>
+														</li>
+													</ul>
+													
+													</div>
+												</div>
+											</div>
+											<p>分类名称一关联图片</p>
+											
+										</div>
+									</div>
+									
+									<div class="btn-wrap">
+										<label class="btn-submit"><input type="button" value="提交" /></label>
+										<label class="btn-cancel"><input type="button" value="取消" /></label>
+										<label class="btn-preview pull-right"><input type="button" value="生成预览" /></label>
+									</div>
+									
+								</div>
+								
+								<!--广告模块-->
+								<div class="ad-module hide tab-4">
+									
+									<!--中部楼层-->								
+									<div class="content pr">
+										<div class="hot-wrap">
+											<div class="hot-ad mb-20 pw ma pr">
+												<a href="javascript:void(0)"><img src="assets/images/tpl/advertise/hot-ad2.jpg" /></a>
+												<div class="mask">
+													<a class="edit-tips" href="javascript:void(0)"><img src="assets/images/tpl/edit-tips.png"/></a>
+													<span class="size">1210 × 120（PX）</span>
+												</div>
+											</div>
+											<p class="mb-20">楼层一广告模块</p>
+											<div class="hot-ad mb-20 pw ma pr">
+												<a href="javascript:void(0)"><img src="assets/images/tpl/advertise/hot-ad2.jpg" /></a>
+												<div class="mask">
+													<a class="edit-tips" href="javascript:void(0)"><img src="assets/images/tpl/edit-tips.png"/></a>
+													<span class="size">1210 × 120（PX）</span>
+												</div>
+											</div>
+											<p class="mb-20">楼层二广告模块</p>
+											<div class="hot-ad mb-20 pw ma pr">
+												<a href="javascript:void(0)"><img src="assets/images/tpl/advertise/hot-ad2.jpg" /></a>
+												<div class="mask">
+													<a class="edit-tips" href="javascript:void(0)"><img src="assets/images/tpl/edit-tips.png"/></a>
+													<span class="size">1210 × 120（PX）</span>
+												</div>
+											</div>
+											<p class="mb-20">楼层三广告模块</p>
+										</div>
+									</div>
+									
+									<div class="btn-wrap">
+										<label class="btn-submit"><input type="button" value="提交" /></label>
+										<label class="btn-cancel"><input type="button" value="取消" /></label>
+										<label class="btn-preview pull-right"><input type="button" value="生成预览" /></label>
+									</div>
+									
+								</div>
+
+								<!--楼层商品类型一-->
+								<div class="floor-goods-type1 hide tab-5">
+									
+									<!--中部楼层-->
+									<div class="content pr">
+										
+										<div class="floor-wrap">
+																			
+											<!--楼层1-->
+											<div class="fes-activity floor floor1 pw ma mb-20">
+												<div class="f-nav clearfix">
+													<div class="pr fl f-icon-wrap">
+														<img class="f-icon" class="fl" src="assets/images/tpl/1f.png" />
+														<input type="text" class="floor-tit fr" value="休闲食品" />
+													</div>
+													<div class="nav-bar-wrap pr fl">
+														<span class="edit-tips" href="javascript:void(0)"><img src="assets/images/tpl/edit-tips.png"/></span>
+														<ul>
+															<li>
+																<a class="active" href="javascript:void(0)">
+																	<div class="mask"></div>
+																	<span>热门</span>
+																</a>
+																<i class="spacer"></i>
+															</li>
+															<li>
+																<a href="javascript:void(0)">
+																	<div class="mask"></div>
+																	<span>巧克力</span>
+																</a>
+																<i class="spacer"></i>
+															</li>
+															<li>
+																<a href="javascript:void(0)">
+																	<div class="mask"></div>
+																	<span>饼干</span>
+																</a>
+																<i class="spacer"></i>
+															</li>
+															<li>
+																<a href="javascript:void(0)">
+																	<div class="mask"></div>
+																	<span>果冻</span>
+																</a>
+																<i class="spacer"></i>
+															</li>
+															<li>
+																<a href="javascript:void(0)">
+																	<div class="mask"></div>
+																	<span>糕点</span>
+																</a>
+															</li>
+														</ul>
+													</div>
+												</div>
+												<div class="fes-sort-wrap">
+													
+													<div class="fes-sort">
+														<ul class="clearfix">
+															<li>
+																<div class="fes-item pr">
+																	<div class="mask">
+																		<a class="edit-tips" href="javascript:void(0)"><img src="assets/images/tpl/edit-tips.png"/></a>
+																		<span class="size">295 × 450（PX）</span>
+																	</div>
+																	<div class="item-wrap">
+																		<a href="#"><img src="assets/images/tpl/activity/doanngo.jpg" /></a>
+																	</div>
+																</div>
+															</li>
+															
+															<li>
+																<div id="test-123" class="fes-item pr">
+																	<div class="mask">
+																		<a class="edit-tips" href="javascript:void(0)"><img src="assets/images/tpl/edit-tips.png"/></a>
+																		<span class="size">295 × 220（PX）</span>
+																	</div>
+																	<div class="item-wrap">
+																		<a href="#"><img src="assets/images/tpl/activity/anerle.jpg" /></a>
+																	</div>
+																</div>
+																<div class="fes-item pr">
+																	<div class="mask">
+																		<a class="edit-tips" href="javascript:void(0)"><img src="assets/images/tpl/edit-tips.png"/></a>
+																		<span class="size">295 × 220（PX）</span>
+																	</div>
+																	<div class="item-wrap">
+																		<a href="#"><img src="assets/images/tpl/activity/anerle.jpg" /></a>
+																	</div>
+																</div>
+																<div class="fes-item pr">
+																	<div class="mask">
+																		<a class="edit-tips" href="javascript:void(0)"><img src="assets/images/tpl/edit-tips.png"/></a>
+																		<span class="size">295 × 220（PX）</span>
+																	</div>
+																	<div class="item-wrap">
+																		<a href="#"><img src="assets/images/tpl/activity/anerle.jpg" /></a>
+																	</div>
+																</div>
+																<div class="fes-item pr">
+																	<div class="mask">
+																		<a class="edit-tips" href="javascript:void(0)"><img src="assets/images/tpl/edit-tips.png"/></a>
+																		<span class="size">295 × 220（PX）</span>
+																	</div>
+																	<div class="item-wrap">
+																		<a href="#"><img src="assets/images/tpl/activity/anerle.jpg" /></a>
+																	</div>
+																</div>
+															</li>
+															
+															<li>
+																<div class="fes-item pr">
+																	<div class="mask">
+																		<a class="edit-tips" href="javascript:void(0)"><img src="assets/images/tpl/edit-tips.png"/></a>
+																		<span class="size">295 × 450（PX）</span>
+																	</div>
+																	<div class="item-wrap">
+																		<a href="#"><img src="assets/images/tpl/activity/doanngo.jpg" /></a>
+																	</div>
+																</div>
+															</li>
+														</ul>
+													</div>
+													
+													<div class="fes-sort hide">
+														<ul class="clearfix">
+															<li>
+																<div class="fes-item pr">
+																	<div class="mask">
+																		<a class="edit-tips" href="javascript:void(0)"><img src="assets/images/tpl/edit-tips.png"/></a>
+																		<span class="size">295 × 450（PX）</span>
+																	</div>
+																	<div class="item-wrap">
+																		<a href="#"><img src="assets/images/tpl/activity/doanngo2.jpg" /></a>
+																	</div>
+																</div>
+															</li>
+															
+															<li>
+																<div class="fes-item pr">
+																	<div class="mask">
+																		<a class="edit-tips" href="javascript:void(0)"><img src="assets/images/tpl/edit-tips.png"/></a>
+																		<span class="size">295 × 220（PX）</span>
+																	</div>
+																	<div class="item-wrap">
+																		<a href="#"><img src="assets/images/tpl/activity/anerle.jpg" /></a>
+																	</div>
+																</div>
+																<div class="fes-item pr">
+																	<div class="mask">
+																		<a class="edit-tips" href="javascript:void(0)"><img src="assets/images/tpl/edit-tips.png"/></a>
+																		<span class="size">295 × 220（PX）</span>
+																	</div>
+																	<div class="item-wrap">
+																		<a href="#"><img src="assets/images/tpl/activity/anerle.jpg" /></a>
+																	</div>
+																</div>
+																<div class="fes-item pr">
+																	<div class="mask">
+																		<a class="edit-tips" href="javascript:void(0)"><img src="assets/images/tpl/edit-tips.png"/></a>
+																		<span class="size">295 × 220（PX）</span>
+																	</div>
+																	<div class="item-wrap">
+																		<a href="#"><img src="assets/images/tpl/activity/anerle.jpg" /></a>
+																	</div>
+																</div>
+																<div class="fes-item pr">
+																	<div class="mask">
+																		<a class="edit-tips" href="javascript:void(0)"><img src="assets/images/tpl/edit-tips.png"/></a>
+																		<span class="size">295 × 220（PX）</span>
+																	</div>
+																	<div class="item-wrap">
+																		<a href="#"><img src="assets/images/tpl/activity/anerle.jpg" /></a>
+																	</div>
+																</div>
+															</li>
+															
+															<li>
+																<div class="fes-item pr">
+																	<div class="mask">
+																		<a class="edit-tips" href="javascript:void(0)"><img src="assets/images/tpl/edit-tips.png"/></a>
+																		<span class="size">295 × 450（PX）</span>
+																	</div>
+																	<div class="item-wrap">
+																		<a href="#"><img src="assets/images/tpl/activity/doanngo2.jpg" /></a>
+																	</div>
+																</div>
+															</li>
+														</ul>
+													</div>
+													
+													<div class="fes-sort hide">
+														<ul class="clearfix">
+															<li>
+																<div class="fes-item pr">
+																	<div class="mask">
+																		<a class="edit-tips" href="javascript:void(0)"><img src="assets/images/tpl/edit-tips.png"/></a>
+																		<span class="size">295 × 450（PX）</span>
+																	</div>
+																	<div class="item-wrap">
+																		<a href="#"><img src="assets/images/tpl/activity/doanngo3.jpg" /></a>
+																	</div>
+																</div>
+															</li>
+															
+															<li>
+																<div class="fes-item pr">
+																	<div class="mask">
+																		<a class="edit-tips" href="javascript:void(0)"><img src="assets/images/tpl/edit-tips.png"/></a>
+																		<span class="size">295 × 220（PX）</span>
+																	</div>
+																	<div class="item-wrap">
+																		<a href="#"><img src="assets/images/tpl/activity/anerle.jpg" /></a>
+																	</div>
+																</div>
+																<div class="fes-item pr">
+																	<div class="mask">
+																		<a class="edit-tips" href="javascript:void(0)"><img src="assets/images/tpl/edit-tips.png"/></a>
+																		<span class="size">295 × 220（PX）</span>
+																	</div>
+																	<div class="item-wrap">
+																		<a href="#"><img src="assets/images/tpl/activity/anerle.jpg" /></a>
+																	</div>
+																</div>
+																<div class="fes-item pr">
+																	<div class="mask">
+																		<a class="edit-tips" href="javascript:void(0)"><img src="assets/images/tpl/edit-tips.png"/></a>
+																		<span class="size">295 × 220（PX）</span>
+																	</div>
+																	<div class="item-wrap">
+																		<a href="#"><img src="assets/images/tpl/activity/anerle.jpg" /></a>
+																	</div>
+																</div>
+																<div class="fes-item pr">
+																	<div class="mask">
+																		<a class="edit-tips" href="javascript:void(0)"><img src="assets/images/tpl/edit-tips.png"/></a>
+																		<span class="size">295 × 220（PX）</span>
+																	</div>
+																	<div class="item-wrap">
+																		<a href="#"><img src="assets/images/tpl/activity/anerle.jpg" /></a>
+																	</div>
+																</div>
+															</li>
+															
+															<li>
+																<div class="fes-item pr">
+																	<div class="mask">
+																		<a class="edit-tips" href="javascript:void(0)"><img src="assets/images/tpl/edit-tips.png"/></a>
+																		<span class="size">295 × 450（PX）</span>
+																	</div>
+																	<div class="item-wrap">
+																		<a href="#"><img src="assets/images/tpl/activity/doanngo3.jpg" /></a>
+																	</div>
+																</div>
+															</li>
+														</ul>
+													</div>
+													
+													<div class="fes-sort hide">
+														<ul class="clearfix">
+															<li>
+																<div class="fes-item pr">
+																	<div class="mask">
+																		<a class="edit-tips" href="javascript:void(0)"><img src="assets/images/tpl/edit-tips.png"/></a>
+																		<span class="size">295 × 450（PX）</span>
+																	</div>
+																	<div class="item-wrap">
+																		<a href="#"><img src="assets/images/tpl/activity/doanngo4.jpg" /></a>
+																	</div>
+																</div>
+															</li>
+															
+															<li>
+																<div class="fes-item pr">
+																	<div class="mask">
+																		<a class="edit-tips" href="javascript:void(0)"><img src="assets/images/tpl/edit-tips.png"/></a>
+																		<span class="size">295 × 220（PX）</span>
+																	</div>
+																	<div class="item-wrap">
+																		<a href="#"><img src="assets/images/tpl/activity/anerle.jpg" /></a>
+																	</div>
+																</div>
+																<div class="fes-item pr">
+																	<div class="mask">
+																		<a class="edit-tips" href="javascript:void(0)"><img src="assets/images/tpl/edit-tips.png"/></a>
+																		<span class="size">295 × 220（PX）</span>
+																	</div>
+																	<div class="item-wrap">
+																		<a href="#"><img src="assets/images/tpl/activity/anerle.jpg" /></a>
+																	</div>
+																</div>
+																<div class="fes-item pr">
+																	<div class="mask">
+																		<a class="edit-tips" href="javascript:void(0)"><img src="assets/images/tpl/edit-tips.png"/></a>
+																		<span class="size">295 × 220（PX）</span>
+																	</div>
+																	<div class="item-wrap">
+																		<a href="#"><img src="assets/images/tpl/activity/anerle.jpg" /></a>
+																	</div>
+																</div>
+																<div class="fes-item pr">
+																	<div class="mask">
+																		<a class="edit-tips" href="javascript:void(0)"><img src="assets/images/tpl/edit-tips.png"/></a>
+																		<span class="size">295 × 220（PX）</span>
+																	</div>
+																	<div class="item-wrap">
+																		<a href="#"><img src="assets/images/tpl/activity/anerle.jpg" /></a>
+																	</div>
+																</div>
+															</li>
+															
+															<li>
+																<div class="fes-item pr">
+																	<div class="mask">
+																		<a class="edit-tips" href="javascript:void(0)"><img src="assets/images/tpl/edit-tips.png"/></a>
+																		<span class="size">295 × 450（PX）</span>
+																	</div>
+																	<div class="item-wrap">
+																		<a href="#"><img src="assets/images/tpl/activity/doanngo4.jpg" /></a>
+																	</div>
+																</div>
+															</li>
+														</ul>
+													</div>
+													
+													<div class="fes-sort hide">
+														<ul class="clearfix">
+															<li>
+																<div class="fes-item pr">
+																	<div class="mask">
+																		<a class="edit-tips" href="javascript:void(0)"><img src="assets/images/tpl/edit-tips.png"/></a>
+																		<span class="size">295 × 450（PX）</span>
+																	</div>
+																	<div class="item-wrap">
+																		<a href="#"><img src="assets/images/tpl/activity/doanngo5.jpg" /></a>
+																	</div>
+																</div>
+															</li>
+															
+															<li>
+																<div class="fes-item pr">
+																	<div class="mask">
+																		<a class="edit-tips" href="javascript:void(0)"><img src="assets/images/tpl/edit-tips.png"/></a>
+																		<span class="size">295 × 220（PX）</span>
+																	</div>
+																	<div class="item-wrap">
+																		<a href="#"><img src="assets/images/tpl/activity/anerle.jpg" /></a>
+																	</div>
+																</div>
+																<div class="fes-item pr">
+																	<div class="mask">
+																		<a class="edit-tips" href="javascript:void(0)"><img src="assets/images/tpl/edit-tips.png"/></a>
+																		<span class="size">295 × 220（PX）</span>
+																	</div>
+																	<div class="item-wrap">
+																		<a href="#"><img src="assets/images/tpl/activity/anerle.jpg" /></a>
+																	</div>
+																</div>
+																<div class="fes-item pr">
+																	<div class="mask">
+																		<a class="edit-tips" href="javascript:void(0)"><img src="assets/images/tpl/edit-tips.png"/></a>
+																		<span class="size">295 × 220（PX）</span>
+																	</div>
+																	<div class="item-wrap">
+																		<a href="#"><img src="assets/images/tpl/activity/anerle.jpg" /></a>
+																	</div>
+																</div>
+																<div class="fes-item pr">
+																	<div class="mask">
+																		<a class="edit-tips" href="javascript:void(0)"><img src="assets/images/tpl/edit-tips.png"/></a>
+																		<span class="size">295 × 220（PX）</span>
+																	</div>
+																	<div class="item-wrap">
+																		<a href="#"><img src="assets/images/tpl/activity/anerle.jpg" /></a>
+																	</div>
+																</div>
+															</li>
+															
+															<li>
+																<div class="fes-item pr">
+																	<div class="mask">
+																		<a class="edit-tips" href="javascript:void(0)"><img src="assets/images/tpl/edit-tips.png"/></a>
+																		<span class="size">295 × 450（PX）</span>
+																	</div>
+																	<div class="item-wrap">
+																		<a href="#"><img src="assets/images/tpl/activity/doanngo5.jpg" /></a>
+																	</div>
+																</div>
+															</li>
+														</ul>
+													</div>
+												
+												</div>
+											</div>
+											
+										</div>
+									</div>
+									
+									<div class="btn-wrap">
+										<label class="btn-submit"><input type="button" value="提交" /></label>
+										<label class="btn-cancel"><input type="button" value="取消" /></label>
+										<label class="btn-preview pull-right"><input type="button" value="生成预览" /></label>
+									</div>
+									
+								</div>
+								
+								<!--楼层商品类型二-->
+								<div class="floor-goods-type2 hide tab-6">
+									
+									<!--中部楼层-->
+									<div class="content pr">
+										
+										<div class="floor-wrap">
+											<!--楼层2-->
+											<div class="floor floor2 mb-10 pw ma">
+												<div class="f-nav clearfix">
+													<div class="fl f-icon-wrap pr">
+														<img class="f-icon" class="fl" src="assets/images/tpl/2f.png" />
+														<input type="text" class="floor-tit fr" value="酒水饮料" />
+													</div>
+													<div class="nav-bar-wrap pr fl">
+														<span class="edit-tips" href="javascript:void(0)"><img src="assets/images/tpl/edit-tips.png"/></span>
+														<ul>
+															<li>
+																<a class="active" href="javascript:void(0)">
+																	<div class="mask"></div>
+																	<span>热门</span>
+																</a>
+																<i class="spacer"></i>
+															</li>
+															<li>
+																<a href="javascript:void(0)">
+																	<div class="mask"></div>
+																	<span>啤酒</span>
+																</a>
+																<i class="spacer"></i>
+															</li>
+															<li>
+																<a href="javascript:void(0)">
+																	<div class="mask"></div>
+																	<span>饮料</span>
+																</a>
+																<i class="spacer"></i>
+															</li>
+															<li>
+																<a href="javascript:void(0)">
+																	<div class="mask"></div>
+																	<span>牛奶</span>
+																</a>
+																<i class="spacer"></i>
+															</li>
+															<li>
+																<a href="javascript:void(0)">
+																	<div class="mask"></div>
+																	<span>饮用水</span>
+																</a>
+															</li>
+														</ul>
+													</div>
+												</div>			
+												
+												<div class="f-content pr pw ma">
+													
+													<div class="fes-sort-wrap">
+														
+														<div class="fes-sort">
+															
+															<ul class="clearfix">
+																<li>
+																	<div class="f-item pr fl">
+																		<div class="mask">
+																			<a class="edit-tips" href="javascript:void(0)"><img src="assets/images/tpl/edit-tips.png"/></a>
+																			<span class="size">333 × 250（PX）</span>
+																		</div>
+																		<div class="item-wrap">
+																			<a href="#"><img src="assets/images/tpl/activity/wine1.jpg"/></a>
+																		</div>
+																	</div>
+																	<div class="fl f-sort pr bg-2f">
+																		<div class="mask">
+																			<a class="edit-tips" href="javascript:void(0)"><img src="assets/images/tpl/edit-tips.png"/></a>
+																		</div>
+																		<p class="clearfix">
+																			<a href="#" class="fl">11</a>
+																			<a href="#" class="fr">碳酸饮料</a>
+																		</p>
+																		<p class="clearfix">
+																			<a href="#" class="fl">茶/咖啡</a>
+																			<a href="#" class="fr">牛奶/果汁</a>
+																		</p>
+																		<p class="clearfix">
+																			<a href="#" class="fl">饮用水</a>
+																			<a href="#" class="fr">冲调饮品</a>
+																		</p>
+																		<p class="clearfix">
+																			<a href="#" class="fl">功能饮料</a>
+																			<a href="#" class="fr">冰淇淋</a>
+																		</p>
+																		<p class="clearfix">
+																			<a href="#" class="fl">雪糕</a>
+																		</p>
+																	</div>
+																</li>
+																<li>
+																	<div class="f-item fz pr fl">
+																		<div class="mask">
+																			<a class="edit-tips" href="javascript:void(0)"><img src="assets/images/tpl/edit-tips.png"/></a>
+																			<span class="size">437 × 249（PX）</span>
+																		</div>
+																		<div class="item-wrap">
+																			<a href="#">
+																				<div style="width: 218px; height: 249px;" class="good-item">
+																					<div style="width: 162px; height: 162px;" class="pic">
+																						<img style="width: 90px; height: 120px;" src="assets/images/tpl/index/1.jpg" />
+																					</div>
+																					<div style="padding: 0 28px;" class="intro">
+																						<p style="margin: 8px 0; height: 30px;">海天味极鲜酱油380ml</p>
+																						<p style="" class="orange fw"><i>￥</i>350.50/<span>盒</span></p>
+																					</div>
+																				</div>
+																			</a>
+																		</div>
+																	</div>
+																	<div id="test-234" class="f-item pr fl">
+																		<div class="mask">
+																			<a class="edit-tips" href="javascript:void(0)"><img src="assets/images/tpl/edit-tips.png"/></a>
+																			<span class="size">162 × 162(PX)</span>
+																		</div>
+																		<div class="item-wrap">
+																			<a href="#">
+																				<img style="width: 218px; height: 249px;" src="assets/images/tpl/activity/anerle.jpg">
+																			</a>
+																		</div>
+																	</div>
+																	<div class="f-item pr fl">
+																		<div class="mask">
+																			<a class="edit-tips" href="javascript:void(0)"><img src="assets/images/tpl/edit-tips.png"/></a>
+																			<span class="size">162 × 162(PX)</span>
+																		</div>
+																		<div class="item-wrap">
+																			<a href="#">
+																				<div style="width: 218px; height: 249px;" class="good-item">
+																					<div style="width: 162px; height: 162px;" class="pic">
+																						<img style="width: 90px; height: 120px;" src="assets/images/tpl/index/1.jpg" />
+																					</div>
+																					<div style="padding: 0 28px;" class="intro">
+																						<p style="margin: 8px 0; height: 30px;">海天味极鲜酱油380ml</p>
+																						<p style="" class="orange fw"><i>￥</i>350.50/<span>盒</span></p>
+																					</div>
+																				</div>
+																			</a>
+																		</div>
+																	</div>
+																</li>
+																<li>
+																	<div class="f-item pr fl">
+																		<div class="mask">
+																			<a class="edit-tips" href="javascript:void(0)"><img src="assets/images/tpl/edit-tips.png"/></a>
+																			<span class="size">162 × 162(PX)</span>
+																		</div>
+																		<div class="item-wrap">
+																			<a href="#">
+																				<div style="width: 218px; height: 249px;" class="good-item">
+																					<div style="width: 162px; height: 162px;" class="pic">
+																						<img style="width: 90px; height: 120px;" src="assets/images/tpl/index/1.jpg" />
+																					</div>
+																					<div style="padding: 0 28px;" class="intro">
+																						<p style="margin: 8px 0; height: 30px;">海天味极鲜酱油380ml</p>
+																						<p style="" class="orange fw"><i>￥</i>350.50/<span>盒</span></p>
+																					</div>
+																				</div>
+																			</a>
+																		</div>
+																	</div>
+																	<div class="f-item pr fl">
+																		<div class="mask">
+																			<a class="edit-tips" href="javascript:void(0)"><img src="assets/images/tpl/edit-tips.png"/></a>
+																			<span class="size">162 × 162(PX)</span>
+																		</div>
+																		<div class="item-wrap">
+																			<a href="#">
+																				<div style="width: 218px; height: 249px;" class="good-item">
+																					<div style="width: 162px; height: 162px;" class="pic">
+																						<img style="width: 90px; height: 120px;" src="assets/images/tpl/index/1.jpg" />
+																					</div>
+																					<div style="padding: 0 28px;" class="intro">
+																						<p style="margin: 8px 0; height: 30px;">海天味极鲜酱油380ml</p>
+																						<p style="" class="orange fw"><i>￥</i>350.50/<span>盒</span></p>
+																					</div>
+																				</div>
+																			</a>
+																		</div>
+																	</div>
+																	<div class="f-item pr fl">
+																		<div class="mask">
+																			<a class="edit-tips" href="javascript:void(0)"><img src="assets/images/tpl/edit-tips.png"/></a>
+																			<span class="size">162 × 162(PX)</span>
+																		</div>
+																		<div class="item-wrap">
+																			<a href="#">
+																				<div style="width: 218px; height: 249px;" class="good-item">
+																					<div style="width: 162px; height: 162px;" class="pic">
+																						<img style="width: 90px; height: 120px;" src="assets/images/tpl/index/1.jpg" />
+																					</div>
+																					<div style="padding: 0 28px;" class="intro">
+																						<p style="margin: 8px 0; height: 30px;">海天味极鲜酱油380ml</p>
+																						<p style="" class="orange fw"><i>￥</i>350.50/<span>盒</span></p>
+																					</div>
+																				</div>
+																			</a>
+																		</div>
+																	</div>
+																	<div class="f-item pr fl">
+																		<div class="mask">
+																			<a class="edit-tips" href="javascript:void(0)"><img src="assets/images/tpl/edit-tips.png"/></a>
+																			<span class="size">162 × 162(PX)</span>
+																		</div>
+																		<div class="item-wrap">
+																			<a href="#">
+																				<div style="width: 218px; height: 249px;" class="good-item">
+																					<div style="width: 162px; height: 162px;" class="pic">
+																						<img style="width: 90px; height: 120px;" src="assets/images/tpl/index/1.jpg" />
+																					</div>
+																					<div style="padding: 0 28px;" class="intro">
+																						<p style="margin: 8px 0; height: 30px;">海天味极鲜酱油380ml</p>
+																						<p style="" class="orange fw"><i>￥</i>350.50/<span>盒</span></p>
+																					</div>
+																				</div>
+																			</a>
+																		</div>
+																	</div>
+																</li>
+															</ul>
+														
+														</div>
+														
+														<div class="fes-sort hide">
+															
+															<ul class="clearfix">
+																<li>
+																	<div class="f-item pr fl">
+																		<div class="mask">
+																			<a class="edit-tips" href="javascript:void(0)"><img src="assets/images/tpl/edit-tips.png"/></a>
+																			<span class="size">333 × 250（PX）</span>
+																		</div>
+																		<div class="item-wrap">
+																			<a href="#"><img src="assets/images/tpl/activity/wine1.jpg"/></a>
+																		</div>
+																	</div>
+																	<div class="fl f-sort pr bg-2f">
+																		<div class="mask">
+																			<a class="edit-tips" href="javascript:void(0)"><img src="assets/images/tpl/edit-tips.png"/></a>
+																		</div>
+																		<p class="clearfix">
+																			<a href="#" class="fl">22</a>
+																			<a href="#" class="fr">碳酸饮料</a>
+																		</p>
+																		<p class="clearfix">
+																			<a href="#" class="fl">茶/咖啡</a>
+																			<a href="#" class="fr">牛奶/果汁</a>
+																		</p>
+																		<p class="clearfix">
+																			<a href="#" class="fl">饮用水</a>
+																			<a href="#" class="fr">冲调饮品</a>
+																		</p>
+																		<p class="clearfix">
+																			<a href="#" class="fl">功能饮料</a>
+																			<a href="#" class="fr">冰淇淋</a>
+																		</p>
+																		<p class="clearfix">
+																			<a href="#" class="fl">雪糕</a>
+																		</p>
+																	</div>
+																</li>
+																<li>
+																	<div class="f-item fz pr fl">
+																		<div class="mask">
+																			<a class="edit-tips" href="javascript:void(0)"><img src="assets/images/tpl/edit-tips.png"/></a>
+																			<span class="size">437 × 249（PX）</span>
+																		</div>
+																		<div class="item-wrap">
+																			<a href="#"><img src="assets/images/tpl/activity/wine2.jpg"/></a>
+																		</div>
+																	</div>
+																	<div class="f-item pr fl">
+																		<div class="mask">
+																			<a class="edit-tips" href="javascript:void(0)"><img src="assets/images/tpl/edit-tips.png"/></a>
+																			<span class="size">162 × 162(PX)</span>
+																		</div>
+																		<div class="item-wrap">
+																			<a href="#">
+																				<div style="width: 218px; height: 249px;" class="good-item">
+																					<div style="width: 162px; height: 162px;" class="pic">
+																						<img style="width: 90px; height: 120px;" src="assets/images/tpl/index/1.jpg" />
+																					</div>
+																					<div style="padding: 0 28px;" class="intro">
+																						<p style="margin: 8px 0; height: 30px;">海天味极鲜酱油380ml</p>
+																						<p style="" class="orange fw"><i>￥</i>350.50/<span>盒</span></p>
+																					</div>
+																				</div>
+																			</a>
+																		</div>
+																	</div>
+																	<div class="f-item pr fl">
+																		<div class="mask">
+																			<a class="edit-tips" href="javascript:void(0)"><img src="assets/images/tpl/edit-tips.png"/></a>
+																			<span class="size">162 × 162(PX)</span>
+																		</div>
+																		<div class="item-wrap">
+																			<a href="#">
+																				<div style="width: 218px; height: 249px;" class="good-item">
+																					<div style="width: 162px; height: 162px;" class="pic">
+																						<img style="width: 90px; height: 120px;" src="assets/images/tpl/index/1.jpg" />
+																					</div>
+																					<div style="padding: 0 28px;" class="intro">
+																						<p style="margin: 8px 0; height: 30px;">海天味极鲜酱油380ml</p>
+																						<p style="" class="orange fw"><i>￥</i>350.50/<span>盒</span></p>
+																					</div>
+																				</div>
+																			</a>
+																		</div>
+																	</div>
+																</li>
+																<li>
+																	<div class="f-item pr fl">
+																		<div class="mask">
+																			<a class="edit-tips" href="javascript:void(0)"><img src="assets/images/tpl/edit-tips.png"/></a>
+																			<span class="size">162 × 162(PX)</span>
+																		</div>
+																		<div class="item-wrap">
+																			<a href="#">
+																				<div style="width: 218px; height: 249px;" class="good-item">
+																					<div style="width: 162px; height: 162px;" class="pic">
+																						<img style="width: 90px; height: 120px;" src="assets/images/tpl/index/1.jpg" />
+																					</div>
+																					<div style="padding: 0 28px;" class="intro">
+																						<p style="margin: 8px 0; height: 30px;">海天味极鲜酱油380ml</p>
+																						<p style="" class="orange fw"><i>￥</i>350.50/<span>盒</span></p>
+																					</div>
+																				</div>
+																			</a>
+																		</div>
+																	</div>
+																	<div class="f-item pr fl">
+																		<div class="mask">
+																			<a class="edit-tips" href="javascript:void(0)"><img src="assets/images/tpl/edit-tips.png"/></a>
+																			<span class="size">162 × 162(PX)</span>
+																		</div>
+																		<div class="item-wrap">
+																			<a href="#">
+																				<div style="width: 218px; height: 249px;" class="good-item">
+																					<div style="width: 162px; height: 162px;" class="pic">
+																						<img style="width: 90px; height: 120px;" src="assets/images/tpl/index/1.jpg" />
+																					</div>
+																					<div style="padding: 0 28px;" class="intro">
+																						<p style="margin: 8px 0; height: 30px;">海天味极鲜酱油380ml</p>
+																						<p style="" class="orange fw"><i>￥</i>350.50/<span>盒</span></p>
+																					</div>
+																				</div>
+																			</a>
+																		</div>
+																	</div>
+																	<div class="f-item pr fl">
+																		<div class="mask">
+																			<a class="edit-tips" href="javascript:void(0)"><img src="assets/images/tpl/edit-tips.png"/></a>
+																			<span class="size">162 × 162(PX)</span>
+																		</div>
+																		<div class="item-wrap">
+																			<a href="#">
+																				<div style="width: 218px; height: 249px;" class="good-item">
+																					<div style="width: 162px; height: 162px;" class="pic">
+																						<img style="width: 90px; height: 120px;" src="assets/images/tpl/index/1.jpg" />
+																					</div>
+																					<div style="padding: 0 28px;" class="intro">
+																						<p style="margin: 8px 0; height: 30px;">海天味极鲜酱油380ml</p>
+																						<p style="" class="orange fw"><i>￥</i>350.50/<span>盒</span></p>
+																					</div>
+																				</div>
+																			</a>
+																		</div>
+																	</div>
+																	<div class="f-item pr fl">
+																		<div class="mask">
+																			<a class="edit-tips" href="javascript:void(0)"><img src="assets/images/tpl/edit-tips.png"/></a>
+																			<span class="size">162 × 162(PX)</span>
+																		</div>
+																		<div class="item-wrap">
+																			<a href="#">
+																				<div style="width: 218px; height: 249px;" class="good-item">
+																					<div style="width: 162px; height: 162px;" class="pic">
+																						<img style="width: 90px; height: 120px;" src="assets/images/tpl/index/1.jpg" />
+																					</div>
+																					<div style="padding: 0 28px;" class="intro">
+																						<p style="margin: 8px 0; height: 30px;">海天味极鲜酱油380ml</p>
+																						<p style="" class="orange fw"><i>￥</i>350.50/<span>盒</span></p>
+																					</div>
+																				</div>
+																			</a>
+																		</div>
+																	</div>
+																</li>
+															</ul>
+														
+														</div>
+														
+														<div class="fes-sort hide">
+															
+															<ul class="clearfix">
+																<li>
+																	<div class="f-item pr fl">
+																		<div class="mask">
+																			<a class="edit-tips" href="javascript:void(0)"><img src="assets/images/tpl/edit-tips.png"/></a>
+																			<span class="size">333 × 250（PX）</span>
+																		</div>
+																		<div class="item-wrap">
+																			<a href="#"><img src="assets/images/tpl/activity/wine1.jpg"/></a>
+																		</div>
+																	</div>
+																	<div class="fl f-sort pr bg-2f">
+																		<div class="mask">
+																			<a class="edit-tips" href="javascript:void(0)"><img src="assets/images/tpl/edit-tips.png"/></a>
+																		</div>
+																		<p class="clearfix">
+																			<a href="#" class="fl">33</a>
+																			<a href="#" class="fr">碳酸饮料</a>
+																		</p>
+																		<p class="clearfix">
+																			<a href="#" class="fl">茶/咖啡</a>
+																			<a href="#" class="fr">牛奶/果汁</a>
+																		</p>
+																		<p class="clearfix">
+																			<a href="#" class="fl">饮用水</a>
+																			<a href="#" class="fr">冲调饮品</a>
+																		</p>
+																		<p class="clearfix">
+																			<a href="#" class="fl">功能饮料</a>
+																			<a href="#" class="fr">冰淇淋</a>
+																		</p>
+																		<p class="clearfix">
+																			<a href="#" class="fl">雪糕</a>
+																		</p>
+																	</div>
+																</li>
+																<li>
+																	<div class="f-item fz pr fl">
+																		<div class="mask">
+																			<a class="edit-tips" href="javascript:void(0)"><img src="assets/images/tpl/edit-tips.png"/></a>
+																			<span class="size">437 × 249（PX）</span>
+																		</div>
+																		<div class="item-wrap">
+																			<a href="#"><img src="assets/images/tpl/activity/wine2.jpg"/></a>
+																		</div>
+																	</div>
+																	<div class="f-item pr fl">
+																		<div class="mask">
+																			<a class="edit-tips" href="javascript:void(0)"><img src="assets/images/tpl/edit-tips.png"/></a>
+																			<span class="size">162 × 162(PX)</span>
+																		</div>
+																		<div class="item-wrap">
+																			<a href="#">
+																				<div style="width: 218px; height: 249px;" class="good-item">
+																					<div style="width: 162px; height: 162px;" class="pic">
+																						<img style="width: 90px; height: 120px;" src="assets/images/tpl/index/1.jpg" />
+																					</div>
+																					<div style="padding: 0 28px;" class="intro">
+																						<p style="margin: 8px 0; height: 30px;">海天味极鲜酱油380ml</p>
+																						<p style="" class="orange fw"><i>￥</i>350.50/<span>盒</span></p>
+																					</div>
+																				</div>
+																			</a>
+																		</div>
+																	</div>
+																	<div class="f-item pr fl">
+																		<div class="mask">
+																			<a class="edit-tips" href="javascript:void(0)"><img src="assets/images/tpl/edit-tips.png"/></a>
+																			<span class="size">162 × 162(PX)</span>
+																		</div>
+																		<div class="item-wrap">
+																			<a href="#">
+																				<div style="width: 218px; height: 249px;" class="good-item">
+																					<div style="width: 162px; height: 162px;" class="pic">
+																						<img style="width: 90px; height: 120px;" src="assets/images/tpl/index/1.jpg" />
+																					</div>
+																					<div style="padding: 0 28px;" class="intro">
+																						<p style="margin: 8px 0; height: 30px;">海天味极鲜酱油380ml</p>
+																						<p style="" class="orange fw"><i>￥</i>350.50/<span>盒</span></p>
+																					</div>
+																				</div>
+																			</a>
+																		</div>
+																	</div>
+																</li>
+																<li>
+																	<div class="f-item pr fl">
+																		<div class="mask">
+																			<a class="edit-tips" href="javascript:void(0)"><img src="assets/images/tpl/edit-tips.png"/></a>
+																			<span class="size">162 × 162(PX)</span>
+																		</div>
+																		<div class="item-wrap">
+																			<a href="#">
+																				<div style="width: 218px; height: 249px;" class="good-item">
+																					<div style="width: 162px; height: 162px;" class="pic">
+																						<img style="width: 90px; height: 120px;" src="assets/images/tpl/index/1.jpg" />
+																					</div>
+																					<div style="padding: 0 28px;" class="intro">
+																						<p style="margin: 8px 0; height: 30px;">海天味极鲜酱油380ml</p>
+																						<p style="" class="orange fw"><i>￥</i>350.50/<span>盒</span></p>
+																					</div>
+																				</div>
+																			</a>
+																		</div>
+																	</div>
+																	<div class="f-item pr fl">
+																		<div class="mask">
+																			<a class="edit-tips" href="javascript:void(0)"><img src="assets/images/tpl/edit-tips.png"/></a>
+																			<span class="size">162 × 162(PX)</span>
+																		</div>
+																		<div class="item-wrap">
+																			<a href="#">
+																				<div style="width: 218px; height: 249px;" class="good-item">
+																					<div style="width: 162px; height: 162px;" class="pic">
+																						<img style="width: 90px; height: 120px;" src="assets/images/tpl/index/1.jpg" />
+																					</div>
+																					<div style="padding: 0 28px;" class="intro">
+																						<p style="margin: 8px 0; height: 30px;">海天味极鲜酱油380ml</p>
+																						<p style="" class="orange fw"><i>￥</i>350.50/<span>盒</span></p>
+																					</div>
+																				</div>
+																			</a>
+																		</div>
+																	</div>
+																	<div class="f-item pr fl">
+																		<div class="mask">
+																			<a class="edit-tips" href="javascript:void(0)"><img src="assets/images/tpl/edit-tips.png"/></a>
+																			<span class="size">162 × 162(PX)</span>
+																		</div>
+																		<div class="item-wrap">
+																			<a href="#">
+																				<div style="width: 218px; height: 249px;" class="good-item">
+																					<div style="width: 162px; height: 162px;" class="pic">
+																						<img style="width: 90px; height: 120px;" src="assets/images/tpl/index/1.jpg" />
+																					</div>
+																					<div style="padding: 0 28px;" class="intro">
+																						<p style="margin: 8px 0; height: 30px;">海天味极鲜酱油380ml</p>
+																						<p style="" class="orange fw"><i>￥</i>350.50/<span>盒</span></p>
+																					</div>
+																				</div>
+																			</a>
+																		</div>
+																	</div>
+																	<div class="f-item pr fl">
+																		<div class="mask">
+																			<a class="edit-tips" href="javascript:void(0)"><img src="assets/images/tpl/edit-tips.png"/></a>
+																			<span class="size">162 × 162(PX)</span>
+																		</div>
+																		<div class="item-wrap">
+																			<a href="#">
+																				<div style="width: 218px; height: 249px;" class="good-item">
+																					<div style="width: 162px; height: 162px;" class="pic">
+																						<img style="width: 90px; height: 120px;" src="assets/images/tpl/index/1.jpg" />
+																					</div>
+																					<div style="padding: 0 28px;" class="intro">
+																						<p style="margin: 8px 0; height: 30px;">海天味极鲜酱油380ml</p>
+																						<p style="" class="orange fw"><i>￥</i>350.50/<span>盒</span></p>
+																					</div>
+																				</div>
+																			</a>
+																		</div>
+																	</div>
+																</li>
+															</ul>
+														
+														</div>
+														
+														<div class="fes-sort hide">
+															
+															<ul class="clearfix">
+																<li>
+																	<div class="f-item pr fl">
+																		<div class="mask">
+																			<a class="edit-tips" href="javascript:void(0)"><img src="assets/images/tpl/edit-tips.png"/></a>
+																			<span class="size">333 × 250（PX）</span>
+																		</div>
+																		<div class="item-wrap">
+																			<a href="#"><img src="assets/images/tpl/activity/wine1.jpg"/></a>
+																		</div>
+																	</div>
+																	<div class="fl f-sort pr bg-2f">
+																		<div class="mask">
+																			<a class="edit-tips" href="javascript:void(0)"><img src="assets/images/tpl/edit-tips.png"/></a>
+																		</div>
+																		<p class="clearfix">
+																			<a href="#" class="fl">44</a>
+																			<a href="#" class="fr">碳酸饮料</a>
+																		</p>
+																		<p class="clearfix">
+																			<a href="#" class="fl">茶/咖啡</a>
+																			<a href="#" class="fr">牛奶/果汁</a>
+																		</p>
+																		<p class="clearfix">
+																			<a href="#" class="fl">饮用水</a>
+																			<a href="#" class="fr">冲调饮品</a>
+																		</p>
+																		<p class="clearfix">
+																			<a href="#" class="fl">功能饮料</a>
+																			<a href="#" class="fr">冰淇淋</a>
+																		</p>
+																		<p class="clearfix">
+																			<a href="#" class="fl">雪糕</a>
+																		</p>
+																	</div>
+																</li>
+																<li>
+																	<div class="f-item fz pr fl">
+																		<div class="mask">
+																			<a class="edit-tips" href="javascript:void(0)"><img src="assets/images/tpl/edit-tips.png"/></a>
+																			<span class="size">437 × 249（PX）</span>
+																		</div>
+																		<div class="item-wrap">
+																			<a href="#"><img src="assets/images/tpl/activity/wine2.jpg"/></a>
+																		</div>
+																	</div>
+																	<div class="f-item pr fl">
+																		<div class="mask">
+																			<a class="edit-tips" href="javascript:void(0)"><img src="assets/images/tpl/edit-tips.png"/></a>
+																			<span class="size">162 × 162(PX)</span>
+																		</div>
+																		<div class="item-wrap">
+																			<a href="#">
+																				<div style="width: 218px; height: 249px;" class="good-item">
+																					<div style="width: 162px; height: 162px;" class="pic">
+																						<img style="width: 90px; height: 120px;" src="assets/images/tpl/index/1.jpg" />
+																					</div>
+																					<div style="padding: 0 28px;" class="intro">
+																						<p style="margin: 8px 0; height: 30px;">海天味极鲜酱油380ml</p>
+																						<p style="" class="orange fw"><i>￥</i>350.50/<span>盒</span></p>
+																					</div>
+																				</div>
+																			</a>
+																		</div>
+																	</div>
+																	<div class="f-item pr fl">
+																		<div class="mask">
+																			<a class="edit-tips" href="javascript:void(0)"><img src="assets/images/tpl/edit-tips.png"/></a>
+																			<span class="size">162 × 162(PX)</span>
+																		</div>
+																		<div class="item-wrap">
+																			<a href="#">
+																				<div style="width: 218px; height: 249px;" class="good-item">
+																					<div style="width: 162px; height: 162px;" class="pic">
+																						<img style="width: 90px; height: 120px;" src="assets/images/tpl/index/1.jpg" />
+																					</div>
+																					<div style="padding: 0 28px;" class="intro">
+																						<p style="margin: 8px 0; height: 30px;">海天味极鲜酱油380ml</p>
+																						<p style="" class="orange fw"><i>￥</i>350.50/<span>盒</span></p>
+																					</div>
+																				</div>
+																			</a>
+																		</div>
+																	</div>
+																</li>
+																<li>
+																	<div class="f-item pr fl">
+																		<div class="mask">
+																			<a class="edit-tips" href="javascript:void(0)"><img src="assets/images/tpl/edit-tips.png"/></a>
+																			<span class="size">162 × 162(PX)</span>
+																		</div>
+																		<div class="item-wrap">
+																			<a href="#">
+																				<div style="width: 218px; height: 249px;" class="good-item">
+																					<div style="width: 162px; height: 162px;" class="pic">
+																						<img style="width: 90px; height: 120px;" src="assets/images/tpl/index/1.jpg" />
+																					</div>
+																					<div style="padding: 0 28px;" class="intro">
+																						<p style="margin: 8px 0; height: 30px;">海天味极鲜酱油380ml</p>
+																						<p style="" class="orange fw"><i>￥</i>350.50/<span>盒</span></p>
+																					</div>
+																				</div>
+																			</a>
+																		</div>
+																	</div>
+																	<div class="f-item pr fl">
+																		<div class="mask">
+																			<a class="edit-tips" href="javascript:void(0)"><img src="assets/images/tpl/edit-tips.png"/></a>
+																			<span class="size">162 × 162(PX)</span>
+																		</div>
+																		<div class="item-wrap">
+																			<a href="#">
+																				<div style="width: 218px; height: 249px;" class="good-item">
+																					<div style="width: 162px; height: 162px;" class="pic">
+																						<img style="width: 90px; height: 120px;" src="assets/images/tpl/index/1.jpg" />
+																					</div>
+																					<div style="padding: 0 28px;" class="intro">
+																						<p style="margin: 8px 0; height: 30px;">海天味极鲜酱油380ml</p>
+																						<p style="" class="orange fw"><i>￥</i>350.50/<span>盒</span></p>
+																					</div>
+																				</div>
+																			</a>
+																		</div>
+																	</div>
+																	<div class="f-item pr fl">
+																		<div class="mask">
+																			<a class="edit-tips" href="javascript:void(0)"><img src="assets/images/tpl/edit-tips.png"/></a>
+																			<span class="size">162 × 162(PX)</span>
+																		</div>
+																		<div class="item-wrap">
+																			<a href="#">
+																				<div style="width: 218px; height: 249px;" class="good-item">
+																					<div style="width: 162px; height: 162px;" class="pic">
+																						<img style="width: 90px; height: 120px;" src="assets/images/tpl/index/1.jpg" />
+																					</div>
+																					<div style="padding: 0 28px;" class="intro">
+																						<p style="margin: 8px 0; height: 30px;">海天味极鲜酱油380ml</p>
+																						<p style="" class="orange fw"><i>￥</i>350.50/<span>盒</span></p>
+																					</div>
+																				</div>
+																			</a>
+																		</div>
+																	</div>
+																	<div class="f-item pr fl">
+																		<div class="mask">
+																			<a class="edit-tips" href="javascript:void(0)"><img src="assets/images/tpl/edit-tips.png"/></a>
+																			<span class="size">162 × 162(PX)</span>
+																		</div>
+																		<div class="item-wrap">
+																			<a href="#">
+																				<div style="width: 218px; height: 249px;" class="good-item">
+																					<div style="width: 162px; height: 162px;" class="pic">
+																						<img style="width: 90px; height: 120px;" src="assets/images/tpl/index/1.jpg" />
+																					</div>
+																					<div style="padding: 0 28px;" class="intro">
+																						<p style="margin: 8px 0; height: 30px;">海天味极鲜酱油380ml</p>
+																						<p style="" class="orange fw"><i>￥</i>350.50/<span>盒</span></p>
+																					</div>
+																				</div>
+																			</a>
+																		</div>
+																	</div>
+																</li>
+															</ul>
+														
+														</div>
+														
+														<div class="fes-sort hide">
+															
+															<ul class="clearfix">
+																<li>
+																	<div class="f-item pr fl">
+																		<div class="mask">
+																			<a class="edit-tips" href="javascript:void(0)"><img src="assets/images/tpl/edit-tips.png"/></a>
+																			<span class="size">333 × 250（PX）</span>
+																		</div>
+																		<div class="item-wrap">
+																			<a href="#"><img src="assets/images/tpl/activity/wine1.jpg"/></a>
+																		</div>
+																	</div>
+																	<div class="fl f-sort pr bg-2f">
+																		<div class="mask">
+																			<a class="edit-tips" href="javascript:void(0)"><img src="assets/images/tpl/edit-tips.png"/></a>
+																		</div>
+																		<p class="clearfix">
+																			<a href="#" class="fl">55</a>
+																			<a href="#" class="fr">碳酸饮料</a>
+																		</p>
+																		<p class="clearfix">
+																			<a href="#" class="fl">茶/咖啡</a>
+																			<a href="#" class="fr">牛奶/果汁</a>
+																		</p>
+																		<p class="clearfix">
+																			<a href="#" class="fl">饮用水</a>
+																			<a href="#" class="fr">冲调饮品</a>
+																		</p>
+																		<p class="clearfix">
+																			<a href="#" class="fl">功能饮料</a>
+																			<a href="#" class="fr">冰淇淋</a>
+																		</p>
+																		<p class="clearfix">
+																			<a href="#" class="fl">雪糕</a>
+																		</p>
+																	</div>
+																</li>
+																<li>
+																	<div class="f-item fz pr fl">
+																		<div class="mask">
+																			<a class="edit-tips" href="javascript:void(0)"><img src="assets/images/tpl/edit-tips.png"/></a>
+																			<span class="size">437 × 249（PX）</span>
+																		</div>
+																		<div class="item-wrap">
+																			<a href="#"><img src="assets/images/tpl/activity/wine2.jpg"/></a>
+																		</div>
+																	</div>
+																	<div class="f-item pr fl">
+																		<div class="mask">
+																			<a class="edit-tips" href="javascript:void(0)"><img src="assets/images/tpl/edit-tips.png"/></a>
+																			<span class="size">162 × 162(PX)</span>
+																		</div>
+																		<div class="item-wrap">
+																			<a href="#">
+																				<div style="width: 218px; height: 249px;" class="good-item">
+																					<div style="width: 162px; height: 162px;" class="pic">
+																						<img style="width: 90px; height: 120px;" src="assets/images/tpl/index/1.jpg" />
+																					</div>
+																					<div style="padding: 0 28px;" class="intro">
+																						<p style="margin: 8px 0; height: 30px;">海天味极鲜酱油380ml</p>
+																						<p style="" class="orange fw"><i>￥</i>350.50/<span>盒</span></p>
+																					</div>
+																				</div>
+																			</a>
+																		</div>
+																	</div>
+																	<div class="f-item pr fl">
+																		<div class="mask">
+																			<a class="edit-tips" href="javascript:void(0)"><img src="assets/images/tpl/edit-tips.png"/></a>
+																			<span class="size">162 × 162(PX)</span>
+																		</div>
+																		<div class="item-wrap">
+																			<a href="#">
+																				<div style="width: 218px; height: 249px;" class="good-item">
+																					<div style="width: 162px; height: 162px;" class="pic">
+																						<img style="width: 90px; height: 120px;" src="assets/images/tpl/index/1.jpg" />
+																					</div>
+																					<div style="padding: 0 28px;" class="intro">
+																						<p style="margin: 8px 0; height: 30px;">海天味极鲜酱油380ml</p>
+																						<p style="" class="orange fw"><i>￥</i>350.50/<span>盒</span></p>
+																					</div>
+																				</div>
+																			</a>
+																		</div>
+																	</div>
+																</li>
+																<li>
+																	<div class="f-item pr fl">
+																		<div class="mask">
+																			<a class="edit-tips" href="javascript:void(0)"><img src="assets/images/tpl/edit-tips.png"/></a>
+																			<span class="size">162 × 162(PX)</span>
+																		</div>
+																		<div class="item-wrap">
+																			<a href="#">
+																				<div style="width: 218px; height: 249px;" class="good-item">
+																					<div style="width: 162px; height: 162px;" class="pic">
+																						<img style="width: 90px; height: 120px;" src="assets/images/tpl/index/1.jpg" />
+																					</div>
+																					<div style="padding: 0 28px;" class="intro">
+																						<p style="margin: 8px 0; height: 30px;">海天味极鲜酱油380ml</p>
+																						<p style="" class="orange fw"><i>￥</i>350.50/<span>盒</span></p>
+																					</div>
+																				</div>
+																			</a>
+																		</div>
+																	</div>
+																	<div class="f-item pr fl">
+																		<div class="mask">
+																			<a class="edit-tips" href="javascript:void(0)"><img src="assets/images/tpl/edit-tips.png"/></a>
+																			<span class="size">162 × 162(PX)</span>
+																		</div>
+																		<div class="item-wrap">
+																			<a href="#">
+																				<div style="width: 218px; height: 249px;" class="good-item">
+																					<div style="width: 162px; height: 162px;" class="pic">
+																						<img style="width: 90px; height: 120px;" src="assets/images/tpl/index/1.jpg" />
+																					</div>
+																					<div style="padding: 0 28px;" class="intro">
+																						<p style="margin: 8px 0; height: 30px;">海天味极鲜酱油380ml</p>
+																						<p style="" class="orange fw"><i>￥</i>350.50/<span>盒</span></p>
+																					</div>
+																				</div>
+																			</a>
+																		</div>
+																	</div>
+																	<div class="f-item pr fl">
+																		<div class="mask">
+																			<a class="edit-tips" href="javascript:void(0)"><img src="assets/images/tpl/edit-tips.png"/></a>
+																			<span class="size">162 × 162(PX)</span>
+																		</div>
+																		<div class="item-wrap">
+																			<a href="#">
+																				<div style="width: 218px; height: 249px;" class="good-item">
+																					<div style="width: 162px; height: 162px;" class="pic">
+																						<img style="width: 90px; height: 120px;" src="assets/images/tpl/index/1.jpg" />
+																					</div>
+																					<div style="padding: 0 28px;" class="intro">
+																						<p style="margin: 8px 0; height: 30px;">海天味极鲜酱油380ml</p>
+																						<p style="" class="orange fw"><i>￥</i>350.50/<span>盒</span></p>
+																					</div>
+																				</div>
+																			</a>
+																		</div>
+																	</div>
+																	<div class="f-item pr fl">
+																		<div class="mask">
+																			<a class="edit-tips" href="javascript:void(0)"><img src="assets/images/tpl/edit-tips.png"/></a>
+																			<span class="size">162 × 162(PX)</span>
+																		</div>
+																		<div class="item-wrap">
+																			<a href="#">
+																				<div style="width: 218px; height: 249px;" class="good-item">
+																					<div style="width: 162px; height: 162px;" class="pic">
+																						<img style="width: 90px; height: 120px;" src="assets/images/tpl/index/1.jpg" />
+																					</div>
+																					<div style="padding: 0 28px;" class="intro">
+																						<p style="margin: 8px 0; height: 30px;">海天味极鲜酱油380ml</p>
+																						<p style="" class="orange fw"><i>￥</i>350.50/<span>盒</span></p>
+																					</div>
+																				</div>
+																			</a>
+																		</div>
+																	</div>
+																</li>
+															</ul>
+														
+														</div>
+														
+													</div>		
+												</div>
+											</div>
+											
+										</div>
+									</div>
+									
+									<div class="btn-wrap">
+										<label class="btn-submit"><input type="button" value="提交" /></label>
+										<label class="btn-cancel"><input type="button" value="取消" /></label>
+										<label class="btn-preview pull-right"><input type="button" value="生成预览" /></label>
+									</div>
+									
+								</div>
+								
+								
+							</div>
+							
+						</div>
+					
+						<!-- 商品分类编辑弹窗  -->
+						<div class="modal fade edit-box good-sort" id="editGoodSort" tabindex="-1" role="dialog" aria-labelledby="editGoodSortLabel">
+						  	<div class="modal-dialog" role="document">
+						    	<div class="modal-content border-radius">
+						    		<div class="modal-header">
+						    			<h1>商品分类设置</h1>
+						    			<p class="line"></p>
+						    			<a class="btn-close" data-dismiss="modal" aria-label="Close" href="javascript:void(0)"><img src="assets/images/btn-close.png"/></a>
+						    		</div>
+							      	<div class="modal-body">
+							        	<form>
+							        		<div class="first-level-wrap">
+												<div class="dropdown-wrap">
+													<a class="dropdown-btn border border-radius bg-color dropdown-toggle" href="javascript:void(0)" data-toggle="dropdown" role="button" aria-haspopup="true" aria-expanded="true">
+											          	<span class="item-name check-content">一级分类</span>
+											          	<span class="dr"><img src="assets/images/arrow-black.png"></span>
+											        </a>
+											        <ul class="dropdown-menu" aria-labelledby="">
+											          	<li>一级分类</li>
+											          	<li>一级分类</li>
+											          	<li>一级分类</li>
+											        </ul>
+												</div>
+											</div>
+											
+							        		<div class="sec-level-wrap">
+												<div class="dropdown-wrap">
+													<a class="dropdown-btn border border-radius bg-color dropdown-toggle" href="javascript:void(0)" data-toggle="dropdown" role="button" aria-haspopup="true" aria-expanded="true">
+											          	<span class="item-name check-content">二级分类</span>
+											          	<span class="dr"><img src="assets/images/arrow-black.png"></span>
+											        </a>
+											        <ul class="dropdown-menu check-group" aria-labelledby="">
+											          	
+											          	<li class="clearfix">
+											          		
+												          	<div class="item-group-wrap secondary">
+												          		
+												          		<div class="item-group">
+												          			
+												          			<h1>二级分类</h1>
+													          		<div class="sort-group clearfix">
+														          		<div class="sort-checkbox pull-left clearfix">
+														          			<label class="checked-wrap pull-left">
+																				<input type="checkbox" class="chk">
+																				<span class="chk-bg"></span>
+																			</label>
+																			<span class="item-name pull-left">蜜饯干果</span>
+														          		</div>
+														          		<div class="sort-checkbox pull-left clearfix">
+														          			<label class="checked-wrap pull-left">
+																				<input type="checkbox" class="chk">
+																				<span class="chk-bg"></span>
+																			</label>
+																			<span class="item-name pull-left">蜜饯干果</span>
+														          		</div>
+														          		<div class="sort-checkbox pull-left clearfix">
+														          			<label class="checked-wrap pull-left">
+																				<input type="checkbox" class="chk">
+																				<span class="chk-bg"></span>
+																			</label>
+																			<span class="item-name pull-left">蜜饯干果</span>
+														          		</div>
+														          		<div class="sort-checkbox pull-left clearfix">
+														          			<label class="checked-wrap pull-left">
+																				<input type="checkbox" class="chk">
+																				<span class="chk-bg"></span>
+																			</label>
+																			<span class="item-name pull-left">蜜饯干果</span>
+														          		</div>
+														          		<div class="sort-checkbox pull-left clearfix">
+														          			<label class="checked-wrap pull-left">
+																				<input type="checkbox" class="chk">
+																				<span class="chk-bg"></span>
+																			</label>
+																			<span class="item-name pull-left">蜜饯干果</span>
+														          		</div>
+														          		<div class="sort-checkbox pull-left clearfix">
+														          			<label class="checked-wrap pull-left">
+																				<input type="checkbox" class="chk">
+																				<span class="chk-bg"></span>
+																			</label>
+																			<span class="item-name pull-left">蜜饯干果</span>
+														          		</div>
+														          		<div class="sort-checkbox pull-left clearfix">
+														          			<label class="checked-wrap pull-left">
+																				<input type="checkbox" class="chk">
+																				<span class="chk-bg"></span>
+																			</label>
+																			<span class="item-name pull-left">蜜饯干果</span>
+														          		</div>
+														          		<div class="sort-checkbox pull-left clearfix">
+														          			<label class="checked-wrap pull-left">
+																				<input type="checkbox" class="chk">
+																				<span class="chk-bg"></span>
+																			</label>
+																			<span class="item-name pull-left">蜜饯干果</span>
+														          		</div>
+														          		<div class="sort-checkbox pull-left clearfix">
+														          			<label class="checked-wrap pull-left">
+																				<input type="checkbox" class="chk">
+																				<span class="chk-bg"></span>
+																			</label>
+																			<span class="item-name pull-left">蜜饯干果</span>
+														          		</div>
+													          		</div>
+												          			
+												          		</div>
+
+												          	</div>
+
+											          	</li>
+											        	
+											        </ul>
+												</div>
+											</div>
+											
+											<div class="three-lv-wrap">
+												<a class="btn-add" href="javascript:void(0)"><img src="assets/images/add-icon.png"/></a>
+												<div class="dropdown-wrap">
+													<a class="dropdown-btn border border-radius bg-color dropdown-toggle" href="javascript:void(0)" data-toggle="dropdown" role="button" aria-haspopup="true" aria-expanded="true">
+											          	<span class="item-name check-content">三级分类</span>
+											          	<span class="dr"><img src="assets/images/arrow-black.png"></span>
+											        </a>
+											        <ul class="dropdown-menu check-group" aria-labelledby="">
+											        	
+											          	<li class="clearfix">
+											          		
+												          	<div class="item-group-wrap">
+												          		
+												          		<div class="item-group">
+												          			
+												          			<h1>饼干糕点</h1>
+													          		<div class="sort-group clearfix">
+													          			<div class="sort-checkbox pull-left clearfix">
+														          			<label class="checked-wrap pull-left">
+																				<input type="checkbox" class="chk">
+																				<span class="chk-bg"></span>
+																			</label>
+																			<span class="item-name pull-left">蜜饯干果</span>
+														          		</div>
+														          		<div class="sort-checkbox pull-left clearfix">
+														          			<label class="checked-wrap pull-left">
+																				<input type="checkbox" class="chk">
+																				<span class="chk-bg"></span>
+																			</label>
+																			<span class="item-name pull-left">蜜饯干果</span>
+														          		</div>
+														          		<div class="sort-checkbox pull-left clearfix">
+														          			<label class="checked-wrap pull-left">
+																				<input type="checkbox" class="chk">
+																				<span class="chk-bg"></span>
+																			</label>
+																			<span class="item-name pull-left">蜜饯干果</span>
+														          		</div>
+														          		<div class="sort-checkbox pull-left clearfix">
+														          			<label class="checked-wrap pull-left">
+																				<input type="checkbox" class="chk">
+																				<span class="chk-bg"></span>
+																			</label>
+																			<span class="item-name pull-left">蜜饯干果</span>
+														          		</div>
+														          		<div class="sort-checkbox pull-left clearfix">
+														          			<label class="checked-wrap pull-left">
+																				<input type="checkbox" class="chk">
+																				<span class="chk-bg"></span>
+																			</label>
+																			<span class="item-name pull-left">蜜饯干果</span>
+														          		</div>
+														          		<div class="sort-checkbox pull-left clearfix">
+														          			<label class="checked-wrap pull-left">
+																				<input type="checkbox" class="chk">
+																				<span class="chk-bg"></span>
+																			</label>
+																			<span class="item-name pull-left">蜜饯干果</span>
+														          		</div>
+														          		<div class="sort-checkbox pull-left clearfix">
+														          			<label class="checked-wrap pull-left">
+																				<input type="checkbox" class="chk">
+																				<span class="chk-bg"></span>
+																			</label>
+																			<span class="item-name pull-left">蜜饯干果</span>
+														          		</div>
+													          		</div>
+												          			
+												          		</div>
+												          		
+												          		<div class="item-group">
+												          			
+												          			<h1>饼干糕点</h1>
+													          		<div class="sort-group clearfix">
+													          			<div class="sort-checkbox pull-left clearfix">
+														          			<label class="checked-wrap pull-left">
+																				<input type="checkbox" class="chk">
+																				<span class="chk-bg"></span>
+																			</label>
+																			<span class="item-name pull-left">蜜饯干果</span>
+														          		</div>
+														          		<div class="sort-checkbox pull-left clearfix">
+														          			<label class="checked-wrap pull-left">
+																				<input type="checkbox" class="chk">
+																				<span class="chk-bg"></span>
+																			</label>
+																			<span class="item-name pull-left">蜜饯干果</span>
+														          		</div>
+														          		<div class="sort-checkbox pull-left clearfix">
+														          			<label class="checked-wrap pull-left">
+																				<input type="checkbox" class="chk">
+																				<span class="chk-bg"></span>
+																			</label>
+																			<span class="item-name pull-left">蜜饯干果</span>
+														          		</div>
+														          		<div class="sort-checkbox pull-left clearfix">
+														          			<label class="checked-wrap pull-left">
+																				<input type="checkbox" class="chk">
+																				<span class="chk-bg"></span>
+																			</label>
+																			<span class="item-name pull-left">蜜饯干果</span>
+														          		</div>
+														          		<div class="sort-checkbox pull-left clearfix">
+														          			<label class="checked-wrap pull-left">
+																				<input type="checkbox" class="chk">
+																				<span class="chk-bg"></span>
+																			</label>
+																			<span class="item-name pull-left">蜜饯干果</span>
+														          		</div>
+														          		<div class="sort-checkbox pull-left clearfix">
+														          			<label class="checked-wrap pull-left">
+																				<input type="checkbox" class="chk">
+																				<span class="chk-bg"></span>
+																			</label>
+																			<span class="item-name pull-left">蜜饯干果</span>
+														          		</div>
+														          		<div class="sort-checkbox pull-left clearfix">
+														          			<label class="checked-wrap pull-left">
+																				<input type="checkbox" class="chk">
+																				<span class="chk-bg"></span>
+																			</label>
+																			<span class="item-name pull-left">蜜饯干果</span>
+														          		</div>
+													          		</div>
+												          			
+												          		</div>
+												          		
+												          		
+												          		<div class="item-group">
+												          			
+												          			<h1>饼干糕点</h1>
+													          		<div class="sort-group clearfix">
+													          			<div class="sort-checkbox pull-left clearfix">
+														          			<label class="checked-wrap pull-left">
+																				<input type="checkbox" class="chk">
+																				<span class="chk-bg"></span>
+																			</label>
+																			<span class="item-name pull-left">蜜饯干果</span>
+														          		</div>
+														          		<div class="sort-checkbox pull-left clearfix">
+														          			<label class="checked-wrap pull-left">
+																				<input type="checkbox" class="chk">
+																				<span class="chk-bg"></span>
+																			</label>
+																			<span class="item-name pull-left">蜜饯干果</span>
+														          		</div>
+														          		<div class="sort-checkbox pull-left clearfix">
+														          			<label class="checked-wrap pull-left">
+																				<input type="checkbox" class="chk">
+																				<span class="chk-bg"></span>
+																			</label>
+																			<span class="item-name pull-left">蜜饯干果</span>
+														          		</div>
+														          		<div class="sort-checkbox pull-left clearfix">
+														          			<label class="checked-wrap pull-left">
+																				<input type="checkbox" class="chk">
+																				<span class="chk-bg"></span>
+																			</label>
+																			<span class="item-name pull-left">蜜饯干果</span>
+														          		</div>
+														          		<div class="sort-checkbox pull-left clearfix">
+														          			<label class="checked-wrap pull-left">
+																				<input type="checkbox" class="chk">
+																				<span class="chk-bg"></span>
+																			</label>
+																			<span class="item-name pull-left">蜜饯干果</span>
+														          		</div>
+														          		<div class="sort-checkbox pull-left clearfix">
+														          			<label class="checked-wrap pull-left">
+																				<input type="checkbox" class="chk">
+																				<span class="chk-bg"></span>
+																			</label>
+																			<span class="item-name pull-left">蜜饯干果</span>
+														          		</div>
+														          		<div class="sort-checkbox pull-left clearfix">
+														          			<label class="checked-wrap pull-left">
+																				<input type="checkbox" class="chk">
+																				<span class="chk-bg"></span>
+																			</label>
+																			<span class="item-name pull-left">蜜饯干果</span>
+														          		</div>
+													          		</div>
+												          			
+												          		</div>
+												          		
+												          		<div class="item-group">
+												          			
+												          			<h1>饼干糕点</h1>
+													          		<div class="sort-group clearfix">
+													          			<div class="sort-checkbox pull-left clearfix">
+														          			<label class="checked-wrap pull-left">
+																				<input type="checkbox" class="chk">
+																				<span class="chk-bg"></span>
+																			</label>
+																			<span class="item-name pull-left">蜜饯干果</span>
+														          		</div>
+														          		<div class="sort-checkbox pull-left clearfix">
+														          			<label class="checked-wrap pull-left">
+																				<input type="checkbox" class="chk">
+																				<span class="chk-bg"></span>
+																			</label>
+																			<span class="item-name pull-left">蜜饯干果</span>
+														          		</div>
+														          		<div class="sort-checkbox pull-left clearfix">
+														          			<label class="checked-wrap pull-left">
+																				<input type="checkbox" class="chk">
+																				<span class="chk-bg"></span>
+																			</label>
+																			<span class="item-name pull-left">蜜饯干果</span>
+														          		</div>
+														          		<div class="sort-checkbox pull-left clearfix">
+														          			<label class="checked-wrap pull-left">
+																				<input type="checkbox" class="chk">
+																				<span class="chk-bg"></span>
+																			</label>
+																			<span class="item-name pull-left">蜜饯干果</span>
+														          		</div>
+														          		<div class="sort-checkbox pull-left clearfix">
+														          			<label class="checked-wrap pull-left">
+																				<input type="checkbox" class="chk">
+																				<span class="chk-bg"></span>
+																			</label>
+																			<span class="item-name pull-left">蜜饯干果</span>
+														          		</div>
+														          		<div class="sort-checkbox pull-left clearfix">
+														          			<label class="checked-wrap pull-left">
+																				<input type="checkbox" class="chk">
+																				<span class="chk-bg"></span>
+																			</label>
+																			<span class="item-name pull-left">蜜饯干果</span>
+														          		</div>
+														          		<div class="sort-checkbox pull-left clearfix">
+														          			<label class="checked-wrap pull-left">
+																				<input type="checkbox" class="chk">
+																				<span class="chk-bg"></span>
+																			</label>
+																			<span class="item-name pull-left">蜜饯干果</span>
+														          		</div>
+													          		</div>
+												          			
+												          		</div>
+												          		
+												          	</div>
+
+											          	</li>
+											        	
+											        </ul>
+												</div>
+											</div>
+							        		
+							        		<div class="scroll-wrap border border-radius bg-color">
+							        			<ul>
+							        				<li class="sort-item active">
+								        				<div>
+								        					<a href="javascript:void(0)"><img src="assets/images/btn-delete.png"/></a>
+									        				<h2>休闲食品</h2>
+									        				<p><span>饼干糕点：</span><i>卫华</i><i>蛋卷</i><i>松塔</i><i>麻薯</i><i>年糕</i><i>华夫饼</i></p>
+									        				<p><span>坚果炒货：</span><i>开心果</i><i>腰果</i><i>长寿果</i><i>核桃</i></p>
+									        				<p><span>肉干肉脯：</span><i>猪肉类</i><i>牛肉类</i><i>鸡肉类</i><i>海产类</i></p>
+									        				<p><span>糖果/巧克力：</span><i>软糖</i><i>硬糖</i><i>无糖</i><i>含酒精巧克力</i><i>其他</i></p>
+								        				</div>
+								        			</li>
+								        			<li class="sort-item active">
+								        				<div>
+								        					<a href="javascript:void(0)"><img src="assets/images/btn-delete.png"/></a>
+									        				<h2>休闲食品</h2>
+									        				<p><span>饼干糕点：</span><i>卫华</i><i>蛋卷</i><i>松塔</i><i>麻薯</i><i>年糕</i><i>华夫饼</i></p>
+									        				<p><span>坚果炒货：</span><i>开心果</i><i>腰果</i><i>长寿果</i><i>核桃</i></p>
+									        				<p><span>肉干肉脯：</span><i>猪肉类</i><i>牛肉类</i><i>鸡肉类</i><i>海产类</i></p>
+									        				<p><span>糖果/巧克力：</span><i>软糖</i><i>硬糖</i><i>无糖</i><i>含酒精巧克力</i><i>其他</i></p>
+								        				</div>
+								        			</li>
+								        			<li class="sort-item active">
+								        				<div>
+								        					<a href="javascript:void(0)"><img src="assets/images/btn-delete.png"/></a>
+									        				<h2>休闲食品</h2>
+									        				<p><span>饼干糕点：</span><i>卫华</i><i>蛋卷</i><i>松塔</i><i>麻薯</i><i>年糕</i><i>华夫饼</i></p>
+									        				<p><span>坚果炒货：</span><i>开心果</i><i>腰果</i><i>长寿果</i><i>核桃</i></p>
+									        				<p><span>肉干肉脯：</span><i>猪肉类</i><i>牛肉类</i><i>鸡肉类</i><i>海产类</i></p>
+									        				<p><span>糖果/巧克力：</span><i>软糖</i><i>硬糖</i><i>无糖</i><i>含酒精巧克力</i><i>其他</i></p>
+								        				</div>
+								        			</li>
+								        			<li class="sort-item active">
+								        				<div>
+								        					<a href="javascript:void(0)"><img src="assets/images/btn-delete.png"/></a>
+									        				<h2>休闲食品</h2>
+									        				<p><span>饼干糕点：</span><i>卫华</i><i>蛋卷</i><i>松塔</i><i>麻薯</i><i>年糕</i><i>华夫饼</i></p>
+									        				<p><span>坚果炒货：</span><i>开心果</i><i>腰果</i><i>长寿果</i><i>核桃</i></p>
+									        				<p><span>肉干肉脯：</span><i>猪肉类</i><i>牛肉类</i><i>鸡肉类</i><i>海产类</i></p>
+									        				<p><span>糖果/巧克力：</span><i>软糖</i><i>硬糖</i><i>无糖</i><i>含酒精巧克力</i><i>其他</i></p>
+								        				</div>
+								        			</li>
+							        			</ul>
+							        		</div>
+							        		<p class="drap-tips">*拖动分类更改顺序</p>
+							        		<div class="btn-wrap">
+												<label class="btn-submit"><input type="button" value="保存" /></label>
+												<label class="btn-cancel"><input data-dismiss="modal" type="button" value="取消" /></label>
+											</div>
+							        	</form>
+							      	</div>
+						    	</div>
+						  	</div>
+						</div>
+						
+						<!-- 广告图编辑弹窗 -->
+						<div class="modal fade edit-box ad-pic" id="editAdPic" tabindex="-1" role="dialog" aria-labelledby="editAdPicLabel">
+						  	<div class="modal-dialog" role="document">
+						    	<div class="modal-content border-radius">
+						    		<div class="modal-header">
+						    			<h1>广告位选择</h1>
+						    			<p class="line"></p>
+						    			<a class="btn-close" data-dismiss="modal" aria-label="Close" href="javascript:void(0)"><img src="assets/images/btn-close.png"/></a>
+						    		</div>
+							      	<div class="modal-body">
+							        	<form>
+							        		<div class="table-box">
+							        			<p class="filter-wrap">
+													<label class="">
+														<i class="icon-search f-95"></i><input class="filter border-radius bg-color" placeholder="广告位名称" id="filter" type="text" />
+													</label>
+													<span>
+														<a class="btn-filter" href="javascript:void(0)">查询</a>
+													</span>
+												</p>
+												
+												<div class="table-scroll">
+													<div class="table-head">
+														<table class="footable table even border border-radius" data-page-size="10">
+															<thead class="bg-color">
+																<tr>
+																	<th data-toggle="true">广告位名称</th>
+																	<th data-hide="phone">类别</th>
+																	<th data-hide="phone">所属区域</th>
+																	<th data-hide="">尺寸</th>
+																	<th></th>
+																</tr>
+															</thead>
+														</table>
+													</div>
+													<div class="scroll-wrap">
+														
+														<table class="footable table even border border-radius" data-page-size="10">
+															<thead class="bg-color hide">
+																<tr>
+																	<th data-toggle="true">广告位名称</th>
+																	<th data-hide="phone">类别</th>
+																	<th data-hide="phone">所属区域</th>
+																	<th data-hide="">尺寸</th>
+																	<th></th>
+																</tr>
+															</thead>
+															<tbody>
+																<tr>
+																	<td>首页导航广告位</td>
+																	<td>PC端广告位</td>
+																	<td>苏州</td>
+																	<td>高456*宽1210</td>
+																	<td>
+																		<a class="detail" href="javascript:void(0)">查看</a>
+																		<a class="detail active" href="javascript:void(0)">启用中</a>
+																	</td>
+																</tr>
+																<tr>
+																	<td>首页导航广告位</td>
+																	<td>PC端广告位</td>
+																	<td>苏州</td>
+																	<td>高456*宽1210</td>
+																	<td>
+																		<a class="detail" href="javascript:void(0)">查看</a>
+																		<a class="detail active" href="javascript:void(0)">启用中</a>
+																	</td>
+																</tr>
+																<tr>
+																	<td>首页导航广告位</td>
+																	<td>PC端广告位</td>
+																	<td>苏州</td>
+																	<td>高456*宽1210</td>
+																	<td>
+																		<a class="detail" href="javascript:void(0)">查看</a>
+																		<a class="detail" href="javascript:void(0)">启用</a>
+																	</td>
+																</tr>
+																<tr>
+																	<td>首页导航广告位</td>
+																	<td>PC端广告位</td>
+																	<td>苏州</td>
+																	<td>高456*宽1210</td>
+																	<td>
+																		<a class="detail" href="javascript:void(0)">查看</a>
+																		<a class="detail" href="javascript:void(0)">启用</a>
+																	</td>
+																</tr>
+																<tr>
+																	<td>首页导航广告位</td>
+																	<td>PC端广告位</td>
+																	<td>苏州</td>
+																	<td>高456*宽1210</td>
+																	<td>
+																		<a class="detail" href="javascript:void(0)">查看</a>
+																		<a class="detail" href="javascript:void(0)">启用</a>
+																	</td>
+																</tr>
+																<tr>
+																	<td>首页导航广告位</td>
+																	<td>PC端广告位</td>
+																	<td>苏州</td>
+																	<td>高456*宽1210</td>
+																	<td>
+																		<a class="detail" href="javascript:void(0)">查看</a>
+																		<a class="detail" href="javascript:void(0)">启用</a>
+																	</td>
+																</tr>
+																<tr>
+																	<td>首页导航广告位</td>
+																	<td>PC端广告位</td>
+																	<td>苏州</td>
+																	<td>高456*宽1210</td>
+																	<td>
+																		<a class="detail" href="javascript:void(0)">查看</a>
+																		<a class="detail" href="javascript:void(0)">启用</a>
+																	</td>
+																</tr>
+															</tbody>
+															
+														</table>
+													</div>
+													
+													<div class="paging-wrap clearfix">
+														<div class="navigation_bar pull-right">
+															<ul class="clearfix">
+																<li>
+																	<a href="javascript:void(0)" class="nav_first"></a>
+																</li>
+																<li>
+																	<a href="javascript:void(0)" class="nav_float"></a>
+																</li>
+																<li class="active"><a href="javascript:void(0)">1</a></li>
+																<li><a href="javascript:void(0)">2</a></li>
+																<li><a href="javascript:void(0)">3</a></li>
+																<li><a href="javascript:void(0)">…</a></li>
+																<li><a href="javascript:void(0)">7</a></li>
+																<li><a href="javascript:void(0)">8</a></li>
+																<li><a href="javascript:void(0)">9</a></li>
+																<li><a href="javascript:void(0)" class="nav_right"></a></li>
+																<li><a href="javascript:void(0)" class="nav_last"></a></li>
+															</ul>
+														</div>
+													</div>
+													
+												</div>
+												
+							        		</div>
+							        		<div class="btn-wrap">
+												<label class="btn-submit"><input type="button" value="保存" /></label>
+												<label class="btn-cancel"><input data-dismiss="modal" type="button" value="取消" /></label>
+											</div>
+							        	</form>
+							      	</div>
+						    	</div>
+						  	</div>
+						</div>
+						
+						<!-- 专区设置弹窗 -->
+						<div class="modal fade edit-box div-setting" id="editDivision" tabindex="-1" role="dialog" aria-labelledby="editDivisionLabel">
+						  	<div class="modal-dialog" role="document">
+						    	<div class="modal-content border-radius">
+						    		<div class="modal-header">
+						    			<h1>专区选择</h1>
+						    			<p class="line"></p>
+						    			<a class="btn-close" data-dismiss="modal" aria-label="Close" href="javascript:void(0)"><img src="assets/images/btn-close.png"/></a>
+						    		</div>
+							      	<div class="modal-body">
+							        	<form>
+							        		<div class="table-box">
+							        			<div class="result-wrap">
+													<ul class="clearfix">
+														<li class="border border-radius bg-color orange">
+															<input type="text" value="" />
+															<a href="javascript:void(0)"><img src="assets/images/btn-delete.png"/></a>
+														</li>
+														<li class="border border-radius bg-color orange">
+															<input type="text" value="" />
+															<a href="javascript:void(0)"><img src="assets/images/btn-delete.png"/></a>
+														</li>
+														<li class="border border-radius bg-color orange">
+															<input type="text" value="" />
+															<a href="javascript:void(0)"><img src="assets/images/btn-delete.png"/></a>
+														</li>
+														<li class="border border-radius bg-color orange">
+															<input type="text" value="" />
+															<a href="javascript:void(0)"><img src="assets/images/btn-delete.png"/></a>
+														</li>
+														<li class="border border-radius bg-color orange">
+															<input type="text" value="" />
+															<a href="javascript:void(0)"><img src="assets/images/btn-delete.png"/></a>
+														</li>
+														<li class="border border-radius bg-color orange">
+															<input type="text" value="" />
+															<a href="javascript:void(0)"><img src="assets/images/btn-delete.png"/></a>
+														</li>
+														<li class="border border-radius bg-color orange">
+															<input type="text" value="" />
+															<a href="javascript:void(0)"><img src="assets/images/btn-delete.png"/></a>
+														</li>
+														<li class="border border-radius bg-color orange">
+															<input type="text" value="" />
+															<a href="javascript:void(0)"><img src="assets/images/btn-delete.png"/></a>
+														</li>
+														<li class="border border-radius bg-color orange">
+															<input type="text" value="" />
+															<a href="javascript:void(0)"><img src="assets/images/btn-delete.png"/></a>
+														</li>
+														<li class="border border-radius bg-color orange">
+															<input type="text" value="bb专区" />
+															<a href="javascript:void(0)"><img src="assets/images/btn-delete.png"/></a>
+														</li>
+													</ul>
+													<p class="drap-tips">*拖动专区更换顺序</p>
+												</div>
+												
+												<div class="table-scroll">
+													<div class="table-head">
+														<table class="footable table even border border-radius" data-page-size="10">
+															<thead class="bg-color">
+																<tr>
+																	<th data-toggle="true">专区名称</th>
+																	<th data-hide="phone">描述</th>
+																	<th data-hide="phone">所属区域</th>
+																	<th></th>
+																</tr>
+															</thead>
+														</table>
+													</div>
+													<div class="scroll-wrap">
+														<table class="footable table even border border-radius" data-page-size="10">
+															<thead class="bg-color hide">
+																<tr>
+																	<th data-toggle="true">专区名称</th>
+																	<th data-hide="phone">描述</th>
+																	<th data-hide="phone">所属区域</th>
+																	<th></th>
+																</tr>
+															</thead>
+															<tbody>
+																<tr>
+																	<td>母婴专区</td>
+																	<td>对母婴专区展示布局及内容进行管理</td>
+																	<td>苏州</td>
+																	<td>
+																		<a class="detail active" href="javascript:void(0)">已选</a>
+																	</td>
+																</tr>
+																<tr>
+																	<td>aa专区</td>
+																	<td>对母婴专区展示布局及内容进行管理</td>
+																	<td>苏州</td>
+																	<td>
+																		<a class="detail" href="javascript:void(0)">选择</a>
+																	</td>
+																</tr>
+																<tr>
+																	<td>bb专区</td>
+																	<td>对母婴专区展示布局及内容进行管理</td>
+																	<td>苏州</td>
+																	<td>
+																		<a class="detail" href="javascript:void(0)">选择</a>
+																	</td>
+																</tr>
+																<tr>
+																	<td>cc专区</td>
+																	<td>对母婴专区展示布局及内容进行管理</td>
+																	<td>苏州</td>
+																	<td>
+																		<a class="detail" href="javascript:void(0)">选择</a>
+																	</td>
+																</tr>
+																<tr>
+																	<td>dd专区</td>
+																	<td>对母婴专区展示布局及内容进行管理</td>
+																	<td>苏州</td>
+																	<td>
+																		<a class="detail" href="javascript:void(0)">选择</a>
+																	</td>
+																</tr>
+																<tr>
+																	<td>dd专区</td>
+																	<td>对母婴专区展示布局及内容进行管理</td>
+																	<td>苏州</td>
+																	<td>
+																		<a class="detail" href="javascript:void(0)">选择</a>
+																	</td>
+																</tr>
+																<tr>
+																	<td>dd专区</td>
+																	<td>对母婴专区展示布局及内容进行管理</td>
+																	<td>苏州</td>
+																	<td>
+																		<a class="detail" href="javascript:void(0)">选择</a>
+																	</td>
+																</tr>
+															</tbody>
+														</table>
+													</div>
+												</div>
+												
+												
+							        		</div>
+							        		<div class="btn-wrap">
+												<label class="btn-submit"><input type="button" value="保存" /></label>
+												<label class="btn-cancel"><input data-dismiss="modal" type="button" value="取消" /></label>
+											</div>
+							        	</form>
+							      	</div>
+						    	</div>
+						  	</div>
+						</div>
+						
+						<!--推荐品牌设置弹窗 -->
+						<div class="modal fade edit-box brand-alert" id="editRecBrand" tabindex="-1" role="dialog" aria-labelledby="editRecBrandLabel">
+						  	<div class="modal-dialog" role="document">
+						    	<div class="modal-content border-radius">
+						    		<div class="modal-header">
+						    			<h1>品牌设置</h1>
+						    			<p class="line"></p>
+						    			<a class="btn-close" data-dismiss="modal" aria-label="Close" href="javascript:void(0)"><img src="assets/images/btn-close.png"/></a>
+						    		</div>
+							      	<div class="modal-body">
+							        	<form>
+							        		<div class="table-box">
+							        			
+							        			<div class="result-wrap">
+													<div class="scroll-wrap">
+														<ul class="clearfix">
+															<li>
+																<div class="g-icon pr">
+																	<input type="file" />
+																	<img src="assets/images/tpl/icon-add.png" />
+																	<a href="javascript:void(0)"><img src="assets/images/btn-delete.png"/></a>
+																</div>
+																<p>三只松鼠</p>
+															</li>
+															<li>
+																<div class="g-icon pr">
+																	<input type="file" disabled />
+																	<img src="assets/images/tpl/g-icon-small.png" />
+																	<a href="javascript:void(0)"><img src="assets/images/btn-delete.png"/></a>
+																</div>
+																<p>三只松鼠</p>
+															</li>
+															<li>
+																<div class="g-icon pr">
+																	<input type="file" disabled />
+																	<img src="assets/images/tpl/g-icon-small.png" />
+																	<a href="javascript:void(0)"><img src="assets/images/btn-delete.png"/></a>
+																</div>
+																<p>三只松鼠</p>
+															</li>
+															<li>
+																<div class="g-icon pr">
+																	<input type="file" disabled />
+																	<img src="assets/images/tpl/g-icon-small.png" />
+																	<a href="javascript:void(0)"><img src="assets/images/btn-delete.png"/></a>
+																</div>
+																<p>三只松鼠</p>
+															</li>
+															<li>
+																<div class="g-icon pr">
+																	<input type="file" disabled />
+																	<img src="assets/images/tpl/g-icon-small.png" />
+																	<a href="javascript:void(0)"><img src="assets/images/btn-delete.png"/></a>
+																</div>
+																<p>三只松鼠</p>
+															</li>
+														</ul>
+													</div>
+													<p class="drap-tips">*必需选择10种品牌，图片尺寸：高140*宽68，拖动品牌更改顺序</p>
+												</div>
+												
+												<div class="filter-wrap">
+													<label class="">
+														<i class="icon-search f-95"></i><input class="filter border-radius bg-color" placeholder="品牌名称" id="filter" type="text" />
+													</label>
+													<label class="filter-select dropdown-wrap">
+														<a class="dropdown-btn border border-radius bg-color dropdown-toggle" href="#" data-toggle="dropdown" role="button" aria-haspopup="true" aria-expanded="true">
+															<span class="item-name">品牌分类</span>
+															<span class="dr"><img src="assets/images/arrow-black.png"/></span>
+														</a>
+														<ul class="dropdown-menu" aria-labelledby="contract-type">
+															<li>品牌分类</li>
+															<li>品牌分类</li>
+															<li>品牌分类</li>
+														</ul>
+													</label>
+													<span>
+														<a class="btn-filter" href="javascript:void(0)">查询</a>
+													</span>
+													<span class="pull-right">
+															<a class="add-message" href="javascript:void(0)">清空<span>已选品牌</span></a>
+													</span>
+												</div>
+												
+												<div class="table-scroll">
+													<div class="table-head">
+														<table class="footable table even border border-radius" data-page-size="10">
+															<thead class="bg-color">
+																<tr>
+																	<th data-toggle="true">品牌图标</th>
+																	<th data-hide="phone">品牌名称</th>
+																	<th data-hide="phone">描述</th>
+																	<th></th>
+																</tr>
+															</thead>
+														</table>
+													</div>
+													<div class="scroll-wrap">
+														<table class="footable table even border border-radius" data-page-size="10">
+															<thead class="bg-color hide">
+																<tr>
+																	<th data-toggle="true">品牌图标</th>
+																	<th data-hide="phone">品牌名称</th>
+																	<th data-hide="phone">描述</th>
+																	<th></th>
+																</tr>
+															</thead>
+															<tbody>
+																<tr>
+																	<td>
+																		<div class="g-icon">
+																			<img src="assets/images/tpl/g-icon.png"/>
+																		</div>
+																	</td>
+																	<td>三只松鼠</td>
+																	<td>主要经营坚果，干果，干茶等食品</td>
+																	<td>
+																		<a class="detail active" href="javascript:void(0)">已选</a>
+																	</td>
+																</tr>
+																<tr>
+																	<td>
+																		<div class="g-icon">
+																			<img src="assets/images/tpl/g-icon.png"/>
+																		</div>
+																	</td>
+																	<td>三只松鼠</td>
+																	<td>主要经营坚果，干果，干茶等食品</td>
+																	<td>
+																		<a class="detail active" href="javascript:void(0)">已选</a>
+																	</td>
+																</tr>
+																<tr>
+																	<td>
+																		<div class="g-icon">
+																			<img src="assets/images/tpl/g-icon.png"/>
+																		</div>
+																	</td>
+																	<td>三只松鼠</td>
+																	<td>主要经营坚果，干果，干茶等食品</td>
+																	<td>
+																		<a class="detail active" href="javascript:void(0)">已选</a>
+																	</td>
+																</tr>
+																<tr>
+																	<td>
+																		<div class="g-icon">
+																			<img src="assets/images/tpl/g-icon.png"/>
+																		</div>
+																	</td>
+																	<td>三只松鼠</td>
+																	<td>主要经营坚果，干果，干茶等食品</td>
+																	<td>
+																		<a class="detail" href="javascript:void(0)">已选</a>
+																	</td>
+																</tr>
+																<tr>
+																	<td>
+																		<div class="g-icon">
+																			<img src="assets/images/tpl/g-icon.png"/>
+																		</div>
+																	</td>
+																	<td>三只松鼠</td>
+																	<td>主要经营坚果，干果，干茶等食品</td>
+																	<td>
+																		<a class="detail" href="javascript:void(0)">已选</a>
+																	</td>
+																</tr>
+															</tbody>
+														</table>
+													</div>
+												</div>
+												
+							        		</div>
+							        		<div class="pagging-wrap clearfix">
+								      			<div class="navigation_bar pull-right">
+													<ul class="clearfix">
+														<li>
+															<a href="javascript:void(0)" class="nav_first"></a>
+														</li>
+														<li>
+															<a href="javascript:void(0)" class="nav_float"></a>
+														</li>
+														<li class="active"><a href="javascript:void(0)">1</a></li>
+														<li><a href="javascript:void(0)">2</a></li>
+														<li><a href="javascript:void(0)">3</a></li>
+														<li><a href="javascript:void(0)">…</a></li>
+														<li><a href="javascript:void(0)">7</a></li>
+														<li><a href="javascript:void(0)">8</a></li>
+														<li><a href="javascript:void(0)">9</a></li>
+														<li><a href="javascript:void(0)" class="nav_right"></a></li>
+														<li><a href="javascript:void(0)" class="nav_last"></a></li>
+													</ul>
+												</div>
+								      		</div>
+							        		<div class="btn-wrap">
+												<label class="btn-submit"><input type="button" value="保存" /></label>
+												<label class="btn-cancel"><input data-dismiss="modal" type="button" value="取消" /></label>
+											</div>
+							        	</form>
+							      	</div>
+						    	</div>
+						  	</div>
+						</div>
+						
+						<!--推荐商品设置弹窗-->
+						<div class="modal fade edit-box rec-good-alert" id="editRecGoods" tabindex="-1" role="dialog" aria-labelledby="editRecGoodsLabel">
+						  	<div class="modal-dialog" role="document">
+						    	<div class="modal-content border-radius">
+						    		<div class="modal-header">
+						    			<h1>商品设置</h1>
+						    			<p class="line"></p>
+						    			<a class="btn-close" data-dismiss="modal" aria-label="Close" href="javascript:void(0)"><img src="assets/images/btn-close.png"/></a>
+						    		</div>
+							      	<div class="modal-body">
+							        	<form>
+							        		<div class="table-box">
+							        			
+							        			<div class="result-wrap">
+													<div class="scroll-wrap">
+														<ul class="clearfix">
+															<li>
+																<div class="g-icon pr">
+																	<input type="file" />
+																	<img src="assets/images/tpl/icon-add.png" />
+																	<a href="javascript:void(0)"><img src="assets/images/btn-delete.png"/></a>
+																</div>
+																<p>柯克兰Kirkland进口坚果 有盐</p>
+															</li>
+															<li>
+																<div class="g-icon pr">
+																	<input type="file" disabled />
+																	<img src="assets/images/tpl/g-icon-small.png" />
+																	<a href="javascript:void(0)"><img src="assets/images/btn-delete.png"/></a>
+																</div>
+																<p>柯克兰Kirkland进口坚果 有盐</p>
+															</li>
+															<li>
+																<div class="g-icon pr">
+																	<input type="file" disabled />
+																	<img src="assets/images/tpl/g-icon-small.png" />
+																	<a href="javascript:void(0)"><img src="assets/images/btn-delete.png"/></a>
+																</div>
+																<p>柯克兰Kirkland进口坚果 有盐</p>
+															</li>
+															<li>
+																<div class="g-icon pr">
+																	<input type="file" disabled />
+																	<img src="assets/images/tpl/g-icon-small.png" />
+																	<a href="javascript:void(0)"><img src="assets/images/btn-delete.png"/></a>
+																</div>
+																<p>柯克兰Kirkland进口坚果 有盐</p>
+															</li>
+															<li>
+																<div class="g-icon pr">
+																	<input type="file" disabled />
+																	<img src="assets/images/tpl/g-icon-small.png" />
+																	<a href="javascript:void(0)"><img src="assets/images/btn-delete.png"/></a>
+																</div>
+																<p>柯克兰Kirkland进口坚果 有盐</p>
+															</li>
+														</ul>
+													</div>
+													<p class="drap-tips">*必需选择6种商品，图片尺寸：高180*宽160，拖动商品更改顺序</p>
+												</div>
+												
+												<div class="filter-wrap">
+													<label class="">
+														<i class="icon-search f-95"></i><input class="filter border-radius bg-color" placeholder="商品名称" id="filter" type="text" />
+													</label>
+													<label class="filter-select dropdown-wrap">
+														<a class="dropdown-btn border border-radius bg-color dropdown-toggle" href="#" data-toggle="dropdown" role="button" aria-haspopup="true" aria-expanded="true">
+															<span class="item-name">商品分类</span>
+															<span class="dr"><img src="assets/images/arrow-black.png"/></span>
+														</a>
+														<ul class="dropdown-menu" aria-labelledby="contract-type">
+															<li>商品分类</li>
+															<li>商品分类</li>
+															<li>商品分类</li>
+														</ul>
+													</label>
+													<span>
+														<a class="btn-filter" href="javascript:void(0)">查询</a>
+													</span>
+													<span class="pull-right">
+															<a class="add-message" href="javascript:void(0)">清空<span>已选商品</span></a>
+													</span>
+												</div>
+												
+												<div class="table-scroll">
+													<div class="table-head">
+														<table class="footable table even border border-radius" data-page-size="10">
+															<thead class="bg-color">
+																<tr>
+																	<th data-toggle="true">商品名称</th>
+																	<th data-hide="phone">商品规格</th>
+																	<th data-hide="phone">描述</th>
+																	<th>价格</th>
+																	<th></th>
+																</tr>
+															</thead>
+														</table>
+													</div>
+													<div class="scroll-wrap">
+														<table class="footable table even border border-radius" data-page-size="10">
+															<thead class="bg-color hide">
+																<tr>
+																	<th data-toggle="true">商品名称</th>
+																	<th data-hide="phone">商品规格</th>
+																	<th data-hide="phone">描述</th>
+																	<th>价格</th>
+																	<th></th>
+																</tr>
+															</thead>
+															<tbody>
+																<tr>
+																	<td>柯克兰Kirkland进口坚果 有盐</td>
+																	<td>1.13千克</td>
+																	<td>超多美味，全家共享</td>
+																	<td>¥ 99.00</td>
+																	<td>
+																		<a class="detail active" href="javascript:void(0)">已选</a>
+																	</td>
+																</tr>
+																<tr>
+																	<td>柯克兰Kirkland进口坚果 有盐</td>
+																	<td>1.13千克</td>
+																	<td>超多美味，全家共享</td>
+																	<td>¥ 99.00</td>
+																	<td>
+																		<a class="detail active" href="javascript:void(0)">已选</a>
+																	</td>
+																</tr>
+																<tr>
+																	<td>柯克兰Kirkland进口坚果 有盐</td>
+																	<td>1.13千克</td>
+																	<td>超多美味，全家共享</td>
+																	<td>¥ 99.00</td>
+																	<td>
+																		<a class="detail active" href="javascript:void(0)">已选</a>
+																	</td>
+																</tr>
+																<tr>
+																	<td>柯克兰Kirkland进口坚果 有盐</td>
+																	<td>1.13千克</td>
+																	<td>超多美味，全家共享</td>
+																	<td>¥ 99.00</td>
+																	<td>
+																		<a class="detail active" href="javascript:void(0)">已选</a>
+																	</td>
+																</tr>
+																<tr>
+																	<td>柯克兰Kirkland进口坚果 有盐</td>
+																	<td>1.13千克</td>
+																	<td>超多美味，全家共享</td>
+																	<td>¥ 99.00</td>
+																	<td>
+																		<a class="detail active" href="javascript:void(0)">已选</a>
+																	</td>
+																</tr>
+															</tbody>
+														</table>
+													</div>
+												</div>
+												
+							        		</div>
+							        		<div class="pagging-wrap clearfix">
+								      			<div class="navigation_bar pull-right">
+													<ul class="clearfix">
+														<li>
+															<a href="javascript:void(0)" class="nav_first"></a>
+														</li>
+														<li>
+															<a href="javascript:void(0)" class="nav_float"></a>
+														</li>
+														<li class="active"><a href="javascript:void(0)">1</a></li>
+														<li><a href="javascript:void(0)">2</a></li>
+														<li><a href="javascript:void(0)">3</a></li>
+														<li><a href="javascript:void(0)">…</a></li>
+														<li><a href="javascript:void(0)">7</a></li>
+														<li><a href="javascript:void(0)">8</a></li>
+														<li><a href="javascript:void(0)">9</a></li>
+														<li><a href="javascript:void(0)" class="nav_right"></a></li>
+														<li><a href="javascript:void(0)" class="nav_last"></a></li>
+													</ul>
+												</div>
+								      		</div>
+							        		<div class="btn-wrap">
+												<label class="btn-submit"><input type="button" value="保存" /></label>
+												<label class="btn-cancel"><input data-dismiss="modal" type="button" value="取消" /></label>
+											</div>
+							        	</form>
+							      	</div>
+						    	</div>
+						  	</div>
+						</div>
+						
+						<!--推荐商品分类-->
+						<div class="modal fade edit-box rec-good-sort" id="editRecGoodsSort" tabindex="-1" role="dialog" aria-labelledby="editRecGoodsSortLabel">
+						  	<div class="modal-dialog" role="document">
+						    	<div class="modal-content border-radius">
+						    		<div class="modal-header">
+						    			<h1>二级分类设置</h1>
+						    			<p class="line"></p>
+						    			<a class="btn-close" data-dismiss="modal" aria-label="Close" href="javascript:void(0)"><img src="assets/images/btn-close.png"/></a>
+						    		</div>
+							      	<div class="modal-body">
+								        <form>
+								        	
+								        	<div class="input-box clearfix">
+								        		<input class="border border-radius bg-color pull-left" type="text" />
+								        		<a class="pull-right" href="javascript:void(0)"><img src="assets/images/tpl/add-input.png"/></a>
+								        	</div>
+								        	<div class="input-item border bg-color border-radius">
+								        		<ul class="clearfix">
+								        			<li>
+								        				<div class="border-radius">
+								        					<a href="javascript:void(0)"><img src="assets/images/btn-delete.png"/></a>
+								        					<p>热卖商品</p>
+								        				</div>
+								        			</li>
+								        			<li>
+								        				<div class="border-radius">
+								        					<a href="javascript:void(0)"><img src="assets/images/btn-delete.png"/></a>
+								        					<p>疯狂抢购</p>
+								        				</div>
+								        			</li>
+								        			<li>
+								        				<div class="border-radius">
+								        					<a href="javascript:void(0)"><img src="assets/images/btn-delete.png"/></a>
+								        					<p>猜您喜欢</p>
+								        				</div>
+								        			</li>
+								        			<li>
+								        				<div class="border-radius">
+								        					<a href="javascript:void(0)"><img src="assets/images/btn-delete.png"/></a>
+								        					<p>热评商品</p>
+								        				</div>
+								        			</li>
+								        			<li>
+								        				<div class="border-radius">
+								        					<a href="javascript:void(0)"><img src="assets/images/btn-delete.png"/></a>
+								        					<p>新品上架</p>
+								        				</div>
+								        			</li>
+								        		</ul>
+								        		
+								        	</div>
+								        	<p class="drap-tips">*拖动分类更改顺序</p>
+								        	
+								        	<div class="btn-wrap">
+												<label class="btn-submit"><input type="button" value="保存" /></label>
+												<label class="btn-cancel"><input data-dismiss="modal" type="button" value="取消" /></label>
+											</div>
+								        	
+								        </form>
+							      	</div>
+						    	</div>
+						  	</div>
+						</div>
+						
+						<!--楼层类型2详细分类-->
+						<div class="modal fade edit-box rec-good-sort sort-type2" id="editGoodsSortDetail" tabindex="-1" role="dialog" aria-labelledby="editGoodsSortDetailLabel">
+						  	<div class="modal-dialog" role="document">
+						    	<div class="modal-content border-radius">
+						    		<div class="modal-header">
+						    			<h1>商品分类设置</h1>
+						    			<p class="line"></p>
+						    			<a class="btn-close" data-dismiss="modal" aria-label="Close" href="javascript:void(0)"><img src="assets/images/btn-close.png"/></a>
+						    		</div>
+							      	<div class="modal-body">
+								        <form>
+								        	<label>
+												<label class="dropdown-wrap">
+													<a class="dropdown-btn border border-radius bg-color dropdown-toggle" href="javascript:void(0)" data-toggle="dropdown" role="button" aria-haspopup="true" aria-expanded="true">
+											          	<span class="item-name">休闲食品</span>
+											          	<span class="dr"><img src="assets/images/arrow-black.png"></span>
+											        </a>
+											        <ul class="dropdown-menu" aria-labelledby="vip-type">
+											          	<li>休闲食品</li>
+											          	<li>休闲食品</li>
+											          	<li>休闲食品</li>
+											        </ul>
+												</label>
+											</label>
+								        	<div class="input-box clearfix">
+								        		<input class="border border-radius bg-color pull-left" type="text" />
+								        		<a class="pull-right" href="javascript:void(0)"><img src="assets/images/tpl/add-input.png"/></a>
+								        	</div>
+								        	<div class="input-item border bg-color border-radius">
+								        		<ul class="clearfix">
+								        			<li>
+								        				<div class="border-radius">
+								        					<a href="javascript:void(0)"><img src="assets/images/btn-delete.png"/></a>
+								        					<p>热卖商品</p>
+								        				</div>
+								        			</li>
+								        			<li>
+								        				<div class="border-radius">
+								        					<a href="javascript:void(0)"><img src="assets/images/btn-delete.png"/></a>
+								        					<p>疯狂抢购</p>
+								        				</div>
+								        			</li>
+								        			<li>
+								        				<div class="border-radius">
+								        					<a href="javascript:void(0)"><img src="assets/images/btn-delete.png"/></a>
+								        					<p>猜您喜欢</p>
+								        				</div>
+								        			</li>
+								        			<li>
+								        				<div class="border-radius">
+								        					<a href="javascript:void(0)"><img src="assets/images/btn-delete.png"/></a>
+								        					<p>热评商品</p>
+								        				</div>
+								        			</li>
+								        			<li>
+								        				<div class="border-radius">
+								        					<a href="javascript:void(0)"><img src="assets/images/btn-delete.png"/></a>
+								        					<p>新品上架</p>
+								        				</div>
+								        			</li>
+								        		</ul>
+								        		
+								        	</div>
+								        	<p class="drap-tips">*拖动分类更改顺序</p>
+								        	
+								        	<div class="btn-wrap">
+												<label class="btn-submit"><input type="button" value="保存" /></label>
+												<label class="btn-cancel"><input data-dismiss="modal" type="button" value="取消" /></label>
+											</div>
+								        	
+								        </form>
+							      	</div>
+						    	</div>
+						  	</div>
+						</div>
+						
+						
+						<!--提示框 必须选择16个品牌-->
+						<div class="modal fade edit-box tips-alert" id="brandTips" tabindex="-1" role="dialog" aria-labelledby="brandTipsLabel">
+						  	<div class="modal-dialog" role="document">
+						    	<div class="modal-content border-radius">
+						    		<div class="modal-header">
+						    			<a class="btn-close" data-dismiss="modal" aria-label="Close" href="javascript:void(0)"><img src="assets/images/btn-close.png"/></a>
+						    		</div>
+							      	<div class="modal-body">
+							        	<p>必须添加16种品牌</p>
+							        	<a data-dismiss="modal" href="javascript:void(0)">确定</a>
+							      	</div>
+						    	</div>
+						  	</div>
+						</div>
+						
+						<!--提示框 必须选择6商品-->
+						<div class="modal fade edit-box tips-alert" id="goodTips" tabindex="-1" role="dialog" aria-labelledby="goodTipsLabel">
+						  	<div class="modal-dialog" role="document">
+						    	<div class="modal-content border-radius">
+						    		<div class="modal-header">
+						    			<a class="btn-close" data-dismiss="modal" aria-label="Close" href="javascript:void(0)"><img src="assets/images/btn-close.png"/></a>
+						    		</div>
+							      	<div class="modal-body">
+							        	<p>必须添加6种商品</p>
+							        	<a data-dismiss="modal" href="javascript:void(0)">确定</a>
+							      	</div>
+						    	</div>
+						  	</div>
+						</div>
+					
+					</div><!-- /.page-content -->
+				</div><!-- /.main-content -->
+			</div><!-- /.main-container-inner -->
+		</div><!-- /.main-container -->
+
+		<!-- basic scripts -->
+		
+		<!--[if !IE]> -->
+
+		<script type="text/javascript">
+			window.jQuery || document.write("<script src='assets/js/jquery-2.0.3.min.js'>"+"<"+"script>");
+		</script>
+
+		<!-- <![endif]-->
+		
+		<!--[if IE]>
+		<script type="text/javascript">
+			window.jQuery || document.write("<script src='assets/js/jquery-1.10.2.min.js'>"+"<"+"script>");
+		</script>
+		<![endif]-->
+
+		<script type="text/javascript">
+			if("ontouchend" in document) document.write("<script src='assets/js/jquery.mobile.custom.min.js'>"+"<"+"script>");
+		</script>
+		<script src="assets/js/bootstrap.min.js"></script>
+
+		<!-- ace scripts -->
+
+		<script src="assets/js/ace-elements.min.js"></script>
+		<script src="assets/js/ace.min.js"></script>
+		<script src="assets/js/footable.js"></script>
+		<script src="assets/js/checked.js"></script>
+		<script src="assets/js/check-group.js"></script>
+		<script src="assets/js/jquery.nestable.min.js"></script>
+		<script src="assets/js/jquery.SuperSlide.2.1.1.js"></script>
+		
+		<!--模板管理-->
+		<script src="assets/js/tpl-setting.js"></script>
+</body>
+</html>
+

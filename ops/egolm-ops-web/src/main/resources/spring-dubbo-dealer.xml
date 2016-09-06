@@ -1,0 +1,41 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<beans xmlns="http://www.springframework.org/schema/beans"
+	xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" xmlns:dubbo="http://code.alibabatech.com/schema/dubbo"
+	xsi:schemaLocation="http://www.springframework.org/schema/beans http://www.springframework.org/schema/beans/spring-beans-2.5.xsd
+    http://code.alibabatech.com/schema/dubbo http://code.alibabatech.com/schema/dubbo/dubbo.xsd">
+
+  	<dubbo:reference id="agentQueryApi" interface="com.egolm.dealer.api.AgentQueryApi" /> 
+  	<dubbo:reference id="agentAddApi" interface="com.egolm.dealer.api.AgentAddApi" /> 
+  	<dubbo:reference id="agentUpdateApi" interface="com.egolm.dealer.api.AgentUpdateApi" /> 
+  	<dubbo:reference id="agentCleanApi" interface="com.egolm.dealer.api.AgentCleanApi" />
+  	<dubbo:reference id="regionQueryApi" interface="com.egolm.dealer.api.RegionQueryApi" />
+  	<dubbo:reference id="agentContractQueryApi" interface="com.egolm.dealer.api.AgentContractQueryApi" /> 
+  	<dubbo:reference id="agentContractAddApi" interface="com.egolm.dealer.api.AgentContractAddApi" /> 
+  	<dubbo:reference id="agentContractUpdateApi" interface="com.egolm.dealer.api.AgentContractUpdateApi" /> 
+  	<dubbo:reference id="agentContractCleanApi" interface="com.egolm.dealer.api.AgentContractCleanApi" /> 
+  	<dubbo:reference id="commonQueryApi" interface="com.egolm.dealer.api.CommonQueryApi" />
+  	
+  	 <dubbo:reference id="agentContractGoodsQueryApi" interface="com.egolm.dealer.api.AgentContractGoodsQueryApi" />
+  	 <dubbo:reference id="agentContractGoodsAddApi" interface="com.egolm.dealer.api.AgentContractGoodsAddApi" />
+  	 <dubbo:reference id="agentContractGoodsUpdateApi" interface="com.egolm.dealer.api.AgentContractGoodsUpdateApi" />
+  	 
+  	 
+  	 
+  	 
+  	 <dubbo:reference id="tACTmpGoodsPromoAddApi" interface="com.egolm.dealer.api.TACTmpGoodsPromoAddApi" />
+  	 <dubbo:reference id="tACTmpGoodsPromoQueryApi" interface="com.egolm.dealer.api.TACTmpGoodsPromoQueryApi" />
+  	 <dubbo:reference id="tACTmpGoodsPromoUpdateApi" interface="com.egolm.dealer.api.TACTmpGoodsPromoUpdateApi" />
+  	 
+  	 
+  	 <dubbo:reference id="tAlterACGoodsAddApi" interface="com.egolm.dealer.api.TAlterACGoodsAddApi" />
+  	 <dubbo:reference id="tAlterACGoodsQueryApi" interface="com.egolm.dealer.api.TAlterACGoodsQueryApi" />
+  	 <dubbo:reference id="tAlterACGoodsUpdateApi" interface="com.egolm.dealer.api.TAlterACGoodsUpdateApi" />
+  	 <dubbo:reference id="tAlterACGoodsDtlAddApi" interface="com.egolm.dealer.api.TAlterACGoodsDtlAddApi" />
+  	 <dubbo:reference id="tAlterACGoodsDtlQueryApi" interface="com.egolm.dealer.api.TAlterACGoodsDtlQueryApi" />
+  	 <dubbo:reference id="tAlterACGoodsDtlUpdateApi" interface="com.egolm.dealer.api.TAlterACGoodsDtlUpdateApi" />
+  	 
+  	 <dubbo:reference id="warehouseApi" interface="com.egolm.dealer.api.WarehouseApi" />
+  	
+  	 <dubbo:reference id="agentContractApi" interface="com.egolm.dealer.api.AgentContractApi" />
+   	
+</beans>

@@ -1,0 +1,223 @@
+.table-content {
+	background: #FFF;
+}
+
+.btn-center {
+	text-align: center;
+}
+
+.tree-body, .base-tree-body {
+	display: block;
+	margin: 10px auto;
+	width: 500px;
+	border: solid 1px #CCC;
+	line-height: 21px;
+	background: #FFF;
+}
+
+.scroll-wrap p textarea {
+	width: 500px;
+	margin: 10px auto;
+	display: block;
+}
+
+.tree-content {
+	display: block;
+	position: relative;
+	min-height: 100px;
+}
+
+.base-tree-body {
+	width: 400px;
+	margin: auto auto;
+	float: left;
+	height: 647px;
+	overflow: auto;
+}
+
+.role-left-side {
+	height : 647px;
+	overflow: auto;
+}
+
+li .chk {
+	height: 14px !important;
+	opacity: 1;
+	position: relative;
+}
+
+.modal-tree {
+	
+}
+
+.role-left-side {
+	float: right;
+	margin: 0px 0px 20px 20px;
+	min-height: 450px;
+	min-width: 700px;
+	background: #FFF;
+}
+
+.role-list {
+	margin: 5px 5px 0px 0px;
+	text-align: center;
+}
+
+.role-list select {
+	width: 100px;
+}
+
+.edit-box .clearfix {
+	margin: 25px 25px 0 0;
+}
+
+.edit-box .pull-left {
+	width: 50%;
+	margin-top: 20px;
+	text-align: left;
+}
+
+.edit-box .pull-left button {
+	width: 60%;
+}
+
+.edit-box .pull-right {
+	margin-top: 20px;
+	width: 50%;
+	text-align: right;
+}
+
+.edit-box .pull-right input {
+	width: 60%;
+	background-color: #5bc0de;
+	border-color: #46b8da;
+	color: #fff;
+}
+
+.edit-box .pull-left input {
+	background-color: #5bc0de;
+	border-color: #46b8da;
+	color: #fff;
+	width: 61%;
+}
+
+.fail-box .modal-body p.pic span {
+	background: rgba(0, 0, 0, 0) url("../images/delete_tips.png") no-repeat
+		scroll 0 0/100% 100%;
+}
+
+.table-sutiable {
+	position: absolute;
+	display: inline;
+	width: 83%;
+	min-width: 960px;
+}
+
+.tool-bar {
+	margin: 0px auto 20px 0px;
+}
+
+.tool-bar select {
+	width : 100px;
+}
+
+.tool-bar input {
+	height : 32px;
+	margin-right : 10px;
+}
+
+.tool-bar form {
+	display : block;
+}
+
+.scroll-wrap .radio-list label {
+	display:inline;	
+}
+
+.scroll-wrap .radio-list input {
+	appearance:radio;
+	-moz-appearance:radio; /* Firefox */
+	-webkit-appearance:radio;
+}
+
+.filter-wrap {
+	padding-left : 0px;
+}
+
+.filter-wrap label {
+	width: 15%;
+}
+
+.filter-wrap .role-group {
+	width: 30%;
+}
+
+.filter-wrap label .filter {
+	width: 95%;
+	margin : auto auto auto 14px;
+}
+
+.filter-wrap .add-notice {
+	width: 140px;
+}
+
+.filter-wrap span a {
+	margin : auto 0px auto 5px;
+}
+
+.bootstrap-select .btn {
+    padding: 8px 12px;
+    background: #f2f2f2;
+}
+
+.dropdown-menu li {
+	text-align:left;
+}
+
+.group-float {
+	float: left;
+	margin-left: -30px;
+}
+
+.group-create {
+	float: left;
+	margin: 20px auto auto 27%;
+}
+
+.group-float span {
+	margin: auto 5px 20px 0px;
+}
+
+.filter-role-group {
+	padding-top: 3px;
+    padding-bottom: 3px;
+}
+
+.user-create {
+	float: left;
+	margin: 20px auto auto 130px;
+}
+
+.btn-default .caret {
+    width:0;
+    height:0;
+    border-width:5px 5px 0;
+    border-style:solid;
+    border-color:#333 transparent transparent;/*灰 透明 透明 */
+    margin:40px auto;
+    position:relative;
+}
+
+.filter-wrap .perm-func {
+    width: 90px;
+    float: right;
+    font-weight: bold;
+    height: 40px;
+    line-height: 40px;
+    text-align: center;
+    text-decoration: none;
+    color: #ff6400;
+    background-size: 100% 100%;
+    -webkit-background-size: 100% 100%;
+    background: url(../images/add-man.png) no-repeat;
+}
